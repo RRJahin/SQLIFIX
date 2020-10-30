@@ -1,0 +1,1 @@
+ SELECT * FROM autot WHERE rekno= X_16030521827830

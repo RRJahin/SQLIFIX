@@ -1,0 +1,1 @@
+ update inception_music set CTR = CTR + 1 where id = ?

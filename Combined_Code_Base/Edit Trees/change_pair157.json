@@ -1,0 +1,391 @@
+{
+  "before_code": "java.lang.String s = ((\"select SQL_CALC_FOUND_ROWS * from movie_feature WHERE datepost < CURRENT_TIMESTAMP ORDER BY datepost DESC limit \" + offset) + \",\") + noOfRecords\nStatement pstm = con.createStatement()\nResultSet rs = pstm.executeQuery(s)\nmf.setDatepost(rs.getTimestamp(\"datepost\"))\npstm = con.createStatement()\nrs = pstm.executeQuery(\"SELECT FOUND_ROWS()\")\n",
+  "after_code": "java.lang.String s = \"select SQL_CALC_FOUND_ROWS * from movie_feature WHERE datepost < CURRENT_TIMESTAMP ORDER BY datepost DESC limit ?,?\"\nPreparedStatement pstm = con.prepareStatement(s)\npstm.setObject(1, offset)\npstm.setObject(2, noOfRecords)\nResultSet rs = pstm.executeQuery()\nmf.setObjectpost(rs.getTimestamp(\"datepost\"))\npstm = con.prepareStatement(\"SELECT FOUND_ROWS()\")\nrs = pstm.executeQuery()\n",
+  "before_line": [
+    7,
+    8,
+    9,
+    17,
+    21,
+    22
+  ],
+  "after_line": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    19,
+    23,
+    24
+  ],
+  "before_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "s",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "java.lang.String",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "PLUS",
+            "type": "BinaryOperator",
+            "children": [
+              {
+                "label": "PLUS",
+                "type": "BinaryOperator",
+                "children": [
+                  {
+                    "label": "PLUS",
+                    "type": "BinaryOperator",
+                    "children": [
+                      {
+                        "label": "\"select SQL_CALC_FOUND_ROWS * from movie_feature WHERE datepost < CURRENT_TIMESTAMP ORDER BY datepost DESC limit \"",
+                        "type": "Literal",
+                        "children": []
+                      },
+                      {
+                        "label": "offset",
+                        "type": "FieldRead",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "label": "\",\"",
+                    "type": "Literal",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "label": "noOfRecords",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "pstm",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "Statement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "createStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "con",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "rs",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "ResultSet",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "executeQuery",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "pstm",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "s",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setDatepost",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "mf",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "getTimestamp",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "rs",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "\"datepost\"",
+                "type": "Literal",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "=",
+        "type": "Assignment",
+        "children": [
+          {
+            "label": "pstm",
+            "type": "FieldWrite",
+            "children": []
+          },
+          {
+            "label": "createStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "con",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "=",
+        "type": "Assignment",
+        "children": [
+          {
+            "label": "rs",
+            "type": "FieldWrite",
+            "children": []
+          },
+          {
+            "label": "executeQuery",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "pstm",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "\"SELECT FOUND_ROWS()\"",
+                "type": "Literal",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "after_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "s",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "java.lang.String",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "\"select SQL_CALC_FOUND_ROWS * from movie_feature WHERE datepost < CURRENT_TIMESTAMP ORDER BY datepost DESC limit ?,?\"",
+            "type": "Literal",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "pstm",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "PreparedStatement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "prepareStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "con",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "s",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "pstm",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "1",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "offset",
+            "type": "FieldRead",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "pstm",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "2",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "noOfRecords",
+            "type": "FieldRead",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "rs",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "ResultSet",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "executeQuery",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "pstm",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setObjectpost",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "mf",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "getTimestamp",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "rs",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "\"datepost\"",
+                "type": "Literal",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "=",
+        "type": "Assignment",
+        "children": [
+          {
+            "label": "pstm",
+            "type": "FieldWrite",
+            "children": []
+          },
+          {
+            "label": "prepareStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "con",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "\"SELECT FOUND_ROWS()\"",
+                "type": "Literal",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "=",
+        "type": "Assignment",
+        "children": [
+          {
+            "label": "rs",
+            "type": "FieldWrite",
+            "children": []
+          },
+          {
+            "label": "executeQuery",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "pstm",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

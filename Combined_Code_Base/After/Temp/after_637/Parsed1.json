@@ -1,0 +1,140 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "insert_statement": {
+        "insert_values": {
+          "row_values": {
+            "expression": [
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "insertSource": "values",
+        "target_table": {
+          "type": "objectname",
+          "named_table_reference": {
+            "table_name": {
+              "full_name": "Notas",
+              "object_type": "table",
+              "object_name": "Notas"
+            }
+          }
+        },
+        "column_list": {
+          "objectName": [
+            {
+              "full_name": "aberta",
+              "object_type": "column",
+              "part_name": "aberta"
+            },
+            {
+              "full_name": "usuario_abriu",
+              "object_type": "column",
+              "part_name": "usuario_abriu"
+            },
+            {
+              "full_name": "titulo",
+              "object_type": "column",
+              "part_name": "titulo"
+            },
+            {
+              "full_name": "texto",
+              "object_type": "column",
+              "part_name": "texto"
+            },
+            {
+              "full_name": "cor",
+              "object_type": "column",
+              "part_name": "cor"
+            },
+            {
+              "full_name": "prazo_final_nota",
+              "object_type": "column",
+              "part_name": "prazo_final_nota"
+            },
+            {
+              "full_name": "data_criacao",
+              "object_type": "column",
+              "part_name": "data_criacao"
+            }
+          ]
+        }
+      },
+      "type": "sstinsert"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

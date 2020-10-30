@@ -1,0 +1,1 @@
+ filtro.getPasta()$X_16030521723150

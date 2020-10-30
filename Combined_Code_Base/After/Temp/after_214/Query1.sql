@@ -1,0 +1,1 @@
+ select * from ? where ?=? AND ?=false order by ?

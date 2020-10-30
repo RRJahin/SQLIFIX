@@ -1,0 +1,1 @@
+ Update product_sms set product_stock = ? where product_id = ?

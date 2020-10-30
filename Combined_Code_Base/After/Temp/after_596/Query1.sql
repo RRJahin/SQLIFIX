@@ -1,0 +1,1 @@
+ SELECT * FROM allergies WHERE PatientID=? ORDER BY FirstFound DESC

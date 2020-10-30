@@ -1,0 +1,1 @@
+ DELETE FROM cluster_table where name='?'

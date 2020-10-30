@@ -1,0 +1,1 @@
+"delete from Persona where id = '" + id + "';"

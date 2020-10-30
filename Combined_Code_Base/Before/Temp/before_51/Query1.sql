@@ -1,0 +1,1 @@
+ DELETE FROM organisms WHERE complete_name='X_16030521791600'

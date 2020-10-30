@@ -1,0 +1,1 @@
+ Select a.Reservation_Id, a.GuestID, a.start, a.end, a.duration, a.numberRooms, a.bookingDate, a.status, a.reservationType, a.price from Reservations a WHERE a.Reservation_Id = X_16030521791170 and a.reservationType = 'Guest'

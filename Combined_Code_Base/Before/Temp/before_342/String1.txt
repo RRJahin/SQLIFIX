@@ -1,0 +1,1 @@
+"INSERT INTO personnel(MID, Role) VALUES(" + Long.valueOf(nextID).toString() + "," + role.name() + ")"

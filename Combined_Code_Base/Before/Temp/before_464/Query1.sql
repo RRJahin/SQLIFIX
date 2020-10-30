@@ -1,0 +1,1 @@
+ DELETE FROM TeamParticipants WHERE teamId= 'X_16030521777020' AND participantId= 'X_16030521777021'

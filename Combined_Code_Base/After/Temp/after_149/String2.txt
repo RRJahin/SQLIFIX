@@ -1,0 +1,1 @@
+"select distinct name " + "from people, roles " + "where  people.person_id = roles.person_id and name <> '?'and movie_id in" + "(select distinct movie_id " + "from people, roles " + "where name  = '?' AND people.person_id = roles.person_id)"

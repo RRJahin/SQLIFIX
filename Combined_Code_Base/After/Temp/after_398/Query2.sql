@@ -1,0 +1,1 @@
+ INSERT INTO ClassifiedParaTexts (ParaID,jahrgang,ZEILENNR,STELLENBESCHREIBUNG) VALUES(?,?,?,?)

@@ -1,0 +1,1 @@
+"UPDATE autot SET merkki=" + rekno + ", malli=" + merkki + " vuosi=" + malli + " WHERE rekno=" + vuosi

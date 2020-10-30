@@ -1,0 +1,1 @@
+"INSERT INTO RoomLine(guestId, roomNo, booking) VALUES('?', '?', '?')"

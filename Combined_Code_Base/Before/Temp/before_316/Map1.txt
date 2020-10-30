@@ -1,0 +1,1 @@
+ Where(Fecha, iNumArticulos, dTotal, iCodPostal, sDirEnvio)$X_16030521737750

@@ -1,0 +1,12 @@
+ user.getBalance()$X_16030521708076
+ user.getAddress()$X_16030521708075
+ user.getType()$X_16030521708079
+ user.getPassword()$X_16030521708078
+ user.getAccount()$X_16030521708077
+ user.getId()$X_16030521708070
+ user.getUserName()$X_16030521708071
+ user.getRemark()$X_160305217080711
+ user.getIdCardNumber()$X_16030521708072
+ user.getState()$X_160305217080710
+ user.getGender()$X_16030521708073
+ date$X_16030521708074

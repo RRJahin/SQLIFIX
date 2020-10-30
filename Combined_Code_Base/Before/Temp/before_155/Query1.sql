@@ -1,0 +1,1 @@
+ SELECT * FROM 'movie_feature' WHERE datepost < CURRENT_TIMESTAMP order by datepost desc LIMIT 0, X_16030521667300

@@ -1,0 +1,1 @@
+"insert into " + TBL_NAME + " (" + FIELD_NOME + "," + FIELD_ID_PIANO + ") values(" + mappa.getNome() + "," + mappa.getID_piano() + ")"

@@ -1,0 +1,1 @@
+"Insert into User(id,firstName,lastName,userName,email,password,mobileNo) values(" + userInfo.getId() + "," + userInfo.getFirstName() + "," + userInfo.getLastName() + "," + userInfo.getUserName() + "," + userInfo.getEmail() + "," + userInfo.getPassword() + "," + userInfo.getMobileNo() + ")"

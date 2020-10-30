@@ -1,0 +1,1 @@
+ delete from user where id = X_16030521794470

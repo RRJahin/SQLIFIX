@@ -1,0 +1,2 @@
+ DigestUtils.sha256Hex(password$X_16030521746911
+ mid$X_16030521746910

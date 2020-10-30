@@ -1,0 +1,1 @@
+ INSERT INTO Team(teamId, leaderId, numberOfParticipants) VALUES ('?','?','?') INSERT INTO TeamParticipants(teamId, participantId) VALUES ('?','?')

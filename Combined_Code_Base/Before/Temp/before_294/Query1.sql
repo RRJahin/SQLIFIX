@@ -1,0 +1,1 @@
+ SELECT * FROM representatives WHERE RepresenterMID= X_16030521729710 AND RepresenteeMID= X_16030521729711

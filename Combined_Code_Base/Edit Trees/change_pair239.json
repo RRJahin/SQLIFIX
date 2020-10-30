@@ -1,0 +1,166 @@
+{
+  "before_code": "Statement pst = con.getCon().createStatement(Statement.RETURN_GENERATED_KEYS)\nif (pst.executeUpdate(sql) > 0) {\r\n}\n",
+  "after_code": "PreparedStatement pst = con.getCon().prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)\nif (pst.executeUpdate() > 0) {\r\n}\n",
+  "before_line": [
+    10,
+    11
+  ],
+  "after_line": [
+    10,
+    11
+  ],
+  "before_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "pst",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "Statement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "createStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "getCon",
+                "type": "Invocation",
+                "children": [
+                  {
+                    "label": "con",
+                    "type": "FieldRead",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "label": "Statement.RETURN_GENERATED_KEYS",
+                "type": "TypeAccess",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "if",
+        "type": "If",
+        "children": [
+          {
+            "label": "GT",
+            "type": "BinaryOperator",
+            "children": [
+              {
+                "label": "executeUpdate",
+                "type": "Invocation",
+                "children": [
+                  {
+                    "label": "pst",
+                    "type": "FieldRead",
+                    "children": []
+                  },
+                  {
+                    "label": "sql",
+                    "type": "FieldRead",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "label": "0",
+                "type": "Literal",
+                "children": []
+              }
+            ]
+          },
+          {
+            "label": "THEN",
+            "type": "then",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "after_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "pst",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "PreparedStatement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "prepareStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "getCon",
+                "type": "Invocation",
+                "children": [
+                  {
+                    "label": "con",
+                    "type": "FieldRead",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "label": "sql",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "Statement.RETURN_GENERATED_KEYS",
+                "type": "TypeAccess",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "if",
+        "type": "If",
+        "children": [
+          {
+            "label": "GT",
+            "type": "BinaryOperator",
+            "children": [
+              {
+                "label": "executeUpdate",
+                "type": "Invocation",
+                "children": [
+                  {
+                    "label": "pst",
+                    "type": "FieldRead",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "label": "0",
+                "type": "Literal",
+                "children": []
+              }
+            ]
+          },
+          {
+            "label": "THEN",
+            "type": "then",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

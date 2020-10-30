@@ -1,0 +1,1 @@
+ UPDATE 'sis_pizza_db'.'pizza' SET 'nome_pizza' = X_16030521750220 , 'tipo_pizza' = X_16030521750221 , 'tipo_massa' = X_16030521750222 , 'ingredientes_pizza' = X_16030521750223 , 'preco_pizza' = X_16030521750224 WHERE 'numero_pizza' = X_16030521750225 ;

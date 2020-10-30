@@ -1,0 +1,1 @@
+"DELETE FROM Usuarios WHERE id=" + id

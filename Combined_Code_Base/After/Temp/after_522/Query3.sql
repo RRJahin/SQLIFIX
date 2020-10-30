@@ -1,0 +1,1 @@
+ select * from fuel_types

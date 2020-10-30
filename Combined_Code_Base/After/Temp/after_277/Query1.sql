@@ -1,0 +1,1 @@
+ SELECT COUNT(*) AS activityLineInstances1 FROM ActivityLine WHERE activityId= '?' AND bookingId= '?' AND date= '?' AND startHour= '?' AND facilityId= '?' AND status= '?'

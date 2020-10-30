@@ -1,0 +1,3951 @@
+{
+  "target": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "\u003d",
+        "type": "Assignment",
+        "children": [
+          {
+            "label": "stmt",
+            "type": "FieldWrite",
+            "children": []
+          },
+          {
+            "label": "createStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "c",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "rs",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "ResultSet",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "executeQuery",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "stmt",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "root",
+                "type": "root",
+                "children": [
+                  {
+                    "label": "select_statement",
+                    "type": "select_statement",
+                    "children": [
+                      {
+                        "label": "query_expression",
+                        "type": "query_expression",
+                        "children": [
+                          {
+                            "label": "query_specification",
+                            "type": "query_specification",
+                            "children": [
+                              {
+                                "label": "select_list",
+                                "type": "select_list",
+                                "children": [
+                                  {
+                                    "label": "result_column",
+                                    "type": "result_column",
+                                    "children": [
+                                      {
+                                        "label": "expression",
+                                        "type": "expression",
+                                        "children": [
+                                          {
+                                            "label": "simple_object_name_t",
+                                            "type": "expr_type",
+                                            "children": []
+                                          },
+                                          {
+                                            "label": "column_referenced_expr",
+                                            "type": "column_referenced_expr",
+                                            "children": [
+                                              {
+                                                "label": "objectName",
+                                                "type": "objectName",
+                                                "children": [
+                                                  {
+                                                    "label": "*",
+                                                    "type": "full_name",
+                                                    "children": []
+                                                  },
+                                                  {
+                                                    "label": "column",
+                                                    "type": "object_type",
+                                                    "children": []
+                                                  },
+                                                  {
+                                                    "label": "*",
+                                                    "type": "part_name",
+                                                    "children": []
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": "where_clause",
+                                "type": "where_clause",
+                                "children": [
+                                  {
+                                    "label": "condition",
+                                    "type": "condition",
+                                    "children": [
+                                      {
+                                        "label": "pattern_matching_t",
+                                        "type": "expr_type",
+                                        "children": []
+                                      },
+                                      {
+                                        "label": "like_expr",
+                                        "type": "like_expr",
+                                        "children": [
+                                          {
+                                            "label": "first_expr",
+                                            "type": "first_expr",
+                                            "children": [
+                                              {
+                                                "label": "simple_object_name_t",
+                                                "type": "expr_type",
+                                                "children": []
+                                              },
+                                              {
+                                                "label": "column_referenced_expr",
+                                                "type": "column_referenced_expr",
+                                                "children": [
+                                                  {
+                                                    "label": "objectName",
+                                                    "type": "objectName",
+                                                    "children": [
+                                                      {
+                                                        "label": "DEPARTMENT",
+                                                        "type": "full_name",
+                                                        "children": []
+                                                      },
+                                                      {
+                                                        "label": "column",
+                                                        "type": "object_type",
+                                                        "children": []
+                                                      },
+                                                      {
+                                                        "label": "DEPARTMENT",
+                                                        "type": "part_name",
+                                                        "children": []
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "label": "second_expr",
+                                            "type": "second_expr",
+                                            "children": [
+                                              {
+                                                "label": "constant_expr",
+                                                "type": "constant_expr",
+                                                "children": [
+                                                  {
+                                                    "label": "literal",
+                                                    "type": "literal",
+                                                    "children": [
+                                                      {
+                                                        "label": "\u0027books\u0027",
+                                                        "type": "value",
+                                                        "children": []
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "label": "simple_constant_t",
+                                                "type": "expr_type",
+                                                "children": []
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": "from_clause",
+                                "type": "from_clause",
+                                "children": [
+                                  {
+                                    "label": "table_reference",
+                                    "type": "table_reference",
+                                    "children": [
+                                      {
+                                        "label": "objectname",
+                                        "type": "type",
+                                        "children": []
+                                      },
+                                      {
+                                        "label": "named_table_reference",
+                                        "type": "named_table_reference",
+                                        "children": [
+                                          {
+                                            "label": "table_name",
+                                            "type": "table_name",
+                                            "children": [
+                                              {
+                                                "label": "ITEM",
+                                                "type": "full_name",
+                                                "children": []
+                                              },
+                                              {
+                                                "label": "table",
+                                                "type": "object_type",
+                                                "children": []
+                                              },
+                                              {
+                                                "label": "ITEM",
+                                                "type": "object_name",
+                                                "children": []
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "label": false,
+                            "type": "is_parenthesis",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": "sstselect",
+                    "type": "type",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "suggestion0": {
+    "before_pattern": {
+      "label": "edit_root",
+      "type": "edit_unit",
+      "children": [
+        {
+          "label": "\u003d",
+          "type": "Assignment",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldWrite",
+              "children": []
+            },
+            {
+              "label": "createStatement",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "c",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "rs",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "ResultSet",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "executeQuery",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "stmt",
+                  "type": "FieldRead",
+                  "children": []
+                },
+                {
+                  "label": "root",
+                  "type": "root",
+                  "children": [
+                    {
+                      "label": "select_statement",
+                      "type": "select_statement",
+                      "children": [
+                        {
+                          "label": "query_expression",
+                          "type": "query_expression",
+                          "children": [
+                            {
+                              "label": "query_specification",
+                              "type": "query_specification",
+                              "children": [
+                                {
+                                  "label": "select_list",
+                                  "type": "select_list",
+                                  "children": [
+                                    {
+                                      "label": "result_column",
+                                      "type": "result_column",
+                                      "children": [
+                                        {
+                                          "label": "expression",
+                                          "type": "expression",
+                                          "children": [
+                                            {
+                                              "label": "simple_object_name_t",
+                                              "type": "expr_type",
+                                              "children": []
+                                            },
+                                            {
+                                              "label": "column_referenced_expr",
+                                              "type": "column_referenced_expr",
+                                              "children": [
+                                                {
+                                                  "label": "objectName",
+                                                  "type": "objectName",
+                                                  "children": [
+                                                    {
+                                                      "label": "*",
+                                                      "type": "full_name",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "column",
+                                                      "type": "object_type",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "*",
+                                                      "type": "part_name",
+                                                      "children": []
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "where_clause",
+                                  "type": "where_clause",
+                                  "children": [
+                                    {
+                                      "label": "condition",
+                                      "type": "condition",
+                                      "children": [
+                                        {
+                                          "label": "pattern_matching_t",
+                                          "type": "expr_type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "like_expr",
+                                          "type": "like_expr",
+                                          "children": [
+                                            {
+                                              "label": "first_expr",
+                                              "type": "first_expr",
+                                              "children": [
+                                                {
+                                                  "label": "simple_object_name_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "column_referenced_expr",
+                                                  "type": "column_referenced_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "objectName",
+                                                      "type": "objectName",
+                                                      "children": [
+                                                        {
+                                                          "label": "DEPARTMENT",
+                                                          "type": "full_name",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "column",
+                                                          "type": "object_type",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "DEPARTMENT",
+                                                          "type": "part_name",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "label": "second_expr",
+                                              "type": "second_expr",
+                                              "children": [
+                                                {
+                                                  "label": "constant_expr",
+                                                  "type": "constant_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "literal",
+                                                      "type": "literal",
+                                                      "children": [
+                                                        {
+                                                          "label": "\u0027ELECTRONICS\u0027",
+                                                          "type": "value",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "label": "simple_constant_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "from_clause",
+                                  "type": "from_clause",
+                                  "children": [
+                                    {
+                                      "label": "table_reference",
+                                      "type": "table_reference",
+                                      "children": [
+                                        {
+                                          "label": "objectname",
+                                          "type": "type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "named_table_reference",
+                                          "type": "named_table_reference",
+                                          "children": [
+                                            {
+                                              "label": "table_name",
+                                              "type": "table_name",
+                                              "children": [
+                                                {
+                                                  "label": "ITEM",
+                                                  "type": "full_name",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "table",
+                                                  "type": "object_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "ITEM",
+                                                  "type": "object_name",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "label": false,
+                              "type": "is_parenthesis",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "sstselect",
+                      "type": "type",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "after_pattern": {
+      "label": "edit_root",
+      "type": "edit_unit",
+      "children": [
+        {
+          "label": "\u003d",
+          "type": "Assignment",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldWrite",
+              "children": []
+            },
+            {
+              "label": "prepareStatement",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "c",
+                  "type": "FieldRead",
+                  "children": []
+                },
+                {
+                  "label": "root",
+                  "type": "root",
+                  "children": [
+                    {
+                      "label": "select_statement",
+                      "type": "select_statement",
+                      "children": [
+                        {
+                          "label": "query_expression",
+                          "type": "query_expression",
+                          "children": [
+                            {
+                              "label": "query_specification",
+                              "type": "query_specification",
+                              "children": [
+                                {
+                                  "label": "select_list",
+                                  "type": "select_list",
+                                  "children": [
+                                    {
+                                      "label": "result_column",
+                                      "type": "result_column",
+                                      "children": [
+                                        {
+                                          "label": "expression",
+                                          "type": "expression",
+                                          "children": [
+                                            {
+                                              "label": "simple_object_name_t",
+                                              "type": "expr_type",
+                                              "children": []
+                                            },
+                                            {
+                                              "label": "column_referenced_expr",
+                                              "type": "column_referenced_expr",
+                                              "children": [
+                                                {
+                                                  "label": "objectName",
+                                                  "type": "objectName",
+                                                  "children": [
+                                                    {
+                                                      "label": "*",
+                                                      "type": "full_name",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "column",
+                                                      "type": "object_type",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "*",
+                                                      "type": "part_name",
+                                                      "children": []
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "where_clause",
+                                  "type": "where_clause",
+                                  "children": [
+                                    {
+                                      "label": "condition",
+                                      "type": "condition",
+                                      "children": [
+                                        {
+                                          "label": "pattern_matching_t",
+                                          "type": "expr_type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "like_expr",
+                                          "type": "like_expr",
+                                          "children": [
+                                            {
+                                              "label": "first_expr",
+                                              "type": "first_expr",
+                                              "children": [
+                                                {
+                                                  "label": "simple_object_name_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "column_referenced_expr",
+                                                  "type": "column_referenced_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "objectName",
+                                                      "type": "objectName",
+                                                      "children": [
+                                                        {
+                                                          "label": "DEPARTMENT",
+                                                          "type": "full_name",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "column",
+                                                          "type": "object_type",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "DEPARTMENT",
+                                                          "type": "part_name",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "label": "second_expr",
+                                              "type": "second_expr",
+                                              "children": [
+                                                {
+                                                  "label": "constant_expr",
+                                                  "type": "constant_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "literal",
+                                                      "type": "literal",
+                                                      "children": [
+                                                        {
+                                                          "label": "\u0027books\u0027",
+                                                          "type": "value",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "label": "simple_constant_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "from_clause",
+                                  "type": "from_clause",
+                                  "children": [
+                                    {
+                                      "label": "table_reference",
+                                      "type": "table_reference",
+                                      "children": [
+                                        {
+                                          "label": "objectname",
+                                          "type": "type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "named_table_reference",
+                                          "type": "named_table_reference",
+                                          "children": [
+                                            {
+                                              "label": "table_name",
+                                              "type": "table_name",
+                                              "children": [
+                                                {
+                                                  "label": "ITEM",
+                                                  "type": "full_name",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "table",
+                                                  "type": "object_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "ITEM",
+                                                  "type": "object_name",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "label": false,
+                              "type": "is_parenthesis",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "sstselect",
+                      "type": "type",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "rs",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "ResultSet",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "executeQuery",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "stmt",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "before_code": "\"\\\"stmt \u003d c.createStatement()\\\\nResultSet rs \u003d stmt.executeQuery(\\\\\\\"SELECT * FROM ITEM WHERE DEPARTMENT LIKE \u0027ELECTRONICS\u0027;\\\\\\\")\\\\n\\\"\"",
+    "after_code": "\"\\\"stmt \u003d c.prepareStatement(\\\\\\\"SELECT * FROM ITEM WHERE DEPARTMENT LIKE \u0027books\u0027;\\\\\\\")\\\\nResultSet rs \u003d stmt.executeQuery()\\\\n\\\"\"",
+    "pattern_id": "0",
+    "children": []
+  },
+  "suggestion1": {
+    "before_pattern": {
+      "label": "edit_root",
+      "type": "edit_unit",
+      "children": [
+        {
+          "label": "\u003d",
+          "type": "Assignment",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldWrite",
+              "children": []
+            },
+            {
+              "label": "createStatement",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "c",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "rs",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "ResultSet",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "executeQuery",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "stmt",
+                  "type": "FieldRead",
+                  "children": []
+                },
+                {
+                  "label": "root",
+                  "type": "root",
+                  "children": [
+                    {
+                      "label": "select_statement",
+                      "type": "select_statement",
+                      "children": [
+                        {
+                          "label": "query_expression",
+                          "type": "query_expression",
+                          "children": [
+                            {
+                              "label": "query_specification",
+                              "type": "query_specification",
+                              "children": [
+                                {
+                                  "label": "select_list",
+                                  "type": "select_list",
+                                  "children": [
+                                    {
+                                      "label": "result_column",
+                                      "type": "result_column",
+                                      "children": [
+                                        {
+                                          "label": "expression",
+                                          "type": "expression",
+                                          "children": [
+                                            {
+                                              "label": "simple_object_name_t",
+                                              "type": "expr_type",
+                                              "children": []
+                                            },
+                                            {
+                                              "label": "column_referenced_expr",
+                                              "type": "column_referenced_expr",
+                                              "children": [
+                                                {
+                                                  "label": "objectName",
+                                                  "type": "objectName",
+                                                  "children": [
+                                                    {
+                                                      "label": "*",
+                                                      "type": "full_name",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "column",
+                                                      "type": "object_type",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "*",
+                                                      "type": "part_name",
+                                                      "children": []
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "where_clause",
+                                  "type": "where_clause",
+                                  "children": [
+                                    {
+                                      "label": "condition",
+                                      "type": "condition",
+                                      "children": [
+                                        {
+                                          "label": "pattern_matching_t",
+                                          "type": "expr_type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "like_expr",
+                                          "type": "like_expr",
+                                          "children": [
+                                            {
+                                              "label": "first_expr",
+                                              "type": "first_expr",
+                                              "children": [
+                                                {
+                                                  "label": "simple_object_name_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "column_referenced_expr",
+                                                  "type": "column_referenced_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "objectName",
+                                                      "type": "objectName",
+                                                      "children": [
+                                                        {
+                                                          "label": "DEPARTMENT",
+                                                          "type": "full_name",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "column",
+                                                          "type": "object_type",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "DEPARTMENT",
+                                                          "type": "part_name",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "label": "second_expr",
+                                              "type": "second_expr",
+                                              "children": [
+                                                {
+                                                  "label": "constant_expr",
+                                                  "type": "constant_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "literal",
+                                                      "type": "literal",
+                                                      "children": [
+                                                        {
+                                                          "label": "\u0027Clothes\u0027",
+                                                          "type": "value",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "label": "simple_constant_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "from_clause",
+                                  "type": "from_clause",
+                                  "children": [
+                                    {
+                                      "label": "table_reference",
+                                      "type": "table_reference",
+                                      "children": [
+                                        {
+                                          "label": "objectname",
+                                          "type": "type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "named_table_reference",
+                                          "type": "named_table_reference",
+                                          "children": [
+                                            {
+                                              "label": "table_name",
+                                              "type": "table_name",
+                                              "children": [
+                                                {
+                                                  "label": "ITEM",
+                                                  "type": "full_name",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "table",
+                                                  "type": "object_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "ITEM",
+                                                  "type": "object_name",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "label": false,
+                              "type": "is_parenthesis",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "sstselect",
+                      "type": "type",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "after_pattern": {
+      "label": "edit_root",
+      "type": "edit_unit",
+      "children": [
+        {
+          "label": "\u003d",
+          "type": "Assignment",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldWrite",
+              "children": []
+            },
+            {
+              "label": "prepareStatement",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "c",
+                  "type": "FieldRead",
+                  "children": []
+                },
+                {
+                  "label": "root",
+                  "type": "root",
+                  "children": [
+                    {
+                      "label": "select_statement",
+                      "type": "select_statement",
+                      "children": [
+                        {
+                          "label": "query_expression",
+                          "type": "query_expression",
+                          "children": [
+                            {
+                              "label": "query_specification",
+                              "type": "query_specification",
+                              "children": [
+                                {
+                                  "label": "select_list",
+                                  "type": "select_list",
+                                  "children": [
+                                    {
+                                      "label": "result_column",
+                                      "type": "result_column",
+                                      "children": [
+                                        {
+                                          "label": "expression",
+                                          "type": "expression",
+                                          "children": [
+                                            {
+                                              "label": "simple_object_name_t",
+                                              "type": "expr_type",
+                                              "children": []
+                                            },
+                                            {
+                                              "label": "column_referenced_expr",
+                                              "type": "column_referenced_expr",
+                                              "children": [
+                                                {
+                                                  "label": "objectName",
+                                                  "type": "objectName",
+                                                  "children": [
+                                                    {
+                                                      "label": "*",
+                                                      "type": "full_name",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "column",
+                                                      "type": "object_type",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "*",
+                                                      "type": "part_name",
+                                                      "children": []
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "where_clause",
+                                  "type": "where_clause",
+                                  "children": [
+                                    {
+                                      "label": "condition",
+                                      "type": "condition",
+                                      "children": [
+                                        {
+                                          "label": "pattern_matching_t",
+                                          "type": "expr_type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "like_expr",
+                                          "type": "like_expr",
+                                          "children": [
+                                            {
+                                              "label": "first_expr",
+                                              "type": "first_expr",
+                                              "children": [
+                                                {
+                                                  "label": "simple_object_name_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "column_referenced_expr",
+                                                  "type": "column_referenced_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "objectName",
+                                                      "type": "objectName",
+                                                      "children": [
+                                                        {
+                                                          "label": "DEPARTMENT",
+                                                          "type": "full_name",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "column",
+                                                          "type": "object_type",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "DEPARTMENT",
+                                                          "type": "part_name",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "label": "second_expr",
+                                              "type": "second_expr",
+                                              "children": [
+                                                {
+                                                  "label": "constant_expr",
+                                                  "type": "constant_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "literal",
+                                                      "type": "literal",
+                                                      "children": [
+                                                        {
+                                                          "label": "\u0027books\u0027",
+                                                          "type": "value",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "label": "simple_constant_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "from_clause",
+                                  "type": "from_clause",
+                                  "children": [
+                                    {
+                                      "label": "table_reference",
+                                      "type": "table_reference",
+                                      "children": [
+                                        {
+                                          "label": "objectname",
+                                          "type": "type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "named_table_reference",
+                                          "type": "named_table_reference",
+                                          "children": [
+                                            {
+                                              "label": "table_name",
+                                              "type": "table_name",
+                                              "children": [
+                                                {
+                                                  "label": "ITEM",
+                                                  "type": "full_name",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "table",
+                                                  "type": "object_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "ITEM",
+                                                  "type": "object_name",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "label": false,
+                              "type": "is_parenthesis",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "sstselect",
+                      "type": "type",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "rs",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "ResultSet",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "executeQuery",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "stmt",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "before_code": "\"\\\"stmt \u003d c.createStatement()\\\\nResultSet rs \u003d stmt.executeQuery(\\\\\\\"SELECT * FROM ITEM WHERE DEPARTMENT LIKE \u0027Clothes\u0027;\\\\\\\")\\\\n\\\"\"",
+    "after_code": "\"\\\"stmt \u003d c.prepareStatement(\\\\\\\"SELECT * FROM ITEM WHERE DEPARTMENT LIKE \u0027books\u0027;\\\\\\\")\\\\nResultSet rs \u003d stmt.executeQuery()\\\\n\\\"\"",
+    "pattern_id": "0",
+    "children": []
+  },
+  "suggestion2": {
+    "before_pattern": {
+      "label": "edit_root",
+      "type": "edit_unit",
+      "children": [
+        {
+          "label": "\u003d",
+          "type": "Assignment",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldWrite",
+              "children": []
+            },
+            {
+              "label": "createStatement",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "c",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "rs",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "ResultSet",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "executeQuery",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "stmt",
+                  "type": "FieldRead",
+                  "children": []
+                },
+                {
+                  "label": "root",
+                  "type": "root",
+                  "children": [
+                    {
+                      "label": "select_statement",
+                      "type": "select_statement",
+                      "children": [
+                        {
+                          "label": "query_expression",
+                          "type": "query_expression",
+                          "children": [
+                            {
+                              "label": "query_specification",
+                              "type": "query_specification",
+                              "children": [
+                                {
+                                  "label": "select_list",
+                                  "type": "select_list",
+                                  "children": [
+                                    {
+                                      "label": "result_column",
+                                      "type": "result_column",
+                                      "children": [
+                                        {
+                                          "label": "expression",
+                                          "type": "expression",
+                                          "children": [
+                                            {
+                                              "label": "simple_object_name_t",
+                                              "type": "expr_type",
+                                              "children": []
+                                            },
+                                            {
+                                              "label": "column_referenced_expr",
+                                              "type": "column_referenced_expr",
+                                              "children": [
+                                                {
+                                                  "label": "objectName",
+                                                  "type": "objectName",
+                                                  "children": [
+                                                    {
+                                                      "label": "*",
+                                                      "type": "full_name",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "column",
+                                                      "type": "object_type",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "*",
+                                                      "type": "part_name",
+                                                      "children": []
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "where_clause",
+                                  "type": "where_clause",
+                                  "children": [
+                                    {
+                                      "label": "condition",
+                                      "type": "condition",
+                                      "children": [
+                                        {
+                                          "label": "pattern_matching_t",
+                                          "type": "expr_type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "like_expr",
+                                          "type": "like_expr",
+                                          "children": [
+                                            {
+                                              "label": "first_expr",
+                                              "type": "first_expr",
+                                              "children": [
+                                                {
+                                                  "label": "simple_object_name_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "column_referenced_expr",
+                                                  "type": "column_referenced_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "objectName",
+                                                      "type": "objectName",
+                                                      "children": [
+                                                        {
+                                                          "label": "EMAIL",
+                                                          "type": "full_name",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "column",
+                                                          "type": "object_type",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "EMAIL",
+                                                          "type": "part_name",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "label": "second_expr",
+                                              "type": "second_expr",
+                                              "children": [
+                                                {
+                                                  "label": "constant_expr",
+                                                  "type": "constant_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "literal",
+                                                      "type": "literal",
+                                                      "children": [
+                                                        {
+                                                          "label": "\u0027X_16030521698910\u0027",
+                                                          "type": "value",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "label": "simple_constant_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "from_clause",
+                                  "type": "from_clause",
+                                  "children": [
+                                    {
+                                      "label": "table_reference",
+                                      "type": "table_reference",
+                                      "children": [
+                                        {
+                                          "label": "objectname",
+                                          "type": "type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "named_table_reference",
+                                          "type": "named_table_reference",
+                                          "children": [
+                                            {
+                                              "label": "table_name",
+                                              "type": "table_name",
+                                              "children": [
+                                                {
+                                                  "label": "ADMIN",
+                                                  "type": "full_name",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "table",
+                                                  "type": "object_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "ADMIN",
+                                                  "type": "object_name",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "label": false,
+                              "type": "is_parenthesis",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "sstselect",
+                      "type": "type",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "after_pattern": {
+      "label": "edit_root",
+      "type": "edit_unit",
+      "children": [
+        {
+          "label": "\u003d",
+          "type": "Assignment",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldWrite",
+              "children": []
+            },
+            {
+              "label": "prepareStatement",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "c",
+                  "type": "FieldRead",
+                  "children": []
+                },
+                {
+                  "label": "root",
+                  "type": "root",
+                  "children": [
+                    {
+                      "label": "select_statement",
+                      "type": "select_statement",
+                      "children": [
+                        {
+                          "label": "query_expression",
+                          "type": "query_expression",
+                          "children": [
+                            {
+                              "label": "query_specification",
+                              "type": "query_specification",
+                              "children": [
+                                {
+                                  "label": "select_list",
+                                  "type": "select_list",
+                                  "children": [
+                                    {
+                                      "label": "result_column",
+                                      "type": "result_column",
+                                      "children": [
+                                        {
+                                          "label": "expression",
+                                          "type": "expression",
+                                          "children": [
+                                            {
+                                              "label": "simple_object_name_t",
+                                              "type": "expr_type",
+                                              "children": []
+                                            },
+                                            {
+                                              "label": "column_referenced_expr",
+                                              "type": "column_referenced_expr",
+                                              "children": [
+                                                {
+                                                  "label": "objectName",
+                                                  "type": "objectName",
+                                                  "children": [
+                                                    {
+                                                      "label": "*",
+                                                      "type": "full_name",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "column",
+                                                      "type": "object_type",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "*",
+                                                      "type": "part_name",
+                                                      "children": []
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "where_clause",
+                                  "type": "where_clause",
+                                  "children": [
+                                    {
+                                      "label": "condition",
+                                      "type": "condition",
+                                      "children": [
+                                        {
+                                          "label": "pattern_matching_t",
+                                          "type": "expr_type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "like_expr",
+                                          "type": "like_expr",
+                                          "children": [
+                                            {
+                                              "label": "first_expr",
+                                              "type": "first_expr",
+                                              "children": [
+                                                {
+                                                  "label": "simple_object_name_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "column_referenced_expr",
+                                                  "type": "column_referenced_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "objectName",
+                                                      "type": "objectName",
+                                                      "children": [
+                                                        {
+                                                          "label": "DEPARTMENT",
+                                                          "type": "full_name",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "column",
+                                                          "type": "object_type",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "DEPARTMENT",
+                                                          "type": "part_name",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "label": "second_expr",
+                                              "type": "second_expr",
+                                              "children": [
+                                                {
+                                                  "label": "simple_object_name_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "column_referenced_expr",
+                                                  "type": "column_referenced_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "objectName",
+                                                      "type": "objectName",
+                                                      "children": [
+                                                        {
+                                                          "label": "?",
+                                                          "type": "full_name",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "column",
+                                                          "type": "object_type",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "?",
+                                                          "type": "part_name",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "from_clause",
+                                  "type": "from_clause",
+                                  "children": [
+                                    {
+                                      "label": "table_reference",
+                                      "type": "table_reference",
+                                      "children": [
+                                        {
+                                          "label": "objectname",
+                                          "type": "type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "named_table_reference",
+                                          "type": "named_table_reference",
+                                          "children": [
+                                            {
+                                              "label": "table_name",
+                                              "type": "table_name",
+                                              "children": [
+                                                {
+                                                  "label": "ITEM",
+                                                  "type": "full_name",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "table",
+                                                  "type": "object_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "ITEM",
+                                                  "type": "object_name",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "label": false,
+                              "type": "is_parenthesis",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "sstselect",
+                      "type": "type",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "setObject",
+          "type": "Invocation",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldRead",
+              "children": []
+            },
+            {
+              "label": "1",
+              "type": "Literal",
+              "children": []
+            },
+            {
+              "label": "username",
+              "type": "FieldRead",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "rs",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "ResultSet",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "executeQuery",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "stmt",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "before_code": "\"\\\"stmt \u003d c.createStatement()\\\\nResultSet rs \u003d stmt.executeQuery((\\\\\\\"SELECT * FROM ADMIN WHERE EMAIL LIKE \u0027\\\\\\\" + username) + \\\\\\\"\u0027;\\\\\\\")\\\\n\\\"\"",
+    "after_code": "\"\\\"stmt \u003d c.prepareStatement(\\\\\\\"SELECT * FROM ITEM WHERE DEPARTMENT LIKE ?;\\\\\\\")\\\\nstmt.setObject(1, username)\\\\nResultSet rs \u003d stmt.executeQuery()\\\\n\\\"\"",
+    "pattern_id": "0",
+    "children": []
+  },
+  "suggestion3": {
+    "before_pattern": {
+      "label": "edit_root",
+      "type": "edit_unit",
+      "children": [
+        {
+          "label": "\u003d",
+          "type": "Assignment",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldWrite",
+              "children": []
+            },
+            {
+              "label": "createStatement",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "c",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "rs",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "ResultSet",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "executeQuery",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "stmt",
+                  "type": "FieldRead",
+                  "children": []
+                },
+                {
+                  "label": "root",
+                  "type": "root",
+                  "children": [
+                    {
+                      "label": "select_statement",
+                      "type": "select_statement",
+                      "children": [
+                        {
+                          "label": "query_expression",
+                          "type": "query_expression",
+                          "children": [
+                            {
+                              "label": "query_specification",
+                              "type": "query_specification",
+                              "children": [
+                                {
+                                  "label": "select_list",
+                                  "type": "select_list",
+                                  "children": [
+                                    {
+                                      "label": "result_column",
+                                      "type": "result_column",
+                                      "children": [
+                                        {
+                                          "label": "expression",
+                                          "type": "expression",
+                                          "children": [
+                                            {
+                                              "label": "simple_object_name_t",
+                                              "type": "expr_type",
+                                              "children": []
+                                            },
+                                            {
+                                              "label": "column_referenced_expr",
+                                              "type": "column_referenced_expr",
+                                              "children": [
+                                                {
+                                                  "label": "objectName",
+                                                  "type": "objectName",
+                                                  "children": [
+                                                    {
+                                                      "label": "*",
+                                                      "type": "full_name",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "column",
+                                                      "type": "object_type",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "*",
+                                                      "type": "part_name",
+                                                      "children": []
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "where_clause",
+                                  "type": "where_clause",
+                                  "children": [
+                                    {
+                                      "label": "condition",
+                                      "type": "condition",
+                                      "children": [
+                                        {
+                                          "label": "pattern_matching_t",
+                                          "type": "expr_type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "like_expr",
+                                          "type": "like_expr",
+                                          "children": [
+                                            {
+                                              "label": "first_expr",
+                                              "type": "first_expr",
+                                              "children": [
+                                                {
+                                                  "label": "simple_object_name_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "column_referenced_expr",
+                                                  "type": "column_referenced_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "objectName",
+                                                      "type": "objectName",
+                                                      "children": [
+                                                        {
+                                                          "label": "ITEM_NAME",
+                                                          "type": "full_name",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "column",
+                                                          "type": "object_type",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "ITEM_NAME",
+                                                          "type": "part_name",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "label": "second_expr",
+                                              "type": "second_expr",
+                                              "children": [
+                                                {
+                                                  "label": "constant_expr",
+                                                  "type": "constant_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "literal",
+                                                      "type": "literal",
+                                                      "children": [
+                                                        {
+                                                          "label": "\u0027X_16030521752670\u0027",
+                                                          "type": "value",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "label": "simple_constant_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "from_clause",
+                                  "type": "from_clause",
+                                  "children": [
+                                    {
+                                      "label": "table_reference",
+                                      "type": "table_reference",
+                                      "children": [
+                                        {
+                                          "label": "objectname",
+                                          "type": "type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "named_table_reference",
+                                          "type": "named_table_reference",
+                                          "children": [
+                                            {
+                                              "label": "table_name",
+                                              "type": "table_name",
+                                              "children": [
+                                                {
+                                                  "label": "ITEM",
+                                                  "type": "full_name",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "table",
+                                                  "type": "object_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "ITEM",
+                                                  "type": "object_name",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "label": false,
+                              "type": "is_parenthesis",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "sstselect",
+                      "type": "type",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "after_pattern": {
+      "label": "edit_root",
+      "type": "edit_unit",
+      "children": [
+        {
+          "label": "\u003d",
+          "type": "Assignment",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldWrite",
+              "children": []
+            },
+            {
+              "label": "prepareStatement",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "c",
+                  "type": "FieldRead",
+                  "children": []
+                },
+                {
+                  "label": "root",
+                  "type": "root",
+                  "children": [
+                    {
+                      "label": "select_statement",
+                      "type": "select_statement",
+                      "children": [
+                        {
+                          "label": "query_expression",
+                          "type": "query_expression",
+                          "children": [
+                            {
+                              "label": "query_specification",
+                              "type": "query_specification",
+                              "children": [
+                                {
+                                  "label": "select_list",
+                                  "type": "select_list",
+                                  "children": [
+                                    {
+                                      "label": "result_column",
+                                      "type": "result_column",
+                                      "children": [
+                                        {
+                                          "label": "expression",
+                                          "type": "expression",
+                                          "children": [
+                                            {
+                                              "label": "simple_object_name_t",
+                                              "type": "expr_type",
+                                              "children": []
+                                            },
+                                            {
+                                              "label": "column_referenced_expr",
+                                              "type": "column_referenced_expr",
+                                              "children": [
+                                                {
+                                                  "label": "objectName",
+                                                  "type": "objectName",
+                                                  "children": [
+                                                    {
+                                                      "label": "*",
+                                                      "type": "full_name",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "column",
+                                                      "type": "object_type",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "*",
+                                                      "type": "part_name",
+                                                      "children": []
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "where_clause",
+                                  "type": "where_clause",
+                                  "children": [
+                                    {
+                                      "label": "condition",
+                                      "type": "condition",
+                                      "children": [
+                                        {
+                                          "label": "pattern_matching_t",
+                                          "type": "expr_type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "like_expr",
+                                          "type": "like_expr",
+                                          "children": [
+                                            {
+                                              "label": "first_expr",
+                                              "type": "first_expr",
+                                              "children": [
+                                                {
+                                                  "label": "simple_object_name_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "column_referenced_expr",
+                                                  "type": "column_referenced_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "objectName",
+                                                      "type": "objectName",
+                                                      "children": [
+                                                        {
+                                                          "label": "DEPARTMENT",
+                                                          "type": "full_name",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "column",
+                                                          "type": "object_type",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "DEPARTMENT",
+                                                          "type": "part_name",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "label": "second_expr",
+                                              "type": "second_expr",
+                                              "children": [
+                                                {
+                                                  "label": "simple_object_name_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "column_referenced_expr",
+                                                  "type": "column_referenced_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "objectName",
+                                                      "type": "objectName",
+                                                      "children": [
+                                                        {
+                                                          "label": "?",
+                                                          "type": "full_name",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "column",
+                                                          "type": "object_type",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "?",
+                                                          "type": "part_name",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "from_clause",
+                                  "type": "from_clause",
+                                  "children": [
+                                    {
+                                      "label": "table_reference",
+                                      "type": "table_reference",
+                                      "children": [
+                                        {
+                                          "label": "objectname",
+                                          "type": "type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "named_table_reference",
+                                          "type": "named_table_reference",
+                                          "children": [
+                                            {
+                                              "label": "table_name",
+                                              "type": "table_name",
+                                              "children": [
+                                                {
+                                                  "label": "ITEM",
+                                                  "type": "full_name",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "table",
+                                                  "type": "object_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "ITEM",
+                                                  "type": "object_name",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "label": false,
+                              "type": "is_parenthesis",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "sstselect",
+                      "type": "type",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "setObject",
+          "type": "Invocation",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldRead",
+              "children": []
+            },
+            {
+              "label": "1",
+              "type": "Literal",
+              "children": []
+            },
+            {
+              "label": "input",
+              "type": "FieldRead",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "rs",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "ResultSet",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "executeQuery",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "stmt",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "before_code": "\"\\\"stmt \u003d c.createStatement()\\\\nResultSet rs \u003d stmt.executeQuery((\\\\\\\"SELECT * FROM ITEM WHERE ITEM_NAME LIKE \u0027\\\\\\\" + input) + \\\\\\\"\u0027;\\\\\\\")\\\\n\\\"\"",
+    "after_code": "\"\\\"stmt \u003d c.prepareStatement(\\\\\\\"SELECT * FROM ITEM WHERE DEPARTMENT LIKE ?;\\\\\\\")\\\\nstmt.setObject(1, input)\\\\nResultSet rs \u003d stmt.executeQuery()\\\\n\\\"\"",
+    "pattern_id": "0",
+    "children": []
+  },
+  "suggestion4": {
+    "before_pattern": {
+      "label": "edit_root",
+      "type": "edit_unit",
+      "children": [
+        {
+          "label": "\u003d",
+          "type": "Assignment",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldWrite",
+              "children": []
+            },
+            {
+              "label": "createStatement",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "c",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "rs",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "ResultSet",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "executeQuery",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "stmt",
+                  "type": "FieldRead",
+                  "children": []
+                },
+                {
+                  "label": "root",
+                  "type": "root",
+                  "children": [
+                    {
+                      "label": "select_statement",
+                      "type": "select_statement",
+                      "children": [
+                        {
+                          "label": "query_expression",
+                          "type": "query_expression",
+                          "children": [
+                            {
+                              "label": "query_specification",
+                              "type": "query_specification",
+                              "children": [
+                                {
+                                  "label": "select_list",
+                                  "type": "select_list",
+                                  "children": [
+                                    {
+                                      "label": "result_column",
+                                      "type": "result_column",
+                                      "children": [
+                                        {
+                                          "label": "expression",
+                                          "type": "expression",
+                                          "children": [
+                                            {
+                                              "label": "simple_object_name_t",
+                                              "type": "expr_type",
+                                              "children": []
+                                            },
+                                            {
+                                              "label": "column_referenced_expr",
+                                              "type": "column_referenced_expr",
+                                              "children": [
+                                                {
+                                                  "label": "objectName",
+                                                  "type": "objectName",
+                                                  "children": [
+                                                    {
+                                                      "label": "*",
+                                                      "type": "full_name",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "column",
+                                                      "type": "object_type",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "*",
+                                                      "type": "part_name",
+                                                      "children": []
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "where_clause",
+                                  "type": "where_clause",
+                                  "children": [
+                                    {
+                                      "label": "condition",
+                                      "type": "condition",
+                                      "children": [
+                                        {
+                                          "label": "pattern_matching_t",
+                                          "type": "expr_type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "like_expr",
+                                          "type": "like_expr",
+                                          "children": [
+                                            {
+                                              "label": "first_expr",
+                                              "type": "first_expr",
+                                              "children": [
+                                                {
+                                                  "label": "simple_object_name_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "column_referenced_expr",
+                                                  "type": "column_referenced_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "objectName",
+                                                      "type": "objectName",
+                                                      "children": [
+                                                        {
+                                                          "label": "ITEM_NAME",
+                                                          "type": "full_name",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "column",
+                                                          "type": "object_type",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "ITEM_NAME",
+                                                          "type": "part_name",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "label": "second_expr",
+                                              "type": "second_expr",
+                                              "children": [
+                                                {
+                                                  "label": "constant_expr",
+                                                  "type": "constant_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "literal",
+                                                      "type": "literal",
+                                                      "children": [
+                                                        {
+                                                          "label": "\u0027X_16030521774920\u0027",
+                                                          "type": "value",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "label": "simple_constant_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "from_clause",
+                                  "type": "from_clause",
+                                  "children": [
+                                    {
+                                      "label": "table_reference",
+                                      "type": "table_reference",
+                                      "children": [
+                                        {
+                                          "label": "objectname",
+                                          "type": "type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "named_table_reference",
+                                          "type": "named_table_reference",
+                                          "children": [
+                                            {
+                                              "label": "table_name",
+                                              "type": "table_name",
+                                              "children": [
+                                                {
+                                                  "label": "ITEM",
+                                                  "type": "full_name",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "table",
+                                                  "type": "object_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "ITEM",
+                                                  "type": "object_name",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "label": false,
+                              "type": "is_parenthesis",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "sstselect",
+                      "type": "type",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "after_pattern": {
+      "label": "edit_root",
+      "type": "edit_unit",
+      "children": [
+        {
+          "label": "\u003d",
+          "type": "Assignment",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldWrite",
+              "children": []
+            },
+            {
+              "label": "PreparedStatement",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "c",
+                  "type": "FieldRead",
+                  "children": []
+                },
+                {
+                  "label": "\"SELECT * FROM ITEM WHERE DEPARTMENT LIKE ?;\"",
+                  "type": "Literal",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "setObject",
+          "type": "Invocation",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldRead",
+              "children": []
+            },
+            {
+              "label": "1",
+              "type": "Literal",
+              "children": []
+            },
+            {
+              "label": "item_name",
+              "type": "FieldRead",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "rs",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "ResultSet",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "executeQuery",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "stmt",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "before_code": "\"\\\"stmt \u003d c.createStatement()\\\\nResultSet rs \u003d stmt.executeQuery((\\\\\\\"SELECT * FROM ITEM WHERE ITEM_NAME LIKE \u0027\\\\\\\" + item_name) + \\\\\\\"\u0027;\\\\\\\")\\\\n\\\"\"",
+    "after_code": "\"\\\"stmt \u003d c.PreparedStatement(\\\\\\\"SELECT * FROM ITEM WHERE DEPARTMENT LIKE ?;\\\\\\\")\\\\nstmt.setObject(1, item_name)\\\\nResultSet rs \u003d stmt.executeQuery()\\\\n\\\"\"",
+    "pattern_id": "0",
+    "children": []
+  },
+  "suggestion5": {
+    "before_pattern": {
+      "label": "edit_root",
+      "type": "edit_unit",
+      "children": [
+        {
+          "label": "\u003d",
+          "type": "Assignment",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldWrite",
+              "children": []
+            },
+            {
+              "label": "createStatement",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "c",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "rs",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "ResultSet",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "executeQuery",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "stmt",
+                  "type": "FieldRead",
+                  "children": []
+                },
+                {
+                  "label": "root",
+                  "type": "root",
+                  "children": [
+                    {
+                      "label": "select_statement",
+                      "type": "select_statement",
+                      "children": [
+                        {
+                          "label": "query_expression",
+                          "type": "query_expression",
+                          "children": [
+                            {
+                              "label": "query_specification",
+                              "type": "query_specification",
+                              "children": [
+                                {
+                                  "label": "select_list",
+                                  "type": "select_list",
+                                  "children": [
+                                    {
+                                      "label": "result_column",
+                                      "type": "result_column",
+                                      "children": [
+                                        {
+                                          "label": "expression",
+                                          "type": "expression",
+                                          "children": [
+                                            {
+                                              "label": "simple_object_name_t",
+                                              "type": "expr_type",
+                                              "children": []
+                                            },
+                                            {
+                                              "label": "column_referenced_expr",
+                                              "type": "column_referenced_expr",
+                                              "children": [
+                                                {
+                                                  "label": "objectName",
+                                                  "type": "objectName",
+                                                  "children": [
+                                                    {
+                                                      "label": "*",
+                                                      "type": "full_name",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "column",
+                                                      "type": "object_type",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "*",
+                                                      "type": "part_name",
+                                                      "children": []
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "where_clause",
+                                  "type": "where_clause",
+                                  "children": [
+                                    {
+                                      "label": "condition",
+                                      "type": "condition",
+                                      "children": [
+                                        {
+                                          "label": "pattern_matching_t",
+                                          "type": "expr_type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "like_expr",
+                                          "type": "like_expr",
+                                          "children": [
+                                            {
+                                              "label": "first_expr",
+                                              "type": "first_expr",
+                                              "children": [
+                                                {
+                                                  "label": "simple_object_name_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "column_referenced_expr",
+                                                  "type": "column_referenced_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "objectName",
+                                                      "type": "objectName",
+                                                      "children": [
+                                                        {
+                                                          "label": "EMAIL",
+                                                          "type": "full_name",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "column",
+                                                          "type": "object_type",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "EMAIL",
+                                                          "type": "part_name",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "label": "second_expr",
+                                              "type": "second_expr",
+                                              "children": [
+                                                {
+                                                  "label": "constant_expr",
+                                                  "type": "constant_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "literal",
+                                                      "type": "literal",
+                                                      "children": [
+                                                        {
+                                                          "label": "\u0027X_16030521744740\u0027",
+                                                          "type": "value",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "label": "simple_constant_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "from_clause",
+                                  "type": "from_clause",
+                                  "children": [
+                                    {
+                                      "label": "table_reference",
+                                      "type": "table_reference",
+                                      "children": [
+                                        {
+                                          "label": "objectname",
+                                          "type": "type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "named_table_reference",
+                                          "type": "named_table_reference",
+                                          "children": [
+                                            {
+                                              "label": "table_name",
+                                              "type": "table_name",
+                                              "children": [
+                                                {
+                                                  "label": "ADMIN",
+                                                  "type": "full_name",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "table",
+                                                  "type": "object_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "ADMIN",
+                                                  "type": "object_name",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "label": false,
+                              "type": "is_parenthesis",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "sstselect",
+                      "type": "type",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "after_pattern": {
+      "label": "edit_root",
+      "type": "edit_unit",
+      "children": [
+        {
+          "label": "\u003d",
+          "type": "Assignment",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldWrite",
+              "children": []
+            },
+            {
+              "label": "prepareStatement",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "c",
+                  "type": "FieldRead",
+                  "children": []
+                },
+                {
+                  "label": "root",
+                  "type": "root",
+                  "children": [
+                    {
+                      "label": "select_statement",
+                      "type": "select_statement",
+                      "children": [
+                        {
+                          "label": "query_expression",
+                          "type": "query_expression",
+                          "children": [
+                            {
+                              "label": "query_specification",
+                              "type": "query_specification",
+                              "children": [
+                                {
+                                  "label": "select_list",
+                                  "type": "select_list",
+                                  "children": [
+                                    {
+                                      "label": "result_column",
+                                      "type": "result_column",
+                                      "children": [
+                                        {
+                                          "label": "expression",
+                                          "type": "expression",
+                                          "children": [
+                                            {
+                                              "label": "simple_object_name_t",
+                                              "type": "expr_type",
+                                              "children": []
+                                            },
+                                            {
+                                              "label": "column_referenced_expr",
+                                              "type": "column_referenced_expr",
+                                              "children": [
+                                                {
+                                                  "label": "objectName",
+                                                  "type": "objectName",
+                                                  "children": [
+                                                    {
+                                                      "label": "*",
+                                                      "type": "full_name",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "column",
+                                                      "type": "object_type",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "*",
+                                                      "type": "part_name",
+                                                      "children": []
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "where_clause",
+                                  "type": "where_clause",
+                                  "children": [
+                                    {
+                                      "label": "condition",
+                                      "type": "condition",
+                                      "children": [
+                                        {
+                                          "label": "pattern_matching_t",
+                                          "type": "expr_type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "like_expr",
+                                          "type": "like_expr",
+                                          "children": [
+                                            {
+                                              "label": "first_expr",
+                                              "type": "first_expr",
+                                              "children": [
+                                                {
+                                                  "label": "simple_object_name_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "column_referenced_expr",
+                                                  "type": "column_referenced_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "objectName",
+                                                      "type": "objectName",
+                                                      "children": [
+                                                        {
+                                                          "label": "DEPARTMENT",
+                                                          "type": "full_name",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "column",
+                                                          "type": "object_type",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "DEPARTMENT",
+                                                          "type": "part_name",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "label": "second_expr",
+                                              "type": "second_expr",
+                                              "children": [
+                                                {
+                                                  "label": "simple_object_name_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "column_referenced_expr",
+                                                  "type": "column_referenced_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "objectName",
+                                                      "type": "objectName",
+                                                      "children": [
+                                                        {
+                                                          "label": "?",
+                                                          "type": "full_name",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "column",
+                                                          "type": "object_type",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "?",
+                                                          "type": "part_name",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "from_clause",
+                                  "type": "from_clause",
+                                  "children": [
+                                    {
+                                      "label": "table_reference",
+                                      "type": "table_reference",
+                                      "children": [
+                                        {
+                                          "label": "objectname",
+                                          "type": "type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "named_table_reference",
+                                          "type": "named_table_reference",
+                                          "children": [
+                                            {
+                                              "label": "table_name",
+                                              "type": "table_name",
+                                              "children": [
+                                                {
+                                                  "label": "ITEM",
+                                                  "type": "full_name",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "table",
+                                                  "type": "object_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "ITEM",
+                                                  "type": "object_name",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "label": false,
+                              "type": "is_parenthesis",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "sstselect",
+                      "type": "type",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "setObject",
+          "type": "Invocation",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldRead",
+              "children": []
+            },
+            {
+              "label": "1",
+              "type": "Literal",
+              "children": []
+            },
+            {
+              "label": "email",
+              "type": "FieldRead",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "rs",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "ResultSet",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "executeQuery",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "stmt",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "before_code": "\"\\\"stmt \u003d c.createStatement()\\\\nResultSet rs \u003d stmt.executeQuery((\\\\\\\"SELECT * FROM ADMIN WHERE EMAIL LIKE \u0027\\\\\\\" + email) + \\\\\\\"\u0027;\\\\\\\")\\\\n\\\"\"",
+    "after_code": "\"\\\"stmt \u003d c.prepareStatement(\\\\\\\"SELECT * FROM ITEM WHERE DEPARTMENT LIKE ?;\\\\\\\")\\\\nstmt.setObject(1, email)\\\\nResultSet rs \u003d stmt.executeQuery()\\\\n\\\"\"",
+    "pattern_id": "0",
+    "children": []
+  },
+  "suggestion6": {
+    "before_pattern": {
+      "label": "edit_root",
+      "type": "edit_unit",
+      "children": [
+        {
+          "label": "\u003d",
+          "type": "Assignment",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldWrite",
+              "children": []
+            },
+            {
+              "label": "createStatement",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "c",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "rs",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "ResultSet",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "executeQuery",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "stmt",
+                  "type": "FieldRead",
+                  "children": []
+                },
+                {
+                  "label": "root",
+                  "type": "root",
+                  "children": [
+                    {
+                      "label": "select_statement",
+                      "type": "select_statement",
+                      "children": [
+                        {
+                          "label": "query_expression",
+                          "type": "query_expression",
+                          "children": [
+                            {
+                              "label": "query_specification",
+                              "type": "query_specification",
+                              "children": [
+                                {
+                                  "label": "select_list",
+                                  "type": "select_list",
+                                  "children": [
+                                    {
+                                      "label": "result_column",
+                                      "type": "result_column",
+                                      "children": [
+                                        {
+                                          "label": "expression",
+                                          "type": "expression",
+                                          "children": [
+                                            {
+                                              "label": "simple_object_name_t",
+                                              "type": "expr_type",
+                                              "children": []
+                                            },
+                                            {
+                                              "label": "column_referenced_expr",
+                                              "type": "column_referenced_expr",
+                                              "children": [
+                                                {
+                                                  "label": "objectName",
+                                                  "type": "objectName",
+                                                  "children": [
+                                                    {
+                                                      "label": "*",
+                                                      "type": "full_name",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "column",
+                                                      "type": "object_type",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "*",
+                                                      "type": "part_name",
+                                                      "children": []
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "where_clause",
+                                  "type": "where_clause",
+                                  "children": [
+                                    {
+                                      "label": "condition",
+                                      "type": "condition",
+                                      "children": [
+                                        {
+                                          "label": "pattern_matching_t",
+                                          "type": "expr_type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "like_expr",
+                                          "type": "like_expr",
+                                          "children": [
+                                            {
+                                              "label": "first_expr",
+                                              "type": "first_expr",
+                                              "children": [
+                                                {
+                                                  "label": "simple_object_name_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "column_referenced_expr",
+                                                  "type": "column_referenced_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "objectName",
+                                                      "type": "objectName",
+                                                      "children": [
+                                                        {
+                                                          "label": "DEPARTMENT",
+                                                          "type": "full_name",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "column",
+                                                          "type": "object_type",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "DEPARTMENT",
+                                                          "type": "part_name",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "label": "second_expr",
+                                              "type": "second_expr",
+                                              "children": [
+                                                {
+                                                  "label": "constant_expr",
+                                                  "type": "constant_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "literal",
+                                                      "type": "literal",
+                                                      "children": [
+                                                        {
+                                                          "label": "\u0027furniture\u0027",
+                                                          "type": "value",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "label": "simple_constant_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "from_clause",
+                                  "type": "from_clause",
+                                  "children": [
+                                    {
+                                      "label": "table_reference",
+                                      "type": "table_reference",
+                                      "children": [
+                                        {
+                                          "label": "objectname",
+                                          "type": "type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "named_table_reference",
+                                          "type": "named_table_reference",
+                                          "children": [
+                                            {
+                                              "label": "table_name",
+                                              "type": "table_name",
+                                              "children": [
+                                                {
+                                                  "label": "ITEM",
+                                                  "type": "full_name",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "table",
+                                                  "type": "object_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "ITEM",
+                                                  "type": "object_name",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "label": false,
+                              "type": "is_parenthesis",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "sstselect",
+                      "type": "type",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "after_pattern": {
+      "label": "edit_root",
+      "type": "edit_unit",
+      "children": [
+        {
+          "label": "\u003d",
+          "type": "Assignment",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldWrite",
+              "children": []
+            },
+            {
+              "label": "prepareStatement",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "c",
+                  "type": "FieldRead",
+                  "children": []
+                },
+                {
+                  "label": "root",
+                  "type": "root",
+                  "children": [
+                    {
+                      "label": "select_statement",
+                      "type": "select_statement",
+                      "children": [
+                        {
+                          "label": "query_expression",
+                          "type": "query_expression",
+                          "children": [
+                            {
+                              "label": "query_specification",
+                              "type": "query_specification",
+                              "children": [
+                                {
+                                  "label": "select_list",
+                                  "type": "select_list",
+                                  "children": [
+                                    {
+                                      "label": "result_column",
+                                      "type": "result_column",
+                                      "children": [
+                                        {
+                                          "label": "expression",
+                                          "type": "expression",
+                                          "children": [
+                                            {
+                                              "label": "simple_object_name_t",
+                                              "type": "expr_type",
+                                              "children": []
+                                            },
+                                            {
+                                              "label": "column_referenced_expr",
+                                              "type": "column_referenced_expr",
+                                              "children": [
+                                                {
+                                                  "label": "objectName",
+                                                  "type": "objectName",
+                                                  "children": [
+                                                    {
+                                                      "label": "*",
+                                                      "type": "full_name",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "column",
+                                                      "type": "object_type",
+                                                      "children": []
+                                                    },
+                                                    {
+                                                      "label": "*",
+                                                      "type": "part_name",
+                                                      "children": []
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "where_clause",
+                                  "type": "where_clause",
+                                  "children": [
+                                    {
+                                      "label": "condition",
+                                      "type": "condition",
+                                      "children": [
+                                        {
+                                          "label": "pattern_matching_t",
+                                          "type": "expr_type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "like_expr",
+                                          "type": "like_expr",
+                                          "children": [
+                                            {
+                                              "label": "first_expr",
+                                              "type": "first_expr",
+                                              "children": [
+                                                {
+                                                  "label": "simple_object_name_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "column_referenced_expr",
+                                                  "type": "column_referenced_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "objectName",
+                                                      "type": "objectName",
+                                                      "children": [
+                                                        {
+                                                          "label": "DEPARTMENT",
+                                                          "type": "full_name",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "column",
+                                                          "type": "object_type",
+                                                          "children": []
+                                                        },
+                                                        {
+                                                          "label": "DEPARTMENT",
+                                                          "type": "part_name",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "label": "second_expr",
+                                              "type": "second_expr",
+                                              "children": [
+                                                {
+                                                  "label": "constant_expr",
+                                                  "type": "constant_expr",
+                                                  "children": [
+                                                    {
+                                                      "label": "literal",
+                                                      "type": "literal",
+                                                      "children": [
+                                                        {
+                                                          "label": "\u0027books\u0027",
+                                                          "type": "value",
+                                                          "children": []
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "label": "simple_constant_t",
+                                                  "type": "expr_type",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "from_clause",
+                                  "type": "from_clause",
+                                  "children": [
+                                    {
+                                      "label": "table_reference",
+                                      "type": "table_reference",
+                                      "children": [
+                                        {
+                                          "label": "objectname",
+                                          "type": "type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "named_table_reference",
+                                          "type": "named_table_reference",
+                                          "children": [
+                                            {
+                                              "label": "table_name",
+                                              "type": "table_name",
+                                              "children": [
+                                                {
+                                                  "label": "ITEM",
+                                                  "type": "full_name",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "table",
+                                                  "type": "object_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "ITEM",
+                                                  "type": "object_name",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "label": false,
+                              "type": "is_parenthesis",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "sstselect",
+                      "type": "type",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "rs",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "ResultSet",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "executeQuery",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "stmt",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "before_code": "\"\\\"stmt \u003d c.createStatement()\\\\nResultSet rs \u003d stmt.executeQuery(\\\\\\\"SELECT * FROM ITEM WHERE DEPARTMENT LIKE \u0027furniture\u0027;\\\\\\\")\\\\n\\\"\"",
+    "after_code": "\"\\\"stmt \u003d c.prepareStatement(\\\\\\\"SELECT * FROM ITEM WHERE DEPARTMENT LIKE \u0027books\u0027;\\\\\\\")\\\\nResultSet rs \u003d stmt.executeQuery()\\\\n\\\"\"",
+    "pattern_id": "0",
+    "children": []
+  }
+}

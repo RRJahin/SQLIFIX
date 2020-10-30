@@ -1,0 +1,1 @@
+ DELETE FROM Pays WHERE id = ?

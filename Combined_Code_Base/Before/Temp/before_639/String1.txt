@@ -1,0 +1,1 @@
+"UPDATE Notas SET " + "aberta=" + nota.getAberta() + ",titulo=" + nota.getTitulo() + ", texto=" + nota.getTexto() + ", cor=" + nota.getCor() + ",prazo_final_nota=" + new Date(nota.getPrazo_final().getTimeInMillis()) + " WHERE id=" + nota.getId()

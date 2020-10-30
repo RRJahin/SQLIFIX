@@ -1,0 +1,1 @@
+"DELETE FROM instrcourdoc WHERE iddocument = " + selFile.getDocid() + " AND idinstructor = " + instrId + " AND idcourse = " + courseId + " ;"

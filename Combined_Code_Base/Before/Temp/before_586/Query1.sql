@@ -1,0 +1,1 @@
+ INSERT INTO alerts (sensor_type, comparator, comparison_value, node_id) VALUES ( X_16030521818810 , X_16030521818811 , X_16030521818812 , X_16030521818813 ) ;

@@ -1,0 +1,1 @@
+"DELETE FROM druginteractions WHERE (FirstDrug = " + firstDrug + " OR SecondDrug = " + firstDrug + ") AND (FirstDrug = " + secondDrug + " OR SecondDrug = " + secondDrug + ")"

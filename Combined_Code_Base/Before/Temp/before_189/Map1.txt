@@ -1,0 +1,3 @@
+ host.getHostName()$X_16030521671490
+ host.getIp()$X_16030521671491
+ host.getNaeglingPort()$X_16030521671492

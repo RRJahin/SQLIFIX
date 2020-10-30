@@ -1,0 +1,5 @@
+ roomBooking.getArrivalDate()$X_16030521773040
+ roomBooking.getNumberOfChildren()$X_16030521773043
+ roomBooking.getDepartureDate()$X_16030521773041
+ roomBooking.getStatus()$X_16030521773042
+ roomBooking.getId()$X_16030521773044

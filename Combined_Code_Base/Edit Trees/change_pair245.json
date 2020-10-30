@@ -1,0 +1,189 @@
+{
+  "before_code": "java.lang.String s = \"SELECT * FROM `order_movie` where order_id = \" + order_id\nStatement pstm = con.createStatement()\nResultSet rs = pstm.executeQuery(s)\n",
+  "after_code": "java.lang.String s = \"SELECT * FROM `order_movie` where order_id = ?\"\nPreparedStatement pstm = con.prepareStatement(s)\npstm.setObject(1, order_id)\nResultSet rs = pstm.executeQuery()\n",
+  "before_line": [
+    6,
+    7,
+    8
+  ],
+  "after_line": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "before_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "s",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "java.lang.String",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "PLUS",
+            "type": "BinaryOperator",
+            "children": [
+              {
+                "label": "\"SELECT * FROM `order_movie` where order_id = \"",
+                "type": "Literal",
+                "children": []
+              },
+              {
+                "label": "order_id",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "pstm",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "Statement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "createStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "con",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "rs",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "ResultSet",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "executeQuery",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "pstm",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "s",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "after_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "s",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "java.lang.String",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "\"SELECT * FROM `order_movie` where order_id = ?\"",
+            "type": "Literal",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "pstm",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "PreparedStatement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "prepareStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "con",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "s",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "pstm",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "1",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "order_id",
+            "type": "FieldRead",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "rs",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "ResultSet",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "executeQuery",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "pstm",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

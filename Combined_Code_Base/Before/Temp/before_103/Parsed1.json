@@ -1,0 +1,237 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "select_statement": {
+        "query_expression": {
+          "query_specification": {
+            "select_list": {
+              "result_column": {
+                "expression": {
+                  "expr_type": "simple_object_name_t",
+                  "column_referenced_expr": {
+                    "objectName": {
+                      "full_name": "*",
+                      "object_type": "column",
+                      "part_name": "*"
+                    }
+                  }
+                }
+              }
+            },
+            "where_clause": {
+              "condition": {
+                "binary_expr": {
+                  "first_expr": {
+                    "expr_type": "simple_comparison_t",
+                    "comparison_expr": {
+                      "first_expr": {
+                        "expr_type": "simple_object_name_t",
+                        "column_referenced_expr": {
+                          "objectName": {
+                            "full_name": "num",
+                            "object_type": "column",
+                            "part_name": "num"
+                          }
+                        }
+                      },
+                      "second_expr": {
+                        "expr_type": "simple_object_name_t",
+                        "column_referenced_expr": {
+                          "objectName": {
+                            "full_name": "X_16030521654140",
+                            "object_type": "column",
+                            "part_name": "X_16030521654140"
+                          }
+                        }
+                      },
+                      "type": ">="
+                    }
+                  },
+                  "second_expr": {
+                    "expr_type": "simple_comparison_t",
+                    "comparison_expr": {
+                      "first_expr": {
+                        "expr_type": "simple_object_name_t",
+                        "column_referenced_expr": {
+                          "objectName": {
+                            "full_name": "num",
+                            "object_type": "column",
+                            "part_name": "num"
+                          }
+                        }
+                      },
+                      "second_expr": {
+                        "expr_type": "simple_object_name_t",
+                        "column_referenced_expr": {
+                          "objectName": {
+                            "full_name": "X_16030521654141",
+                            "object_type": "column",
+                            "part_name": "X_16030521654141"
+                          }
+                        }
+                      },
+                      "type": "<="
+                    }
+                  },
+                  "operator": "AND"
+                },
+                "expr_type": "logical_and_t"
+              }
+            },
+            "from_clause": {
+              "table_reference": {
+                "type": "subquery",
+                "query_table_reference": {
+                  "query_expression": {
+                    "query_specification": {
+                      "select_list": {
+                        "result_column": [
+                          {
+                            "expression": {
+                              "expr_type": "simple_object_name_t",
+                              "column_referenced_expr": {
+                                "objectName": {
+                                  "full_name": "id",
+                                  "object_type": "column",
+                                  "part_name": "id"
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "expression": {
+                              "expr_type": "simple_object_name_t",
+                              "column_referenced_expr": {
+                                "objectName": {
+                                  "full_name": "pwd",
+                                  "object_type": "column",
+                                  "part_name": "pwd"
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "expression": {
+                              "expr_type": "simple_object_name_t",
+                              "column_referenced_expr": {
+                                "objectName": {
+                                  "full_name": "name",
+                                  "object_type": "column",
+                                  "part_name": "name"
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "expression": {
+                              "expr_type": "simple_object_name_t",
+                              "column_referenced_expr": {
+                                "objectName": {
+                                  "full_name": "phone",
+                                  "object_type": "column",
+                                  "part_name": "phone"
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "expression": {
+                              "expr_type": "simple_object_name_t",
+                              "column_referenced_expr": {
+                                "objectName": {
+                                  "full_name": "email",
+                                  "object_type": "column",
+                                  "part_name": "email"
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "expression": {
+                              "expr_type": "simple_object_name_t",
+                              "column_referenced_expr": {
+                                "objectName": {
+                                  "full_name": "address",
+                                  "object_type": "column",
+                                  "part_name": "address"
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "expression": {
+                              "expr_type": "simple_object_name_t",
+                              "column_referenced_expr": {
+                                "objectName": {
+                                  "full_name": "memo",
+                                  "object_type": "column",
+                                  "part_name": "memo"
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "expression": {
+                              "expr_type": "simple_object_name_t",
+                              "column_referenced_expr": {
+                                "objectName": {
+                                  "full_name": "rating",
+                                  "object_type": "column",
+                                  "part_name": "rating"
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "alias_clause": {
+                              "object_name": {
+                                "full_name": "num",
+                                "object_type": "column_alias",
+                                "object_name": "num"
+                              },
+                              "with_as": true
+                            },
+                            "expression": {
+                              "expr_type": "simple_object_name_t",
+                              "column_referenced_expr": {
+                                "objectName": {
+                                  "full_name": "rownum",
+                                  "object_type": "unknown",
+                                  "part_name": "rownum"
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "from_clause": {
+                        "table_reference": {
+                          "type": "objectname",
+                          "named_table_reference": {
+                            "table_name": {
+                              "full_name": "member",
+                              "object_type": "table",
+                              "object_name": "member"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "is_parenthesis": true
+                  }
+                }
+              }
+            }
+          },
+          "is_parenthesis": false
+        }
+      },
+      "type": "sstselect"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

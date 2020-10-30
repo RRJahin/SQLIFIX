@@ -1,0 +1,140 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "delete_statement": {
+        "where_clause": {
+          "condition": {
+            "binary_expr": {
+              "first_expr": {
+                "binary_expr": {
+                  "first_expr": {
+                    "binary_expr": {
+                      "first_expr": {
+                        "expr_type": "simple_comparison_t",
+                        "comparison_expr": {
+                          "first_expr": {
+                            "expr_type": "simple_object_name_t",
+                            "column_referenced_expr": {
+                              "objectName": {
+                                "full_name": "activityId",
+                                "object_type": "column",
+                                "part_name": "activityId"
+                              }
+                            }
+                          },
+                          "second_expr": {
+                            "constant_expr": {
+                              "literal": {
+                                "value": "'X_16030521718000'"
+                              }
+                            },
+                            "expr_type": "simple_constant_t"
+                          },
+                          "type": "="
+                        }
+                      },
+                      "second_expr": {
+                        "expr_type": "simple_comparison_t",
+                        "comparison_expr": {
+                          "first_expr": {
+                            "expr_type": "simple_object_name_t",
+                            "column_referenced_expr": {
+                              "objectName": {
+                                "full_name": "bookingId",
+                                "object_type": "column",
+                                "part_name": "bookingId"
+                              }
+                            }
+                          },
+                          "second_expr": {
+                            "constant_expr": {
+                              "literal": {
+                                "value": "'X_16030521718001'"
+                              }
+                            },
+                            "expr_type": "simple_constant_t"
+                          },
+                          "type": "="
+                        }
+                      },
+                      "operator": "AND"
+                    },
+                    "expr_type": "logical_and_t"
+                  },
+                  "second_expr": {
+                    "expr_type": "simple_comparison_t",
+                    "comparison_expr": {
+                      "first_expr": {
+                        "expr_type": "simple_object_name_t",
+                        "column_referenced_expr": {
+                          "objectName": {
+                            "full_name": "date",
+                            "object_type": "column",
+                            "part_name": "date"
+                          }
+                        }
+                      },
+                      "second_expr": {
+                        "constant_expr": {
+                          "literal": {
+                            "value": "'X_16030521718002'"
+                          }
+                        },
+                        "expr_type": "simple_constant_t"
+                      },
+                      "type": "="
+                    }
+                  },
+                  "operator": "AND"
+                },
+                "expr_type": "logical_and_t"
+              },
+              "second_expr": {
+                "expr_type": "simple_comparison_t",
+                "comparison_expr": {
+                  "first_expr": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "startHour",
+                        "object_type": "column",
+                        "part_name": "startHour"
+                      }
+                    }
+                  },
+                  "second_expr": {
+                    "constant_expr": {
+                      "literal": {
+                        "value": "'X_16030521718003'"
+                      }
+                    },
+                    "expr_type": "simple_constant_t"
+                  },
+                  "type": "="
+                }
+              },
+              "operator": "AND"
+            },
+            "expr_type": "logical_and_t"
+          }
+        },
+        "target_table": {
+          "type": "objectname",
+          "named_table_reference": {
+            "table_name": {
+              "full_name": "ActivityLine",
+              "object_type": "table",
+              "object_name": "ActivityLine"
+            }
+          }
+        }
+      },
+      "type": "sstdelete"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

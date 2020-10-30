@@ -1,0 +1,1 @@
+"UPDATE Resurse_Financiare  SET descriere=?, suma=?, tip=? where id=?"

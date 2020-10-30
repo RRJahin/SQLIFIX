@@ -1,0 +1,99 @@
+{
+  "target": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "sql",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "java.lang.String",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "\"Select a.Reservation_Id, a.GuestID, a.start, a.end, a.numberRooms, a.bookingDate, a.status, a.reservationType, a.price from Reservations a where a.GuestID \u003d ? and a.reservationType \u003d ? \"",
+            "type": "Literal",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "pstm",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "Statement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "createStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "conn",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "sql",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setString",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "pstm",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "1",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "toString",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "GuestID",
+                "type": "TypeAccess",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setString",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "pstm",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "2",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "reservationType",
+            "type": "FieldRead",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "select_statement": {
+        "query_expression": {
+          "query_specification": {
+            "select_list": {
+              "result_column": {
+                "expression": {
+                  "expr_type": "function_t",
+                  "functionCall_expr": {
+                    "functionCall": {
+                      "generic_function": {
+                        "functionArgs": {
+                          "expression": {
+                            "expr_type": "simple_object_name_t",
+                            "column_referenced_expr": {
+                              "objectName": {
+                                "full_name": "order_num",
+                                "object_type": "column",
+                                "part_name": "order_num"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "functionName": {
+                        "full_name": "COUNT",
+                        "object_type": "function",
+                        "object_name": "COUNT"
+                      },
+                      "builtIn": true,
+                      "type": "unknown_t",
+                      "aggregateType": "distinct"
+                    }
+                  }
+                }
+              }
+            },
+            "where_clause": {
+              "condition": {
+                "in_expr": {
+                  "not": true,
+                  "first_expr": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "order_state",
+                        "object_type": "column",
+                        "part_name": "order_state"
+                      }
+                    }
+                  },
+                  "second_expr": {
+                    "expr_type": "list_t",
+                    "list_expr": {
+                      "expression_list": {
+                        "expression": [
+                          {
+                            "constant_expr": {
+                              "literal": {
+                                "value": 7
+                              }
+                            },
+                            "expr_type": "simple_constant_t"
+                          },
+                          {
+                            "constant_expr": {
+                              "literal": {
+                                "value": 8
+                              }
+                            },
+                            "expr_type": "simple_constant_t"
+                          },
+                          {
+                            "constant_expr": {
+                              "literal": {
+                                "value": 9
+                              }
+                            },
+                            "expr_type": "simple_constant_t"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                "expr_type": "in_t"
+              }
+            },
+            "from_clause": {
+              "table_reference": {
+                "type": "objectname",
+                "named_table_reference": {
+                  "table_name": {
+                    "full_name": "bespeak",
+                    "object_type": "table",
+                    "object_name": "bespeak"
+                  }
+                }
+              }
+            }
+          },
+          "is_parenthesis": false
+        }
+      },
+      "type": "sstselect"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

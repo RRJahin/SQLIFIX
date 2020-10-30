@@ -1,0 +1,1 @@
+"UPDATE User SET password=" + forgotObj.getPassword() + " where userName=" + forgotObj.getUserName() + " and email=" + forgotObj.getEmail()

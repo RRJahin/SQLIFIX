@@ -1,0 +1,1 @@
+ DELETE FROM ActivityLine WHERE bookingId= 'X_16030521719490'

@@ -1,0 +1,3 @@
+ rt.getCategory()$X_16030521774152
+ rt.getDescription()$X_16030521774150
+ rt.getPrice()$X_16030521774151

@@ -1,0 +1,1 @@
+ UPDATE Cadre_Didactice SET pozitia = X_16030521822830 , den_post = X_16030521822831 , nume = X_16030521822832 , functia= X_16030521822833 , tit_vac = X_16030521822834 WHERE Id_Cadru_Didactic= X_16030521822835

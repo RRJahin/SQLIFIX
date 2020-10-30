@@ -1,0 +1,1 @@
+ INSERT INTO interesting(dateObserved,ticker) VALUES(now(),'?') ;

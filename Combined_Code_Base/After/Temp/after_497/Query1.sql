@@ -1,0 +1,1 @@
+ select * from agent_details where agn_id=? and password=? and approval=?

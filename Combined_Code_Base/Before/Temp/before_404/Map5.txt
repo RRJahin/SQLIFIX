@@ -1,0 +1,2 @@
+ post.getUser().toString()$X_16030521757431
+ post.getForum().toString()$X_16030521757430

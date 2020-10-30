@@ -1,0 +1,1 @@
+"insert into " + TBL_NAME + " (" + FIELD_CODICE + "," + FIELD_COORD_X + "," + FIELD_COORD_Y + "," + FIELD_WIDTH + "," + FIELD_ID_MAPPA + "," + FIELD_ID_PIANO + ") " + "values(" + nodo.getCodice() + "," + nodo.getCoord_X() + "," + nodo.getCoord_Y() + "," + nodo.getLarghezza() + "," + nodo.getID_mappa() + "," + nodo.getID_piano() + ")"

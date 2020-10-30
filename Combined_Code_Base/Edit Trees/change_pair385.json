@@ -1,0 +1,503 @@
+{
+  "before_code": "java.lang.String sql = (((((((((((\"UPDATE `sis_pizza_db`.`pizza` SET `nome_pizza` = \" + pizza.getNome()) + \", `tipo_pizza` = \") + pizza.getTipoPizza()) + \", `tipo_massa` = \") + pizza.getTipoMassa()) + \", `ingredientes_pizza` = \") + pizza.getIngredientes()) + \", `preco_pizza` = \") + pizza.getPreco()) + \"WHERE `numero_pizza` = \") + pizza.getNumero()) + \";\"\nStatement ps = c.createStatement()\nint rs = ps.executeUpdate(sql)\n",
+  "after_code": "java.lang.String sql = \"UPDATE `sis_pizza_db`.`pizza` SET `nome_pizza` = ?, `tipo_pizza` = ?, `tipo_massa` = ?, `ingredientes_pizza` = ?, `preco_pizza` = ?\" + \"WHERE `numero_pizza` = ?;\"\nPreparedStatement ps = c.prepareStatement(sql)\nps.setObject(1, pizza.getNome())\nps.setObject(2, pizza.getTipoPizza())\nps.setObject(3, pizza.getTipoMassa())\nps.setObject(4, pizza.getIngredientes())\nps.setObject(5, pizza.getPreco())\nps.setObject(6, pizza.getNumero())\nint rs = ps.executeUpdate()\n",
+  "before_line": [
+    4,
+    5,
+    6
+  ],
+  "after_line": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "before_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "sql",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "java.lang.String",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "PLUS",
+            "type": "BinaryOperator",
+            "children": [
+              {
+                "label": "PLUS",
+                "type": "BinaryOperator",
+                "children": [
+                  {
+                    "label": "PLUS",
+                    "type": "BinaryOperator",
+                    "children": [
+                      {
+                        "label": "PLUS",
+                        "type": "BinaryOperator",
+                        "children": [
+                          {
+                            "label": "PLUS",
+                            "type": "BinaryOperator",
+                            "children": [
+                              {
+                                "label": "PLUS",
+                                "type": "BinaryOperator",
+                                "children": [
+                                  {
+                                    "label": "PLUS",
+                                    "type": "BinaryOperator",
+                                    "children": [
+                                      {
+                                        "label": "PLUS",
+                                        "type": "BinaryOperator",
+                                        "children": [
+                                          {
+                                            "label": "PLUS",
+                                            "type": "BinaryOperator",
+                                            "children": [
+                                              {
+                                                "label": "PLUS",
+                                                "type": "BinaryOperator",
+                                                "children": [
+                                                  {
+                                                    "label": "PLUS",
+                                                    "type": "BinaryOperator",
+                                                    "children": [
+                                                      {
+                                                        "label": "PLUS",
+                                                        "type": "BinaryOperator",
+                                                        "children": [
+                                                          {
+                                                            "label": "\"UPDATE `sis_pizza_db`.`pizza` SET `nome_pizza` = \"",
+                                                            "type": "Literal",
+                                                            "children": []
+                                                          },
+                                                          {
+                                                            "label": "getNome",
+                                                            "type": "Invocation",
+                                                            "children": [
+                                                              {
+                                                                "label": "pizza",
+                                                                "type": "FieldRead",
+                                                                "children": []
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "label": "\", `tipo_pizza` = \"",
+                                                        "type": "Literal",
+                                                        "children": []
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "label": "getTipoPizza",
+                                                    "type": "Invocation",
+                                                    "children": [
+                                                      {
+                                                        "label": "pizza",
+                                                        "type": "FieldRead",
+                                                        "children": []
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "label": "\", `tipo_massa` = \"",
+                                                "type": "Literal",
+                                                "children": []
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "label": "getTipoMassa",
+                                            "type": "Invocation",
+                                            "children": [
+                                              {
+                                                "label": "pizza",
+                                                "type": "FieldRead",
+                                                "children": []
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "\", `ingredientes_pizza` = \"",
+                                        "type": "Literal",
+                                        "children": []
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "getIngredientes",
+                                    "type": "Invocation",
+                                    "children": [
+                                      {
+                                        "label": "pizza",
+                                        "type": "FieldRead",
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": "\", `preco_pizza` = \"",
+                                "type": "Literal",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "label": "getPreco",
+                            "type": "Invocation",
+                            "children": [
+                              {
+                                "label": "pizza",
+                                "type": "FieldRead",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "\"WHERE `numero_pizza` = \"",
+                        "type": "Literal",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "label": "getNumero",
+                    "type": "Invocation",
+                    "children": [
+                      {
+                        "label": "pizza",
+                        "type": "FieldRead",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "label": "\";\"",
+                "type": "Literal",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "ps",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "Statement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "createStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "c",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "rs",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "int",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "executeUpdate",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "ps",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "sql",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "after_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "sql",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "java.lang.String",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "PLUS",
+            "type": "BinaryOperator",
+            "children": [
+              {
+                "label": "\"UPDATE `sis_pizza_db`.`pizza` SET `nome_pizza` = ?, `tipo_pizza` = ?, `tipo_massa` = ?, `ingredientes_pizza` = ?, `preco_pizza` = ?\"",
+                "type": "Literal",
+                "children": []
+              },
+              {
+                "label": "\"WHERE `numero_pizza` = ?;\"",
+                "type": "Literal",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "ps",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "PreparedStatement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "prepareStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "c",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "sql",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "ps",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "1",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "getNome",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "pizza",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "ps",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "2",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "getTipoPizza",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "pizza",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "ps",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "3",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "getTipoMassa",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "pizza",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "ps",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "4",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "getIngredientes",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "pizza",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "ps",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "5",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "getPreco",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "pizza",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "ps",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "6",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "getNumero",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "pizza",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "rs",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "int",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "executeUpdate",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "ps",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

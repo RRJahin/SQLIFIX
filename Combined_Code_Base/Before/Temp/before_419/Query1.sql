@@ -1,0 +1,1 @@
+ select COUNT(*) from inception_preference where userId = X_16030521761210

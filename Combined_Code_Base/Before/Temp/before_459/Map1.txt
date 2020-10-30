@@ -1,0 +1,3 @@
+ teamObj.getId()$X_16030521774802
+ teamObj.getNumberOfParticipants()$X_16030521774801
+ guestObj.getId()$X_16030521774800

@@ -1,0 +1,7 @@
+ new Date(nota.getPrazo_final().getTimeInMillis())$X_16030521831765
+ nota.getTexto()$X_16030521831763
+ nota.getAberta()$X_16030521831760
+ nota.getTitulo()$X_16030521831762
+ nota.getCor()$X_16030521831764
+ new Date(nota.getData_criacao().getTimeInMillis())$X_16030521831766
+ nota.getUsuario_abriu()$X_16030521831761

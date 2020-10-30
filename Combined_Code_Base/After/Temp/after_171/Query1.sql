@@ -1,0 +1,1 @@
+ update userinfo set pw=?, email=? where id=? and pw=?

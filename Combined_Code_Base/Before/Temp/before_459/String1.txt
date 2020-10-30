@@ -1,0 +1,1 @@
+"UPDATE Team SET leaderId= '" + guestObj.getId() + "', " + "numberOfParticipants= '" + teamObj.getNumberOfParticipants() + "' " + "WHERE teamId= '" + teamObj.getId() + "'"

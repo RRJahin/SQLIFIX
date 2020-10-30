@@ -1,0 +1,1 @@
+ SELECT FOUND_ROWS()

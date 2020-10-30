@@ -1,0 +1,1 @@
+ Delete From Starwood where User_Name= X_16030521785270

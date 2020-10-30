@@ -1,0 +1,1 @@
+ SELECT * FROM bespeak WHERE id = ? AND order_state NOT IN(7, 8, 9) ORDER BY order_num DESC

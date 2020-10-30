@@ -1,0 +1,179 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "update_statement": {
+        "where_clause": {
+          "condition": {
+            "expr_type": "simple_comparison_t",
+            "comparison_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "id",
+                    "object_type": "column",
+                    "part_name": "id"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              "type": "="
+            }
+          }
+        },
+        "target_table": {
+          "type": "objectname",
+          "named_table_reference": {
+            "table_name": {
+              "full_name": "inception_music",
+              "object_type": "table",
+              "object_name": "inception_music"
+            }
+          }
+        },
+        "set_clause": [
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "musicName",
+                    "object_type": "column",
+                    "part_name": "musicName"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "musicStyle",
+                    "object_type": "column",
+                    "part_name": "musicStyle"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "musicLanguage",
+                    "object_type": "column",
+                    "part_name": "musicLanguage"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "artistName",
+                    "object_type": "column",
+                    "part_name": "artistName"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "albumName",
+                    "object_type": "column",
+                    "part_name": "albumName"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          }
+        ]
+      },
+      "type": "sstupdate"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

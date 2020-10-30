@@ -1,0 +1,1 @@
+"SELECT * FROM users WHERE MID=? AND isDependent=1"

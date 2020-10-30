@@ -1,0 +1,1 @@
+"UPDATE Notas SET " + "aberta=?,titulo=?, texto=?, cor=?,prazo_final_nota=? WHERE id=?"

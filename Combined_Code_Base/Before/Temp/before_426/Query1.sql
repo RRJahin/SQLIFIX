@@ -1,0 +1,1 @@
+ SELECT COUNT(*) AS facilityInstances FROM Facility WHERE id<> 'X_16030521763110' AND name= 'X_16030521763111'

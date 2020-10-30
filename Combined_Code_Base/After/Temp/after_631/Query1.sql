@@ -1,0 +1,1 @@
+ select column_name,data_type,column_comment from information_schema.columns where table_schema='?' and table_name='?'

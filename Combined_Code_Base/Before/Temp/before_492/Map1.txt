@@ -1,0 +1,2 @@
+ member.getPhoneNumber()$X_16030521787490
+ member.getId().toString()$X_16030521787491

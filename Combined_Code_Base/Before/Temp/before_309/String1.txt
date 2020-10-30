@@ -1,0 +1,1 @@
+"UPDATE Pays SET codePays = " + obj.getCodePays() + ", nomPays = " + obj.getNomPays() + " WHERE id = " + obj.getId()

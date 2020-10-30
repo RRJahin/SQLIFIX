@@ -1,0 +1,1 @@
+"INSERT INTO Resurse_Financiare  VALUES(" + rf.getDescriere() + "," + rf.getSuma() + "," + tip + ")"

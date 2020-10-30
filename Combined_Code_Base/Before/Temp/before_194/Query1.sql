@@ -1,0 +1,1 @@
+ SELECT * FROM virtual_master_node_table WHERE cluster='X_16030521672370'

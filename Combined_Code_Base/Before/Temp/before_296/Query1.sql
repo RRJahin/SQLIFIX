@@ -1,0 +1,1 @@
+ SELECT * FROM patients WHERE MID= X_16030521730530 AND DateOfDeactivation IS NULL

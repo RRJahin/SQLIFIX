@@ -1,0 +1,201 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "select_statement": {
+        "query_expression": {
+          "query_specification": {
+            "select_list": {
+              "result_column": {
+                "expression": {
+                  "expr_type": "simple_object_name_t",
+                  "column_referenced_expr": {
+                    "objectName": {
+                      "full_name": "Id_Cadru_Didactic",
+                      "object_type": "column",
+                      "part_name": "Id_Cadru_Didactic"
+                    }
+                  }
+                }
+              }
+            },
+            "where_clause": {
+              "condition": {
+                "binary_expr": {
+                  "first_expr": {
+                    "binary_expr": {
+                      "first_expr": {
+                        "binary_expr": {
+                          "first_expr": {
+                            "binary_expr": {
+                              "first_expr": {
+                                "expr_type": "simple_comparison_t",
+                                "comparison_expr": {
+                                  "first_expr": {
+                                    "expr_type": "simple_object_name_t",
+                                    "column_referenced_expr": {
+                                      "objectName": {
+                                        "full_name": "pozitia",
+                                        "object_type": "column",
+                                        "part_name": "pozitia"
+                                      }
+                                    }
+                                  },
+                                  "second_expr": {
+                                    "expr_type": "simple_object_name_t",
+                                    "column_referenced_expr": {
+                                      "objectName": {
+                                        "full_name": "X_16030521839300",
+                                        "object_type": "column",
+                                        "part_name": "X_16030521839300"
+                                      }
+                                    }
+                                  },
+                                  "type": "="
+                                }
+                              },
+                              "second_expr": {
+                                "expr_type": "simple_comparison_t",
+                                "comparison_expr": {
+                                  "first_expr": {
+                                    "expr_type": "simple_object_name_t",
+                                    "column_referenced_expr": {
+                                      "objectName": {
+                                        "full_name": "den_post",
+                                        "object_type": "column",
+                                        "part_name": "den_post"
+                                      }
+                                    }
+                                  },
+                                  "second_expr": {
+                                    "expr_type": "simple_object_name_t",
+                                    "column_referenced_expr": {
+                                      "objectName": {
+                                        "full_name": "X_16030521839301",
+                                        "object_type": "column",
+                                        "part_name": "X_16030521839301"
+                                      }
+                                    }
+                                  },
+                                  "type": "="
+                                }
+                              },
+                              "operator": "and"
+                            },
+                            "expr_type": "logical_and_t"
+                          },
+                          "second_expr": {
+                            "expr_type": "simple_comparison_t",
+                            "comparison_expr": {
+                              "first_expr": {
+                                "expr_type": "simple_object_name_t",
+                                "column_referenced_expr": {
+                                  "objectName": {
+                                    "full_name": "nume",
+                                    "object_type": "column",
+                                    "part_name": "nume"
+                                  }
+                                }
+                              },
+                              "second_expr": {
+                                "expr_type": "simple_object_name_t",
+                                "column_referenced_expr": {
+                                  "objectName": {
+                                    "full_name": "X_16030521839302",
+                                    "object_type": "column",
+                                    "part_name": "X_16030521839302"
+                                  }
+                                }
+                              },
+                              "type": "="
+                            }
+                          },
+                          "operator": "and"
+                        },
+                        "expr_type": "logical_and_t"
+                      },
+                      "second_expr": {
+                        "expr_type": "simple_comparison_t",
+                        "comparison_expr": {
+                          "first_expr": {
+                            "expr_type": "simple_object_name_t",
+                            "column_referenced_expr": {
+                              "objectName": {
+                                "full_name": "functia",
+                                "object_type": "column",
+                                "part_name": "functia"
+                              }
+                            }
+                          },
+                          "second_expr": {
+                            "expr_type": "simple_object_name_t",
+                            "column_referenced_expr": {
+                              "objectName": {
+                                "full_name": "X_16030521839303",
+                                "object_type": "column",
+                                "part_name": "X_16030521839303"
+                              }
+                            }
+                          },
+                          "type": "="
+                        }
+                      },
+                      "operator": "and"
+                    },
+                    "expr_type": "logical_and_t"
+                  },
+                  "second_expr": {
+                    "expr_type": "simple_comparison_t",
+                    "comparison_expr": {
+                      "first_expr": {
+                        "expr_type": "simple_object_name_t",
+                        "column_referenced_expr": {
+                          "objectName": {
+                            "full_name": "tit_vac",
+                            "object_type": "column",
+                            "part_name": "tit_vac"
+                          }
+                        }
+                      },
+                      "second_expr": {
+                        "expr_type": "simple_object_name_t",
+                        "column_referenced_expr": {
+                          "objectName": {
+                            "full_name": "X_16030521839304",
+                            "object_type": "column",
+                            "part_name": "X_16030521839304"
+                          }
+                        }
+                      },
+                      "type": "="
+                    }
+                  },
+                  "operator": "and"
+                },
+                "expr_type": "logical_and_t"
+              }
+            },
+            "from_clause": {
+              "table_reference": {
+                "type": "objectname",
+                "named_table_reference": {
+                  "table_name": {
+                    "full_name": "Cadre_Didactice",
+                    "object_type": "table",
+                    "object_name": "Cadre_Didactice"
+                  }
+                }
+              }
+            }
+          },
+          "is_parenthesis": false
+        }
+      },
+      "type": "sstselect"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

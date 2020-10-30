@@ -1,0 +1,1 @@
+ DELETE FROM ProgrameDeStudiu WHERE program_id = ?

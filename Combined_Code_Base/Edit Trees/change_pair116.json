@@ -1,0 +1,198 @@
+{
+  "before_code": "@java.lang.SuppressWarnings(\"unchecked\")\r\nQuery<java.lang.Object[]> query = getSession().createQuery((((\"select a1.item_id, a1.item_name, a3.member_no, a3.nickname, MAX(a2.time), a5.status, a1.done, a1.getter_id.member_no, a1.getter_rate, a1.giver_rate, MIN(a2.readed) from MessageContextBean a2 JOIN a2.itemBean a1 LEFT JOIN a2.memberBean_speaker a3 LEFT JOIN RequestListBean a5 with a1.item_id = a5.item_id AND a3.member_no = a5.requester_id where a1.member_id.member_no = \" + member_id) + \" AND a3.member_no <> \") + member_id) + \" GROUP BY a1.item_id, a1.item_name, a3.member_no, a3.nickname, a5.status, a1.done, a1.getter_id.member_no, a1.getter_rate, a1.giver_rate ORDER BY MAX(a2.time) DESC\")\n",
+  "after_code": "@java.lang.SuppressWarnings(\"unchecked\")\r\nQuery<java.lang.Object[]> query = getSession().createQuery(\"select a1.item_id, a1.item_name, a3.member_no, a3.nickname, MAX(a2.time), a5.status, a1.done, a1.getter_id.member_no, a1.getter_rate, a1.giver_rate, MIN(a2.readed) from MessageContextBean a2 JOIN a2.itemBean a1 LEFT JOIN a2.memberBean_speaker a3 LEFT JOIN RequestListBean a5 with a1.item_id = a5.item_id AND a3.member_no = a5.requester_id where a1.member_id.member_no = ? AND a3.member_no <> ? GROUP BY a1.item_id, a1.item_name, a3.member_no, a3.nickname, a5.status, a1.done, a1.getter_id.member_no, a1.getter_rate, a1.giver_rate ORDER BY MAX(a2.time) DESC\")\nquery.setObject(1, member_id)\nquery.setObject(2, member_id)\n",
+  "before_line": [
+    4
+  ],
+  "after_line": [
+    4,
+    5,
+    6
+  ],
+  "before_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "query",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "Query",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "",
+            "type": "Annotation",
+            "children": [
+              {
+                "label": "\"unchecked\"",
+                "type": "Literal",
+                "children": []
+              }
+            ]
+          },
+          {
+            "label": "createQuery",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "getSession",
+                "type": "Invocation",
+                "children": [
+                  {
+                    "label": "x",
+                    "type": "TypeAccess",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "label": "PLUS",
+                "type": "BinaryOperator",
+                "children": [
+                  {
+                    "label": "PLUS",
+                    "type": "BinaryOperator",
+                    "children": [
+                      {
+                        "label": "PLUS",
+                        "type": "BinaryOperator",
+                        "children": [
+                          {
+                            "label": "PLUS",
+                            "type": "BinaryOperator",
+                            "children": [
+                              {
+                                "label": "\"select a1.item_id, a1.item_name, a3.member_no, a3.nickname, MAX(a2.time), a5.status, a1.done, a1.getter_id.member_no, a1.getter_rate, a1.giver_rate, MIN(a2.readed) from MessageContextBean a2 JOIN a2.itemBean a1 LEFT JOIN a2.memberBean_speaker a3 LEFT JOIN RequestListBean a5 with a1.item_id = a5.item_id AND a3.member_no = a5.requester_id where a1.member_id.member_no = \"",
+                                "type": "Literal",
+                                "children": []
+                              },
+                              {
+                                "label": "member_id",
+                                "type": "FieldRead",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "label": "\" AND a3.member_no <> \"",
+                            "type": "Literal",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "label": "member_id",
+                        "type": "FieldRead",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "label": "\" GROUP BY a1.item_id, a1.item_name, a3.member_no, a3.nickname, a5.status, a1.done, a1.getter_id.member_no, a1.getter_rate, a1.giver_rate ORDER BY MAX(a2.time) DESC\"",
+                    "type": "Literal",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "after_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "query",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "Query",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "",
+            "type": "Annotation",
+            "children": [
+              {
+                "label": "\"unchecked\"",
+                "type": "Literal",
+                "children": []
+              }
+            ]
+          },
+          {
+            "label": "createQuery",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "getSession",
+                "type": "Invocation",
+                "children": [
+                  {
+                    "label": "x",
+                    "type": "TypeAccess",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "label": "\"select a1.item_id, a1.item_name, a3.member_no, a3.nickname, MAX(a2.time), a5.status, a1.done, a1.getter_id.member_no, a1.getter_rate, a1.giver_rate, MIN(a2.readed) from MessageContextBean a2 JOIN a2.itemBean a1 LEFT JOIN a2.memberBean_speaker a3 LEFT JOIN RequestListBean a5 with a1.item_id = a5.item_id AND a3.member_no = a5.requester_id where a1.member_id.member_no = ? AND a3.member_no <> ? GROUP BY a1.item_id, a1.item_name, a3.member_no, a3.nickname, a5.status, a1.done, a1.getter_id.member_no, a1.getter_rate, a1.giver_rate ORDER BY MAX(a2.time) DESC\"",
+                "type": "Literal",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "query",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "1",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "member_id",
+            "type": "FieldRead",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "query",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "2",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "member_id",
+            "type": "FieldRead",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

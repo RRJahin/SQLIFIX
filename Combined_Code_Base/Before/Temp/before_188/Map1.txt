@@ -1,0 +1,3 @@
+ template.getPath()$X_16030521671411
+ template.getName()$X_16030521671410
+ template.getMd5()$X_16030521671412

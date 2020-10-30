@@ -1,0 +1,1 @@
+"UPDATE OptionVisite SET label = " + obj.getLabel() + ", niveau = " + obj.getNiveau() + ", parent = " + obj.getParent() + ", type = " + obj.getType() + ", typeB = " + obj.getTypeB() + " WHERE id = " + obj.getId()

@@ -1,0 +1,1 @@
+"UPDATE users " + "SET password = " + passwordBean.getPassword1() + ", change_user_name = javauser, change_date = " + GenericUtilities.getCurrentTimeStamp() + "WHERE id = " + userId

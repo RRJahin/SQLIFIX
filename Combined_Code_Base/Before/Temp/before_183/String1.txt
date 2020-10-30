@@ -1,0 +1,1 @@
+"update " + getIncrementerName() + " set " + columnName + " = last_insert_id(" + columnName + " + " + getCacheSize() + ")"

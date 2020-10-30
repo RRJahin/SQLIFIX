@@ -1,0 +1,1 @@
+"DELETE FROM declaredhcp WHERE PatientID=" + pid + " AND HCPID=" + hcpID

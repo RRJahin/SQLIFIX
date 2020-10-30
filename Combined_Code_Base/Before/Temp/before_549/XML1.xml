@@ -1,0 +1,53 @@
+<sqlscript xmlns="http://www.sqlparser.com/xml/sqlschema/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" dbvendor="dbvoracle" stmt_count="1" xsi:schemaLocation="http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd">
+  <statement type="sstselect">
+    <select_statement>
+      <query_expression is_parenthesis="false">
+        <query_specification>
+          <select_list>
+            <result_column>
+              <expression expr_type="simple_object_name_t">
+                <column_referenced_expr>
+                  <objectName object_type="column">
+                    <full_name>aoc</full_name>
+                    <part_name>aoc</part_name>
+                  </objectName>
+                </column_referenced_expr>
+              </expression>
+            </result_column>
+          </select_list>
+          <from_clause>
+            <table_reference type="objectname">
+              <named_table_reference>
+                <table_name object_type="table">
+                  <full_name>VARIETE</full_name>
+                  <object_name>VARIETE</object_name>
+                </table_name>
+              </named_table_reference>
+            </table_reference>
+          </from_clause>
+          <where_clause>
+            <condition expr_type="simple_comparison_t">
+              <comparison_expr type="=">
+                <first_expr expr_type="simple_object_name_t">
+                  <column_referenced_expr>
+                    <objectName object_type="column">
+                      <full_name>libelle</full_name>
+                      <part_name>libelle</part_name>
+                    </objectName>
+                  </column_referenced_expr>
+                </first_expr>
+                <second_expr expr_type="simple_constant_t">
+                  <constant_expr>
+                    <literal>
+                      <value>'X_16030521810840'</value>
+                    </literal>
+                  </constant_expr>
+                </second_expr>
+              </comparison_expr>
+            </condition>
+          </where_clause>
+        </query_specification>
+      </query_expression>
+    </select_statement>
+  </statement>
+</sqlscript>

@@ -1,0 +1,1 @@
+ DELETE FROM Instructor WHERE employeeId= 'X_16030521764700'

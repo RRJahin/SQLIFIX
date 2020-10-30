@@ -1,0 +1,9 @@
+ prs.getAddress()$X_16030521769743
+ prs.getCountry()$X_16030521769742
+ prs.getPhoneNo()$X_16030521769744
+ prs.getPersonType()$X_16030521769756
+ prs.getPassword()$X_16030521769757
+ prs.getName()$X_16030521769730
+ prs.getEmail()$X_16030521769755
+ prs.getId()$X_16030521769758
+ prs.getZipcode()$X_16030521769741

@@ -1,0 +1,1 @@
+new StringBuilder("SELECT * FROM ").append(tableName).append(" WHERE id = ?").toString()

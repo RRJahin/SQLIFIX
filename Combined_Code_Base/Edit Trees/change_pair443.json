@@ -1,0 +1,201 @@
+{
+  "before_code": "stringBuilder1.append(\"select UserName from userdata where UserAccount=\" + userAccount)\nStatement preparedStatement1 = connection.createStatement()\nResultSet resultSet = preparedStatement1.executeQuery(stringBuilder1.toString())\n",
+  "after_code": "stringBuilder1.append(\"select UserName from userdata where UserAccount=?\")\nPreparedStatement preparedStatement1 = connection.prepareStatement(stringBuilder1.toString())\npreparedStatement1.setObject(1, userAccount)\nResultSet resultSet = preparedStatement1.executeQuery()\n",
+  "before_line": [
+    5,
+    6,
+    7
+  ],
+  "after_line": [
+    7,
+    8,
+    9,
+    10
+  ],
+  "before_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "append",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "stringBuilder1",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "PLUS",
+            "type": "BinaryOperator",
+            "children": [
+              {
+                "label": "\"select UserName from userdata where UserAccount=\"",
+                "type": "Literal",
+                "children": []
+              },
+              {
+                "label": "userAccount",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "preparedStatement1",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "Statement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "createStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "connection",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "resultSet",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "ResultSet",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "executeQuery",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "preparedStatement1",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "toString",
+                "type": "Invocation",
+                "children": [
+                  {
+                    "label": "stringBuilder1",
+                    "type": "FieldRead",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "after_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "append",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "stringBuilder1",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "\"select UserName from userdata where UserAccount=?\"",
+            "type": "Literal",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "preparedStatement1",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "PreparedStatement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "prepareStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "connection",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "toString",
+                "type": "Invocation",
+                "children": [
+                  {
+                    "label": "stringBuilder1",
+                    "type": "FieldRead",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "preparedStatement1",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "1",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "userAccount",
+            "type": "FieldRead",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "resultSet",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "ResultSet",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "executeQuery",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "preparedStatement1",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

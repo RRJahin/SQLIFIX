@@ -1,0 +1,7 @@
+ doisD.getValor()$X_16030521819326
+ doisD.getTipoIngresso().getId()$X_16030521819325
+ new java.sql.Date(doisD.getDataHora().getTime())$X_16030521819321
+ doisD.getCategoria().getId()$X_16030521819324
+ doisD.getLugar()$X_16030521819322
+ doisD.getLocal()$X_16030521819320
+ doisD.getQuantidade()$X_16030521819323

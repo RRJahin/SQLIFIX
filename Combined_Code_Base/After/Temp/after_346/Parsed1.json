@@ -1,0 +1,189 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "select_statement": {
+        "query_expression": {
+          "query_specification": {
+            "distinct_clause": {
+              "distinct_type": "urfDistinct"
+            },
+            "select_list": {
+              "result_column": {
+                "expression": {
+                  "expr_type": "simple_object_name_t",
+                  "column_referenced_expr": {
+                    "objectName": {
+                      "full_name": "hospitals.*",
+                      "object_type": "column",
+                      "object_name": "hospitals",
+                      "part_name": "*"
+                    }
+                  }
+                }
+              }
+            },
+            "where_clause": {
+              "condition": {
+                "expr_type": "simple_comparison_t",
+                "comparison_expr": {
+                  "first_expr": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "hcprelations.UAP",
+                        "object_type": "column",
+                        "object_name": "hcprelations",
+                        "part_name": "UAP"
+                      }
+                    }
+                  },
+                  "second_expr": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "?",
+                        "object_type": "column",
+                        "part_name": "?"
+                      }
+                    }
+                  },
+                  "type": "="
+                }
+              }
+            },
+            "order_by_clause": {
+              "order_by_item": {
+                "sort_key": {
+                  "expr_type": "simple_object_name_t",
+                  "column_referenced_expr": {
+                    "objectName": {
+                      "full_name": "HospitalName",
+                      "object_type": "column",
+                      "part_name": "HospitalName"
+                    }
+                  }
+                },
+                "sort_order": "asc"
+              }
+            },
+            "from_clause": {
+              "table_reference": {
+                "joined_table": {
+                  "first_table_reference": {
+                    "joined_table": {
+                      "first_table_reference": {
+                        "type": "objectname",
+                        "named_table_reference": {
+                          "alias_clause": {
+                            "object_name": {
+                              "full_name": "hah",
+                              "object_type": "table_alias",
+                              "object_name": "hah"
+                            },
+                            "with_as": false
+                          },
+                          "table_name": {
+                            "full_name": "hcpassignedhos",
+                            "object_type": "table",
+                            "object_name": "hcpassignedhos"
+                          }
+                        }
+                      },
+                      "join_condition": {
+                        "expr_type": "simple_comparison_t",
+                        "comparison_expr": {
+                          "first_expr": {
+                            "expr_type": "simple_object_name_t",
+                            "column_referenced_expr": {
+                              "objectName": {
+                                "full_name": "hah.HCPID",
+                                "object_type": "column",
+                                "object_name": "hah",
+                                "part_name": "HCPID"
+                              }
+                            }
+                          },
+                          "second_expr": {
+                            "expr_type": "simple_object_name_t",
+                            "column_referenced_expr": {
+                              "objectName": {
+                                "full_name": "hcprelations.HCP",
+                                "object_type": "column",
+                                "object_name": "hcprelations",
+                                "part_name": "HCP"
+                              }
+                            }
+                          },
+                          "type": "="
+                        }
+                      },
+                      "type": "inner",
+                      "second_table_reference": {
+                        "type": "objectname",
+                        "named_table_reference": {
+                          "table_name": {
+                            "full_name": "hcprelations",
+                            "object_type": "table",
+                            "object_name": "hcprelations"
+                          }
+                        }
+                      }
+                    },
+                    "type": "join"
+                  },
+                  "join_condition": {
+                    "expr_type": "simple_comparison_t",
+                    "comparison_expr": {
+                      "first_expr": {
+                        "expr_type": "simple_object_name_t",
+                        "column_referenced_expr": {
+                          "objectName": {
+                            "full_name": "hah.hosID",
+                            "object_type": "column",
+                            "object_name": "hah",
+                            "part_name": "hosID"
+                          }
+                        }
+                      },
+                      "second_expr": {
+                        "expr_type": "simple_object_name_t",
+                        "column_referenced_expr": {
+                          "objectName": {
+                            "full_name": "hospitals.HospitalID",
+                            "object_type": "column",
+                            "object_name": "hospitals",
+                            "part_name": "HospitalID"
+                          }
+                        }
+                      },
+                      "type": "="
+                    }
+                  },
+                  "type": "inner",
+                  "second_table_reference": {
+                    "type": "objectname",
+                    "named_table_reference": {
+                      "table_name": {
+                        "full_name": "hospitals",
+                        "object_type": "table",
+                        "object_name": "hospitals"
+                      }
+                    }
+                  }
+                },
+                "type": "join"
+              }
+            }
+          },
+          "is_parenthesis": false
+        }
+      },
+      "type": "sstselect"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

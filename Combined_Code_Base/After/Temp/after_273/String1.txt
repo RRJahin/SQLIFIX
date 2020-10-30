@@ -1,0 +1,1 @@
+"DELETE FROM ActivityLine WHERE bookingId= '" + bookingId + "'"

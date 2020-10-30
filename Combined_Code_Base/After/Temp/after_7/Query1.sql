@@ -1,0 +1,1 @@
+ Select * from User where email=? and userName=?

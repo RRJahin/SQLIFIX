@@ -1,0 +1,1 @@
+ UPDATE ModRgl SET codeModRgl = ?, nomModRgl = ? WHERE id = ?

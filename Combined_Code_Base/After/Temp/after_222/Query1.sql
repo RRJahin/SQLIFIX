@@ -1,0 +1,1 @@
+ SELECT * FROM notes WHERE id_user = ?

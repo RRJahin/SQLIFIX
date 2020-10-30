@@ -1,0 +1,1 @@
+"UPDATE tblauthor SET author_name = ?, gender = ?, description = ? WHERE id = " + author.getId()

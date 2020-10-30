@@ -1,0 +1,2 @@
+ bi.getTable()$X_16030521830721
+ bi.getDatabase()$X_16030521830720

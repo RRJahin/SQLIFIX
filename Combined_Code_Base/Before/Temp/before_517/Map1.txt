@@ -1,0 +1,7 @@
+ agricultor.getNome()$X_16030521792710
+ new java.sql.Date(agricultor.getData_cadastro().getTime())$X_16030521792711
+ agricultor.getStatus()$X_16030521792715
+ agricultor.getMunicipio()$X_16030521792712
+ agricultor.getLocalidade()$X_16030521792713
+ agricultor.getProdutos()$X_16030521792714
+ agricultor.getTelefone()$X_16030521792716

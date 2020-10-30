@@ -1,0 +1,1 @@
+"INSERT INTO cd (id, title) values (?, ?)"

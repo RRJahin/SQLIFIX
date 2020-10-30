@@ -1,0 +1,2 @@
+ member.getCardNumber()$X_16030521788140
+ member.getId().toString()$X_16030521788141

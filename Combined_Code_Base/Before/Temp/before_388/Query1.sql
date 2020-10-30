@@ -1,0 +1,1 @@
+ Select product_stock from product_sms where product_id = X_16030521752210

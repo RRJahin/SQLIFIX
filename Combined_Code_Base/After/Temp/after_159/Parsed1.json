@@ -1,0 +1,245 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "insert_statement": {
+        "insert_values": {
+          "row_values": {
+            "expression": [
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "insertSource": "values",
+        "target_table": {
+          "type": "objectname",
+          "named_table_reference": {
+            "table_name": {
+              "full_name": "inception_music",
+              "object_type": "table",
+              "object_name": "inception_music"
+            }
+          }
+        },
+        "column_list": {
+          "objectName": [
+            {
+              "full_name": "musicName",
+              "object_type": "column",
+              "part_name": "musicName"
+            },
+            {
+              "full_name": "musicStyle",
+              "object_type": "column",
+              "part_name": "musicStyle"
+            },
+            {
+              "full_name": "musicLanguage",
+              "object_type": "column",
+              "part_name": "musicLanguage"
+            },
+            {
+              "full_name": "artistName",
+              "object_type": "column",
+              "part_name": "artistName"
+            },
+            {
+              "full_name": "albumName",
+              "object_type": "column",
+              "part_name": "albumName"
+            },
+            {
+              "full_name": "musicUrl",
+              "object_type": "column",
+              "part_name": "musicUrl"
+            },
+            {
+              "full_name": "imageUrl",
+              "object_type": "column",
+              "part_name": "imageUrl"
+            },
+            {
+              "full_name": "lyrics",
+              "object_type": "column",
+              "part_name": "lyrics"
+            },
+            {
+              "full_name": "publishDate",
+              "object_type": "column",
+              "part_name": "publishDate"
+            },
+            {
+              "full_name": "description",
+              "object_type": "column",
+              "part_name": "description"
+            },
+            {
+              "full_name": "uploadedBy",
+              "object_type": "column",
+              "part_name": "uploadedBy"
+            },
+            {
+              "full_name": "uploadDate",
+              "object_type": "column",
+              "part_name": "uploadDate"
+            },
+            {
+              "full_name": "fileLength",
+              "object_type": "column",
+              "part_name": "fileLength"
+            },
+            {
+              "full_name": "musicLength",
+              "object_type": "column",
+              "part_name": "musicLength"
+            }
+          ]
+        }
+      },
+      "type": "sstinsert"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

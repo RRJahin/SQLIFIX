@@ -1,0 +1,1 @@
+new StringBuilder("INSERT INTO ").append(tableName).append("(date, forum, isApproved, isDeleted, isEdited, isHighlighted, isSpam, message, parent, thread, user, patch)").append(" VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)").toString()

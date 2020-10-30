@@ -1,0 +1,1 @@
+ UPDATE Team SET leaderId= 'X_16030521774800', numberOfParticipants= 'X_16030521774801' WHERE teamId= 'X_16030521774802'

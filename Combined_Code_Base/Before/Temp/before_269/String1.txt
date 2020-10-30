@@ -1,0 +1,1 @@
+"DELETE FROM ParcClient WHERE id = " + obj.getId()

@@ -1,0 +1,1 @@
+"INSERT INTO TravelAgency(cvr, name, zipcode, country, address, phoneNo, email) VALUES('?','?','?','?','?','?','?')"

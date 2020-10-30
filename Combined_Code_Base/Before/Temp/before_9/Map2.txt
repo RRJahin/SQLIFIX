@@ -1,0 +1,5 @@
+ cd.getDenumirePost()$X_16030521839301
+ cd.getTitVac()$X_16030521839304
+ cd.getPozitia()$X_16030521839300
+ cd.getN$X_16030521839302
+ cd.getFunctia()$X_16030521839303

@@ -1,0 +1,1 @@
+ SELECT COUNT(*) AS travelAgencyInstances FROM TravelAgency WHERE cvr<> '?' AND name= '?' AND zipcode= '?' AND country= '?' AND address= '?'

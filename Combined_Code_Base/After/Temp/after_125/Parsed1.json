@@ -1,0 +1,167 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "select_statement": {
+        "query_expression": {
+          "query_specification": {
+            "select_list": {
+              "result_column": {
+                "expression": {
+                  "expr_type": "simple_object_name_t",
+                  "column_referenced_expr": {
+                    "objectName": {
+                      "full_name": "message.*",
+                      "object_type": "column",
+                      "object_name": "message",
+                      "part_name": "*"
+                    }
+                  }
+                }
+              }
+            },
+            "where_clause": {
+              "condition": {
+                "binary_expr": {
+                  "first_expr": {
+                    "expr_type": "simple_comparison_t",
+                    "comparison_expr": {
+                      "first_expr": {
+                        "expr_type": "simple_object_name_t",
+                        "column_referenced_expr": {
+                          "objectName": {
+                            "full_name": "message.to_id",
+                            "object_type": "column",
+                            "object_name": "message",
+                            "part_name": "to_id"
+                          }
+                        }
+                      },
+                      "second_expr": {
+                        "expr_type": "simple_object_name_t",
+                        "column_referenced_expr": {
+                          "objectName": {
+                            "full_name": "personnel.mid",
+                            "object_type": "column",
+                            "object_name": "personnel",
+                            "part_name": "mid"
+                          }
+                        }
+                      },
+                      "type": "="
+                    }
+                  },
+                  "second_expr": {
+                    "expr_type": "simple_comparison_t",
+                    "comparison_expr": {
+                      "first_expr": {
+                        "expr_type": "simple_object_name_t",
+                        "column_referenced_expr": {
+                          "objectName": {
+                            "full_name": "message.from_id",
+                            "object_type": "column",
+                            "object_name": "message",
+                            "part_name": "from_id"
+                          }
+                        }
+                      },
+                      "second_expr": {
+                        "expr_type": "simple_object_name_t",
+                        "column_referenced_expr": {
+                          "objectName": {
+                            "full_name": "?",
+                            "object_type": "column",
+                            "part_name": "?"
+                          }
+                        }
+                      },
+                      "type": "="
+                    }
+                  },
+                  "operator": "AND"
+                },
+                "expr_type": "logical_and_t"
+              }
+            },
+            "order_by_clause": {
+              "order_by_item": [
+                {
+                  "sort_key": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "personnel.lastName",
+                        "object_type": "column",
+                        "object_name": "personnel",
+                        "part_name": "lastName"
+                      }
+                    }
+                  },
+                  "sort_order": "desc"
+                },
+                {
+                  "sort_key": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "personnel.firstName",
+                        "object_type": "column",
+                        "object_name": "personnel",
+                        "part_name": "firstName"
+                      }
+                    }
+                  },
+                  "sort_order": "desc"
+                },
+                {
+                  "sort_key": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "message.sent_date",
+                        "object_type": "column",
+                        "object_name": "message",
+                        "part_name": "sent_date"
+                      }
+                    }
+                  },
+                  "sort_order": "desc"
+                }
+              ]
+            },
+            "from_clause": {
+              "table_reference": [
+                {
+                  "type": "objectname",
+                  "named_table_reference": {
+                    "table_name": {
+                      "full_name": "message",
+                      "object_type": "table",
+                      "object_name": "message"
+                    }
+                  }
+                },
+                {
+                  "type": "objectname",
+                  "named_table_reference": {
+                    "table_name": {
+                      "full_name": "personnel",
+                      "object_type": "table",
+                      "object_name": "personnel"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "is_parenthesis": false
+        }
+      },
+      "type": "sstselect"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

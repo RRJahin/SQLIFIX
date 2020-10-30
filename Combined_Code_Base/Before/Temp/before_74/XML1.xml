@@ -1,0 +1,104 @@
+<sqlscript xmlns="http://www.sqlparser.com/xml/sqlschema/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" dbvendor="dbvoracle" stmt_count="1" xsi:schemaLocation="http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd">
+  <statement type="sstinsert">
+    <insert_statement insertSource="values">
+      <target_table type="objectname">
+        <named_table_reference>
+          <table_name object_type="table">
+            <full_name>member</full_name>
+            <object_name>member</object_name>
+          </table_name>
+        </named_table_reference>
+      </target_table>
+      <column_list>
+        <objectName object_type="column">
+          <full_name>id</full_name>
+          <part_name>id</part_name>
+        </objectName>
+        <objectName object_type="column">
+          <full_name>pwd</full_name>
+          <part_name>pwd</part_name>
+        </objectName>
+        <objectName object_type="column">
+          <full_name>name</full_name>
+          <part_name>name</part_name>
+        </objectName>
+        <objectName object_type="column">
+          <full_name>phone</full_name>
+          <part_name>phone</part_name>
+        </objectName>
+        <objectName object_type="column">
+          <full_name>email</full_name>
+          <part_name>email</part_name>
+        </objectName>
+        <objectName object_type="column">
+          <full_name>address</full_name>
+          <part_name>address</part_name>
+        </objectName>
+        <objectName object_type="column">
+          <full_name>e_key</full_name>
+          <part_name>e_key</part_name>
+        </objectName>
+      </column_list>
+      <insert_values>
+        <row_values>
+          <expression expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_16030521837380</full_name>
+                <part_name>X_16030521837380</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </expression>
+          <expression expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_16030521837381</full_name>
+                <part_name>X_16030521837381</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </expression>
+          <expression expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_16030521837382</full_name>
+                <part_name>X_16030521837382</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </expression>
+          <expression expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_16030521837383</full_name>
+                <part_name>X_16030521837383</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </expression>
+          <expression expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_16030521837384</full_name>
+                <part_name>X_16030521837384</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </expression>
+          <expression expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_16030521837385</full_name>
+                <part_name>X_16030521837385</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </expression>
+          <expression expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_16030521837386</full_name>
+                <part_name>X_16030521837386</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </expression>
+        </row_values>
+      </insert_values>
+    </insert_statement>
+  </statement>
+</sqlscript>

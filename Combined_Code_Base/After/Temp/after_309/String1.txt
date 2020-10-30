@@ -1,0 +1,1 @@
+"UPDATE Pays SET codePays = ?, nomPays = ? WHERE id = ?"

@@ -1,0 +1,1 @@
+ SELECT * FROM hcpassignedhos hah,hospitals h WHERE hah.HCPID=? AND hah.HosID=h.HospitalID ORDER BY HospitalName ASC

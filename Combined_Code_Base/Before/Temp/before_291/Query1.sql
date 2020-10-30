@@ -1,0 +1,1 @@
+ SELECT patients.* FROM representatives, patients WHERE RepresenterMID= X_16030521729280 AND RepresenteeMID=patients.MID

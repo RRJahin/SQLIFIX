@@ -1,0 +1,1 @@
+"UPDATE T_HT_ALIMENTACAO SET CD_ALIMENTO = " + alimentacao.getCd_alimento() + ", DS_ALIMENTO = " + alimentacao.getDs_alimento() + ", CD_USUARIO = " + alimentacao.getCd_usuario() + ", VL_CALORIAS_GANHAS =" + alimentacao.getVl_calorias_ganhas() + ", DT_REGISTRO = " + data + " WHERE CD_ALIMENTO = " + alimentacao.getCd_alimento()

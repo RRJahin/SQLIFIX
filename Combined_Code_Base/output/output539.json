@@ -1,0 +1,1216 @@
+{
+  "target": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "stmt",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "Statement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "null",
+            "type": "Literal",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "\u003d",
+        "type": "Assignment",
+        "children": [
+          {
+            "label": "stmt",
+            "type": "FieldWrite",
+            "children": []
+          },
+          {
+            "label": "createStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "connection",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "execute",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "stmt",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "root",
+            "type": "root",
+            "children": [
+              {
+                "label": "delete_statement",
+                "type": "delete_statement",
+                "children": [
+                  {
+                    "label": "where_clause",
+                    "type": "where_clause",
+                    "children": [
+                      {
+                        "label": "condition",
+                        "type": "condition",
+                        "children": [
+                          {
+                            "label": "simple_comparison_t",
+                            "type": "expr_type",
+                            "children": []
+                          },
+                          {
+                            "label": "comparison_expr",
+                            "type": "comparison_expr",
+                            "children": [
+                              {
+                                "label": "first_expr",
+                                "type": "first_expr",
+                                "children": [
+                                  {
+                                    "label": "simple_object_name_t",
+                                    "type": "expr_type",
+                                    "children": []
+                                  },
+                                  {
+                                    "label": "column_referenced_expr",
+                                    "type": "column_referenced_expr",
+                                    "children": [
+                                      {
+                                        "label": "objectName",
+                                        "type": "objectName",
+                                        "children": [
+                                          {
+                                            "label": "id",
+                                            "type": "full_name",
+                                            "children": []
+                                          },
+                                          {
+                                            "label": "column",
+                                            "type": "object_type",
+                                            "children": []
+                                          },
+                                          {
+                                            "label": "id",
+                                            "type": "part_name",
+                                            "children": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": "second_expr",
+                                "type": "second_expr",
+                                "children": [
+                                  {
+                                    "label": "simple_object_name_t",
+                                    "type": "expr_type",
+                                    "children": []
+                                  },
+                                  {
+                                    "label": "column_referenced_expr",
+                                    "type": "column_referenced_expr",
+                                    "children": [
+                                      {
+                                        "label": "objectName",
+                                        "type": "objectName",
+                                        "children": [
+                                          {
+                                            "label": "X_16030521805020",
+                                            "type": "full_name",
+                                            "children": []
+                                          },
+                                          {
+                                            "label": "column",
+                                            "type": "object_type",
+                                            "children": []
+                                          },
+                                          {
+                                            "label": "X_16030521805020",
+                                            "type": "part_name",
+                                            "children": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": "\u003d",
+                                "type": "type",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": "target_table",
+                    "type": "target_table",
+                    "children": [
+                      {
+                        "label": "objectname",
+                        "type": "type",
+                        "children": []
+                      },
+                      {
+                        "label": "named_table_reference",
+                        "type": "named_table_reference",
+                        "children": [
+                          {
+                            "label": "table_name",
+                            "type": "table_name",
+                            "children": [
+                              {
+                                "label": "Usuarios",
+                                "type": "full_name",
+                                "children": []
+                              },
+                              {
+                                "label": "table",
+                                "type": "object_type",
+                                "children": []
+                              },
+                              {
+                                "label": "Usuarios",
+                                "type": "object_name",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "label": "sstdelete",
+                "type": "type",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "suggestion0": {
+    "before_pattern": {
+      "label": "edit_root",
+      "type": "edit_unit",
+      "children": [
+        {
+          "label": "stmt",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "Statement",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "null",
+              "type": "Literal",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "\u003d",
+          "type": "Assignment",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldWrite",
+              "children": []
+            },
+            {
+              "label": "createStatement",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "connection",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "execute",
+          "type": "Invocation",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldRead",
+              "children": []
+            },
+            {
+              "label": "root",
+              "type": "root",
+              "children": [
+                {
+                  "label": "delete_statement",
+                  "type": "delete_statement",
+                  "children": [
+                    {
+                      "label": "where_clause",
+                      "type": "where_clause",
+                      "children": [
+                        {
+                          "label": "condition",
+                          "type": "condition",
+                          "children": [
+                            {
+                              "label": "simple_comparison_t",
+                              "type": "expr_type",
+                              "children": []
+                            },
+                            {
+                              "label": "comparison_expr",
+                              "type": "comparison_expr",
+                              "children": [
+                                {
+                                  "label": "first_expr",
+                                  "type": "first_expr",
+                                  "children": [
+                                    {
+                                      "label": "simple_object_name_t",
+                                      "type": "expr_type",
+                                      "children": []
+                                    },
+                                    {
+                                      "label": "column_referenced_expr",
+                                      "type": "column_referenced_expr",
+                                      "children": [
+                                        {
+                                          "label": "objectName",
+                                          "type": "objectName",
+                                          "children": [
+                                            {
+                                              "label": "id",
+                                              "type": "full_name",
+                                              "children": []
+                                            },
+                                            {
+                                              "label": "column",
+                                              "type": "object_type",
+                                              "children": []
+                                            },
+                                            {
+                                              "label": "id",
+                                              "type": "part_name",
+                                              "children": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "second_expr",
+                                  "type": "second_expr",
+                                  "children": [
+                                    {
+                                      "label": "simple_object_name_t",
+                                      "type": "expr_type",
+                                      "children": []
+                                    },
+                                    {
+                                      "label": "column_referenced_expr",
+                                      "type": "column_referenced_expr",
+                                      "children": [
+                                        {
+                                          "label": "objectName",
+                                          "type": "objectName",
+                                          "children": [
+                                            {
+                                              "label": "X_16030521809820",
+                                              "type": "full_name",
+                                              "children": []
+                                            },
+                                            {
+                                              "label": "column",
+                                              "type": "object_type",
+                                              "children": []
+                                            },
+                                            {
+                                              "label": "X_16030521809820",
+                                              "type": "part_name",
+                                              "children": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "\u003d",
+                                  "type": "type",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "target_table",
+                      "type": "target_table",
+                      "children": [
+                        {
+                          "label": "objectname",
+                          "type": "type",
+                          "children": []
+                        },
+                        {
+                          "label": "named_table_reference",
+                          "type": "named_table_reference",
+                          "children": [
+                            {
+                              "label": "table_name",
+                              "type": "table_name",
+                              "children": [
+                                {
+                                  "label": "Notas",
+                                  "type": "full_name",
+                                  "children": []
+                                },
+                                {
+                                  "label": "table",
+                                  "type": "object_type",
+                                  "children": []
+                                },
+                                {
+                                  "label": "Notas",
+                                  "type": "object_name",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "label": "sstdelete",
+                  "type": "type",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "after_pattern": {
+      "label": "edit_root",
+      "type": "edit_unit",
+      "children": [
+        {
+          "label": "stmt",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "PreparedStatement",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "null",
+              "type": "Literal",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "\u003d",
+          "type": "Assignment",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldWrite",
+              "children": []
+            },
+            {
+              "label": "prepareStatement",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "connection",
+                  "type": "FieldRead",
+                  "children": []
+                },
+                {
+                  "label": "root",
+                  "type": "root",
+                  "children": [
+                    {
+                      "label": "delete_statement",
+                      "type": "delete_statement",
+                      "children": [
+                        {
+                          "label": "where_clause",
+                          "type": "where_clause",
+                          "children": [
+                            {
+                              "label": "condition",
+                              "type": "condition",
+                              "children": [
+                                {
+                                  "label": "simple_comparison_t",
+                                  "type": "expr_type",
+                                  "children": []
+                                },
+                                {
+                                  "label": "comparison_expr",
+                                  "type": "comparison_expr",
+                                  "children": [
+                                    {
+                                      "label": "first_expr",
+                                      "type": "first_expr",
+                                      "children": [
+                                        {
+                                          "label": "simple_object_name_t",
+                                          "type": "expr_type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "column_referenced_expr",
+                                          "type": "column_referenced_expr",
+                                          "children": [
+                                            {
+                                              "label": "objectName",
+                                              "type": "objectName",
+                                              "children": [
+                                                {
+                                                  "label": "id",
+                                                  "type": "full_name",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "column",
+                                                  "type": "object_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "id",
+                                                  "type": "part_name",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "label": "second_expr",
+                                      "type": "second_expr",
+                                      "children": [
+                                        {
+                                          "label": "simple_object_name_t",
+                                          "type": "expr_type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "column_referenced_expr",
+                                          "type": "column_referenced_expr",
+                                          "children": [
+                                            {
+                                              "label": "objectName",
+                                              "type": "objectName",
+                                              "children": [
+                                                {
+                                                  "label": "?",
+                                                  "type": "full_name",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "column",
+                                                  "type": "object_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "?",
+                                                  "type": "part_name",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "label": "\u003d",
+                                      "type": "type",
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "label": "target_table",
+                          "type": "target_table",
+                          "children": [
+                            {
+                              "label": "objectname",
+                              "type": "type",
+                              "children": []
+                            },
+                            {
+                              "label": "named_table_reference",
+                              "type": "named_table_reference",
+                              "children": [
+                                {
+                                  "label": "table_name",
+                                  "type": "table_name",
+                                  "children": [
+                                    {
+                                      "label": "Usuarios",
+                                      "type": "full_name",
+                                      "children": []
+                                    },
+                                    {
+                                      "label": "table",
+                                      "type": "object_type",
+                                      "children": []
+                                    },
+                                    {
+                                      "label": "Usuarios",
+                                      "type": "object_name",
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "sstdelete",
+                      "type": "type",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "setObject",
+          "type": "Invocation",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldRead",
+              "children": []
+            },
+            {
+              "label": "1",
+              "type": "Literal",
+              "children": []
+            },
+            {
+              "label": "id",
+              "type": "FieldRead",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "",
+          "type": "Try",
+          "children": [
+            {
+              "label": "execute",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "stmt",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "label": "",
+              "type": "Catch",
+              "children": [
+                {
+                  "label": "e",
+                  "type": "CatchVariable",
+                  "children": [
+                    {
+                      "label": "SQLException",
+                      "type": "VARIABLE_TYPE",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "label": "printStackTrace",
+                  "type": "Invocation",
+                  "children": [
+                    {
+                      "label": "e",
+                      "type": "VariableRead",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "execute",
+          "type": "Invocation",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldRead",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "before_code": "\"\\\"Statement stmt \u003d null\\\\nstmt \u003d connection.createStatement()\\\\nstmt.execute(\\\\\\\"DELETE FROM Notas WHERE id\u003d\\\\\\\" + id)\\\\n\\\"\"",
+    "after_code": "\"\\\"PreparedStatement stmt \u003d null\\\\nstmt \u003d connection.prepareStatement(\\\\\\\"DELETE FROM Usuarios WHERE id\u003d?\\\\\\\")\\\\nstmt.setObject(1, id)\\\\ntry {\\\\r\\\\n    stmt.execute();\\\\r\\\\n} catch (SQLException e) {\\\\r\\\\n    e.printStackTrace();\\\\r\\\\n}\\\\nstmt.execute()\\\\n\\\"\"",
+    "pattern_id": "0",
+    "children": []
+  },
+  "suggestion1": {
+    "before_pattern": {
+      "label": "edit_root",
+      "type": "edit_unit",
+      "children": [
+        {
+          "label": "stmt",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "Statement",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "null",
+              "type": "Literal",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "\u003d",
+          "type": "Assignment",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldWrite",
+              "children": []
+            },
+            {
+              "label": "createStatement",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "connection",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "execute",
+          "type": "Invocation",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldRead",
+              "children": []
+            },
+            {
+              "label": "root",
+              "type": "root",
+              "children": [
+                {
+                  "label": "delete_statement",
+                  "type": "delete_statement",
+                  "children": [
+                    {
+                      "label": "where_clause",
+                      "type": "where_clause",
+                      "children": [
+                        {
+                          "label": "condition",
+                          "type": "condition",
+                          "children": [
+                            {
+                              "label": "simple_comparison_t",
+                              "type": "expr_type",
+                              "children": []
+                            },
+                            {
+                              "label": "comparison_expr",
+                              "type": "comparison_expr",
+                              "children": [
+                                {
+                                  "label": "first_expr",
+                                  "type": "first_expr",
+                                  "children": [
+                                    {
+                                      "label": "simple_object_name_t",
+                                      "type": "expr_type",
+                                      "children": []
+                                    },
+                                    {
+                                      "label": "column_referenced_expr",
+                                      "type": "column_referenced_expr",
+                                      "children": [
+                                        {
+                                          "label": "objectName",
+                                          "type": "objectName",
+                                          "children": [
+                                            {
+                                              "label": "id",
+                                              "type": "full_name",
+                                              "children": []
+                                            },
+                                            {
+                                              "label": "column",
+                                              "type": "object_type",
+                                              "children": []
+                                            },
+                                            {
+                                              "label": "id",
+                                              "type": "part_name",
+                                              "children": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "second_expr",
+                                  "type": "second_expr",
+                                  "children": [
+                                    {
+                                      "label": "simple_object_name_t",
+                                      "type": "expr_type",
+                                      "children": []
+                                    },
+                                    {
+                                      "label": "column_referenced_expr",
+                                      "type": "column_referenced_expr",
+                                      "children": [
+                                        {
+                                          "label": "objectName",
+                                          "type": "objectName",
+                                          "children": [
+                                            {
+                                              "label": "X_16030521828110",
+                                              "type": "full_name",
+                                              "children": []
+                                            },
+                                            {
+                                              "label": "column",
+                                              "type": "object_type",
+                                              "children": []
+                                            },
+                                            {
+                                              "label": "X_16030521828110",
+                                              "type": "part_name",
+                                              "children": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "\u003d",
+                                  "type": "type",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "target_table",
+                      "type": "target_table",
+                      "children": [
+                        {
+                          "label": "objectname",
+                          "type": "type",
+                          "children": []
+                        },
+                        {
+                          "label": "named_table_reference",
+                          "type": "named_table_reference",
+                          "children": [
+                            {
+                              "label": "table_name",
+                              "type": "table_name",
+                              "children": [
+                                {
+                                  "label": "Usuarios",
+                                  "type": "full_name",
+                                  "children": []
+                                },
+                                {
+                                  "label": "table",
+                                  "type": "object_type",
+                                  "children": []
+                                },
+                                {
+                                  "label": "Usuarios",
+                                  "type": "object_name",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "label": "sstdelete",
+                  "type": "type",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "after_pattern": {
+      "label": "edit_root",
+      "type": "edit_unit",
+      "children": [
+        {
+          "label": "stmt",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "PreparedStatement",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "null",
+              "type": "Literal",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "\u003d",
+          "type": "Assignment",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldWrite",
+              "children": []
+            },
+            {
+              "label": "prepareStatement",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "connection",
+                  "type": "FieldRead",
+                  "children": []
+                },
+                {
+                  "label": "root",
+                  "type": "root",
+                  "children": [
+                    {
+                      "label": "delete_statement",
+                      "type": "delete_statement",
+                      "children": [
+                        {
+                          "label": "where_clause",
+                          "type": "where_clause",
+                          "children": [
+                            {
+                              "label": "condition",
+                              "type": "condition",
+                              "children": [
+                                {
+                                  "label": "simple_comparison_t",
+                                  "type": "expr_type",
+                                  "children": []
+                                },
+                                {
+                                  "label": "comparison_expr",
+                                  "type": "comparison_expr",
+                                  "children": [
+                                    {
+                                      "label": "first_expr",
+                                      "type": "first_expr",
+                                      "children": [
+                                        {
+                                          "label": "simple_object_name_t",
+                                          "type": "expr_type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "column_referenced_expr",
+                                          "type": "column_referenced_expr",
+                                          "children": [
+                                            {
+                                              "label": "objectName",
+                                              "type": "objectName",
+                                              "children": [
+                                                {
+                                                  "label": "id",
+                                                  "type": "full_name",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "column",
+                                                  "type": "object_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "id",
+                                                  "type": "part_name",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "label": "second_expr",
+                                      "type": "second_expr",
+                                      "children": [
+                                        {
+                                          "label": "simple_object_name_t",
+                                          "type": "expr_type",
+                                          "children": []
+                                        },
+                                        {
+                                          "label": "column_referenced_expr",
+                                          "type": "column_referenced_expr",
+                                          "children": [
+                                            {
+                                              "label": "objectName",
+                                              "type": "objectName",
+                                              "children": [
+                                                {
+                                                  "label": "?",
+                                                  "type": "full_name",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "column",
+                                                  "type": "object_type",
+                                                  "children": []
+                                                },
+                                                {
+                                                  "label": "?",
+                                                  "type": "part_name",
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "label": "\u003d",
+                                      "type": "type",
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "label": "target_table",
+                          "type": "target_table",
+                          "children": [
+                            {
+                              "label": "objectname",
+                              "type": "type",
+                              "children": []
+                            },
+                            {
+                              "label": "named_table_reference",
+                              "type": "named_table_reference",
+                              "children": [
+                                {
+                                  "label": "table_name",
+                                  "type": "table_name",
+                                  "children": [
+                                    {
+                                      "label": "Usuarios",
+                                      "type": "full_name",
+                                      "children": []
+                                    },
+                                    {
+                                      "label": "table",
+                                      "type": "object_type",
+                                      "children": []
+                                    },
+                                    {
+                                      "label": "Usuarios",
+                                      "type": "object_name",
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "sstdelete",
+                      "type": "type",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "setObject",
+          "type": "Invocation",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldRead",
+              "children": []
+            },
+            {
+              "label": "1",
+              "type": "Literal",
+              "children": []
+            },
+            {
+              "label": "id",
+              "type": "FieldRead",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "",
+          "type": "Try",
+          "children": [
+            {
+              "label": "execute",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "stmt",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "label": "",
+              "type": "Catch",
+              "children": [
+                {
+                  "label": "e",
+                  "type": "CatchVariable",
+                  "children": [
+                    {
+                      "label": "SQLException",
+                      "type": "VARIABLE_TYPE",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "label": "printStackTrace",
+                  "type": "Invocation",
+                  "children": [
+                    {
+                      "label": "e",
+                      "type": "VariableRead",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "execute",
+          "type": "Invocation",
+          "children": [
+            {
+              "label": "stmt",
+              "type": "FieldRead",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "before_code": "\"\\\"Statement stmt \u003d null\\\\nstmt \u003d connection.createStatement()\\\\nstmt.execute(\\\\\\\"DELETE FROM Usuarios WHERE id\u003d\\\\\\\" + id)\\\\n\\\"\"",
+    "after_code": "\"\\\"PreparedStatement stmt \u003d null\\\\nstmt \u003d connection.prepareStatement(\\\\\\\"DELETE FROM Usuarios WHERE id\u003d?\\\\\\\")\\\\nstmt.setObject(1, id)\\\\ntry {\\\\r\\\\n    stmt.execute();\\\\r\\\\n} catch (SQLException e) {\\\\r\\\\n    e.printStackTrace();\\\\r\\\\n}\\\\nstmt.execute()\\\\n\\\"\"",
+    "pattern_id": "0",
+    "children": []
+  }
+}

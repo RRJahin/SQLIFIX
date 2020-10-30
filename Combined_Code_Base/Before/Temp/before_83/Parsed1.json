@@ -1,0 +1,135 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "select_statement": {
+        "query_expression": {
+          "query_specification": {
+            "select_list": {
+              "result_column": {
+                "expression": {
+                  "expr_type": "simple_object_name_t",
+                  "column_referenced_expr": {
+                    "objectName": {
+                      "full_name": "*",
+                      "object_type": "column",
+                      "part_name": "*"
+                    }
+                  }
+                }
+              }
+            },
+            "where_clause": {
+              "condition": {
+                "binary_expr": {
+                  "first_expr": {
+                    "expr_type": "simple_comparison_t",
+                    "comparison_expr": {
+                      "first_expr": {
+                        "expr_type": "simple_object_name_t",
+                        "column_referenced_expr": {
+                          "objectName": {
+                            "full_name": "c.no",
+                            "object_type": "column",
+                            "object_name": "c",
+                            "part_name": "no"
+                          }
+                        }
+                      },
+                      "second_expr": {
+                        "expr_type": "simple_object_name_t",
+                        "column_referenced_expr": {
+                          "objectName": {
+                            "full_name": "b.no",
+                            "object_type": "column",
+                            "object_name": "b",
+                            "part_name": "no"
+                          }
+                        }
+                      },
+                      "type": "="
+                    }
+                  },
+                  "second_expr": {
+                    "expr_type": "simple_comparison_t",
+                    "comparison_expr": {
+                      "first_expr": {
+                        "expr_type": "simple_object_name_t",
+                        "column_referenced_expr": {
+                          "objectName": {
+                            "full_name": "id",
+                            "object_type": "column",
+                            "part_name": "id"
+                          }
+                        }
+                      },
+                      "second_expr": {
+                        "expr_type": "simple_object_name_t",
+                        "column_referenced_expr": {
+                          "objectName": {
+                            "full_name": "X_16030521838520",
+                            "object_type": "column",
+                            "part_name": "X_16030521838520"
+                          }
+                        }
+                      },
+                      "type": "="
+                    }
+                  },
+                  "operator": "AND"
+                },
+                "expr_type": "logical_and_t"
+              }
+            },
+            "from_clause": {
+              "table_reference": [
+                {
+                  "type": "objectname",
+                  "named_table_reference": {
+                    "alias_clause": {
+                      "object_name": {
+                        "full_name": "c",
+                        "object_type": "table_alias",
+                        "object_name": "c"
+                      },
+                      "with_as": false
+                    },
+                    "table_name": {
+                      "full_name": "cart",
+                      "object_type": "table",
+                      "object_name": "cart"
+                    }
+                  }
+                },
+                {
+                  "type": "objectname",
+                  "named_table_reference": {
+                    "alias_clause": {
+                      "object_name": {
+                        "full_name": "b",
+                        "object_type": "table_alias",
+                        "object_name": "b"
+                      },
+                      "with_as": false
+                    },
+                    "table_name": {
+                      "full_name": "book",
+                      "object_type": "table",
+                      "object_name": "book"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "is_parenthesis": false
+        }
+      },
+      "type": "sstselect"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

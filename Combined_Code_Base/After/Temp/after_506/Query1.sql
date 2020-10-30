@@ -1,0 +1,1 @@
+ Select a.Reservation_Id, a.GuestID, a.start, a.end, a.numberRooms, a.bookingDate, a.status, a.reservationType, a.price from Reservations a where a.GuestID = X_16030521906170 and a.start = X_16030521906171 and a.end = X_16030521906172 and a.numberRooms = X_16030521906173 and a.status = X_16030521906174 and a.reservationType = X_16030521906175 and a.price = X_16030521906176

@@ -1,0 +1,10 @@
+ alteActivitati.getComisiiAbsolvire()$X_16030521731282
+ alteActivitati.getIndrLucrDisert()$X_16030521731285
+ alteActivitati.getExamene()$X_16030521731284
+ alteActivitati.getConsultatii()$X_16030521731283
+ alteActivitati.getLucrControl()$X_16030521731288
+ alteActivitati.getSeminariiCerc()$X_16030521731289
+ alteActivitati.getId_Cadru_Didactic()$X_16030521731280
+ alteActivitati.getPregAdmitere()$X_16030521731281
+ alteActivitati.getIndrLucrLic()$X_16030521731286
+ alteActivitati.getIndrProiect()$X_16030521731287

@@ -1,0 +1,76 @@
+<sqlscript xmlns="http://www.sqlparser.com/xml/sqlschema/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" dbvendor="dbvoracle" stmt_count="1" xsi:schemaLocation="http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd">
+  <statement type="sstupdate">
+    <update_statement>
+      <target_table type="objectname">
+        <named_table_reference>
+          <table_name object_type="table">
+            <full_name>COUNTRY</full_name>
+            <object_name>COUNTRY</object_name>
+          </table_name>
+        </named_table_reference>
+      </target_table>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>COUNTRY</full_name>
+                <part_name>COUNTRY</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>LAST_UPDATE</full_name>
+                <part_name>LAST_UPDATE</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <where_clause>
+        <condition expr_type="simple_comparison_t">
+          <comparison_expr type="=">
+            <first_expr expr_type="simple_object_name_t">
+              <column_referenced_expr>
+                <objectName object_type="column">
+                  <full_name>COUNTRY_ID</full_name>
+                  <part_name>COUNTRY_ID</part_name>
+                </objectName>
+              </column_referenced_expr>
+            </first_expr>
+            <second_expr expr_type="simple_object_name_t">
+              <column_referenced_expr>
+                <objectName object_type="column">
+                  <full_name>?</full_name>
+                  <part_name>?</part_name>
+                </objectName>
+              </column_referenced_expr>
+            </second_expr>
+          </comparison_expr>
+        </condition>
+      </where_clause>
+    </update_statement>
+  </statement>
+</sqlscript>

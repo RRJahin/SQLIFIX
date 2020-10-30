@@ -1,0 +1,1 @@
+ select * from normalposts where authorid = X_16030521755540

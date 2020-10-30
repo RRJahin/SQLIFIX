@@ -1,0 +1,1 @@
+ UPDATE tbl_emp SET job = ? WHERE empno = ?

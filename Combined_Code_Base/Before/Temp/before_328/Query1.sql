@@ -1,0 +1,1 @@
+ delete from personas where id = X_16030521740750

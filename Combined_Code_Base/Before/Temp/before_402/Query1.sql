@@ -1,0 +1,1 @@
+ select count(*) from normalposts where authorid = X_16030521755320

@@ -1,0 +1,1 @@
+"INSERT INTO tbl_emp(empno, ename, job, hiredate, sal) VALUES(" + emp.getEmpno() + ", " + emp.getEname() + ", " + emp.getJob() + ", " + emp.getHiredate() + " ," + emp.getSal() + ")"

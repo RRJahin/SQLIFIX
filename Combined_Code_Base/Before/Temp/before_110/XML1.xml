@@ -1,0 +1,56 @@
+<sqlscript xmlns="http://www.sqlparser.com/xml/sqlschema/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" dbvendor="dbvoracle" stmt_count="1" xsi:schemaLocation="http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd">
+  <statement type="sstinsert">
+    <insert_statement insertSource="values">
+      <target_table type="objectname">
+        <named_table_reference>
+          <table_name object_type="table">
+            <full_name>member</full_name>
+            <object_name>member</object_name>
+          </table_name>
+        </named_table_reference>
+      </target_table>
+      <column_list>
+        <objectName object_type="column">
+          <full_name>account</full_name>
+          <part_name>account</part_name>
+        </objectName>
+        <objectName object_type="column">
+          <full_name>passwd</full_name>
+          <part_name>passwd</part_name>
+        </objectName>
+        <objectName object_type="column">
+          <full_name>realname</full_name>
+          <part_name>realname</part_name>
+        </objectName>
+      </column_list>
+      <insert_values>
+        <row_values>
+          <expression expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_16030521656070</full_name>
+                <part_name>X_16030521656070</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </expression>
+          <expression expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_16030521656071</full_name>
+                <part_name>X_16030521656071</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </expression>
+          <expression expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_16030521656072</full_name>
+                <part_name>X_16030521656072</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </expression>
+        </row_values>
+      </insert_values>
+    </insert_statement>
+  </statement>
+</sqlscript>

@@ -1,0 +1,1 @@
+"DELETE FROM ActivityLine WHERE activityId= '" + activityId + "' AND bookingId= '" + bookingId + "' AND date= '" + date + "' AND startHour= '" + startHour + "'"

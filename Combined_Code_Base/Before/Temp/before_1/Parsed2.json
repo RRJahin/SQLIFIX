@@ -1,0 +1,180 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "insert_statement": {
+        "insert_query": {
+          "query_specification": {
+            "select_list": {
+              "result_column": [
+                {
+                  "expression": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "X_16030521651840",
+                        "object_type": "column",
+                        "part_name": "X_16030521651840"
+                      }
+                    }
+                  }
+                },
+                {
+                  "expression": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "docdesc",
+                        "object_type": "column",
+                        "part_name": "docdesc"
+                      }
+                    }
+                  }
+                },
+                {
+                  "expression": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "filetype",
+                        "object_type": "column",
+                        "part_name": "filetype"
+                      }
+                    }
+                  }
+                },
+                {
+                  "expression": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "uploader",
+                        "object_type": "column",
+                        "part_name": "uploader"
+                      }
+                    }
+                  }
+                },
+                {
+                  "expression": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "uploaddate",
+                        "object_type": "column",
+                        "part_name": "uploaddate"
+                      }
+                    }
+                  }
+                },
+                {
+                  "expression": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "docfile",
+                        "object_type": "column",
+                        "part_name": "docfile"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "where_clause": {
+              "condition": {
+                "expr_type": "simple_comparison_t",
+                "comparison_expr": {
+                  "first_expr": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "iddocument",
+                        "object_type": "column",
+                        "part_name": "iddocument"
+                      }
+                    }
+                  },
+                  "second_expr": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "X_16030521651841",
+                        "object_type": "column",
+                        "part_name": "X_16030521651841"
+                      }
+                    }
+                  },
+                  "type": "="
+                }
+              }
+            },
+            "from_clause": {
+              "table_reference": {
+                "type": "objectname",
+                "named_table_reference": {
+                  "table_name": {
+                    "full_name": "document",
+                    "object_type": "table",
+                    "object_name": "document"
+                  }
+                }
+              }
+            }
+          },
+          "is_parenthesis": false
+        },
+        "insertSource": "subquery",
+        "target_table": {
+          "type": "objectname",
+          "named_table_reference": {
+            "table_name": {
+              "full_name": "document",
+              "object_type": "table",
+              "object_name": "document"
+            }
+          }
+        },
+        "column_list": {
+          "objectName": [
+            {
+              "full_name": "title",
+              "object_type": "column",
+              "part_name": "title"
+            },
+            {
+              "full_name": "docdesc",
+              "object_type": "column",
+              "part_name": "docdesc"
+            },
+            {
+              "full_name": "filetype",
+              "object_type": "column",
+              "part_name": "filetype"
+            },
+            {
+              "full_name": "uploader",
+              "object_type": "column",
+              "part_name": "uploader"
+            },
+            {
+              "full_name": "uploaddate",
+              "object_type": "column",
+              "part_name": "uploaddate"
+            },
+            {
+              "full_name": "docfile",
+              "object_type": "column",
+              "part_name": "docfile"
+            }
+          ]
+        }
+      },
+      "type": "sstinsert"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

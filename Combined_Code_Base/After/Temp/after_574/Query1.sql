@@ -1,0 +1,1 @@
+ DELETE FROM Sectii WHERE Id_Sectie = ?

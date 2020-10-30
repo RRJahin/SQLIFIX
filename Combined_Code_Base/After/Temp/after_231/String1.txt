@@ -1,0 +1,1 @@
+"INSERT INTO OptionVisite (id, label, niveau, parent, type, typeB) VALUES (?, ?, ?, ?, ?, ?)"

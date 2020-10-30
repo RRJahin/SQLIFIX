@@ -1,0 +1,1 @@
+ SELECT * FROM shipping WHERE order_num = X_16030521840930

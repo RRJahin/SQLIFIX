@@ -1,0 +1,1 @@
+ INSERT INTO bespeak (order_num, id, name, phone, address, no, count, price, etc, bank, account) VALUES (TO_CHAR(sysdate, 'yyyyMMdd') || LPAD(order_sq.currval, 3, '0'), ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)

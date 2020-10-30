@@ -1,0 +1,1 @@
+"Select Password from " + dbTableName + " where Username = '" + username + "';"

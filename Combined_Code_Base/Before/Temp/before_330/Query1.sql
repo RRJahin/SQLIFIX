@@ -1,0 +1,1 @@
+ INSERT INTO users (MID, PASSWORD, SALT, ROLE, sQuestion, sAnswer) VALUES ( X_16030521741310 , X_16030521741311 , X_16030521741312 , X_16030521741313 , Enter the random password given in your account email , X_16030521741314 )

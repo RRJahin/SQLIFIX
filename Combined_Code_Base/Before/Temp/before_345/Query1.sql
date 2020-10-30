@@ -1,0 +1,1 @@
+ SELECT * FROM hcpassignedhos hah,hospitals h WHERE hah.HCPID= X_16030521744060 AND hah.HosID=h.HospitalID ORDER BY HospitalName ASC

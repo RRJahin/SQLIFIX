@@ -1,0 +1,1 @@
+ SELECT * FROM Album_Lista INNER JOIN Lista ON Album_Lista.id_lista = Lista.id_lista INNER JOIN Usuario ON Lista.id_usuario = Usuario.id_usuario INNER JOIN Album ON Album.id_album = Album_Lista.id_album WHERE Album_Lista.id_lista=? ;

@@ -1,0 +1,1 @@
+ SELECT * FROM message WHERE original_msg_id= X_16030521662330

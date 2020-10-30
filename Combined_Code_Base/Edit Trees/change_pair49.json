@@ -1,0 +1,343 @@
+{
+  "before_code": "java.lang.String query = ((((((\"SELECT * \" + (\"FROM evolutionary_distance \" + \"WHERE organism_1 like '\")) + organismName) + \"' OR organism_2 like '\") + organismName) + \"' ORDER BY CAST(evolutionary_distance AS float)  \") + \" LIMIT \") + top\nStatement stmt = conn.createStatement()\nResultSet rs = stmt.executeQuery(query)\n",
+  "after_code": "java.lang.String query = \"SELECT * \" + ((\"FROM evolutionary_distance \" + \"WHERE organism_1 like '?' OR organism_2 like '?' ORDER BY CAST(evolutionary_distance AS float)  \") + \" LIMIT ?\")\nPreparedStatement stmt = conn.prepareStatement(query)\nstmt.setObject(1, organismName)\nstmt.setObject(2, organismName)\nstmt.setObject(3, top)\nResultSet rs = stmt.executeQuery()\n",
+  "before_line": [
+    4,
+    8,
+    9
+  ],
+  "after_line": [
+    4,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "before_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "query",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "java.lang.String",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "PLUS",
+            "type": "BinaryOperator",
+            "children": [
+              {
+                "label": "PLUS",
+                "type": "BinaryOperator",
+                "children": [
+                  {
+                    "label": "PLUS",
+                    "type": "BinaryOperator",
+                    "children": [
+                      {
+                        "label": "PLUS",
+                        "type": "BinaryOperator",
+                        "children": [
+                          {
+                            "label": "PLUS",
+                            "type": "BinaryOperator",
+                            "children": [
+                              {
+                                "label": "PLUS",
+                                "type": "BinaryOperator",
+                                "children": [
+                                  {
+                                    "label": "PLUS",
+                                    "type": "BinaryOperator",
+                                    "children": [
+                                      {
+                                        "label": "\"SELECT * \"",
+                                        "type": "Literal",
+                                        "children": []
+                                      },
+                                      {
+                                        "label": "PLUS",
+                                        "type": "BinaryOperator",
+                                        "children": [
+                                          {
+                                            "label": "\"FROM evolutionary_distance \"",
+                                            "type": "Literal",
+                                            "children": []
+                                          },
+                                          {
+                                            "label": "\"WHERE organism_1 like '\"",
+                                            "type": "Literal",
+                                            "children": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "organismName",
+                                    "type": "FieldRead",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "label": "\"' OR organism_2 like '\"",
+                                "type": "Literal",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "label": "organismName",
+                            "type": "FieldRead",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "label": "\"' ORDER BY CAST(evolutionary_distance AS float)  \"",
+                        "type": "Literal",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "label": "\" LIMIT \"",
+                    "type": "Literal",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "label": "top",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "stmt",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "Statement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "createStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "conn",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "rs",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "ResultSet",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "executeQuery",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "stmt",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "query",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "after_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "query",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "java.lang.String",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "PLUS",
+            "type": "BinaryOperator",
+            "children": [
+              {
+                "label": "\"SELECT * \"",
+                "type": "Literal",
+                "children": []
+              },
+              {
+                "label": "PLUS",
+                "type": "BinaryOperator",
+                "children": [
+                  {
+                    "label": "PLUS",
+                    "type": "BinaryOperator",
+                    "children": [
+                      {
+                        "label": "\"FROM evolutionary_distance \"",
+                        "type": "Literal",
+                        "children": []
+                      },
+                      {
+                        "label": "\"WHERE organism_1 like '?' OR organism_2 like '?' ORDER BY CAST(evolutionary_distance AS float)  \"",
+                        "type": "Literal",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "label": "\" LIMIT ?\"",
+                    "type": "Literal",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "stmt",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "PreparedStatement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "prepareStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "conn",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "query",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "stmt",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "1",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "organismName",
+            "type": "FieldRead",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "stmt",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "2",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "organismName",
+            "type": "FieldRead",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "stmt",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "3",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "top",
+            "type": "FieldRead",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "rs",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "ResultSet",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "executeQuery",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "stmt",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

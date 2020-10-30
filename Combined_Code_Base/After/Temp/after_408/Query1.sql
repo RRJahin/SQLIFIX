@@ -1,0 +1,1 @@
+ UPDATE SET isDeleted = 0 WHERE id = ?

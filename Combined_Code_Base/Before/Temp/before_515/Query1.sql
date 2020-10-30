@@ -1,0 +1,1 @@
+ select count(*) from agent_details where location= X_16030521792330

@@ -1,0 +1,1 @@
+ SELECT * FROM notes WHERE id_user = X_16030521682560

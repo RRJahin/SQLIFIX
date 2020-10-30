@@ -1,0 +1,1 @@
+"UPDATE Usuarios SET " + "nome=" + pessoa.getNome() + ",login=" + pessoa.getLogin() + ",senha=" + pessoa.getSenha() + ",email=" + pessoa.getEmail() + "+WHERE id=" + pessoa.getId()

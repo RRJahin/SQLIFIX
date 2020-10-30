@@ -1,0 +1,1 @@
+"UPDATE ModRgl SET codeModRgl = " + obj.getCodeModRgl() + ", nomModRgl = " + obj.getNomModRgl() + " WHERE id = " + obj.getId()

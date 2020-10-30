@@ -1,0 +1,1 @@
+ UPDATE Cadre_Didactice SET pozitia = ?, den_post = ?, nume = ?, functia= ?, tit_vac = ? WHERE Id_Cadru_Didactic= ?

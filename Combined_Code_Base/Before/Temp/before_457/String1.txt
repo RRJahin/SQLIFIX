@@ -1,0 +1,1 @@
+"UPDATE RoomType SET " + "typeDescription='" + rt.getDescription() + "', " + "price=" + rt.getPrice() + " WHERE category='" + rt.getCategory() + "'"

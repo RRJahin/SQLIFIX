@@ -1,0 +1,412 @@
+{
+  "before_code": "java.lang.String query = (((((((((\"INSERT INTO Team(teamId, leaderId, numberOfParticipants) VALUES ('\" + nextTeamId) + \"','\") + guestObj.getId()) + \"','\") + team.getNumberOfParticipants()) + \"') INSERT INTO TeamParticipants(teamId, participantId) VALUES ('\") + nextTeamId) + \"','\") + guestObj.getId()) + \"')\"\nStatement stmt = con.createStatement()\nresult = stmt.executeUpdate(query)\n",
+  "after_code": "java.lang.String query = \"INSERT INTO Team(teamId, leaderId, numberOfParticipants) VALUES ('?','?','?') INSERT INTO TeamParticipants(teamId, participantId)  VALUES ('?','?')\"\nPreparedStatement stmt = con.prepareStatement(query)\nstmt.setObject(1, nextTeamId)\nstmt.setObject(2, guestObj.getId())\nstmt.setObject(3, team.getNumberOfParticipants())\nstmt.setObject(4, nextTeamId)\nstmt.setObject(5, guestObj.getId())\nresult = stmt.executeUpdate()\n",
+  "before_line": [
+    9,
+    12,
+    14
+  ],
+  "after_line": [
+    11,
+    14,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "before_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "query",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "java.lang.String",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "PLUS",
+            "type": "BinaryOperator",
+            "children": [
+              {
+                "label": "PLUS",
+                "type": "BinaryOperator",
+                "children": [
+                  {
+                    "label": "PLUS",
+                    "type": "BinaryOperator",
+                    "children": [
+                      {
+                        "label": "PLUS",
+                        "type": "BinaryOperator",
+                        "children": [
+                          {
+                            "label": "PLUS",
+                            "type": "BinaryOperator",
+                            "children": [
+                              {
+                                "label": "PLUS",
+                                "type": "BinaryOperator",
+                                "children": [
+                                  {
+                                    "label": "PLUS",
+                                    "type": "BinaryOperator",
+                                    "children": [
+                                      {
+                                        "label": "PLUS",
+                                        "type": "BinaryOperator",
+                                        "children": [
+                                          {
+                                            "label": "PLUS",
+                                            "type": "BinaryOperator",
+                                            "children": [
+                                              {
+                                                "label": "PLUS",
+                                                "type": "BinaryOperator",
+                                                "children": [
+                                                  {
+                                                    "label": "\"INSERT INTO Team(teamId, leaderId, numberOfParticipants) VALUES ('\"",
+                                                    "type": "Literal",
+                                                    "children": []
+                                                  },
+                                                  {
+                                                    "label": "nextTeamId",
+                                                    "type": "FieldRead",
+                                                    "children": []
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "label": "\"','\"",
+                                                "type": "Literal",
+                                                "children": []
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "label": "getId",
+                                            "type": "Invocation",
+                                            "children": [
+                                              {
+                                                "label": "guestObj",
+                                                "type": "FieldRead",
+                                                "children": []
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "\"','\"",
+                                        "type": "Literal",
+                                        "children": []
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "getNumberOfParticipants",
+                                    "type": "Invocation",
+                                    "children": [
+                                      {
+                                        "label": "team",
+                                        "type": "FieldRead",
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "label": "\"') INSERT INTO TeamParticipants(teamId, participantId) VALUES ('\"",
+                                "type": "Literal",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "label": "nextTeamId",
+                            "type": "FieldRead",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "label": "\"','\"",
+                        "type": "Literal",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "label": "getId",
+                    "type": "Invocation",
+                    "children": [
+                      {
+                        "label": "guestObj",
+                        "type": "FieldRead",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "label": "\"')\"",
+                "type": "Literal",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "stmt",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "Statement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "createStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "con",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "=",
+        "type": "Assignment",
+        "children": [
+          {
+            "label": "result",
+            "type": "FieldWrite",
+            "children": []
+          },
+          {
+            "label": "executeUpdate",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "stmt",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "query",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "after_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "query",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "java.lang.String",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "\"INSERT INTO Team(teamId, leaderId, numberOfParticipants) VALUES ('?','?','?') INSERT INTO TeamParticipants(teamId, participantId)  VALUES ('?','?')\"",
+            "type": "Literal",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "stmt",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "PreparedStatement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "prepareStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "con",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "query",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "stmt",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "1",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "nextTeamId",
+            "type": "FieldRead",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "stmt",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "2",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "getId",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "guestObj",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "stmt",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "3",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "getNumberOfParticipants",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "team",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "stmt",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "4",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "nextTeamId",
+            "type": "FieldRead",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "stmt",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "5",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "getId",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "guestObj",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "=",
+        "type": "Assignment",
+        "children": [
+          {
+            "label": "result",
+            "type": "FieldWrite",
+            "children": []
+          },
+          {
+            "label": "executeUpdate",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "stmt",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+ card.getCardNumber()$X_16030521789021
+ card.getExpiryDate()$X_16030521789022
+ card.getId().toString()$X_16030521789020
+ card.getCVV()$X_16030521789023

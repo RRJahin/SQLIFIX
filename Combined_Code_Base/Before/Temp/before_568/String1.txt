@@ -1,0 +1,1 @@
+"INSERT INTO CercuriStudentesti VALUES(" + cerc.getId() + "," + cerc.getDenumire() + "," + cerc.getMentor() + "," + cerc.getAn() + "," + cerc.getDescriere() + ",0)"

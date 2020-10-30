@@ -1,0 +1,1 @@
+ update adv_pendencia.tab_pasta set statusPasta = 'ocupado' where idPasta = ?

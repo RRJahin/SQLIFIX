@@ -1,0 +1,1 @@
+"UPDATE pedido " + "SET Fecha = " + Data.String2Sql(_Fecha.toString(), true, false) + ", CodPostal = " + _iCodPostal + ", DirEnvio = " + Data.String2Sql(_sDirEnvio, true, false) + " WHERE Id = " + _iId

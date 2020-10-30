@@ -1,0 +1,1 @@
+"INSERT INTO instructor(fname,lname,faculty,email,password)  VALUES (" + firstNameTextBox.getText() + "," + lastNameTextBox.getText() + "," + facultyInstrTextBox.getText() + "," + emailTextBox.getText() + "," + BCrypt.hashpw(passBox.getText(), BCrypt.gensalt()) + ")"

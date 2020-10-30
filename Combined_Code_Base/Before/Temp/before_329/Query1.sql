@@ -1,0 +1,1 @@
+ DELETE FROM ActivityType WHERE id= 'X_16030521740930'

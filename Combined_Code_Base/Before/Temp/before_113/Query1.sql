@@ -1,0 +1,1 @@
+ insert into mensagem(de, para, mensagem) values( X_16030521656560 , X_16030521656561 , X_16030521656562 )

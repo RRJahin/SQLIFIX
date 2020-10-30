@@ -1,0 +1,1 @@
+"insert into TB_DATE values ( " + record.getdYear4() + "," + new java.sql.Date(record.getdDate().getTime()) + "," + new java.sql.Time(record.getdTime().getTime()) + "," + new java.sql.Timestamp(record.getdDatetime().getTime()) + "," + new java.sql.Timestamp(record.getdTimestamp().getTime()) + ")"

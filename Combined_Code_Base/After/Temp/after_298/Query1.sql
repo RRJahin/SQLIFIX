@@ -1,0 +1,1 @@
+ DELETE FROM representatives WHERE RepresenterMID=? AND RepresenteeMID=?

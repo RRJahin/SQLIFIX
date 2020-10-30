@@ -1,0 +1,1 @@
+new StringBuilder("UPDATE ").append(tableName).append(" SET isDeleted = 0 WHERE id = ?").toString()

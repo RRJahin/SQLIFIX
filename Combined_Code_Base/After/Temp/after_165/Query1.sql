@@ -1,0 +1,1 @@
+ update inception_music set musicName = ?, musicStyle = ?, musicLanguage = ?, artistName = ?, albumName = ? where id = ?

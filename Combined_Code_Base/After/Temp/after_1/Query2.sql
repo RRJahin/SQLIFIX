@@ -1,0 +1,1 @@
+ INSERT INTO document (title,docdesc,filetype,uploader,uploaddate,docfile) SELECT ?, docdesc, filetype, uploader, uploaddate, docfile FROM document where iddocument = ?

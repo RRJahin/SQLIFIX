@@ -1,0 +1,1 @@
+"UPDATE ParcClient SET codeTParc = " + obj.getCodeTParc() + ", codeCliPros = " + obj.getCodeCliPros() + ", quantite = " + Integer.toString(obj.getQuantite()) + ", date = " + formatter.format(obj.getDate()) + ", nom = " + obj.getNom() + " WHERE id = " + obj.getId()

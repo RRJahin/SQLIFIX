@@ -1,0 +1,1 @@
+"INSERT INTO ndcodes (Code, Description) " + "VALUES (" + med.getNDCode() + "," + med.getDescription() + ")"

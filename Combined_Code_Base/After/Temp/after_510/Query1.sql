@@ -1,0 +1,1 @@
+ Delete From Reserved_Rooms where reservationID= ?

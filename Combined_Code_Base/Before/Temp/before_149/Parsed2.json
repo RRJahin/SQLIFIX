@@ -1,0 +1,253 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "select_statement": {
+        "query_expression": {
+          "query_specification": {
+            "distinct_clause": {
+              "distinct_type": "urfDistinct"
+            },
+            "select_list": {
+              "result_column": {
+                "expression": {
+                  "expr_type": "simple_object_name_t",
+                  "column_referenced_expr": {
+                    "objectName": {
+                      "full_name": "name",
+                      "object_type": "column",
+                      "part_name": "name"
+                    }
+                  }
+                }
+              }
+            },
+            "where_clause": {
+              "condition": {
+                "binary_expr": {
+                  "first_expr": {
+                    "binary_expr": {
+                      "first_expr": {
+                        "expr_type": "simple_comparison_t",
+                        "comparison_expr": {
+                          "first_expr": {
+                            "expr_type": "simple_object_name_t",
+                            "column_referenced_expr": {
+                              "objectName": {
+                                "full_name": "people.person_id",
+                                "object_type": "column",
+                                "object_name": "people",
+                                "part_name": "person_id"
+                              }
+                            }
+                          },
+                          "second_expr": {
+                            "expr_type": "simple_object_name_t",
+                            "column_referenced_expr": {
+                              "objectName": {
+                                "full_name": "roles.person_id",
+                                "object_type": "column",
+                                "object_name": "roles",
+                                "part_name": "person_id"
+                              }
+                            }
+                          },
+                          "type": "="
+                        }
+                      },
+                      "second_expr": {
+                        "expr_type": "simple_comparison_t",
+                        "comparison_expr": {
+                          "first_expr": {
+                            "expr_type": "simple_object_name_t",
+                            "column_referenced_expr": {
+                              "objectName": {
+                                "full_name": "name",
+                                "object_type": "column",
+                                "part_name": "name"
+                              }
+                            }
+                          },
+                          "second_expr": {
+                            "constant_expr": {
+                              "literal": {
+                                "value": "'X_16030521666230'"
+                              }
+                            },
+                            "expr_type": "simple_constant_t"
+                          },
+                          "type": "<>"
+                        }
+                      },
+                      "operator": "and"
+                    },
+                    "expr_type": "logical_and_t"
+                  },
+                  "second_expr": {
+                    "in_expr": {
+                      "not": false,
+                      "first_expr": {
+                        "expr_type": "simple_object_name_t",
+                        "column_referenced_expr": {
+                          "objectName": {
+                            "full_name": "movie_id",
+                            "object_type": "column",
+                            "part_name": "movie_id"
+                          }
+                        }
+                      },
+                      "second_expr": {
+                        "subquery_expr": {
+                          "query_expression": {
+                            "query_specification": {
+                              "distinct_clause": {
+                                "distinct_type": "urfDistinct"
+                              },
+                              "select_list": {
+                                "result_column": {
+                                  "expression": {
+                                    "expr_type": "simple_object_name_t",
+                                    "column_referenced_expr": {
+                                      "objectName": {
+                                        "full_name": "movie_id",
+                                        "object_type": "column",
+                                        "part_name": "movie_id"
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "where_clause": {
+                                "condition": {
+                                  "binary_expr": {
+                                    "first_expr": {
+                                      "expr_type": "simple_comparison_t",
+                                      "comparison_expr": {
+                                        "first_expr": {
+                                          "expr_type": "simple_object_name_t",
+                                          "column_referenced_expr": {
+                                            "objectName": {
+                                              "full_name": "name",
+                                              "object_type": "column",
+                                              "part_name": "name"
+                                            }
+                                          }
+                                        },
+                                        "second_expr": {
+                                          "constant_expr": {
+                                            "literal": {
+                                              "value": "'X_16030521666230'"
+                                            }
+                                          },
+                                          "expr_type": "simple_constant_t"
+                                        },
+                                        "type": "="
+                                      }
+                                    },
+                                    "second_expr": {
+                                      "expr_type": "simple_comparison_t",
+                                      "comparison_expr": {
+                                        "first_expr": {
+                                          "expr_type": "simple_object_name_t",
+                                          "column_referenced_expr": {
+                                            "objectName": {
+                                              "full_name": "people.person_id",
+                                              "object_type": "column",
+                                              "object_name": "people",
+                                              "part_name": "person_id"
+                                            }
+                                          }
+                                        },
+                                        "second_expr": {
+                                          "expr_type": "simple_object_name_t",
+                                          "column_referenced_expr": {
+                                            "objectName": {
+                                              "full_name": "roles.person_id",
+                                              "object_type": "column",
+                                              "object_name": "roles",
+                                              "part_name": "person_id"
+                                            }
+                                          }
+                                        },
+                                        "type": "="
+                                      }
+                                    },
+                                    "operator": "AND"
+                                  },
+                                  "expr_type": "logical_and_t"
+                                }
+                              },
+                              "from_clause": {
+                                "table_reference": [
+                                  {
+                                    "type": "objectname",
+                                    "named_table_reference": {
+                                      "table_name": {
+                                        "full_name": "people",
+                                        "object_type": "table",
+                                        "object_name": "people"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "type": "objectname",
+                                    "named_table_reference": {
+                                      "table_name": {
+                                        "full_name": "roles",
+                                        "object_type": "table",
+                                        "object_name": "roles"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            "is_parenthesis": true
+                          }
+                        },
+                        "expr_type": "subquery_t"
+                      }
+                    },
+                    "expr_type": "in_t"
+                  },
+                  "operator": "and"
+                },
+                "expr_type": "logical_and_t"
+              }
+            },
+            "from_clause": {
+              "table_reference": [
+                {
+                  "type": "objectname",
+                  "named_table_reference": {
+                    "table_name": {
+                      "full_name": "people",
+                      "object_type": "table",
+                      "object_name": "people"
+                    }
+                  }
+                },
+                {
+                  "type": "objectname",
+                  "named_table_reference": {
+                    "table_name": {
+                      "full_name": "roles",
+                      "object_type": "table",
+                      "object_name": "roles"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "is_parenthesis": false
+        }
+      },
+      "type": "sstselect"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

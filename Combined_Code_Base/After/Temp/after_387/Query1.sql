@@ -1,0 +1,1 @@
+ Select product_price from product_sms where product_id = ?

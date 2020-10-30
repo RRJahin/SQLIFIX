@@ -1,0 +1,1 @@
+ DELETE FROM Location WHERE zipCode= '?' AND country= '?'

@@ -1,0 +1,1 @@
+ update users set hitcount=hitcount + 1 where name=?

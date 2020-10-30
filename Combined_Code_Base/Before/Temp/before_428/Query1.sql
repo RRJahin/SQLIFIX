@@ -1,0 +1,1 @@
+ INSERT INTO course(courname,faculty) VALUES ( X_16030521763810 , X_16030521763811 )

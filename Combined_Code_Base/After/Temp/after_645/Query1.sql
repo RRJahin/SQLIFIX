@@ -1,0 +1,1 @@
+ SELECT idPed FROM adv_pendencia.tab_pedencia where tab_pasta_idPasta = ?

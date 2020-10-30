@@ -1,0 +1,1 @@
+ UPDATE marca SET Nombre = ?, Id_Imagen = ? WHERE Id = ?

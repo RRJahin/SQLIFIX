@@ -1,0 +1,125 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "insert_statement": {
+        "insert_values": {
+          "row_values": {
+            "expression": [
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521669860",
+                    "object_type": "column",
+                    "part_name": "X_16030521669860"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521669861",
+                    "object_type": "column",
+                    "part_name": "X_16030521669861"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521669862",
+                    "object_type": "column",
+                    "part_name": "X_16030521669862"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521669863",
+                    "object_type": "column",
+                    "part_name": "X_16030521669863"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521669864",
+                    "object_type": "column",
+                    "part_name": "X_16030521669864"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521669865",
+                    "object_type": "column",
+                    "part_name": "X_16030521669865"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "insertSource": "values",
+        "target_table": {
+          "type": "objectname",
+          "named_table_reference": {
+            "table_name": {
+              "full_name": "Guitar",
+              "object_type": "table",
+              "object_name": "Guitar"
+            }
+          }
+        },
+        "column_list": {
+          "objectName": [
+            {
+              "full_name": "serialNumber",
+              "object_type": "column",
+              "part_name": "serialNumber"
+            },
+            {
+              "full_name": "price",
+              "object_type": "column",
+              "part_name": "price"
+            },
+            {
+              "full_name": "builder",
+              "object_type": "column",
+              "part_name": "builder"
+            },
+            {
+              "full_name": "type",
+              "object_type": "column",
+              "part_name": "type"
+            },
+            {
+              "full_name": "backWood",
+              "object_type": "column",
+              "part_name": "backWood"
+            },
+            {
+              "full_name": "topWood",
+              "object_type": "column",
+              "part_name": "topWood"
+            }
+          ]
+        }
+      },
+      "type": "sstinsert"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

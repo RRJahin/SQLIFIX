@@ -1,0 +1,1 @@
+"INSERT INTO ActivityType(id, name, maxParticipants) VALUES ('?','?','?')"

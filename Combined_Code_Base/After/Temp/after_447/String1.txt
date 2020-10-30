@@ -1,0 +1,1 @@
+"INSERT INTO Room(number, roomType)" + " VALUES('?','?')"

@@ -1,0 +1,1 @@
+ INSERT INTO instructor(fname,lname,faculty,email,password) VALUES (?,?,?,?,?)

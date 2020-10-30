@@ -1,0 +1,100 @@
+{
+  "before_code": "Statement statement = connector.createStatement()\nstatement.execute(s1)\n",
+  "after_code": "PreparedStatement statement = connector.prepareStatement(s1)\nstatement.execute()\n",
+  "before_line": [
+    21,
+    22
+  ],
+  "after_line": [
+    21,
+    22
+  ],
+  "before_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "statement",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "Statement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "createStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "connector",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "execute",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "statement",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "s1",
+            "type": "FieldRead",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "after_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "statement",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "PreparedStatement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "prepareStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "connector",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "s1",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "execute",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "statement",
+            "type": "FieldRead",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

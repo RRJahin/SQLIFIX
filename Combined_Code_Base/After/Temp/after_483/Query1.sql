@@ -1,0 +1,1 @@
+ Delete From Starwood where User_Name= ?

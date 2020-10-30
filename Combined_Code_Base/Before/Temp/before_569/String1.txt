@@ -1,0 +1,1 @@
+"SELECT * FROM ProgrameDeStudiu WHERE sectie_id = " + sectie.getId()

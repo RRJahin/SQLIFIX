@@ -1,0 +1,1 @@
+ INSERT into user(name, username, password) values('X_16030521747970', 'X_16030521747971','X_16030521747972')

@@ -1,0 +1,1 @@
+new StringBuilder("UPDATE ").append(tableName).append(" SET ").append(column).append(" = ").append(column).append(" + 1, points = points + ").append(Integer.toString(vote)).append(" WHERE id = " + postId).toString()

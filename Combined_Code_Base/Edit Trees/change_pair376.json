@@ -1,0 +1,380 @@
+{
+  "before_code": "Statement prepComp = connection.createStatement(\"INSERT OR REPLACE INTO ClassifiedCompetences (CompetenceText, Quality, Importance, Type, AdID) VALUES(?,?,?,?,?)\")\nprepComp.setString(1, competence.getCompetence())\nprepComp.setString(2, competence.getQuality())\nprepComp.setString(3, competence.getImportance())\nprepComp.setString(4, competence.getType().toString())\nprepComp.setInt(5, competence.getJobAdID())\n",
+  "after_code": "PreparedStatement prepComp = connection.prepareStatement(\"INSERT OR REPLACE INTO ClassifiedCompetences (CompetenceText, Quality, Importance, Type, AdID) VALUES(?,?,?,?,?)\")\nprepComp.setObject(1, competence.getCompetence())\nprepComp.setObject(2, competence.getQuality())\nprepComp.setObject(3, competence.getImportance())\nprepComp.setObject(4, competence.getType().toString())\nprepComp.setObject(5, competence.getJobAdID())\nprepComp.executeUpdate()\n",
+  "before_line": [
+    4,
+    6,
+    7,
+    8,
+    10,
+    12
+  ],
+  "after_line": [
+    4,
+    6,
+    7,
+    8,
+    10,
+    12,
+    13
+  ],
+  "before_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "prepComp",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "Statement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "createStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "connection",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "\"INSERT OR REPLACE INTO ClassifiedCompetences (CompetenceText, Quality, Importance, Type, AdID) VALUES(?,?,?,?,?)\"",
+                "type": "Literal",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setString",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "prepComp",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "1",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "getCompetence",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "competence",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setString",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "prepComp",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "2",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "getQuality",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "competence",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setString",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "prepComp",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "3",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "getImportance",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "competence",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setString",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "prepComp",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "4",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "toString",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "getType",
+                "type": "Invocation",
+                "children": [
+                  {
+                    "label": "competence",
+                    "type": "FieldRead",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setInt",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "prepComp",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "5",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "getJobAdID",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "competence",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "after_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "prepComp",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "PreparedStatement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "prepareStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "connection",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "\"INSERT OR REPLACE INTO ClassifiedCompetences (CompetenceText, Quality, Importance, Type, AdID) VALUES(?,?,?,?,?)\"",
+                "type": "Literal",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "prepComp",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "1",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "getCompetence",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "competence",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "prepComp",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "2",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "getQuality",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "competence",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "prepComp",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "3",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "getImportance",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "competence",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "prepComp",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "4",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "toString",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "getType",
+                "type": "Invocation",
+                "children": [
+                  {
+                    "label": "competence",
+                    "type": "FieldRead",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "prepComp",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "5",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "getJobAdID",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "competence",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "executeUpdate",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "prepComp",
+            "type": "FieldRead",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+ SELECT title, image FROM book WHERE no = ?

@@ -1,0 +1,1 @@
+ select SQL_CALC_FOUND_ROWS * from movie m join categories c on m.category_id = c.category_id where c.name = ? ORDER BY movie_id DESC limit ?,?

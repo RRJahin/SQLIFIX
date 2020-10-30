@@ -1,0 +1,1 @@
+ insert into practica7.SOCI values (LAST_INSERT_ID(), 'X_16030521811690')

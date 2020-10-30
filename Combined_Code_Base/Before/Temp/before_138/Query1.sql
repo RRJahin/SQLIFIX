@@ -1,0 +1,1 @@
+ SELECT * FROM service_order WHERE expiration_date IS null AND id = X_16030521664450

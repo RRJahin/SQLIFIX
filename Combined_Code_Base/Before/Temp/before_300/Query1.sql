@@ -1,0 +1,1 @@
+ UPDATE users U, representatives R SET U.isDependent=0 WHERE R.representerMID= X_16030521731590 AND R.representeeMID=U.MID AND R.representeeMID NOT IN (SELECT representeeMID FROM representatives WHERE representerMID<> X_16030521731590 )

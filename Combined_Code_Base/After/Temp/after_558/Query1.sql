@@ -1,0 +1,1 @@
+ select * from practica7.PERSONA where ID = ? ;

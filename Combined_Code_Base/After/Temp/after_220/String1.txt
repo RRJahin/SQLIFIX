@@ -1,0 +1,1 @@
+"insert into " + TBL_NAME + " (" + FIELD_CODICE + "," + FIELD_IS_PDI + "," + FIELD_TIPO + "," + FIELD_COORD_X + "," + FIELD_COORD_Y + "," + FIELD_WIDTH + "," + FIELD_LENGTH + "," + FIELD_ID_MAPPA + "," + FIELD_ID_PIANO + ") values(?,?,?,?,?,?,?,?,?)"

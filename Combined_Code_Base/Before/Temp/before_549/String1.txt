@@ -1,0 +1,1 @@
+"select aoc from VARIETE where libelle='" + libelle + "';"

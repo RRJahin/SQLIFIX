@@ -1,0 +1,2 @@
+ member.getCardNumber()$X_16030521787660
+ oldNo$X_16030521787661

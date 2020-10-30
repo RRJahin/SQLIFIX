@@ -1,0 +1,1 @@
+ update Book set name = 'X_16030521669570', idAuthor = X_16030521669571 where id = X_16030521669572

@@ -1,0 +1,1 @@
+"UPDATE member SET pwd=" + m.getPwd() + ", name=" + m.getName() + ", phone=" + m.getPhone() + ", email=" + m.getEmail() + ", address=" + m.getAddress() + " WHERE id = " + m.getId()

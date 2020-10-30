@@ -1,0 +1,1 @@
+"SELECT cedula_op, contrasena FROM Operadores WHERE cedula_op = ?;"

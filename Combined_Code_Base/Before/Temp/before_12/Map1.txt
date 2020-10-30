@@ -1,0 +1,7 @@
+ userInfo.getMobileNo()$X_16030521659186
+ userInfo.getPassword()$X_16030521659185
+ userInfo.getLastName()$X_16030521659182
+ userInfo.getUserName()$X_16030521659183
+ userInfo.getEmail()$X_16030521659184
+ userInfo.getFirstName()$X_16030521659181
+ userInfo.getId()$X_16030521659180

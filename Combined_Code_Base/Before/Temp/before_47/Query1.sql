@@ -1,0 +1,1 @@
+ INSERT INTO ingresso ( local, datahora, lugar, quantidade, idcategoria, idtipoingresso, valor) VALUES ( X_16030521781630 , X_16030521781641 , X_16030521781642 , X_16030521781643 , X_16030521781644 , X_16030521781645 , X_16030521781646 )

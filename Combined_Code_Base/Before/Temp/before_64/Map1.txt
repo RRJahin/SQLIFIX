@@ -1,0 +1,1 @@
+ Where(sNombre, iId_Imagen)$X_16030521832290

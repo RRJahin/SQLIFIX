@@ -1,0 +1,1 @@
+ UPDATE TravelAgency SET name='?', zipcode='?', country='?', address='?', phoneNo='?', email='?' WHERE cvr='?'

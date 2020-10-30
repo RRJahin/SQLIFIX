@@ -1,0 +1,200 @@
+{
+  "before_code": "java.lang.String sql = \"Update Reservations set status =? where Reservation_Id=? \"\nStatement pstm = conn.createStatement(sql)\npstm.setString(1, \"Cancelled\")\npstm.setString(2, reservationID.toString())\n",
+  "after_code": "java.lang.String sql = \"Update Reservations set status = \\\"Cancelled\\\" where Reservation_Id=? \"\nPreparedStatement pstm = conn.prepareStatement(sql)\npstm.setObject(1, reservationID.toString())\npstm.executeUpdate()\n",
+  "before_line": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "after_line": [
+    3,
+    4,
+    5,
+    7
+  ],
+  "before_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "sql",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "java.lang.String",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "\"Update Reservations set status =? where Reservation_Id=? \"",
+            "type": "Literal",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "pstm",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "Statement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "createStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "conn",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "sql",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setString",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "pstm",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "1",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "\"Cancelled\"",
+            "type": "Literal",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "setString",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "pstm",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "2",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "toString",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "reservationID",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "after_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "sql",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "java.lang.String",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "\"Update Reservations set status = \\\"Cancelled\\\" where Reservation_Id=? \"",
+            "type": "Literal",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "pstm",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "PreparedStatement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "prepareStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "conn",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "sql",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "pstm",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "1",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "toString",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "reservationID",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "executeUpdate",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "pstm",
+            "type": "FieldRead",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

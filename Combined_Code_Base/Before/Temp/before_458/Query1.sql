@@ -1,0 +1,1 @@
+ INSERT INTO Team(teamId, leaderId, numberOfParticipants) VALUES ('X_16030521774530','X_16030521774531','X_16030521774532') INSERT INTO TeamParticipants(teamId, participantId) VALUES ('X_16030521774530','X_16030521774531')

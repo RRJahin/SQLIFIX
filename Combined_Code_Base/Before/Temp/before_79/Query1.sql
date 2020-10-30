@@ -1,0 +1,1 @@
+ SELECT pwd FROM member WHERE e_key= X_16030521838120

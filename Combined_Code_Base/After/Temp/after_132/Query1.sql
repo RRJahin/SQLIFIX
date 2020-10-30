@@ -1,0 +1,1 @@
+ INSERT INTO ModRgl (codeModRgl, nomModRgl) VALUES (?, ?)

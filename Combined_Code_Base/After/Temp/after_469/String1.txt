@@ -1,0 +1,1 @@
+"DELETE FROM TravelAgency WHERE cvr= '?'"

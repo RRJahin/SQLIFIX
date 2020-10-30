@@ -1,0 +1,229 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "update_statement": {
+        "where_clause": {
+          "condition": {
+            "expr_type": "simple_comparison_t",
+            "comparison_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "ID_AGRICULTOR",
+                    "object_type": "column",
+                    "part_name": "ID_AGRICULTOR"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              "type": "="
+            }
+          }
+        },
+        "target_table": {
+          "type": "objectname",
+          "named_table_reference": {
+            "table_name": {
+              "full_name": "CADASTROAGRICULTOR",
+              "object_type": "table",
+              "object_name": "CADASTROAGRICULTOR"
+            }
+          }
+        },
+        "set_clause": [
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "NOME",
+                    "object_type": "column",
+                    "part_name": "NOME"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521792710",
+                    "object_type": "column",
+                    "part_name": "X_16030521792710"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "DATA_CADASTRO",
+                    "object_type": "column",
+                    "part_name": "DATA_CADASTRO"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521792711",
+                    "object_type": "column",
+                    "part_name": "X_16030521792711"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "MUNICIPIO",
+                    "object_type": "column",
+                    "part_name": "MUNICIPIO"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521792712",
+                    "object_type": "column",
+                    "part_name": "X_16030521792712"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "LOCALIDADE",
+                    "object_type": "column",
+                    "part_name": "LOCALIDADE"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521792713",
+                    "object_type": "column",
+                    "part_name": "X_16030521792713"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "PRODUTOS",
+                    "object_type": "column",
+                    "part_name": "PRODUTOS"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521792714",
+                    "object_type": "column",
+                    "part_name": "X_16030521792714"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "STATUS",
+                    "object_type": "column",
+                    "part_name": "STATUS"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521792715",
+                    "object_type": "column",
+                    "part_name": "X_16030521792715"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "TELEFONE",
+                    "object_type": "column",
+                    "part_name": "TELEFONE"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521792716",
+                    "object_type": "column",
+                    "part_name": "X_16030521792716"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          }
+        ]
+      },
+      "type": "sstupdate"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

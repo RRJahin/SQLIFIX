@@ -1,0 +1,1 @@
+ DELETE FROM tbl_peliculas WHERE pk_pelicula = X_16030521739010

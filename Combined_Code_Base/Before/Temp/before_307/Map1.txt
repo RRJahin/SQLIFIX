@@ -1,0 +1,2 @@
+ obj.getNomPays()$X_16030521733551
+ obj.getCodePays()$X_16030521733550

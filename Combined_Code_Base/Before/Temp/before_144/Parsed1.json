@@ -1,0 +1,129 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "update_statement": {
+        "where_clause": {
+          "condition": {
+            "expr_type": "simple_comparison_t",
+            "comparison_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "id",
+                    "object_type": "column",
+                    "part_name": "id"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521665602",
+                    "object_type": "column",
+                    "part_name": "X_16030521665602"
+                  }
+                }
+              },
+              "type": "="
+            }
+          }
+        },
+        "target_table": {
+          "type": "objectname",
+          "named_table_reference": {
+            "table_name": {
+              "full_name": "users",
+              "object_type": "table",
+              "object_name": "users"
+            }
+          }
+        },
+        "set_clause": [
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "password",
+                    "object_type": "column",
+                    "part_name": "password"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521665600",
+                    "object_type": "column",
+                    "part_name": "X_16030521665600"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "change_user_name",
+                    "object_type": "column",
+                    "part_name": "change_user_name"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "javauser",
+                    "object_type": "column",
+                    "part_name": "javauser"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "change_date",
+                    "object_type": "column",
+                    "part_name": "change_date"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521665601",
+                    "object_type": "column",
+                    "part_name": "X_16030521665601"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          }
+        ]
+      },
+      "type": "sstupdate"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

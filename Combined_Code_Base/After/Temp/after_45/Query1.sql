@@ -1,0 +1,1 @@
+ UPDATE stats SET kills = ? WHERE player = '?'

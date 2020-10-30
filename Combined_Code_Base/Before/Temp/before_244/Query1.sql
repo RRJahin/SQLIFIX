@@ -1,0 +1,1 @@
+ UPDATE ActivityBooking SET status= 'X_16030521705880' WHERE id= 'X_16030521705881'

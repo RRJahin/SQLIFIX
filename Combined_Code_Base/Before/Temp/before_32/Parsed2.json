@@ -1,0 +1,72 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "update_statement": {
+        "where_clause": {
+          "condition": {
+            "expr_type": "pattern_matching_t",
+            "like_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "EMAIL",
+                    "object_type": "column",
+                    "part_name": "EMAIL"
+                  }
+                }
+              },
+              "second_expr": {
+                "constant_expr": {
+                  "literal": {
+                    "value": "'X_16030521738511'"
+                  }
+                },
+                "expr_type": "simple_constant_t"
+              }
+            }
+          }
+        },
+        "target_table": {
+          "type": "objectname",
+          "named_table_reference": {
+            "table_name": {
+              "full_name": "ADMIN",
+              "object_type": "table",
+              "object_name": "ADMIN"
+            }
+          }
+        },
+        "set_clause": {
+          "assignment_expr": {
+            "first_expr": {
+              "expr_type": "simple_object_name_t",
+              "column_referenced_expr": {
+                "objectName": {
+                  "full_name": "FIRST_NAME",
+                  "object_type": "column",
+                  "part_name": "FIRST_NAME"
+                }
+              }
+            },
+            "second_expr": {
+              "constant_expr": {
+                "literal": {
+                  "value": "'X_16030521738510'"
+                }
+              },
+              "expr_type": "simple_constant_t"
+            }
+          },
+          "expr_type": "assignment_t"
+        }
+      },
+      "type": "sstupdate"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

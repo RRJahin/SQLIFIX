@@ -1,0 +1,1 @@
+"select SQL_CALC_FOUND_ROWS * from movie_feature WHERE datepost < CURRENT_TIMESTAMP ORDER BY datepost DESC limit ?,?"

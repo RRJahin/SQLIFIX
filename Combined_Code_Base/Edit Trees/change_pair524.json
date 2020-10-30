@@ -1,0 +1,168 @@
+{
+  "before_code": "request.setCharacterEncoding(\"utf-8\")\nStatement statement = null\nstatement = con.createStatement()\nstatement.executeUpdate(sql)\n",
+  "after_code": "request.setObjectacterEncoding(\"utf-8\")\nPreparedStatement statement = null\nstatement = con.prepareStatement(sql)\nstatement.executeUpdate()\n",
+  "before_line": [
+    3,
+    8,
+    24,
+    25
+  ],
+  "after_line": [
+    3,
+    8,
+    24,
+    25
+  ],
+  "before_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "setCharacterEncoding",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "request",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "\"utf-8\"",
+            "type": "Literal",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "statement",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "Statement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "null",
+            "type": "Literal",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "=",
+        "type": "Assignment",
+        "children": [
+          {
+            "label": "statement",
+            "type": "FieldWrite",
+            "children": []
+          },
+          {
+            "label": "createStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "con",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "executeUpdate",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "statement",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "sql",
+            "type": "FieldRead",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "after_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "setObjectacterEncoding",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "request",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "\"utf-8\"",
+            "type": "Literal",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "statement",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "PreparedStatement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "null",
+            "type": "Literal",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "=",
+        "type": "Assignment",
+        "children": [
+          {
+            "label": "statement",
+            "type": "FieldWrite",
+            "children": []
+          },
+          {
+            "label": "prepareStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "con",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "sql",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "executeUpdate",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "statement",
+            "type": "FieldRead",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

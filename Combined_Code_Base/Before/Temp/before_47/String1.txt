@@ -1,0 +1,1 @@
+"INSERT INTO ingresso ( local, datahora, lugar, quantidade, idcategoria, idtipoingresso, valor) " + "VALUES (" + adulto.getLocal() + "," + new java.sql.Date(adulto.getDataHora().getTime()) + "," + adulto.getLugar() + "," + adulto.getQuantidade() + "," + adulto.getCategoria().getId() + "," + adulto.getTipoIngresso().getId() + "," + adulto.getValor() + ")"

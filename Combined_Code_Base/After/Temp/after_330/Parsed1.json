@@ -1,0 +1,125 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "insert_statement": {
+        "insert_values": {
+          "row_values": {
+            "expression": [
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "insertSource": "values",
+        "target_table": {
+          "type": "objectname",
+          "named_table_reference": {
+            "table_name": {
+              "full_name": "users",
+              "object_type": "table",
+              "object_name": "users"
+            }
+          }
+        },
+        "column_list": {
+          "objectName": [
+            {
+              "full_name": "MID",
+              "object_type": "column",
+              "part_name": "MID"
+            },
+            {
+              "full_name": "PASSWORD",
+              "object_type": "column",
+              "part_name": "PASSWORD"
+            },
+            {
+              "full_name": "SALT",
+              "object_type": "column",
+              "part_name": "SALT"
+            },
+            {
+              "full_name": "ROLE",
+              "object_type": "column",
+              "part_name": "ROLE"
+            },
+            {
+              "full_name": "sQuestion",
+              "object_type": "column",
+              "part_name": "sQuestion"
+            },
+            {
+              "full_name": "sAnswer",
+              "object_type": "column",
+              "part_name": "sAnswer"
+            }
+          ]
+        }
+      },
+      "type": "sstinsert"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

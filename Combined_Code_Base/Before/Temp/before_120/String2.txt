@@ -1,0 +1,1 @@
+"SELECT message.* FROM message, patients WHERE message.from_id=patients.mid AND message.to_id=" + mid + " ORDER BY patients.lastName ASC, patients.firstName ASC, message.sent_date ASC"

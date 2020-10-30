@@ -1,0 +1,1 @@
+"UPDATE users " + "SET password = ?, change_user_name = javauser, change_date = ?" + "WHERE id = ?"

@@ -1,0 +1,1 @@
+"DELETE FROM Posizione WHERE etichetta = " + posizione.getEtichetta() + " AND isil = " + posizione.getBiblioteca().getIsil()

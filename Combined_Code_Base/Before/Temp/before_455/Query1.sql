@@ -1,0 +1,1 @@
+ INSERT INTO RoomType(category, typeDescription, price) VALUES('X_16030521773890','X_16030521773891','X_16030521773892')

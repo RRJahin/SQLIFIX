@@ -1,0 +1,1 @@
+"SELECT cedula_ge, contrasena FROM Gerentes WHERE cedula_ge = '" + user + "';"

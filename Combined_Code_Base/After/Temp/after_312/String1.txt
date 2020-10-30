@@ -1,0 +1,1 @@
+"insert into " + table + "(docno,productname,reviewtitle,reviewcontent,pros,cons,reviewlink,reviewstar,reviewstarword) values(?,?,?,?,?,?,?,?,?)"

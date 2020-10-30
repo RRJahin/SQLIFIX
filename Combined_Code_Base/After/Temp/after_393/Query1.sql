@@ -1,0 +1,1 @@
+ UPDATE tblauthor SET author_name = ?, gender = ?, description = ? WHERE id = X_16030521889280

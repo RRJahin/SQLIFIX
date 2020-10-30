@@ -1,0 +1,1 @@
+ SELECT DateOfDeactivation FROM patients WHERE MID=?

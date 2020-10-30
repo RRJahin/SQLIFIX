@@ -1,0 +1,1 @@
+ select ts.nama_studio as nama_studio from tb_studio ts, tb_jadwal tj\n where ts.id_studio=tj.id_studio and\n tj.id_jadwal= 'X_16030521824320' ;

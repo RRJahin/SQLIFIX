@@ -1,0 +1,1 @@
+ UPDATE Employee SET salary= '?' WHERE personId= '?'

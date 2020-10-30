@@ -1,0 +1,1 @@
+"update " + TBL_NAME + " set " + FIELD_NOME + "=" + mappa.getNome() + "where " + FIELD_ID + "=" + id_mappa

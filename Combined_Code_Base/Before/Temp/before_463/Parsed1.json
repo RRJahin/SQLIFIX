@@ -1,0 +1,61 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "insert_statement": {
+        "insert_values": {
+          "row_values": {
+            "expression": [
+              {
+                "constant_expr": {
+                  "literal": {
+                    "value": "'X_16030521776220'"
+                  }
+                },
+                "expr_type": "simple_constant_t"
+              },
+              {
+                "constant_expr": {
+                  "literal": {
+                    "value": "'X_16030521776221'"
+                  }
+                },
+                "expr_type": "simple_constant_t"
+              }
+            ]
+          }
+        },
+        "insertSource": "values",
+        "target_table": {
+          "type": "objectname",
+          "named_table_reference": {
+            "table_name": {
+              "full_name": "TeamParticipants",
+              "object_type": "table",
+              "object_name": "TeamParticipants"
+            }
+          }
+        },
+        "column_list": {
+          "objectName": [
+            {
+              "full_name": "teamId",
+              "object_type": "column",
+              "part_name": "teamId"
+            },
+            {
+              "full_name": "participantId",
+              "object_type": "column",
+              "part_name": "participantId"
+            }
+          ]
+        }
+      },
+      "type": "sstinsert"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

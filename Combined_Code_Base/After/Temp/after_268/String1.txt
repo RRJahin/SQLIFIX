@@ -1,0 +1,1 @@
+"INSERT INTO ParcClient (codeTParc, codeCliPros, quantite, date, nom) VALUES (?, ?, ?, ?, ?)"

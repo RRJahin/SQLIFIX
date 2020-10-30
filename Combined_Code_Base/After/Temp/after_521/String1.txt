@@ -1,0 +1,1 @@
+"delete from fuel_types where id=?"

@@ -1,0 +1,1 @@
+"select * from tablesr where dbname='" + tableeasy.MainActivity.databases[tableeasy.MainActivity.selecteddata] + "'"

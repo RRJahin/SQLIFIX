@@ -1,0 +1,1 @@
+ update nba.players set currentteam= X_16030521753640 where name= X_16030521753641

@@ -1,0 +1,1 @@
+ DELETE FROM document WHERE iddocument NOT IN (SELECT iddocument FROM instrcourdoc) ;

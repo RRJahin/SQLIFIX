@@ -1,0 +1,1 @@
+"SELECT COUNT(*) AS activityTypeInstances FROM ActivityType " + " WHERE id<> '" + id + "' AND name= '" + name + "'"

@@ -1,0 +1,1 @@
+ SELECT role FROM users WHERE MID=?

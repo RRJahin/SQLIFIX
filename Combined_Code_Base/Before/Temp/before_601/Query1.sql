@@ -1,0 +1,1 @@
+ SELECT * FROM drugreactionoverridecodes WHERE Code = X_16030521823290

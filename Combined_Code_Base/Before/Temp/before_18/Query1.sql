@@ -1,0 +1,1 @@
+ UPDATE Resurse_Financiare SET descriere= X_16030521669970 ,suma= X_16030521669971 , tip= X_16030521669972 where id= X_16030521669973

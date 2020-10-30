@@ -1,0 +1,1 @@
+"UPDATE stats SET death = " + getDeaths(p) + 1 + " WHERE player = '" + uuid + "'"

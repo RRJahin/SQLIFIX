@@ -1,0 +1,1 @@
+("UPDATE ITEM set DESCRIPTION = '" + DESCRIPTION + "' where ITEM_NAME LIKE '" + ITEM_NAME + "';")

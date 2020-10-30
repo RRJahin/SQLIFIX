@@ -1,0 +1,1 @@
+ Delete From Members where User_Name= X_16030521785300

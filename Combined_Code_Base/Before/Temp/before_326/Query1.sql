@@ -1,0 +1,1 @@
+ UPDATE ActivityType SET name= 'X_16030521740590', maxParticipants= 'X_16030521740591' WHERE id= 'X_16030521740592'

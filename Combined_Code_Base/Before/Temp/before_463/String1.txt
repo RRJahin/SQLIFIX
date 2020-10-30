@@ -1,0 +1,1 @@
+"INSERT INTO TeamParticipants(teamId, participantId) VALUES ('" + teamParticipant.getTeam().getId() + "','" + teamParticipant.getGuest().getId() + "')"

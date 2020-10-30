@@ -1,0 +1,1 @@
+ SELECT id,idAuthor FROM book where name='X_16030521669380'

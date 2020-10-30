@@ -1,0 +1,1 @@
+ SELECT smartreporter.field.Name, smartreporter.field.Size FROM smartreporter.field, smartreporter.template, smartreporter.user WHERE smartreporter.field.TemplateID=smartreporter.template.ID AND smartreporter.template.ACTIVE=1 AND smartreporter.template.User_ID= X_16030521747040

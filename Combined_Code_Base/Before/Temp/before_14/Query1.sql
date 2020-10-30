@@ -1,0 +1,1 @@
+ delete from Resurse_Financiare where id= X_16030521664700

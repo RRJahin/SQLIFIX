@@ -1,0 +1,1 @@
+"SELECT COUNT(*) AS activityBokingInstances FROM ActivityBooking " + " WHERE date='" + date + "' AND guestId='" + guestId + "' AND status<>'Canceled'"

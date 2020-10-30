@@ -1,0 +1,1 @@
+"INSERT INTO Location(zipcode, country, city) VALUES('" + loc.getZipCode() + "','" + loc.getCountry() + "','" + loc.getCity() + "')"

@@ -1,0 +1,1 @@
+ SELECT * from shipping.ica_couriers where subo in ( X_16030521669760 )

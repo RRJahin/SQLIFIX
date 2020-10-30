@@ -1,0 +1,1 @@
+ SELECT * FROM message WHERE to_id = X_16030521658860 ORDER BY sent_date ASC

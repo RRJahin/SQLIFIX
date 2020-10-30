@@ -1,0 +1,1 @@
+ SELECT * FROM officeVisit WHERE visitID= X_16030521687970

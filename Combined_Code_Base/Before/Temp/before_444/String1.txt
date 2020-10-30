@@ -1,0 +1,1 @@
+"UPDATE Person SET " + "name='" + prs.getName() + "', " + "zipcode='" + prs.getZipcode() + "', " + "country='" + prs.getCountry() + "', " + "address='" + prs.getAddress() + "', " + "phoneNo='" + prs.getPhoneNo() + "', " + "email='" + prs.getEmail() + "', " + "personType='" + prs.getPersonType() + "', " + "password='" + prs.getPassword() + "' " + "WHERE id='" + prs.getId() + "'"

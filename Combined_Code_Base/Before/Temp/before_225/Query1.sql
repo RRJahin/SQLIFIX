@@ -1,0 +1,1 @@
+ SELECT * FROM npc WHERE npc_id = X_16030521683930

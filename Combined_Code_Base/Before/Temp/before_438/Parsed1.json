@@ -1,0 +1,110 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "insert_statement": {
+        "insert_values": {
+          "row_values": {
+            "expression": [
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521768530",
+                    "object_type": "column",
+                    "part_name": "X_16030521768530"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521768531",
+                    "object_type": "column",
+                    "part_name": "X_16030521768531"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521768532",
+                    "object_type": "column",
+                    "part_name": "X_16030521768532"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521768533",
+                    "object_type": "column",
+                    "part_name": "X_16030521768533"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521768534",
+                    "object_type": "column",
+                    "part_name": "X_16030521768534"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "insertSource": "values",
+        "target_table": {
+          "type": "objectname",
+          "named_table_reference": {
+            "table_name": {
+              "full_name": "instructor",
+              "object_type": "table",
+              "object_name": "instructor"
+            }
+          }
+        },
+        "column_list": {
+          "objectName": [
+            {
+              "full_name": "fname",
+              "object_type": "column",
+              "part_name": "fname"
+            },
+            {
+              "full_name": "lname",
+              "object_type": "column",
+              "part_name": "lname"
+            },
+            {
+              "full_name": "faculty",
+              "object_type": "column",
+              "part_name": "faculty"
+            },
+            {
+              "full_name": "email",
+              "object_type": "column",
+              "part_name": "email"
+            },
+            {
+              "full_name": "password",
+              "object_type": "column",
+              "part_name": "password"
+            }
+          ]
+        }
+      },
+      "type": "sstinsert"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

@@ -1,0 +1,5 @@
+ type$X_16030521671903
+ job.getName()$X_16030521671891
+ status$X_16030521671904
+ file.getName()$X_16030521671890
+ file.getAbsolutePath()$X_16030521671892

@@ -1,0 +1,1 @@
+ SELECT patch FROM WHERE id = ?

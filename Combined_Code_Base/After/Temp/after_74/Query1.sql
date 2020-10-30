@@ -1,0 +1,1 @@
+ INSERT INTO member (id, pwd, name, phone, email, address, e_key) VALUES (?, ?, ?, ?, ?, ?, ?)

@@ -1,0 +1,1 @@
+ UPDATE service_order SET need_by_date = X_16030521665450 , service_type_mow = X_16030521665451 , service_type_edge = X_16030521665452 , service_type_rake = X_16030521665453 , instruction = X_16030521665454 , change_user_name = javauser, change_date = X_16030521665455 WHERE id = X_16030521665456

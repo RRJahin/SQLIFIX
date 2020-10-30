@@ -1,0 +1,2 @@
+ reservationID.toString()$X_16030521791701
+ roomNumber$X_16030521791700

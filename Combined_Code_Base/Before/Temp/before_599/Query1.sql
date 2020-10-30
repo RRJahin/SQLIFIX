@@ -1,0 +1,1 @@
+ INSERT INTO druginteractions (FirstDrug, SecondDrug, Description) VALUES ( X_16030521822710 , X_16030521822711 , X_16030521822712 )

@@ -1,0 +1,1 @@
+"insert into practica7.LLIBRE values (DEFAULT, " + ISBN + ",'" + titol + "','" + portada + "'," + numPag + ",'" + editorial + "'," + autor + ")"

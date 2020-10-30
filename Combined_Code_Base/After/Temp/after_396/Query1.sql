@@ -1,0 +1,1 @@
+ select name,number,position,height,weight,birth,age,exp,school,actionimgpath,portraitimgpath,seasonsp from nba.players where name=?

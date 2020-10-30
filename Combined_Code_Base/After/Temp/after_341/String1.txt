@@ -1,0 +1,1 @@
+"SELECT MAX(users.mid) FROM users WHERE mid BETWEEN ? AND ?"

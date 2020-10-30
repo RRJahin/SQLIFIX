@@ -1,0 +1,1 @@
+"INSERT INTO ingresso ( local, datahora, lugar, quantidade, idcategoria, idtipoingresso, valor) " + "VALUES (" + pista.getLocal() + "," + new java.sql.Date(pista.getDataHora().getTime()) + "," + pista.getLugar() + "," + pista.getQuantidade() + "," + pista.getCategoria().getId() + "," + pista.getTipoIngresso().getId() + "," + pista.getValor() + ")"

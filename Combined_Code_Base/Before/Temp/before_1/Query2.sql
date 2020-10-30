@@ -1,0 +1,1 @@
+ INSERT INTO document (title,docdesc,filetype,uploader,uploaddate,docfile) SELECT X_16030521651840 , docdesc, filetype, uploader, uploaddate, docfile FROM document where iddocument = X_16030521651841

@@ -1,0 +1,1 @@
+ INSERT INTO ActivityType(id, name, maxParticipants) VALUES ('X_16030521737920','X_16030521737921','X_16030521737922')

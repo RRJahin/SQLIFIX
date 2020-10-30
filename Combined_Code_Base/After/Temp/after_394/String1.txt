@@ -1,0 +1,1 @@
+"insert into nba.players(name,number,position,height,weight,birth,age,exp,school,actionimgpath,portraitimgpath)values(?,?,?,?,?,?,?,?,?,?,?)"

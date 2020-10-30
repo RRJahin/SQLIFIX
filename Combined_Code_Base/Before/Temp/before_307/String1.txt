@@ -1,0 +1,1 @@
+"INSERT INTO Pays (codePays, nomPays) VALUES (" + obj.getCodePays() + ", " + obj.getNomPays() + ")"

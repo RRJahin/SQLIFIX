@@ -1,0 +1,1 @@
+ INSERT INTO tblauthor(author_name, gender, description) VALUES(?, ?, ?)

@@ -1,0 +1,1 @@
+ UPDATE FamClient SET codeFamClient = ?, nomFamClient = ? WHERE id = ?

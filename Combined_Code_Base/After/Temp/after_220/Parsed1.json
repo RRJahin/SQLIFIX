@@ -1,0 +1,170 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "insert_statement": {
+        "insert_values": {
+          "row_values": {
+            "expression": [
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "insertSource": "values",
+        "target_table": {
+          "type": "objectname",
+          "named_table_reference": {
+            "table_name": {
+              "full_name": "X_16030521863140",
+              "object_type": "table",
+              "object_name": "X_16030521863140"
+            }
+          }
+        },
+        "column_list": {
+          "objectName": [
+            {
+              "full_name": "X_16030521863141",
+              "object_type": "column",
+              "part_name": "X_16030521863141"
+            },
+            {
+              "full_name": "X_16030521863142",
+              "object_type": "column",
+              "part_name": "X_16030521863142"
+            },
+            {
+              "full_name": "X_16030521863143",
+              "object_type": "column",
+              "part_name": "X_16030521863143"
+            },
+            {
+              "full_name": "X_16030521863144",
+              "object_type": "column",
+              "part_name": "X_16030521863144"
+            },
+            {
+              "full_name": "X_16030521863145",
+              "object_type": "column",
+              "part_name": "X_16030521863145"
+            },
+            {
+              "full_name": "X_16030521863146",
+              "object_type": "column",
+              "part_name": "X_16030521863146"
+            },
+            {
+              "full_name": "X_16030521863147",
+              "object_type": "column",
+              "part_name": "X_16030521863147"
+            },
+            {
+              "full_name": "X_16030521863148",
+              "object_type": "column",
+              "part_name": "X_16030521863148"
+            },
+            {
+              "full_name": "X_16030521863149",
+              "object_type": "column",
+              "part_name": "X_16030521863149"
+            }
+          ]
+        }
+      },
+      "type": "sstinsert"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

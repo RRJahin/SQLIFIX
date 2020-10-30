@@ -1,0 +1,1 @@
+ INSERT INTO tblauthor(author_name, gender, description) VALUES( X_16030521753000 , X_16030521753001 , X_16030521753002 )

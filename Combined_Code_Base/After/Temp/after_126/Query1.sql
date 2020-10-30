@@ -1,0 +1,1 @@
+ UPDATE message SET been_read=1 WHERE message_id=?

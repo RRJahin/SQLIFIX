@@ -1,0 +1,1 @@
+ SELECT COUNT(*) AS activityTypeInstances FROM ActivityType WHERE id<> 'X_16030521744540' AND name= 'X_16030521744541'

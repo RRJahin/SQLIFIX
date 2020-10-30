@@ -1,0 +1,1 @@
+"DELETE FROM ModRgl WHERE id = " + obj.getId()

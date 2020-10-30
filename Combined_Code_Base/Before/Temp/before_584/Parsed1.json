@@ -1,0 +1,206 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "select_statement": {
+        "query_expression": {
+          "query_specification": {
+            "select_list": {
+              "result_column": {
+                "expression": {
+                  "expr_type": "simple_object_name_t",
+                  "column_referenced_expr": {
+                    "objectName": {
+                      "full_name": "*",
+                      "object_type": "column",
+                      "part_name": "*"
+                    }
+                  }
+                }
+              }
+            },
+            "where_clause": {
+              "condition": {
+                "expr_type": "simple_comparison_t",
+                "comparison_expr": {
+                  "first_expr": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "Album_Lista.id_lista",
+                        "object_type": "column",
+                        "object_name": "Album_Lista",
+                        "part_name": "id_lista"
+                      }
+                    }
+                  },
+                  "second_expr": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "X_16030521818620",
+                        "object_type": "column",
+                        "part_name": "X_16030521818620"
+                      }
+                    }
+                  },
+                  "type": "="
+                }
+              }
+            },
+            "from_clause": {
+              "table_reference": {
+                "joined_table": {
+                  "first_table_reference": {
+                    "joined_table": {
+                      "first_table_reference": {
+                        "joined_table": {
+                          "first_table_reference": {
+                            "type": "objectname",
+                            "named_table_reference": {
+                              "table_name": {
+                                "full_name": "Album_Lista",
+                                "object_type": "table",
+                                "object_name": "Album_Lista"
+                              }
+                            }
+                          },
+                          "join_condition": {
+                            "expr_type": "simple_comparison_t",
+                            "comparison_expr": {
+                              "first_expr": {
+                                "expr_type": "simple_object_name_t",
+                                "column_referenced_expr": {
+                                  "objectName": {
+                                    "full_name": "Album_Lista.id_lista",
+                                    "object_type": "column",
+                                    "object_name": "Album_Lista",
+                                    "part_name": "id_lista"
+                                  }
+                                }
+                              },
+                              "second_expr": {
+                                "expr_type": "simple_object_name_t",
+                                "column_referenced_expr": {
+                                  "objectName": {
+                                    "full_name": "Lista.id_lista",
+                                    "object_type": "column",
+                                    "object_name": "Lista",
+                                    "part_name": "id_lista"
+                                  }
+                                }
+                              },
+                              "type": "="
+                            }
+                          },
+                          "type": "inner",
+                          "second_table_reference": {
+                            "type": "objectname",
+                            "named_table_reference": {
+                              "table_name": {
+                                "full_name": "Lista",
+                                "object_type": "table",
+                                "object_name": "Lista"
+                              }
+                            }
+                          }
+                        },
+                        "type": "join"
+                      },
+                      "join_condition": {
+                        "expr_type": "simple_comparison_t",
+                        "comparison_expr": {
+                          "first_expr": {
+                            "expr_type": "simple_object_name_t",
+                            "column_referenced_expr": {
+                              "objectName": {
+                                "full_name": "Lista.id_usuario",
+                                "object_type": "column",
+                                "object_name": "Lista",
+                                "part_name": "id_usuario"
+                              }
+                            }
+                          },
+                          "second_expr": {
+                            "expr_type": "simple_object_name_t",
+                            "column_referenced_expr": {
+                              "objectName": {
+                                "full_name": "Usuario.id_usuario",
+                                "object_type": "column",
+                                "object_name": "Usuario",
+                                "part_name": "id_usuario"
+                              }
+                            }
+                          },
+                          "type": "="
+                        }
+                      },
+                      "type": "inner",
+                      "second_table_reference": {
+                        "type": "objectname",
+                        "named_table_reference": {
+                          "table_name": {
+                            "full_name": "Usuario",
+                            "object_type": "table",
+                            "object_name": "Usuario"
+                          }
+                        }
+                      }
+                    },
+                    "type": "join"
+                  },
+                  "join_condition": {
+                    "expr_type": "simple_comparison_t",
+                    "comparison_expr": {
+                      "first_expr": {
+                        "expr_type": "simple_object_name_t",
+                        "column_referenced_expr": {
+                          "objectName": {
+                            "full_name": "Album.id_album",
+                            "object_type": "column",
+                            "object_name": "Album",
+                            "part_name": "id_album"
+                          }
+                        }
+                      },
+                      "second_expr": {
+                        "expr_type": "simple_object_name_t",
+                        "column_referenced_expr": {
+                          "objectName": {
+                            "full_name": "Album_Lista.id_album",
+                            "object_type": "column",
+                            "object_name": "Album_Lista",
+                            "part_name": "id_album"
+                          }
+                        }
+                      },
+                      "type": "="
+                    }
+                  },
+                  "type": "inner",
+                  "second_table_reference": {
+                    "type": "objectname",
+                    "named_table_reference": {
+                      "table_name": {
+                        "full_name": "Album",
+                        "object_type": "table",
+                        "object_name": "Album"
+                      }
+                    }
+                  }
+                },
+                "type": "join"
+              }
+            }
+          },
+          "is_parenthesis": false
+        }
+      },
+      "type": "sstselect"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

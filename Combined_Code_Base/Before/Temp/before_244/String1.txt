@@ -1,0 +1,1 @@
+"UPDATE ActivityBooking SET " + " status= '" + activityBookingObj.getStatus() + "' " + "WHERE id= '" + activityBookingObj.getId() + "'"

@@ -1,0 +1,1 @@
+ INSERT INTO Notas (aberta,usuario_abriu,titulo,texto,cor,prazo_final_nota,data_criacao) values( X_16030521808520 , X_16030521808521 , X_16030521808522 , X_16030521808523 , X_16030521808524 , X_16030521808525 , X_16030521808526 )

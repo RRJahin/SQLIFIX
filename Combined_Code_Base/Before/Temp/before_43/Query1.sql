@@ -1,0 +1,1 @@
+ SELECT kills FROM stats WHERE player = 'X_16030521764420'

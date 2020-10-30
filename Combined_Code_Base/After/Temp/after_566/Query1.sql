@@ -1,0 +1,1 @@
+ DELETE FROM Projects WHERE id = ?

@@ -1,0 +1,1 @@
+ SELECT * FROM ProgrameDeStudiu WHERE sectie_id = X_16030521816200

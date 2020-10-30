@@ -1,0 +1,1 @@
+ Insert into Guest(Guest_Name, Guest_Surname, Address, Email_Address, Card_Number, Phone_Number,ExpiryDate,CVV) values ( X_16030521789300 , X_16030521789301 , X_16030521789302 , X_16030521789303 , X_16030521789304 , X_16030521789305 , X_16030521789306 , X_16030521789307 )

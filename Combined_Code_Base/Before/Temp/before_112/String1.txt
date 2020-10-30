@@ -1,0 +1,1 @@
+"UPDATE ingresso SET local=" + adulto.getLocal() + ", datahora=" + new java.sql.Date(adulto.getDataHora().getTime()) + ", lugar=" + adulto.getLugar() + ", quantidade=" + adulto.getQuantidade() + ", idcategoria=" + adulto.getCategoria().getId() + ", idtipoingresso=" + adulto.getTipoIngresso().getId() + ", valor=" + adulto.getValor() + " WHERE id=" + adulto.getId()

@@ -1,0 +1,1 @@
+"INSERT INTO TaskBudget VALUES (" + t.getId() + "," + tip + "," + res.getSuma() + "," + res.getDescriere() + ")"

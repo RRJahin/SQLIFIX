@@ -1,0 +1,4 @@
+ alimentacao.getCd_usuario()$X_16030521820231
+ alimentacao.getVl_calorias_ganhas()$X_16030521820232
+ alimentacao.getDs_alimento()$X_16030521820230
+ data$X_16030521820233

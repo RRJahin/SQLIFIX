@@ -1,0 +1,1 @@
+ UPDATE users SET isDependent=0 WHERE MID=?

@@ -1,0 +1,91 @@
+{
+  "target": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "state",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "Statement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "\u003d",
+        "type": "Assignment",
+        "children": [
+          {
+            "label": "state",
+            "type": "FieldWrite",
+            "children": []
+          },
+          {
+            "label": "createStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "conn",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "executeUpdate",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "state",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "PLUS",
+            "type": "BinaryOperator",
+            "children": [
+              {
+                "label": "PLUS",
+                "type": "BinaryOperator",
+                "children": [
+                  {
+                    "label": "\"INSERT INTO `stats` (`player`, `kills`, `deaths`) VALUES (\u0027\"",
+                    "type": "Literal",
+                    "children": []
+                  },
+                  {
+                    "label": "toString",
+                    "type": "Invocation",
+                    "children": [
+                      {
+                        "label": "getUniqueId",
+                        "type": "Invocation",
+                        "children": [
+                          {
+                            "label": "p",
+                            "type": "FieldRead",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "label": "\"\u0027, \u00270\u0027, \u00270\u0027)\"",
+                "type": "Literal",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

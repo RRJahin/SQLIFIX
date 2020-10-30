@@ -1,0 +1,1 @@
+ SELECT fldProgress FROM tblAchievements WHERE id=?

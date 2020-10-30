@@ -1,0 +1,4 @@
+ Data.String2Sql(_Fecha.toString(), true, false)$X_16030521737070
+ Data.String2Sql(_sDirEnvio, true, false)$X_16030521737072
+ _iId$X_16030521737073
+ _iCodPostal$X_16030521737071

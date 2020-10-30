@@ -1,0 +1,1 @@
+ UPDATE instructor SET admin = X_16030521782530 WHERE idinstructor = X_16030521782531 ;

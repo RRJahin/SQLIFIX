@@ -1,0 +1,1 @@
+ SELECT id FROM member WHERE e_key=?

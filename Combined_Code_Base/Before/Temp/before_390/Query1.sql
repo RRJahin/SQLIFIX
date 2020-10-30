@@ -1,0 +1,1 @@
+ SELECT * FROM tblauthor WHERE id = X_16030521752810

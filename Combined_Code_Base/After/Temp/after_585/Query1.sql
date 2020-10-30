@@ -1,0 +1,1 @@
+ SELECT sensor_type, comparator, comparison_value FROM alerts WHERE node_id = ? AND sensor_type = ? ;

@@ -1,0 +1,14 @@
+ m.getAlbumName()$X_16030521667884
+ DateUtil.getDateTime()$X_160305216678811
+ m.getMusicName()$X_16030521667880
+ m.getMusicLanguage()$X_16030521667882
+ m.getLyrics()$X_16030521667887
+ m.getFileLength()$X_160305216678812
+ m.getMusicLength()$X_160305216678813
+ m.getMusicUrl()$X_16030521667885
+ m.getUploadedBy()$X_160305216678810
+ m.getMusicStyle()$X_16030521667881
+ m.getPublishDate()$X_16030521667888
+ m.getDescription()$X_16030521667889
+ m.getImageUrl()$X_16030521667886
+ m.getArtistName()$X_16030521667883

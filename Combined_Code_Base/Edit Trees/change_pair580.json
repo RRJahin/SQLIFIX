@@ -1,0 +1,210 @@
+{
+  "before_code": "Statement s = c.createStatement()\nResultSet rs = s.executeQuery(((\"Select UserId, `Name`, a.Id as aId, i.Id, `Hash`, `Image`, `Album`, `CreatedIn` From `ALBUM` as a \" + (\"INNER JOIN `IMAGE` as i on i.Album = a.Id\" + \" Where `UserId` = \")) + userId) + \" Group by `Name`, i.`Id`, `Album`\")\n",
+  "after_code": "PreparedStatement s = c.prepareStatement(\"Select UserId, `Name`, a.Id as aId, i.Id, `Hash`, `Image`, `Album`, `CreatedIn` From `ALBUM` as a \" + (\"INNER JOIN `IMAGE` as i on i.Album = a.Id\" + \" Where `UserId` = ? Group by `Name`, i.`Id`, `Album`\"))\ns.setObject(1, userId)\nResultSet rs = s.executeQuery()\n",
+  "before_line": [
+    6,
+    7
+  ],
+  "after_line": [
+    6,
+    7,
+    8
+  ],
+  "before_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "s",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "Statement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "createStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "c",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "rs",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "ResultSet",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "executeQuery",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "s",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "PLUS",
+                "type": "BinaryOperator",
+                "children": [
+                  {
+                    "label": "PLUS",
+                    "type": "BinaryOperator",
+                    "children": [
+                      {
+                        "label": "PLUS",
+                        "type": "BinaryOperator",
+                        "children": [
+                          {
+                            "label": "\"Select UserId, `Name`, a.Id as aId, i.Id, `Hash`, `Image`, `Album`, `CreatedIn` From `ALBUM` as a \"",
+                            "type": "Literal",
+                            "children": []
+                          },
+                          {
+                            "label": "PLUS",
+                            "type": "BinaryOperator",
+                            "children": [
+                              {
+                                "label": "\"INNER JOIN `IMAGE` as i on i.Album = a.Id\"",
+                                "type": "Literal",
+                                "children": []
+                              },
+                              {
+                                "label": "\" Where `UserId` = \"",
+                                "type": "Literal",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "userId",
+                        "type": "FieldRead",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "label": "\" Group by `Name`, i.`Id`, `Album`\"",
+                    "type": "Literal",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "after_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "s",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "PreparedStatement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "prepareStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "c",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "PLUS",
+                "type": "BinaryOperator",
+                "children": [
+                  {
+                    "label": "\"Select UserId, `Name`, a.Id as aId, i.Id, `Hash`, `Image`, `Album`, `CreatedIn` From `ALBUM` as a \"",
+                    "type": "Literal",
+                    "children": []
+                  },
+                  {
+                    "label": "PLUS",
+                    "type": "BinaryOperator",
+                    "children": [
+                      {
+                        "label": "\"INNER JOIN `IMAGE` as i on i.Album = a.Id\"",
+                        "type": "Literal",
+                        "children": []
+                      },
+                      {
+                        "label": "\" Where `UserId` = ? Group by `Name`, i.`Id`, `Album`\"",
+                        "type": "Literal",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "setObject",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "s",
+            "type": "FieldRead",
+            "children": []
+          },
+          {
+            "label": "1",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "userId",
+            "type": "FieldRead",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "rs",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "ResultSet",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "executeQuery",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "s",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

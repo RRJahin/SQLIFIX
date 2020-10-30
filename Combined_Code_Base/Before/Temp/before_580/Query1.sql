@@ -1,0 +1,1 @@
+ Select UserId, 'Name', a.Id as aId, i.Id, 'Hash', 'Image', 'Album', 'CreatedIn' From 'ALBUM' as a INNER JOIN 'IMAGE' as i on i.Album = a.Id Where 'UserId' = X_16030521818290 Group by 'Name', i.'Id', 'Album'

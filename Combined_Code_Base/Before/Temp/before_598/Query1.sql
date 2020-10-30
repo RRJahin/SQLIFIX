@@ -1,0 +1,1 @@
+ SELECT * FROM druginteractions WHERE FirstDrug = X_16030521822500 OR SecondDrug = X_16030521822500

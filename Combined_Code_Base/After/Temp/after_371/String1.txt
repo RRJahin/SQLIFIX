@@ -1,0 +1,1 @@
+"UPDATE " + table + " SET " + column + "=? WHERE id=" + id

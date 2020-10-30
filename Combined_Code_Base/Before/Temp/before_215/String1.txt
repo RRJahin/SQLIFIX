@@ -1,0 +1,1 @@
+"select * from " + TBL_NAME + " where " + FIELD_ID_PIANO + "=" + search_id + " AND " + FIELD_IS_PDI + "=false order by " + FIELD_CODICE

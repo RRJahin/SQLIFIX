@@ -1,0 +1,110 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "insert_statement": {
+        "insert_values": {
+          "row_values": {
+            "expression": [
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521738030",
+                    "object_type": "column",
+                    "part_name": "X_16030521738030"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521738031",
+                    "object_type": "column",
+                    "part_name": "X_16030521738031"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521738032",
+                    "object_type": "column",
+                    "part_name": "X_16030521738032"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521738033",
+                    "object_type": "column",
+                    "part_name": "X_16030521738033"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521738034",
+                    "object_type": "column",
+                    "part_name": "X_16030521738034"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "insertSource": "values",
+        "target_table": {
+          "type": "objectname",
+          "named_table_reference": {
+            "table_name": {
+              "full_name": "tbl_peliculas",
+              "object_type": "table",
+              "object_name": "tbl_peliculas"
+            }
+          }
+        },
+        "column_list": {
+          "objectName": [
+            {
+              "full_name": "nombre",
+              "object_type": "column",
+              "part_name": "nombre"
+            },
+            {
+              "full_name": "genero",
+              "object_type": "column",
+              "part_name": "genero"
+            },
+            {
+              "full_name": "clasificacion",
+              "object_type": "column",
+              "part_name": "clasificacion"
+            },
+            {
+              "full_name": "duracion",
+              "object_type": "column",
+              "part_name": "duracion"
+            },
+            {
+              "full_name": "imagen",
+              "object_type": "column",
+              "part_name": "imagen"
+            }
+          ]
+        }
+      },
+      "type": "sstinsert"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

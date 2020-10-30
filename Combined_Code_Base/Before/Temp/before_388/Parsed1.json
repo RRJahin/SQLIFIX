@@ -1,0 +1,73 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "select_statement": {
+        "query_expression": {
+          "query_specification": {
+            "select_list": {
+              "result_column": {
+                "expression": {
+                  "expr_type": "simple_object_name_t",
+                  "column_referenced_expr": {
+                    "objectName": {
+                      "full_name": "product_stock",
+                      "object_type": "column",
+                      "part_name": "product_stock"
+                    }
+                  }
+                }
+              }
+            },
+            "where_clause": {
+              "condition": {
+                "expr_type": "simple_comparison_t",
+                "comparison_expr": {
+                  "first_expr": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "product_id",
+                        "object_type": "column",
+                        "part_name": "product_id"
+                      }
+                    }
+                  },
+                  "second_expr": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "X_16030521752210",
+                        "object_type": "column",
+                        "part_name": "X_16030521752210"
+                      }
+                    }
+                  },
+                  "type": "="
+                }
+              }
+            },
+            "from_clause": {
+              "table_reference": {
+                "type": "objectname",
+                "named_table_reference": {
+                  "table_name": {
+                    "full_name": "product_sms",
+                    "object_type": "table",
+                    "object_name": "product_sms"
+                  }
+                }
+              }
+            }
+          },
+          "is_parenthesis": false
+        }
+      },
+      "type": "sstselect"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

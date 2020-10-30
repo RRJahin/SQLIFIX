@@ -1,0 +1,2 @@
+ GuestID.toString()$X_16030521906270
+ reservationType$X_16030521906271

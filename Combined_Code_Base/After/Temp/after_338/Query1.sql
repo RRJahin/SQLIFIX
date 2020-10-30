@@ -1,0 +1,1 @@
+ SELECT sQuestion FROM users WHERE MID=?

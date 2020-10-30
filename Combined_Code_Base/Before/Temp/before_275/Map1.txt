@@ -1,0 +1,3 @@
+ codeParc$X_16030521721500
+ PanelStats.commercialStats.getCodeCommercial()$X_16030521721501
+ PanelStats.commercialStats.getId()$X_16030521721502

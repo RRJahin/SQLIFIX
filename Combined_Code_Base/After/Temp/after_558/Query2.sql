@@ -1,0 +1,1 @@
+ select * from practica7.BIBLIOTECARI where ID = ? ;

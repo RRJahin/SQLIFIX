@@ -1,0 +1,1 @@
+ DELETE FROM TeamParticipants WHERE teamId= '?'

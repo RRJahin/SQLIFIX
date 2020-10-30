@@ -1,0 +1,127 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "select_statement": {
+        "query_expression": {
+          "query_specification": {
+            "select_list": {
+              "result_column": {
+                "expression": {
+                  "expr_type": "simple_object_name_t",
+                  "column_referenced_expr": {
+                    "objectName": {
+                      "full_name": "*",
+                      "object_type": "column",
+                      "part_name": "*"
+                    }
+                  }
+                }
+              }
+            },
+            "where_clause": {
+              "condition": {
+                "in_expr": {
+                  "not": false,
+                  "first_expr": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "MID",
+                        "object_type": "column",
+                        "part_name": "MID"
+                      }
+                    }
+                  },
+                  "second_expr": {
+                    "subquery_expr": {
+                      "query_expression": {
+                        "query_specification": {
+                          "select_list": {
+                            "result_column": {
+                              "expression": {
+                                "expr_type": "simple_object_name_t",
+                                "column_referenced_expr": {
+                                  "objectName": {
+                                    "full_name": "UAP",
+                                    "object_type": "column",
+                                    "part_name": "UAP"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "where_clause": {
+                            "condition": {
+                              "expr_type": "simple_comparison_t",
+                              "comparison_expr": {
+                                "first_expr": {
+                                  "expr_type": "simple_object_name_t",
+                                  "column_referenced_expr": {
+                                    "objectName": {
+                                      "full_name": "HCP",
+                                      "object_type": "column",
+                                      "part_name": "HCP"
+                                    }
+                                  }
+                                },
+                                "second_expr": {
+                                  "expr_type": "simple_object_name_t",
+                                  "column_referenced_expr": {
+                                    "objectName": {
+                                      "full_name": "X_16030521744960",
+                                      "object_type": "column",
+                                      "part_name": "X_16030521744960"
+                                    }
+                                  }
+                                },
+                                "type": "="
+                              }
+                            }
+                          },
+                          "from_clause": {
+                            "table_reference": {
+                              "type": "objectname",
+                              "named_table_reference": {
+                                "table_name": {
+                                  "full_name": "hcprelations",
+                                  "object_type": "table",
+                                  "object_name": "hcprelations"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "is_parenthesis": true
+                      }
+                    },
+                    "expr_type": "subquery_t"
+                  }
+                },
+                "expr_type": "in_t"
+              }
+            },
+            "from_clause": {
+              "table_reference": {
+                "type": "objectname",
+                "named_table_reference": {
+                  "table_name": {
+                    "full_name": "personnel",
+                    "object_type": "table",
+                    "object_name": "personnel"
+                  }
+                }
+              }
+            }
+          },
+          "is_parenthesis": false
+        }
+      },
+      "type": "sstselect"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

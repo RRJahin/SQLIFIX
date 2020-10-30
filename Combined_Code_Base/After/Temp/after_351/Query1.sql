@@ -1,0 +1,1 @@
+ SELECT * FROM personnel WHERE MID IN (SELECT UAP FROM hcprelations WHERE HCP=?)

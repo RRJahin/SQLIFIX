@@ -1,0 +1,151 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "select_statement": {
+        "query_expression": {
+          "query_specification": {
+            "select_list": {
+              "result_column": {
+                "expression": {
+                  "expr_type": "simple_object_name_t",
+                  "column_referenced_expr": {
+                    "objectName": {
+                      "full_name": "*",
+                      "object_type": "column",
+                      "part_name": "*"
+                    }
+                  }
+                }
+              }
+            },
+            "where_clause": {
+              "condition": {
+                "binary_expr": {
+                  "first_expr": {
+                    "expr_type": "simple_comparison_t",
+                    "comparison_expr": {
+                      "first_expr": {
+                        "expr_type": "simple_object_name_t",
+                        "column_referenced_expr": {
+                          "objectName": {
+                            "full_name": "hah.HCPID",
+                            "object_type": "column",
+                            "object_name": "hah",
+                            "part_name": "HCPID"
+                          }
+                        }
+                      },
+                      "second_expr": {
+                        "expr_type": "simple_object_name_t",
+                        "column_referenced_expr": {
+                          "objectName": {
+                            "full_name": "X_16030521744060",
+                            "object_type": "column",
+                            "part_name": "X_16030521744060"
+                          }
+                        }
+                      },
+                      "type": "="
+                    }
+                  },
+                  "second_expr": {
+                    "expr_type": "simple_comparison_t",
+                    "comparison_expr": {
+                      "first_expr": {
+                        "expr_type": "simple_object_name_t",
+                        "column_referenced_expr": {
+                          "objectName": {
+                            "full_name": "hah.HosID",
+                            "object_type": "column",
+                            "object_name": "hah",
+                            "part_name": "HosID"
+                          }
+                        }
+                      },
+                      "second_expr": {
+                        "expr_type": "simple_object_name_t",
+                        "column_referenced_expr": {
+                          "objectName": {
+                            "full_name": "h.HospitalID",
+                            "object_type": "column",
+                            "object_name": "h",
+                            "part_name": "HospitalID"
+                          }
+                        }
+                      },
+                      "type": "="
+                    }
+                  },
+                  "operator": "AND"
+                },
+                "expr_type": "logical_and_t"
+              }
+            },
+            "order_by_clause": {
+              "order_by_item": {
+                "sort_key": {
+                  "expr_type": "simple_object_name_t",
+                  "column_referenced_expr": {
+                    "objectName": {
+                      "full_name": "HospitalName",
+                      "object_type": "column",
+                      "part_name": "HospitalName"
+                    }
+                  }
+                },
+                "sort_order": "asc"
+              }
+            },
+            "from_clause": {
+              "table_reference": [
+                {
+                  "type": "objectname",
+                  "named_table_reference": {
+                    "alias_clause": {
+                      "object_name": {
+                        "full_name": "hah",
+                        "object_type": "table_alias",
+                        "object_name": "hah"
+                      },
+                      "with_as": false
+                    },
+                    "table_name": {
+                      "full_name": "hcpassignedhos",
+                      "object_type": "table",
+                      "object_name": "hcpassignedhos"
+                    }
+                  }
+                },
+                {
+                  "type": "objectname",
+                  "named_table_reference": {
+                    "alias_clause": {
+                      "object_name": {
+                        "full_name": "h",
+                        "object_type": "table_alias",
+                        "object_name": "h"
+                      },
+                      "with_as": false
+                    },
+                    "table_name": {
+                      "full_name": "hospitals",
+                      "object_type": "table",
+                      "object_name": "hospitals"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "is_parenthesis": false
+        }
+      },
+      "type": "sstselect"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

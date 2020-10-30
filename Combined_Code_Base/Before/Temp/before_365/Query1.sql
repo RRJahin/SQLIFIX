@@ -1,0 +1,1 @@
+ DELETE FROM credit_card WHERE cardnum = 'X_16030521746970' ;

@@ -1,0 +1,1 @@
+"SELECT " + column + " FROM " + table + " WHERE id=" + id

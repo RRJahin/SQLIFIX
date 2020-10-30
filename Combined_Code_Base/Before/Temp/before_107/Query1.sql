@@ -1,0 +1,1 @@
+ DELETE FROM bespeak WHERE order_num= X_16030521655110

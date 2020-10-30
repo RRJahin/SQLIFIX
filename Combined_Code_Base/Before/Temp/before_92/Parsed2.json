@@ -1,0 +1,291 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "insert_statement": {
+        "insert_values": {
+          "row_values": {
+            "expression": [
+              {
+                "binary_expr": {
+                  "first_expr": {
+                    "expr_type": "function_t",
+                    "functionCall_expr": {
+                      "functionCall": {
+                        "generic_function": {
+                          "functionArgs": {
+                            "expression": [
+                              {
+                                "expr_type": "simple_object_name_t",
+                                "column_referenced_expr": {
+                                  "objectName": {
+                                    "full_name": "sysdate",
+                                    "object_type": "unknown",
+                                    "part_name": "sysdate"
+                                  }
+                                }
+                              },
+                              {
+                                "constant_expr": {
+                                  "literal": {
+                                    "value": "'yyyyMMdd'"
+                                  }
+                                },
+                                "expr_type": "simple_constant_t"
+                              }
+                            ]
+                          }
+                        },
+                        "functionName": {
+                          "full_name": "TO_CHAR",
+                          "object_type": "function",
+                          "object_name": "TO_CHAR"
+                        },
+                        "builtIn": true,
+                        "type": "unknown_t",
+                        "aggregateType": "none"
+                      }
+                    }
+                  },
+                  "second_expr": {
+                    "expr_type": "function_t",
+                    "functionCall_expr": {
+                      "functionCall": {
+                        "generic_function": {
+                          "functionArgs": {
+                            "expression": [
+                              {
+                                "expr_type": "simple_object_name_t",
+                                "column_referenced_expr": {
+                                  "objectName": {
+                                    "full_name": "order_sq.nextval",
+                                    "object_type": "unknown",
+                                    "object_name": "order_sq",
+                                    "part_name": "nextval"
+                                  }
+                                }
+                              },
+                              {
+                                "constant_expr": {
+                                  "literal": {
+                                    "value": 3
+                                  }
+                                },
+                                "expr_type": "simple_constant_t"
+                              },
+                              {
+                                "constant_expr": {
+                                  "literal": {
+                                    "value": "'0'"
+                                  }
+                                },
+                                "expr_type": "simple_constant_t"
+                              }
+                            ]
+                          }
+                        },
+                        "functionName": {
+                          "full_name": "LPAD",
+                          "object_type": "function",
+                          "object_name": "LPAD"
+                        },
+                        "builtIn": true,
+                        "type": "unknown_t",
+                        "aggregateType": "none"
+                      }
+                    }
+                  },
+                  "operator": "||"
+                },
+                "expr_type": "concatenate_t"
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "insertSource": "values",
+        "target_table": {
+          "type": "objectname",
+          "named_table_reference": {
+            "alias_clause": {
+              "object_name": {
+                "full_name": "bespeak",
+                "object_type": "table_alias",
+                "object_name": "bespeak"
+              },
+              "with_as": false
+            },
+            "table_name": {
+              "full_name": "bespeak",
+              "object_type": "table",
+              "object_name": "bespeak"
+            }
+          }
+        },
+        "column_list": {
+          "objectName": [
+            {
+              "full_name": "order_num",
+              "object_type": "column",
+              "part_name": "order_num"
+            },
+            {
+              "full_name": "id",
+              "object_type": "column",
+              "part_name": "id"
+            },
+            {
+              "full_name": "name",
+              "object_type": "column",
+              "part_name": "name"
+            },
+            {
+              "full_name": "phone",
+              "object_type": "column",
+              "part_name": "phone"
+            },
+            {
+              "full_name": "address",
+              "object_type": "column",
+              "part_name": "address"
+            },
+            {
+              "full_name": "no",
+              "object_type": "column",
+              "part_name": "no"
+            },
+            {
+              "full_name": "count",
+              "object_type": "column",
+              "part_name": "count"
+            },
+            {
+              "full_name": "price",
+              "object_type": "column",
+              "part_name": "price"
+            },
+            {
+              "full_name": "etc",
+              "object_type": "column",
+              "part_name": "etc"
+            },
+            {
+              "full_name": "bank",
+              "object_type": "column",
+              "part_name": "bank"
+            },
+            {
+              "full_name": "account",
+              "object_type": "column",
+              "part_name": "account"
+            }
+          ]
+        }
+      },
+      "type": "sstinsert"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

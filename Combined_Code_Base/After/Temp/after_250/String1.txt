@@ -1,0 +1,1 @@
+"DELETE FROM ActivityBooking WHERE guestId= '?' AND date= '?'"

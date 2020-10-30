@@ -1,0 +1,134 @@
+{
+  "before_code": "Statement statement = dbManager.getConnection().createStatement()\nResultSet rs = statement.executeQuery(sqlQuerry)\n",
+  "after_code": "PreparedStatement statement = dbManager.getConnection().prepareStatement(sqlQuerry)\nResultSet rs = statement.executeQuery()\n",
+  "before_line": [
+    6,
+    7
+  ],
+  "after_line": [
+    6,
+    7
+  ],
+  "before_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "statement",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "Statement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "createStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "getConnection",
+                "type": "Invocation",
+                "children": [
+                  {
+                    "label": "dbManager",
+                    "type": "FieldRead",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "rs",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "ResultSet",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "executeQuery",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "statement",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "sqlQuerry",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "after_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "statement",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "PreparedStatement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "prepareStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "getConnection",
+                "type": "Invocation",
+                "children": [
+                  {
+                    "label": "dbManager",
+                    "type": "FieldRead",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "label": "sqlQuerry",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "rs",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "ResultSet",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "executeQuery",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "statement",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

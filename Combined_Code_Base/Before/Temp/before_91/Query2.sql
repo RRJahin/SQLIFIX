@@ -1,0 +1,1 @@
+ SELECT * FROM cart WHERE id=? AND no=?

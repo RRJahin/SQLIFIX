@@ -1,0 +1,1 @@
+ UPDATE Location SET zipCode= '?', city= '?' WHERE country= '?'

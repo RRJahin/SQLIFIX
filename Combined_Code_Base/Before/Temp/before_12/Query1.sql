@@ -1,0 +1,1 @@
+ Insert into User(id,firstName,lastName,userName,email,password,mobileNo) values( X_16030521659180 , X_16030521659181 , X_16030521659182 , X_16030521659183 , X_16030521659184 , X_16030521659185 , X_16030521659186 )

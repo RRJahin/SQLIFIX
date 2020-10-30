@@ -1,0 +1,2 @@
+ member.getPassword()$X_16030521788870
+ member.getUserName()$X_16030521788871

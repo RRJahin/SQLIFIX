@@ -1,0 +1,1 @@
+ INSERT INTO cluster_table VALUES( 'X_16030521671320')

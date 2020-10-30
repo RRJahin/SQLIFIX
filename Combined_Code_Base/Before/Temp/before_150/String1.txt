@@ -1,0 +1,1 @@
+"select SQL_CALC_FOUND_ROWS m.* FROM movie m JOIN order_movie om ON m.movie_id = om.movie_id JOIN user_order uo ON uo.order_id = om.order_id \n" + "JOIN user u ON u.user_id = uo.user_id\n" + "WHERE u.user_id = " + user_id + " AND uo.confirm_no = 1 ORDER BY uo.date_create desc limit " + offset + ", " + noOfRecords

@@ -1,0 +1,12 @@
+ post.getIsHighlighted()$X_16030521757035
+ post.getMessage()$X_16030521757037
+ post.getUser().toString()$X_160305217570310
+ post.getIsApproved()$X_16030521757032
+ post.getParent()$X_16030521757038
+ post.getIsSpam()$X_16030521757036
+ post.getIsDeleted()$X_16030521757033
+ post.getDate()$X_16030521757030
+ Long.parseLong(post.getThread().toString())$X_16030521757039
+ post.getForum().toString()$X_16030521757031
+ post.getIsEdited()$X_16030521757034
+ resultPatch$X_160305217570311

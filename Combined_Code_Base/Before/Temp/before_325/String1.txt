@@ -1,0 +1,1 @@
+"INSERT INTO adv_pendencia.tab_pedencia VALUES(null, " + filtro.getDescPendencia() + ",'Em aberto', " + filtro.getNomPendencia() + ", null, " + filtro.getPasta() + "," + data + ")"

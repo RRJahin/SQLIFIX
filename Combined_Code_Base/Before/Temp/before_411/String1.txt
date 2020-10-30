@@ -1,0 +1,1 @@
+"select * from shares where our_result='Y' order by time desc limit " + Math.round(network_diff / 32.0)

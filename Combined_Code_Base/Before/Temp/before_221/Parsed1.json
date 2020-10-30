@@ -1,0 +1,204 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "update_statement": {
+        "where_clause": {
+          "condition": {
+            "expr_type": "simple_comparison_t",
+            "comparison_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_160305216822313",
+                    "object_type": "column",
+                    "part_name": "X_160305216822313"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_160305216822314",
+                    "object_type": "column",
+                    "part_name": "X_160305216822314"
+                  }
+                }
+              },
+              "type": "="
+            }
+          }
+        },
+        "target_table": {
+          "type": "objectname",
+          "named_table_reference": {
+            "table_name": {
+              "full_name": "X_16030521682230",
+              "object_type": "table",
+              "object_name": "X_16030521682230"
+            }
+          }
+        },
+        "set_clause": [
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521682231",
+                    "object_type": "column",
+                    "part_name": "X_16030521682231"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521682232",
+                    "object_type": "column",
+                    "part_name": "X_16030521682232"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521682233",
+                    "object_type": "column",
+                    "part_name": "X_16030521682233"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521682234",
+                    "object_type": "column",
+                    "part_name": "X_16030521682234"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521682235",
+                    "object_type": "column",
+                    "part_name": "X_16030521682235"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521682236",
+                    "object_type": "column",
+                    "part_name": "X_16030521682236"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521682237",
+                    "object_type": "column",
+                    "part_name": "X_16030521682237"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521682238",
+                    "object_type": "column",
+                    "part_name": "X_16030521682238"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521682239",
+                    "object_type": "column",
+                    "part_name": "X_16030521682239"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_160305216822310",
+                    "object_type": "column",
+                    "part_name": "X_160305216822310"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_160305216822311",
+                    "object_type": "column",
+                    "part_name": "X_160305216822311"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_160305216822312",
+                    "object_type": "column",
+                    "part_name": "X_160305216822312"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          }
+        ]
+      },
+      "type": "sstupdate"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

@@ -1,0 +1,1 @@
+ INSERT INTO instrcourdoc (idinstructor,idcourse,iddocument) VALUES (?,?,?)

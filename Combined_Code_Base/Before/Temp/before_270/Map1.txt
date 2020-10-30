@@ -1,0 +1,6 @@
+ obj.getId()$X_16030521718805
+ obj.getNom()$X_16030521718804
+ formatter.format(obj.getDate())$X_16030521718803
+ obj.getCodeCliPros()$X_16030521718801
+ Integer.toString(obj.getQuantite())$X_16030521718802
+ obj.getCodeTParc()$X_16030521718800

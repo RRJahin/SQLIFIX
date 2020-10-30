@@ -1,0 +1,1 @@
+ UPDATE member SET memo=?, rating=? WHERE id=?

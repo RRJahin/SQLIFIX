@@ -1,0 +1,872 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "select_statement": {
+        "query_expression": {
+          "query_specification": {
+            "select_list": {
+              "result_column": {
+                "expression": {
+                  "expr_type": "simple_object_name_t",
+                  "column_referenced_expr": {
+                    "objectName": {
+                      "full_name": "*",
+                      "object_type": "column",
+                      "part_name": "*"
+                    }
+                  }
+                }
+              }
+            },
+            "order_by_clause": {
+              "order_by_item": [
+                {
+                  "sort_key": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "final.lastname",
+                        "object_type": "column",
+                        "object_name": "final",
+                        "part_name": "lastname"
+                      }
+                    }
+                  },
+                  "sort_order": "asc"
+                },
+                {
+                  "sort_key": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "final.firstname",
+                        "object_type": "column",
+                        "object_name": "final",
+                        "part_name": "firstname"
+                      }
+                    }
+                  },
+                  "sort_order": "asc"
+                }
+              ]
+            },
+            "from_clause": {
+              "table_reference": {
+                "type": "subquery",
+                "query_table_reference": {
+                  "alias_clause": {
+                    "object_name": {
+                      "full_name": "final",
+                      "object_type": "table_alias",
+                      "object_name": "final"
+                    },
+                    "with_as": true
+                  },
+                  "query_expression": {
+                    "is_parenthesis": true,
+                    "binary_query_expression": {
+                      "is_all": true,
+                      "second_query_expression": {
+                        "query_specification": {
+                          "distinct_clause": {
+                            "distinct_type": "urfDistinct"
+                          },
+                          "select_list": {
+                            "result_column": {
+                              "expression": {
+                                "expr_type": "simple_object_name_t",
+                                "column_referenced_expr": {
+                                  "objectName": {
+                                    "full_name": "patients.*",
+                                    "object_type": "column",
+                                    "object_name": "patients",
+                                    "part_name": "*"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "where_clause": {
+                            "condition": {
+                              "binary_expr": {
+                                "first_expr": {
+                                  "binary_expr": {
+                                    "first_expr": {
+                                      "expr_type": "simple_comparison_t",
+                                      "comparison_expr": {
+                                        "first_expr": {
+                                          "expr_type": "simple_object_name_t",
+                                          "column_referenced_expr": {
+                                            "objectName": {
+                                              "full_name": "declaredhcp.HCPID",
+                                              "object_type": "column",
+                                              "object_name": "declaredhcp",
+                                              "part_name": "HCPID"
+                                            }
+                                          }
+                                        },
+                                        "second_expr": {
+                                          "expr_type": "simple_object_name_t",
+                                          "column_referenced_expr": {
+                                            "objectName": {
+                                              "full_name": "?",
+                                              "object_type": "column",
+                                              "part_name": "?"
+                                            }
+                                          }
+                                        },
+                                        "type": "="
+                                      }
+                                    },
+                                    "second_expr": {
+                                      "expr_type": "simple_comparison_t",
+                                      "comparison_expr": {
+                                        "first_expr": {
+                                          "expr_type": "simple_object_name_t",
+                                          "column_referenced_expr": {
+                                            "objectName": {
+                                              "full_name": "patients.MID",
+                                              "object_type": "column",
+                                              "object_name": "patients",
+                                              "part_name": "MID"
+                                            }
+                                          }
+                                        },
+                                        "second_expr": {
+                                          "expr_type": "simple_object_name_t",
+                                          "column_referenced_expr": {
+                                            "objectName": {
+                                              "full_name": "declaredhcp.PatientID",
+                                              "object_type": "column",
+                                              "object_name": "declaredhcp",
+                                              "part_name": "PatientID"
+                                            }
+                                          }
+                                        },
+                                        "type": "="
+                                      }
+                                    },
+                                    "operator": "AND"
+                                  },
+                                  "expr_type": "logical_and_t"
+                                },
+                                "second_expr": {
+                                  "expr_type": "parenthesis_t",
+                                  "parenthesis_expr": {
+                                    "first_expr": {
+                                      "binary_expr": {
+                                        "first_expr": {
+                                          "binary_expr": {
+                                            "first_expr": {
+                                              "expr_type": "simple_comparison_t",
+                                              "comparison_expr": {
+                                                "first_expr": {
+                                                  "expr_type": "simple_object_name_t",
+                                                  "column_referenced_expr": {
+                                                    "objectName": {
+                                                      "full_name": "declaredhcp.PatientID",
+                                                      "object_type": "column",
+                                                      "object_name": "declaredhcp",
+                                                      "part_name": "PatientID"
+                                                    }
+                                                  }
+                                                },
+                                                "second_expr": {
+                                                  "expr_type": "simple_object_name_t",
+                                                  "column_referenced_expr": {
+                                                    "objectName": {
+                                                      "full_name": "officevisits.PatientID",
+                                                      "object_type": "column",
+                                                      "object_name": "officevisits",
+                                                      "part_name": "PatientID"
+                                                    }
+                                                  }
+                                                },
+                                                "type": "="
+                                              }
+                                            },
+                                            "second_expr": {
+                                              "expr_type": "simple_comparison_t",
+                                              "comparison_expr": {
+                                                "first_expr": {
+                                                  "expr_type": "simple_object_name_t",
+                                                  "column_referenced_expr": {
+                                                    "objectName": {
+                                                      "full_name": "officevisits.ID",
+                                                      "object_type": "column",
+                                                      "object_name": "officevisits",
+                                                      "part_name": "ID"
+                                                    }
+                                                  }
+                                                },
+                                                "second_expr": {
+                                                  "expr_type": "simple_object_name_t",
+                                                  "column_referenced_expr": {
+                                                    "objectName": {
+                                                      "full_name": "ovmedication.VisitID",
+                                                      "object_type": "column",
+                                                      "object_name": "ovmedication",
+                                                      "part_name": "VisitID"
+                                                    }
+                                                  }
+                                                },
+                                                "type": "="
+                                              }
+                                            },
+                                            "operator": "AND"
+                                          },
+                                          "expr_type": "logical_and_t"
+                                        },
+                                        "second_expr": {
+                                          "between_expr": {
+                                            "first_expr": {
+                                              "expr_type": "simple_object_name_t",
+                                              "column_referenced_expr": {
+                                                "objectName": {
+                                                  "full_name": "ovmedication.EndDate",
+                                                  "object_type": "column",
+                                                  "object_name": "ovmedication",
+                                                  "part_name": "EndDate"
+                                                }
+                                              }
+                                            },
+                                            "third_expr": {
+                                              "expr_type": "function_t",
+                                              "functionCall_expr": {
+                                                "functionCall": {
+                                                  "generic_function": {
+                                                    "functionArgs": {
+                                                      "expression": [
+                                                        {
+                                                          "expr_type": "function_t",
+                                                          "functionCall_expr": {
+                                                            "functionCall": {
+                                                              "generic_function": "",
+                                                              "functionName": {
+                                                                "full_name": "CURDATE",
+                                                                "object_type": "function",
+                                                                "object_name": "CURDATE"
+                                                              },
+                                                              "builtIn": false,
+                                                              "type": "unknown_t",
+                                                              "aggregateType": "none"
+                                                            }
+                                                          }
+                                                        },
+                                                        {
+                                                          "constant_expr": {
+                                                            "literal": {
+                                                              "value": "INTERVAL 7 DAY"
+                                                            }
+                                                          },
+                                                          "expr_type": "simple_constant_t"
+                                                        }
+                                                      ]
+                                                    }
+                                                  },
+                                                  "functionName": {
+                                                    "full_name": "DATE_ADD",
+                                                    "object_type": "function",
+                                                    "object_name": "DATE_ADD"
+                                                  },
+                                                  "builtIn": false,
+                                                  "type": "unknown_t",
+                                                  "aggregateType": "none"
+                                                }
+                                              }
+                                            },
+                                            "second_expr": {
+                                              "expr_type": "function_t",
+                                              "functionCall_expr": {
+                                                "functionCall": {
+                                                  "generic_function": "",
+                                                  "functionName": {
+                                                    "full_name": "CURDATE",
+                                                    "object_type": "function",
+                                                    "object_name": "CURDATE"
+                                                  },
+                                                  "builtIn": false,
+                                                  "type": "unknown_t",
+                                                  "aggregateType": "none"
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "expr_type": "between_t"
+                                        },
+                                        "operator": "AND"
+                                      },
+                                      "expr_type": "logical_and_t"
+                                    }
+                                  }
+                                },
+                                "operator": "AND"
+                              },
+                              "expr_type": "logical_and_t"
+                            }
+                          },
+                          "from_clause": {
+                            "table_reference": [
+                              {
+                                "type": "objectname",
+                                "named_table_reference": {
+                                  "table_name": {
+                                    "full_name": "patients",
+                                    "object_type": "table",
+                                    "object_name": "patients"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "objectname",
+                                "named_table_reference": {
+                                  "table_name": {
+                                    "full_name": "declaredhcp",
+                                    "object_type": "table",
+                                    "object_name": "declaredhcp"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "objectname",
+                                "named_table_reference": {
+                                  "table_name": {
+                                    "full_name": "ovdiagnosis",
+                                    "object_type": "table",
+                                    "object_name": "ovdiagnosis"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "objectname",
+                                "named_table_reference": {
+                                  "table_name": {
+                                    "full_name": "officevisits",
+                                    "object_type": "table",
+                                    "object_name": "officevisits"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "objectname",
+                                "named_table_reference": {
+                                  "table_name": {
+                                    "full_name": "ovmedication",
+                                    "object_type": "table",
+                                    "object_name": "ovmedication"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "is_parenthesis": false
+                      },
+                      "first_query_expression": {
+                        "query_specification": {
+                          "distinct_clause": {
+                            "distinct_type": "urfDistinct"
+                          },
+                          "select_list": {
+                            "result_column": {
+                              "expression": {
+                                "expr_type": "simple_object_name_t",
+                                "column_referenced_expr": {
+                                  "objectName": {
+                                    "full_name": "patients.*",
+                                    "object_type": "column",
+                                    "object_name": "patients",
+                                    "part_name": "*"
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "where_clause": {
+                            "condition": {
+                              "binary_expr": {
+                                "first_expr": {
+                                  "binary_expr": {
+                                    "first_expr": {
+                                      "expr_type": "simple_comparison_t",
+                                      "comparison_expr": {
+                                        "first_expr": {
+                                          "expr_type": "simple_object_name_t",
+                                          "column_referenced_expr": {
+                                            "objectName": {
+                                              "full_name": "declaredhcp.HCPID",
+                                              "object_type": "column",
+                                              "object_name": "declaredhcp",
+                                              "part_name": "HCPID"
+                                            }
+                                          }
+                                        },
+                                        "second_expr": {
+                                          "expr_type": "simple_object_name_t",
+                                          "column_referenced_expr": {
+                                            "objectName": {
+                                              "full_name": "?",
+                                              "object_type": "column",
+                                              "part_name": "?"
+                                            }
+                                          }
+                                        },
+                                        "type": "="
+                                      }
+                                    },
+                                    "second_expr": {
+                                      "expr_type": "simple_comparison_t",
+                                      "comparison_expr": {
+                                        "first_expr": {
+                                          "expr_type": "simple_object_name_t",
+                                          "column_referenced_expr": {
+                                            "objectName": {
+                                              "full_name": "patients.MID",
+                                              "object_type": "column",
+                                              "object_name": "patients",
+                                              "part_name": "MID"
+                                            }
+                                          }
+                                        },
+                                        "second_expr": {
+                                          "expr_type": "simple_object_name_t",
+                                          "column_referenced_expr": {
+                                            "objectName": {
+                                              "full_name": "declaredhcp.PatientID",
+                                              "object_type": "column",
+                                              "object_name": "declaredhcp",
+                                              "part_name": "PatientID"
+                                            }
+                                          }
+                                        },
+                                        "type": "="
+                                      }
+                                    },
+                                    "operator": "AND"
+                                  },
+                                  "expr_type": "logical_and_t"
+                                },
+                                "second_expr": {
+                                  "expr_type": "parenthesis_t",
+                                  "parenthesis_expr": {
+                                    "first_expr": {
+                                      "binary_expr": {
+                                        "first_expr": {
+                                          "binary_expr": {
+                                            "first_expr": {
+                                              "expr_type": "simple_comparison_t",
+                                              "comparison_expr": {
+                                                "first_expr": {
+                                                  "expr_type": "simple_object_name_t",
+                                                  "column_referenced_expr": {
+                                                    "objectName": {
+                                                      "full_name": "ovdiagnosis.VisitID",
+                                                      "object_type": "column",
+                                                      "object_name": "ovdiagnosis",
+                                                      "part_name": "VisitID"
+                                                    }
+                                                  }
+                                                },
+                                                "second_expr": {
+                                                  "expr_type": "simple_object_name_t",
+                                                  "column_referenced_expr": {
+                                                    "objectName": {
+                                                      "full_name": "officevisits.ID",
+                                                      "object_type": "column",
+                                                      "object_name": "officevisits",
+                                                      "part_name": "ID"
+                                                    }
+                                                  }
+                                                },
+                                                "type": "="
+                                              }
+                                            },
+                                            "second_expr": {
+                                              "expr_type": "simple_comparison_t",
+                                              "comparison_expr": {
+                                                "first_expr": {
+                                                  "expr_type": "simple_object_name_t",
+                                                  "column_referenced_expr": {
+                                                    "objectName": {
+                                                      "full_name": "officevisits.PatientID",
+                                                      "object_type": "column",
+                                                      "object_name": "officevisits",
+                                                      "part_name": "PatientID"
+                                                    }
+                                                  }
+                                                },
+                                                "second_expr": {
+                                                  "expr_type": "simple_object_name_t",
+                                                  "column_referenced_expr": {
+                                                    "objectName": {
+                                                      "full_name": "declaredhcp.PatientID",
+                                                      "object_type": "column",
+                                                      "object_name": "declaredhcp",
+                                                      "part_name": "PatientID"
+                                                    }
+                                                  }
+                                                },
+                                                "type": "="
+                                              }
+                                            },
+                                            "operator": "AND"
+                                          },
+                                          "expr_type": "logical_and_t"
+                                        },
+                                        "second_expr": {
+                                          "expr_type": "parenthesis_t",
+                                          "parenthesis_expr": {
+                                            "first_expr": {
+                                              "binary_expr": {
+                                                "first_expr": {
+                                                  "binary_expr": {
+                                                    "first_expr": {
+                                                      "expr_type": "parenthesis_t",
+                                                      "parenthesis_expr": {
+                                                        "first_expr": {
+                                                          "binary_expr": {
+                                                            "first_expr": {
+                                                              "expr_type": "simple_comparison_t",
+                                                              "comparison_expr": {
+                                                                "first_expr": {
+                                                                  "expr_type": "simple_object_name_t",
+                                                                  "column_referenced_expr": {
+                                                                    "objectName": {
+                                                                      "full_name": "ovdiagnosis.ICDCode",
+                                                                      "object_type": "column",
+                                                                      "object_name": "ovdiagnosis",
+                                                                      "part_name": "ICDCode"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "second_expr": {
+                                                                  "expr_type": "simple_object_name_t",
+                                                                  "column_referenced_expr": {
+                                                                    "objectName": {
+                                                                      "full_name": "?",
+                                                                      "object_type": "column",
+                                                                      "part_name": "?"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "type": ">="
+                                                              }
+                                                            },
+                                                            "second_expr": {
+                                                              "expr_type": "simple_comparison_t",
+                                                              "comparison_expr": {
+                                                                "first_expr": {
+                                                                  "expr_type": "simple_object_name_t",
+                                                                  "column_referenced_expr": {
+                                                                    "objectName": {
+                                                                      "full_name": "ovdiagnosis.ICDCode",
+                                                                      "object_type": "column",
+                                                                      "object_name": "ovdiagnosis",
+                                                                      "part_name": "ICDCode"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "second_expr": {
+                                                                  "expr_type": "simple_object_name_t",
+                                                                  "column_referenced_expr": {
+                                                                    "objectName": {
+                                                                      "full_name": "?",
+                                                                      "object_type": "column",
+                                                                      "part_name": "?"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "type": "<"
+                                                              }
+                                                            },
+                                                            "operator": "AND"
+                                                          },
+                                                          "expr_type": "logical_and_t"
+                                                        }
+                                                      }
+                                                    },
+                                                    "second_expr": {
+                                                      "expr_type": "parenthesis_t",
+                                                      "parenthesis_expr": {
+                                                        "first_expr": {
+                                                          "binary_expr": {
+                                                            "first_expr": {
+                                                              "expr_type": "simple_comparison_t",
+                                                              "comparison_expr": {
+                                                                "first_expr": {
+                                                                  "expr_type": "simple_object_name_t",
+                                                                  "column_referenced_expr": {
+                                                                    "objectName": {
+                                                                      "full_name": "ovdiagnosis.ICDCode",
+                                                                      "object_type": "column",
+                                                                      "object_name": "ovdiagnosis",
+                                                                      "part_name": "ICDCode"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "second_expr": {
+                                                                  "expr_type": "simple_object_name_t",
+                                                                  "column_referenced_expr": {
+                                                                    "objectName": {
+                                                                      "full_name": "?",
+                                                                      "object_type": "column",
+                                                                      "part_name": "?"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "type": ">="
+                                                              }
+                                                            },
+                                                            "second_expr": {
+                                                              "expr_type": "simple_comparison_t",
+                                                              "comparison_expr": {
+                                                                "first_expr": {
+                                                                  "expr_type": "simple_object_name_t",
+                                                                  "column_referenced_expr": {
+                                                                    "objectName": {
+                                                                      "full_name": "ovdiagnosis.ICDCode",
+                                                                      "object_type": "column",
+                                                                      "object_name": "ovdiagnosis",
+                                                                      "part_name": "ICDCode"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "second_expr": {
+                                                                  "expr_type": "simple_object_name_t",
+                                                                  "column_referenced_expr": {
+                                                                    "objectName": {
+                                                                      "full_name": "?",
+                                                                      "object_type": "column",
+                                                                      "part_name": "?"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "type": "<"
+                                                              }
+                                                            },
+                                                            "operator": "AND"
+                                                          },
+                                                          "expr_type": "logical_and_t"
+                                                        }
+                                                      }
+                                                    },
+                                                    "operator": "OR"
+                                                  },
+                                                  "expr_type": "logical_or_t"
+                                                },
+                                                "second_expr": {
+                                                  "expr_type": "parenthesis_t",
+                                                  "parenthesis_expr": {
+                                                    "first_expr": {
+                                                      "binary_expr": {
+                                                        "first_expr": {
+                                                          "expr_type": "simple_comparison_t",
+                                                          "comparison_expr": {
+                                                            "first_expr": {
+                                                              "expr_type": "simple_object_name_t",
+                                                              "column_referenced_expr": {
+                                                                "objectName": {
+                                                                  "full_name": "ovdiagnosis.ICDCode",
+                                                                  "object_type": "column",
+                                                                  "object_name": "ovdiagnosis",
+                                                                  "part_name": "ICDCode"
+                                                                }
+                                                              }
+                                                            },
+                                                            "second_expr": {
+                                                              "expr_type": "simple_object_name_t",
+                                                              "column_referenced_expr": {
+                                                                "objectName": {
+                                                                  "full_name": "?",
+                                                                  "object_type": "column",
+                                                                  "part_name": "?"
+                                                                }
+                                                              }
+                                                            },
+                                                            "type": ">="
+                                                          }
+                                                        },
+                                                        "second_expr": {
+                                                          "expr_type": "simple_comparison_t",
+                                                          "comparison_expr": {
+                                                            "first_expr": {
+                                                              "expr_type": "simple_object_name_t",
+                                                              "column_referenced_expr": {
+                                                                "objectName": {
+                                                                  "full_name": "ovdiagnosis.ICDCode",
+                                                                  "object_type": "column",
+                                                                  "object_name": "ovdiagnosis",
+                                                                  "part_name": "ICDCode"
+                                                                }
+                                                              }
+                                                            },
+                                                            "second_expr": {
+                                                              "expr_type": "simple_object_name_t",
+                                                              "column_referenced_expr": {
+                                                                "objectName": {
+                                                                  "full_name": "?",
+                                                                  "object_type": "column",
+                                                                  "part_name": "?"
+                                                                }
+                                                              }
+                                                            },
+                                                            "type": "<"
+                                                          }
+                                                        },
+                                                        "operator": "AND"
+                                                      },
+                                                      "expr_type": "logical_and_t"
+                                                    }
+                                                  }
+                                                },
+                                                "operator": "OR"
+                                              },
+                                              "expr_type": "logical_or_t"
+                                            }
+                                          }
+                                        },
+                                        "operator": "AND"
+                                      },
+                                      "expr_type": "logical_and_t"
+                                    }
+                                  }
+                                },
+                                "operator": "AND"
+                              },
+                              "expr_type": "logical_and_t"
+                            }
+                          },
+                          "from_clause": {
+                            "table_reference": [
+                              {
+                                "type": "objectname",
+                                "named_table_reference": {
+                                  "table_name": {
+                                    "full_name": "patients",
+                                    "object_type": "table",
+                                    "object_name": "patients"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "objectname",
+                                "named_table_reference": {
+                                  "table_name": {
+                                    "full_name": "declaredhcp",
+                                    "object_type": "table",
+                                    "object_name": "declaredhcp"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "objectname",
+                                "named_table_reference": {
+                                  "table_name": {
+                                    "full_name": "ovdiagnosis",
+                                    "object_type": "table",
+                                    "object_name": "ovdiagnosis"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "objectname",
+                                "named_table_reference": {
+                                  "table_name": {
+                                    "full_name": "officevisits",
+                                    "object_type": "table",
+                                    "object_name": "officevisits"
+                                  }
+                                }
+                              },
+                              {
+                                "type": "objectname",
+                                "named_table_reference": {
+                                  "table_name": {
+                                    "full_name": "ovmedication",
+                                    "object_type": "table",
+                                    "object_name": "ovmedication"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "is_parenthesis": false
+                      },
+                      "set_operator": "union"
+                    }
+                  }
+                }
+              }
+            },
+            "group_by_clause": {
+              "grouping_element": {
+                "grouping_expression": {
+                  "expr_type": "simple_object_name_t",
+                  "column_referenced_expr": {
+                    "objectName": {
+                      "full_name": "final.MID",
+                      "object_type": "column",
+                      "object_name": "final",
+                      "part_name": "MID"
+                    }
+                  }
+                }
+              }
+            },
+            "having_clause": {
+              "expr_type": "simple_comparison_t",
+              "comparison_expr": {
+                "first_expr": {
+                  "expr_type": "function_t",
+                  "functionCall_expr": {
+                    "functionCall": {
+                      "generic_function": {
+                        "functionArgs": {
+                          "expression": {
+                            "expr_type": "simple_object_name_t",
+                            "column_referenced_expr": {
+                              "objectName": {
+                                "full_name": "*",
+                                "object_type": "column",
+                                "part_name": "*"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "functionName": {
+                        "full_name": "COUNT",
+                        "object_type": "function",
+                        "object_name": "COUNT"
+                      },
+                      "builtIn": true,
+                      "type": "unknown_t",
+                      "aggregateType": "none"
+                    }
+                  }
+                },
+                "second_expr": {
+                  "constant_expr": {
+                    "literal": {
+                      "value": 2
+                    }
+                  },
+                  "expr_type": "simple_constant_t"
+                },
+                "type": "="
+              }
+            }
+          },
+          "is_parenthesis": false
+        }
+      },
+      "type": "sstselect"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

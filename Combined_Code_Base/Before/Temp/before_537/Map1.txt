@@ -1,0 +1,4 @@
+ pessoa.getEmail()$X_16030521802323
+ pessoa.getSenha()$X_16030521802322
+ pessoa.getLogin()$X_16030521802321
+ pessoa.getNome()$X_16030521802320

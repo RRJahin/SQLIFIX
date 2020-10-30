@@ -1,0 +1,1 @@
+ SELECT MAX(ID) as id FROM ADMIN

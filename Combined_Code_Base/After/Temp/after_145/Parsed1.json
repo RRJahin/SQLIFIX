@@ -1,0 +1,133 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "select_statement": {
+        "query_expression": {
+          "query_specification": {
+            "select_list": {
+              "result_column": [
+                {
+                  "expression": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "server_name",
+                        "object_type": "column",
+                        "part_name": "server_name"
+                      }
+                    }
+                  }
+                },
+                {
+                  "expression": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "server_url",
+                        "object_type": "column",
+                        "part_name": "server_url"
+                      }
+                    }
+                  }
+                },
+                {
+                  "expression": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "node",
+                        "object_type": "column",
+                        "part_name": "node"
+                      }
+                    }
+                  }
+                },
+                {
+                  "expression": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "dt_last_check",
+                        "object_type": "column",
+                        "part_name": "dt_last_check"
+                      }
+                    }
+                  }
+                },
+                {
+                  "expression": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "dt_last_rfaction",
+                        "object_type": "column",
+                        "part_name": "dt_last_rfaction"
+                      }
+                    }
+                  }
+                },
+                {
+                  "expression": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "env",
+                        "object_type": "column",
+                        "part_name": "env"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "where_clause": {
+              "condition": {
+                "expr_type": "simple_comparison_t",
+                "comparison_expr": {
+                  "first_expr": {
+                    "expr_type": "simple_object_name_t",
+                    "column_referenced_expr": {
+                      "objectName": {
+                        "full_name": "active",
+                        "object_type": "column",
+                        "part_name": "active"
+                      }
+                    }
+                  },
+                  "second_expr": {
+                    "constant_expr": {
+                      "literal": {
+                        "value": "'T'"
+                      }
+                    },
+                    "expr_type": "simple_constant_t"
+                  },
+                  "type": "="
+                }
+              }
+            },
+            "from_clause": {
+              "table_reference": {
+                "type": "objectname",
+                "named_table_reference": {
+                  "table_name": {
+                    "full_name": "ORKIDS_SERVERS",
+                    "object_type": "table",
+                    "object_name": "ORKIDS_SERVERS"
+                  }
+                }
+              }
+            }
+          },
+          "is_parenthesis": false
+        }
+      },
+      "type": "sstselect"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

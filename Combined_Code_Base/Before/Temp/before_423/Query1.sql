@@ -1,0 +1,1 @@
+ DELETE FROM Prenotazione WHERE id = 'X_16030521762830'

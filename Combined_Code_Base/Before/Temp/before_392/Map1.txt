@@ -1,0 +1,3 @@
+ author.getDescription()$X_16030521753002
+ author.getAuthorName()$X_16030521753000
+ author.getGender()$X_16030521753001

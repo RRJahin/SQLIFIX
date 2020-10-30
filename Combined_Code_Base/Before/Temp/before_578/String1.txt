@@ -1,0 +1,1 @@
+"SELECT * FROM Album WHERE id_album=" + id + ";"

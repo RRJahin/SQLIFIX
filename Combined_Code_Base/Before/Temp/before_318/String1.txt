@@ -1,0 +1,1 @@
+"INSERT INTO tbl_peliculas (nombre, genero, clasificacion, duracion, imagen) VALUES (" + entidad.getNombre() + ", " + entidad.getGenero() + ", " + entidad.getClasificacion() + ", " + entidad.getDuracion() + ", " + entidad.getImagen() + ")"

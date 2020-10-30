@@ -1,0 +1,42 @@
+<sqlscript xmlns="http://www.sqlparser.com/xml/sqlschema/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" dbvendor="dbvoracle" stmt_count="1" xsi:schemaLocation="http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd">
+  <statement type="sstinsert">
+    <insert_statement insertSource="values">
+      <target_table type="objectname">
+        <named_table_reference>
+          <table_name object_type="table">
+            <full_name>login</full_name>
+            <object_name>login</object_name>
+          </table_name>
+        </named_table_reference>
+      </target_table>
+      <column_list>
+        <objectName object_type="column">
+          <full_name>name</full_name>
+          <part_name>name</part_name>
+        </objectName>
+        <objectName object_type="column">
+          <full_name>password</full_name>
+          <part_name>password</part_name>
+        </objectName>
+      </column_list>
+      <insert_values>
+        <row_values>
+          <expression expr_type="simple_constant_t">
+            <constant_expr>
+              <literal>
+                <value>'X_16030521746610'</value>
+              </literal>
+            </constant_expr>
+          </expression>
+          <expression expr_type="simple_constant_t">
+            <constant_expr>
+              <literal>
+                <value>'X_16030521746611'</value>
+              </literal>
+            </constant_expr>
+          </expression>
+        </row_values>
+      </insert_values>
+    </insert_statement>
+  </statement>
+</sqlscript>

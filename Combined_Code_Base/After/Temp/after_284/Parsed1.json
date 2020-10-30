@@ -1,0 +1,954 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "update_statement": {
+        "where_clause": {
+          "condition": {
+            "expr_type": "simple_comparison_t",
+            "comparison_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "MID",
+                    "object_type": "column",
+                    "part_name": "MID"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              },
+              "type": "="
+            }
+          }
+        },
+        "target_table": {
+          "type": "objectname",
+          "named_table_reference": {
+            "table_name": {
+              "full_name": "patients",
+              "object_type": "table",
+              "object_name": "patients"
+            }
+          }
+        },
+        "set_clause": [
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "firstName",
+                    "object_type": "column",
+                    "part_name": "firstName"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "lastName",
+                    "object_type": "column",
+                    "part_name": "lastName"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "email",
+                    "object_type": "column",
+                    "part_name": "email"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "address1",
+                    "object_type": "column",
+                    "part_name": "address1"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "address2",
+                    "object_type": "column",
+                    "part_name": "address2"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "city",
+                    "object_type": "column",
+                    "part_name": "city"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "state",
+                    "object_type": "column",
+                    "part_name": "state"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "zip",
+                    "object_type": "column",
+                    "part_name": "zip"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "phone",
+                    "object_type": "column",
+                    "part_name": "phone"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "eName",
+                    "object_type": "column",
+                    "part_name": "eName"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "ePhone",
+                    "object_type": "column",
+                    "part_name": "ePhone"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "iCName",
+                    "object_type": "column",
+                    "part_name": "iCName"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "iCAddress1",
+                    "object_type": "column",
+                    "part_name": "iCAddress1"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "iCAddress2",
+                    "object_type": "column",
+                    "part_name": "iCAddress2"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "iCCity",
+                    "object_type": "column",
+                    "part_name": "iCCity"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "ICState",
+                    "object_type": "column",
+                    "part_name": "ICState"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "iCZip",
+                    "object_type": "column",
+                    "part_name": "iCZip"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "iCPhone",
+                    "object_type": "column",
+                    "part_name": "iCPhone"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "iCID",
+                    "object_type": "column",
+                    "part_name": "iCID"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "DateOfBirth",
+                    "object_type": "column",
+                    "part_name": "DateOfBirth"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "DateOfDeath",
+                    "object_type": "column",
+                    "part_name": "DateOfDeath"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "CauseOfDeath",
+                    "object_type": "column",
+                    "part_name": "CauseOfDeath"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "MotherMID",
+                    "object_type": "column",
+                    "part_name": "MotherMID"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "FatherMID",
+                    "object_type": "column",
+                    "part_name": "FatherMID"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "BloodType",
+                    "object_type": "column",
+                    "part_name": "BloodType"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "Ethnicity",
+                    "object_type": "column",
+                    "part_name": "Ethnicity"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "Gender",
+                    "object_type": "column",
+                    "part_name": "Gender"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "TopicalNotes",
+                    "object_type": "column",
+                    "part_name": "TopicalNotes"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "CreditCardType",
+                    "object_type": "column",
+                    "part_name": "CreditCardType"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "CreditCardNumber",
+                    "object_type": "column",
+                    "part_name": "CreditCardNumber"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "DirectionsToHome",
+                    "object_type": "column",
+                    "part_name": "DirectionsToHome"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "Religion",
+                    "object_type": "column",
+                    "part_name": "Religion"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "Language",
+                    "object_type": "column",
+                    "part_name": "Language"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "SpiritualPractices",
+                    "object_type": "column",
+                    "part_name": "SpiritualPractices"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "AlternateName",
+                    "object_type": "column",
+                    "part_name": "AlternateName"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          },
+          {
+            "assignment_expr": {
+              "first_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "DateOfDeactivation",
+                    "object_type": "column",
+                    "part_name": "DateOfDeactivation"
+                  }
+                }
+              },
+              "second_expr": {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "?",
+                    "object_type": "column",
+                    "part_name": "?"
+                  }
+                }
+              }
+            },
+            "expr_type": "assignment_t"
+          }
+        ]
+      },
+      "type": "sstupdate"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

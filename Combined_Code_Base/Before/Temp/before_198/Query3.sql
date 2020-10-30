@@ -1,0 +1,1 @@
+ DELETE FROM virtual_machine_host_table where hostname='X_16030521674550'

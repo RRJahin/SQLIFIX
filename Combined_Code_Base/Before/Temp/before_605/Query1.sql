@@ -1,0 +1,1 @@
+ DELETE FROM localdb.sys_network.repositories WHERE repo_url = X_16030521823710

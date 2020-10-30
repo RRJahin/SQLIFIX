@@ -1,0 +1,1 @@
+ INSERT INTO FamClient (codeFamClient, nomFamClient) VALUES (?, ?)

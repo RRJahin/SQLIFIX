@@ -1,0 +1,517 @@
+{
+  "target": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "statement",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "Statement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "null",
+            "type": "Literal",
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "\u003d",
+        "type": "Assignment",
+        "children": [
+          {
+            "label": "statement",
+            "type": "FieldWrite",
+            "children": []
+          },
+          {
+            "label": "createStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "dbConnection",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "rs",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "ResultSet",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "executeQuery",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "statement",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "selectTableSQL",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "suggestion0": {
+    "before_pattern": {
+      "label": "edit_root",
+      "type": "edit_unit",
+      "children": [
+        {
+          "label": "statement",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "Statement",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "null",
+              "type": "Literal",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "\u003d",
+          "type": "Assignment",
+          "children": [
+            {
+              "label": "statement",
+              "type": "FieldWrite",
+              "children": []
+            },
+            {
+              "label": "createStatement",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "dbConnection",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "rs",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "ResultSet",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "executeQuery",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "statement",
+                  "type": "FieldRead",
+                  "children": []
+                },
+                {
+                  "label": "selectTableSQL",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "after_pattern": {
+      "label": "edit_root",
+      "type": "edit_unit",
+      "children": [
+        {
+          "label": "statement",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "PreparedStatement",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "null",
+              "type": "Literal",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "\u003d",
+          "type": "Assignment",
+          "children": [
+            {
+              "label": "statement",
+              "type": "FieldWrite",
+              "children": []
+            },
+            {
+              "label": "prepareStatement",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "dbConnection",
+                  "type": "FieldRead",
+                  "children": []
+                },
+                {
+                  "label": "selectTableSQL",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "rs",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "ResultSet",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "executeQuery",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "statement",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "before_code": "\"\\\"Statement statement \u003d null\\\\nstatement \u003d dbConnection.createStatement()\\\\nResultSet rs \u003d statement.executeQuery(selectTableSQL)\\\\n\\\"\"",
+    "after_code": "\"\\\"PreparedStatement statement \u003d null\\\\nstatement \u003d dbConnection.prepareStatement(selectTableSQL)\\\\nResultSet rs \u003d statement.executeQuery()\\\\n\\\"\"",
+    "pattern_id": "0",
+    "children": []
+  },
+  "suggestion1": {
+    "before_pattern": {
+      "label": "edit_root",
+      "type": "edit_unit",
+      "children": [
+        {
+          "label": "statement",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "Statement",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "null",
+              "type": "Literal",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "\u003d",
+          "type": "Assignment",
+          "children": [
+            {
+              "label": "statement",
+              "type": "FieldWrite",
+              "children": []
+            },
+            {
+              "label": "createStatement",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "dbConnection",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "rs",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "ResultSet",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "executeQuery",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "statement",
+                  "type": "FieldRead",
+                  "children": []
+                },
+                {
+                  "label": "selectTableSQL",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "after_pattern": {
+      "label": "edit_root",
+      "type": "edit_unit",
+      "children": [
+        {
+          "label": "statement",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "PreparedStatement",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "null",
+              "type": "Literal",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "\u003d",
+          "type": "Assignment",
+          "children": [
+            {
+              "label": "statement",
+              "type": "FieldWrite",
+              "children": []
+            },
+            {
+              "label": "prepareStatement",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "dbConnection",
+                  "type": "FieldRead",
+                  "children": []
+                },
+                {
+                  "label": "selectTableSQL",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "rs",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "ResultSet",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "executeQuery",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "statement",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "before_code": "\"\\\"Statement statement \u003d null\\\\nstatement \u003d dbConnection.createStatement()\\\\nResultSet rs \u003d statement.executeQuery(selectTableSQL)\\\\n\\\"\"",
+    "after_code": "\"\\\"PreparedStatement statement \u003d null\\\\nstatement \u003d dbConnection.prepareStatement(selectTableSQL)\\\\nResultSet rs \u003d statement.executeQuery()\\\\n\\\"\"",
+    "pattern_id": "0",
+    "children": []
+  },
+  "suggestion2": {
+    "before_pattern": {
+      "label": "edit_root",
+      "type": "edit_unit",
+      "children": [
+        {
+          "label": "statement",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "Statement",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "null",
+              "type": "Literal",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "\u003d",
+          "type": "Assignment",
+          "children": [
+            {
+              "label": "statement",
+              "type": "FieldWrite",
+              "children": []
+            },
+            {
+              "label": "createStatement",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "dbConnection",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "rs",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "ResultSet",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "executeQuery",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "statement",
+                  "type": "FieldRead",
+                  "children": []
+                },
+                {
+                  "label": "selectTableSQL",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "after_pattern": {
+      "label": "edit_root",
+      "type": "edit_unit",
+      "children": [
+        {
+          "label": "statement",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "PreparedStatement",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "null",
+              "type": "Literal",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "\u003d",
+          "type": "Assignment",
+          "children": [
+            {
+              "label": "statement",
+              "type": "FieldWrite",
+              "children": []
+            },
+            {
+              "label": "prepareStatement",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "dbConnection",
+                  "type": "FieldRead",
+                  "children": []
+                },
+                {
+                  "label": "selectTableSQL",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "rs",
+          "type": "LocalVariable",
+          "children": [
+            {
+              "label": "ResultSet",
+              "type": "VARIABLE_TYPE",
+              "children": []
+            },
+            {
+              "label": "executeQuery",
+              "type": "Invocation",
+              "children": [
+                {
+                  "label": "statement",
+                  "type": "FieldRead",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "before_code": "\"\\\"Statement statement \u003d null\\\\nstatement \u003d dbConnection.createStatement()\\\\nResultSet rs \u003d statement.executeQuery(selectTableSQL)\\\\n\\\"\"",
+    "after_code": "\"\\\"PreparedStatement statement \u003d null\\\\nstatement \u003d dbConnection.prepareStatement(selectTableSQL)\\\\nResultSet rs \u003d statement.executeQuery()\\\\n\\\"\"",
+    "pattern_id": "0",
+    "children": []
+  }
+}

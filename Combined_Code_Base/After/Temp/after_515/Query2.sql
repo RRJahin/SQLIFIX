@@ -1,0 +1,1 @@
+ select agn_id from agent_details where email_id = ? and location=? and phone_no=?

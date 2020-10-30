@@ -1,0 +1,7 @@
+ orar.getId_Disciplina()$X_16030521836254
+ orar.getOra_sfarsit()$X_16030521836252
+ orar.getZiua()$X_16030521836250
+ orar.getFrecventa()$X_16030521836253
+ orar.getOra_inceput()$X_16030521836251
+ orar.getTip()$X_16030521836255
+ orar.getId_Cadru_Didactic()$X_16030521836256

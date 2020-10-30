@@ -1,0 +1,1 @@
+ UPDATE tbl_peliculas SET nombre = ?, genero = ?, clasificacion = ?, duracion = ?, imagen = ? WHERE pk_pelicula = ?

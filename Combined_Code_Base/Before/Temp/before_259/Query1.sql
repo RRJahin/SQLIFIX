@@ -1,0 +1,1 @@
+ DELETE FROM instrcourdoc WHERE iddocument = X_16030521717150 AND idinstructor = X_16030521717151 AND idcourse = X_16030521717152 ;

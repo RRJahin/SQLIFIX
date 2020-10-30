@@ -1,0 +1,1 @@
+"insert into Guitar(serialNumber,price,builder,type,backWood,topWood) values(?,?,?,?,?,?)"

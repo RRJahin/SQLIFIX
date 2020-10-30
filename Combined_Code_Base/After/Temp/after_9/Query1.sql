@@ -1,0 +1,1 @@
+ INSERT INTO Cadre_Didactice VALUES(?,?,?,?,?)

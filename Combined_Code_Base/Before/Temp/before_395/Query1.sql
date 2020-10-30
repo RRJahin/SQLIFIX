@@ -1,0 +1,1 @@
+ delete from nba.players where name= X_16030521753300

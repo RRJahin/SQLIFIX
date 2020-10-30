@@ -1,0 +1,1 @@
+"INSERT INTO wishlist VALUES (" + id + ", " + no + ")"

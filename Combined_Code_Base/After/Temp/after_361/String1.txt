@@ -1,0 +1,1 @@
+"UPDATE resetpasswordfailures SET failureCount=0 WHERE IPAddress=?"

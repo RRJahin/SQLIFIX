@@ -1,0 +1,1 @@
+"insert into AdvanceSearch(name,sp,city) values(?,?,?)"

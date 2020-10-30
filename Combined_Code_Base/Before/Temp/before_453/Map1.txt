@@ -1,0 +1,3 @@
+ roomLine.getGuest().getId()$X_16030521773390
+ roomLine.getBooking().getId()$X_16030521773392
+ roomLine.getRoom().getNumber()$X_16030521773391

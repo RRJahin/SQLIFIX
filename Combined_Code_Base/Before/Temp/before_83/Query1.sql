@@ -1,0 +1,1 @@
+ SELECT * FROM cart c, book b WHERE c.no = b.no AND id = X_16030521838520

@@ -1,0 +1,1 @@
+ INSERT INTO virtual_machine_host_table VALUES( '?', '?', '?')

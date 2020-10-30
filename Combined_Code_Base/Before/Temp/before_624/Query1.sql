@@ -1,0 +1,1 @@
+ SELECT usuario, contrasena FROM Administradores WHERE usuario = 'X_16030521829630' ;

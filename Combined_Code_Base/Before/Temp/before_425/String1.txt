@@ -1,0 +1,1 @@
+"DELETE FROM Facility WHERE id= '" + id + "'"

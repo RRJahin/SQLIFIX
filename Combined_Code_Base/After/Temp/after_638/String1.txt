@@ -1,0 +1,1 @@
+"UPDATE adv_pendencia.tab_pedencia set nomependencia = ?, descPend = ?, statusPend = ?, datEmiPend = ?, datPrevFechamento =? where idPed = ?"

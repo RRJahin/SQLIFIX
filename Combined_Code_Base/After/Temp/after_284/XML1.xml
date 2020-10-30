@@ -1,0 +1,756 @@
+<sqlscript xmlns="http://www.sqlparser.com/xml/sqlschema/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" dbvendor="dbvoracle" stmt_count="1" xsi:schemaLocation="http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd">
+  <statement type="sstupdate">
+    <update_statement>
+      <target_table type="objectname">
+        <named_table_reference>
+          <table_name object_type="table">
+            <full_name>patients</full_name>
+            <object_name>patients</object_name>
+          </table_name>
+        </named_table_reference>
+      </target_table>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>firstName</full_name>
+                <part_name>firstName</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>lastName</full_name>
+                <part_name>lastName</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>email</full_name>
+                <part_name>email</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>address1</full_name>
+                <part_name>address1</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>address2</full_name>
+                <part_name>address2</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>city</full_name>
+                <part_name>city</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>state</full_name>
+                <part_name>state</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>zip</full_name>
+                <part_name>zip</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>phone</full_name>
+                <part_name>phone</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>eName</full_name>
+                <part_name>eName</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>ePhone</full_name>
+                <part_name>ePhone</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>iCName</full_name>
+                <part_name>iCName</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>iCAddress1</full_name>
+                <part_name>iCAddress1</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>iCAddress2</full_name>
+                <part_name>iCAddress2</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>iCCity</full_name>
+                <part_name>iCCity</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>ICState</full_name>
+                <part_name>ICState</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>iCZip</full_name>
+                <part_name>iCZip</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>iCPhone</full_name>
+                <part_name>iCPhone</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>iCID</full_name>
+                <part_name>iCID</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>DateOfBirth</full_name>
+                <part_name>DateOfBirth</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>DateOfDeath</full_name>
+                <part_name>DateOfDeath</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>CauseOfDeath</full_name>
+                <part_name>CauseOfDeath</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>MotherMID</full_name>
+                <part_name>MotherMID</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>FatherMID</full_name>
+                <part_name>FatherMID</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>BloodType</full_name>
+                <part_name>BloodType</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>Ethnicity</full_name>
+                <part_name>Ethnicity</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>Gender</full_name>
+                <part_name>Gender</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>TopicalNotes</full_name>
+                <part_name>TopicalNotes</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>CreditCardType</full_name>
+                <part_name>CreditCardType</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>CreditCardNumber</full_name>
+                <part_name>CreditCardNumber</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>DirectionsToHome</full_name>
+                <part_name>DirectionsToHome</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>Religion</full_name>
+                <part_name>Religion</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>Language</full_name>
+                <part_name>Language</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>SpiritualPractices</full_name>
+                <part_name>SpiritualPractices</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>AlternateName</full_name>
+                <part_name>AlternateName</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>DateOfDeactivation</full_name>
+                <part_name>DateOfDeactivation</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>?</full_name>
+                <part_name>?</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <where_clause>
+        <condition expr_type="simple_comparison_t">
+          <comparison_expr type="=">
+            <first_expr expr_type="simple_object_name_t">
+              <column_referenced_expr>
+                <objectName object_type="column">
+                  <full_name>MID</full_name>
+                  <part_name>MID</part_name>
+                </objectName>
+              </column_referenced_expr>
+            </first_expr>
+            <second_expr expr_type="simple_object_name_t">
+              <column_referenced_expr>
+                <objectName object_type="column">
+                  <full_name>?</full_name>
+                  <part_name>?</part_name>
+                </objectName>
+              </column_referenced_expr>
+            </second_expr>
+          </comparison_expr>
+        </condition>
+      </where_clause>
+    </update_statement>
+  </statement>
+</sqlscript>

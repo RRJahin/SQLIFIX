@@ -1,0 +1,1 @@
+"insert into personas (NOMBRE,EDAD,PESO)" + "values (?,?,?)"

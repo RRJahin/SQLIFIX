@@ -1,0 +1,1 @@
+"insert into databaser values('" + databasename1.getText() + "'," + ef + "," + d + "," + ids + ")"

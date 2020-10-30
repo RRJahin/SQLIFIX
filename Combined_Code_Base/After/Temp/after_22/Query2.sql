@@ -1,0 +1,1 @@
+ select userid from usersr where username=?

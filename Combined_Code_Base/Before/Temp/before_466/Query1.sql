@@ -1,0 +1,1 @@
+ SELECT COUNT(*) AS teamParticipantInstances FROM TeamParticipants WHERE teamId='X_16030521778520' AND participantId='X_16030521778521'

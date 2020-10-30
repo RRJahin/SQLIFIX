@@ -1,0 +1,136 @@
+<sqlscript xmlns="http://www.sqlparser.com/xml/sqlschema/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" dbvendor="dbvoracle" stmt_count="1" xsi:schemaLocation="http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd">
+  <statement type="sstupdate">
+    <update_statement>
+      <target_table type="objectname">
+        <named_table_reference>
+          <table_name object_type="table">
+            <full_name>Notas</full_name>
+            <object_name>Notas</object_name>
+          </table_name>
+        </named_table_reference>
+      </target_table>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>aberta</full_name>
+                <part_name>aberta</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_16030521832040</full_name>
+                <part_name>X_16030521832040</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>titulo</full_name>
+                <part_name>titulo</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_16030521832041</full_name>
+                <part_name>X_16030521832041</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>texto</full_name>
+                <part_name>texto</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_16030521832042</full_name>
+                <part_name>X_16030521832042</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>cor</full_name>
+                <part_name>cor</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_16030521832043</full_name>
+                <part_name>X_16030521832043</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <set_clause expr_type="assignment_t">
+        <assignment_expr>
+          <first_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>prazo_final_nota</full_name>
+                <part_name>prazo_final_nota</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </first_expr>
+          <second_expr expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_16030521832044</full_name>
+                <part_name>X_16030521832044</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </second_expr>
+        </assignment_expr>
+      </set_clause>
+      <where_clause>
+        <condition expr_type="simple_comparison_t">
+          <comparison_expr type="=">
+            <first_expr expr_type="simple_object_name_t">
+              <column_referenced_expr>
+                <objectName object_type="column">
+                  <full_name>id</full_name>
+                  <part_name>id</part_name>
+                </objectName>
+              </column_referenced_expr>
+            </first_expr>
+            <second_expr expr_type="simple_object_name_t">
+              <column_referenced_expr>
+                <objectName object_type="column">
+                  <full_name>X_16030521832045</full_name>
+                  <part_name>X_16030521832045</part_name>
+                </objectName>
+              </column_referenced_expr>
+            </second_expr>
+          </comparison_expr>
+        </condition>
+      </where_clause>
+    </update_statement>
+  </statement>
+</sqlscript>

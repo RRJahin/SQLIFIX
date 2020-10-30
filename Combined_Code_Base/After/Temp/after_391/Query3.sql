@@ -1,0 +1,1 @@
+ INSERT OR REPLACE INTO Classes_Original (TxtID,ClassONE,ClassTWO,ClassTHREE,ClassFOUR) VALUES(?,?,?,?,?)

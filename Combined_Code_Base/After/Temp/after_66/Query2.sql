@@ -1,0 +1,1 @@
+ SELECT CURRVAL('ingresso_id_seq') as id ;

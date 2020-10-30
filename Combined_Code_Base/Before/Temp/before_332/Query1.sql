@@ -1,0 +1,1 @@
+ select id,nombre,edad,peso from personas where id = X_16030521741950

@@ -1,0 +1,200 @@
+{
+  "sqlscript": {
+    "dbvendor": "dbvoracle",
+    "xmlns": "http://www.sqlparser.com/xml/sqlschema/1.0",
+    "xsi:schemaLocation": "http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd",
+    "statement": {
+      "insert_statement": {
+        "insert_values": {
+          "row_values": {
+            "expression": [
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521664890",
+                    "object_type": "column",
+                    "part_name": "X_16030521664890"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521664891",
+                    "object_type": "column",
+                    "part_name": "X_16030521664891"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521664892",
+                    "object_type": "column",
+                    "part_name": "X_16030521664892"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521664893",
+                    "object_type": "column",
+                    "part_name": "X_16030521664893"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521664894",
+                    "object_type": "column",
+                    "part_name": "X_16030521664894"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521664895",
+                    "object_type": "column",
+                    "part_name": "X_16030521664895"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521664896",
+                    "object_type": "column",
+                    "part_name": "X_16030521664896"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "javauser",
+                    "object_type": "column",
+                    "part_name": "javauser"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521664897",
+                    "object_type": "column",
+                    "part_name": "X_16030521664897"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "javauser",
+                    "object_type": "column",
+                    "part_name": "javauser"
+                  }
+                }
+              },
+              {
+                "expr_type": "simple_object_name_t",
+                "column_referenced_expr": {
+                  "objectName": {
+                    "full_name": "X_16030521664897",
+                    "object_type": "column",
+                    "part_name": "X_16030521664897"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "insertSource": "values",
+        "target_table": {
+          "type": "objectname",
+          "named_table_reference": {
+            "table_name": {
+              "full_name": "service_order",
+              "object_type": "table",
+              "object_name": "service_order"
+            }
+          }
+        },
+        "column_list": {
+          "objectName": [
+            {
+              "full_name": "memberid",
+              "object_type": "column",
+              "part_name": "memberid"
+            },
+            {
+              "full_name": "service_group",
+              "object_type": "column",
+              "part_name": "service_group"
+            },
+            {
+              "full_name": "service_type_mow",
+              "object_type": "column",
+              "part_name": "service_type_mow"
+            },
+            {
+              "full_name": "service_type_edge",
+              "object_type": "column",
+              "part_name": "service_type_edge"
+            },
+            {
+              "full_name": "service_type_rake",
+              "object_type": "column",
+              "part_name": "service_type_rake"
+            },
+            {
+              "full_name": "instruction",
+              "object_type": "column",
+              "part_name": "instruction"
+            },
+            {
+              "full_name": "need_by_date",
+              "object_type": "column",
+              "part_name": "need_by_date"
+            },
+            {
+              "full_name": "create_user_name",
+              "object_type": "column",
+              "part_name": "create_user_name"
+            },
+            {
+              "full_name": "create_date",
+              "object_type": "column",
+              "part_name": "create_date"
+            },
+            {
+              "full_name": "change_user_name",
+              "object_type": "column",
+              "part_name": "change_user_name"
+            },
+            {
+              "full_name": "change_date",
+              "object_type": "column",
+              "part_name": "change_date"
+            }
+          ]
+        }
+      },
+      "type": "sstinsert"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "stmt_count": 1
+  }
+}

@@ -1,0 +1,1 @@
+"SELECT * FROM representatives WHERE RepresenterMID=" + representer + " AND RepresenteeMID=" + representee

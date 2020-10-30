@@ -1,0 +1,1 @@
+ DELETE FROM pizza WHERE numero_pizza = ? ;

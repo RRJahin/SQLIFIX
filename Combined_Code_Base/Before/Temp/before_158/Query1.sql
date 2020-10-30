@@ -1,0 +1,1 @@
+ SELECT mp.* FROM 'movie_pic' mp JOIN movie m on m.movie_id = mp.movie_id WHERE m.movie_id = X_16030521667780

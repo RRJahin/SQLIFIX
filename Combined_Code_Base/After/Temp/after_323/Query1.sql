@@ -1,0 +1,1 @@
+ SELECT nombre FROM tbl_peliculas WHERE nombre = ?

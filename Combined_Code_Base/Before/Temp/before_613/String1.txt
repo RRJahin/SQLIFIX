@@ -1,0 +1,1 @@
+"INSERT INTO autot VALUES(" + rekno + "," + merkki + "," + malli + "," + vuosi + ")"

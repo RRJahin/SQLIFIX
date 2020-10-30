@@ -1,0 +1,1014 @@
+{
+  "before_code": "Statement statement = connection.createStatement()\nif (user != null) {\r\n    java.lang.String cardNum = request.getParameter(\"cardNumber\");\r\n    java.lang.String cardCSV = request.getParameter(\"cardCSV\");\r\n    statementBuilder.append(\"SELECT * FROM credit_card WHERE cardnum = '\").append(cardNum).append(\"';\");\r\n    ResultSet results = statement.executeQuery(statementBuilder.toString());\r\n    if (!results.next()) {\r\n        statementBuilder.delete(0, statementBuilder.length()).append(\"INSERT INTO credit_card VALUES ('\").append(user.getUsername()).append(\"', '\").append(cardNum).append(\"', '\").append(cardCSV).append(\"');\");\r\n        statement.executeUpdate(statementBuilder.toString());\r\n        request.getSession().setAttribute(\"CardOperationError\", (\"New card \\\"\" + cardNum) + \"\\\" added successfully.\");\r\n    } else {\r\n        throw new ServletException(\"The credit card is already present in the database.\");\r\n    }\r\n} else {\r\n    throw new ServletException(\"No user is logged in to update!\");\r\n}\n",
+  "after_code": "if (user != null) {\r\n    java.lang.String cardNum = request.getParameter(\"cardNumber\");\r\n    java.lang.String cardCSV = request.getParameter(\"cardCSV\");\r\n    statementBuilder.append(\"SELECT * FROM credit_card WHERE cardnum = '\").append(\"?\").append(\"';\");\r\n    PreparedStatement statement = connection.prepareStatement(statementBuilder.toString());\r\n    statement.setObject(1, cardNum);\r\n    ResultSet results = statement.executeQuery();\r\n    if (!results.next()) {\r\n        statementBuilder.delete(0, statementBuilder.length()).append(\"INSERT INTO credit_card VALUES ('\").append(\"?\").append(\"', '\").append(\"?\").append(\"', '\").append(\"?\").append(\"');\");\r\n        statement = connection.prepareStatement(statementBuilder.toString());\r\n        statement.setObject(1, user.getUsername());\r\n        statement.setObject(2, cardNum);\r\n        statement.setObject(3, cardCSV);\r\n        statement.executeUpdate();\r\n        request.getSession().setAttribute(\"CardOperationError\", (\"New card \\\"\" + cardNum) + \"\\\" added successfully.\");\r\n    } else {\r\n        throw new ServletException(\"The credit card is already present in the database.\");\r\n    }\r\n} else {\r\n    throw new ServletException(\"No user is logged in to update!\");\r\n}\nResultSet results = statement.executeQuery()\n",
+  "before_line": [
+    9,
+    12
+  ],
+  "after_line": [
+    14,
+    20
+  ],
+  "before_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "statement",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "Statement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "createStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "connection",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "if",
+        "type": "If",
+        "children": [
+          {
+            "label": "NE",
+            "type": "BinaryOperator",
+            "children": [
+              {
+                "label": "user",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "null",
+                "type": "Literal",
+                "children": []
+              }
+            ]
+          },
+          {
+            "label": "THEN",
+            "type": "then",
+            "children": [
+              {
+                "label": "cardNum",
+                "type": "LocalVariable",
+                "children": [
+                  {
+                    "label": "java.lang.String",
+                    "type": "VARIABLE_TYPE",
+                    "children": []
+                  },
+                  {
+                    "label": "getParameter",
+                    "type": "Invocation",
+                    "children": [
+                      {
+                        "label": "request",
+                        "type": "FieldRead",
+                        "children": []
+                      },
+                      {
+                        "label": "\"cardNumber\"",
+                        "type": "Literal",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "label": "cardCSV",
+                "type": "LocalVariable",
+                "children": [
+                  {
+                    "label": "java.lang.String",
+                    "type": "VARIABLE_TYPE",
+                    "children": []
+                  },
+                  {
+                    "label": "getParameter",
+                    "type": "Invocation",
+                    "children": [
+                      {
+                        "label": "request",
+                        "type": "FieldRead",
+                        "children": []
+                      },
+                      {
+                        "label": "\"cardCSV\"",
+                        "type": "Literal",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "label": "append",
+                "type": "Invocation",
+                "children": [
+                  {
+                    "label": "append",
+                    "type": "Invocation",
+                    "children": [
+                      {
+                        "label": "append",
+                        "type": "Invocation",
+                        "children": [
+                          {
+                            "label": "statementBuilder",
+                            "type": "FieldRead",
+                            "children": []
+                          },
+                          {
+                            "label": "\"SELECT * FROM credit_card WHERE cardnum = '\"",
+                            "type": "Literal",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "label": "cardNum",
+                        "type": "VariableRead",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "label": "\"';\"",
+                    "type": "Literal",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "label": "results",
+                "type": "LocalVariable",
+                "children": [
+                  {
+                    "label": "ResultSet",
+                    "type": "VARIABLE_TYPE",
+                    "children": []
+                  },
+                  {
+                    "label": "executeQuery",
+                    "type": "Invocation",
+                    "children": [
+                      {
+                        "label": "statement",
+                        "type": "FieldRead",
+                        "children": []
+                      },
+                      {
+                        "label": "toString",
+                        "type": "Invocation",
+                        "children": [
+                          {
+                            "label": "statementBuilder",
+                            "type": "FieldRead",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "label": "if",
+                "type": "If",
+                "children": [
+                  {
+                    "label": "NOT",
+                    "type": "UnaryOperator",
+                    "children": [
+                      {
+                        "label": "next",
+                        "type": "Invocation",
+                        "children": [
+                          {
+                            "label": "results",
+                            "type": "VariableRead",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": "THEN",
+                    "type": "then",
+                    "children": [
+                      {
+                        "label": "append",
+                        "type": "Invocation",
+                        "children": [
+                          {
+                            "label": "append",
+                            "type": "Invocation",
+                            "children": [
+                              {
+                                "label": "append",
+                                "type": "Invocation",
+                                "children": [
+                                  {
+                                    "label": "append",
+                                    "type": "Invocation",
+                                    "children": [
+                                      {
+                                        "label": "append",
+                                        "type": "Invocation",
+                                        "children": [
+                                          {
+                                            "label": "append",
+                                            "type": "Invocation",
+                                            "children": [
+                                              {
+                                                "label": "append",
+                                                "type": "Invocation",
+                                                "children": [
+                                                  {
+                                                    "label": "delete",
+                                                    "type": "Invocation",
+                                                    "children": [
+                                                      {
+                                                        "label": "statementBuilder",
+                                                        "type": "FieldRead",
+                                                        "children": []
+                                                      },
+                                                      {
+                                                        "label": "0",
+                                                        "type": "Literal",
+                                                        "children": []
+                                                      },
+                                                      {
+                                                        "label": "length",
+                                                        "type": "Invocation",
+                                                        "children": [
+                                                          {
+                                                            "label": "statementBuilder",
+                                                            "type": "FieldRead",
+                                                            "children": []
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "label": "\"INSERT INTO credit_card VALUES ('\"",
+                                                    "type": "Literal",
+                                                    "children": []
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "label": "getUsername",
+                                                "type": "Invocation",
+                                                "children": [
+                                                  {
+                                                    "label": "user",
+                                                    "type": "FieldRead",
+                                                    "children": []
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "label": "\"', '\"",
+                                            "type": "Literal",
+                                            "children": []
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "cardNum",
+                                        "type": "VariableRead",
+                                        "children": []
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "\"', '\"",
+                                    "type": "Literal",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "label": "cardCSV",
+                                "type": "VariableRead",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "label": "\"');\"",
+                            "type": "Literal",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "label": "executeUpdate",
+                        "type": "Invocation",
+                        "children": [
+                          {
+                            "label": "statement",
+                            "type": "FieldRead",
+                            "children": []
+                          },
+                          {
+                            "label": "toString",
+                            "type": "Invocation",
+                            "children": [
+                              {
+                                "label": "statementBuilder",
+                                "type": "FieldRead",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "setAttribute",
+                        "type": "Invocation",
+                        "children": [
+                          {
+                            "label": "getSession",
+                            "type": "Invocation",
+                            "children": [
+                              {
+                                "label": "request",
+                                "type": "FieldRead",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "label": "\"CardOperationError\"",
+                            "type": "Literal",
+                            "children": []
+                          },
+                          {
+                            "label": "PLUS",
+                            "type": "BinaryOperator",
+                            "children": [
+                              {
+                                "label": "PLUS",
+                                "type": "BinaryOperator",
+                                "children": [
+                                  {
+                                    "label": "\"New card \\\"\"",
+                                    "type": "Literal",
+                                    "children": []
+                                  },
+                                  {
+                                    "label": "cardNum",
+                                    "type": "VariableRead",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "label": "\"\\\" added successfully.\"",
+                                "type": "Literal",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": "ELSE",
+                    "type": "else",
+                    "children": [
+                      {
+                        "label": "",
+                        "type": "Throw",
+                        "children": [
+                          {
+                            "label": "ServletException(java.lang.String)",
+                            "type": "ConstructorCall",
+                            "children": [
+                              {
+                                "label": "\"The credit card is already present in the database.\"",
+                                "type": "Literal",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "ELSE",
+            "type": "else",
+            "children": [
+              {
+                "label": "",
+                "type": "Throw",
+                "children": [
+                  {
+                    "label": "ServletException(java.lang.String)",
+                    "type": "ConstructorCall",
+                    "children": [
+                      {
+                        "label": "\"No user is logged in to update!\"",
+                        "type": "Literal",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "after_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "if",
+        "type": "If",
+        "children": [
+          {
+            "label": "NE",
+            "type": "BinaryOperator",
+            "children": [
+              {
+                "label": "user",
+                "type": "FieldRead",
+                "children": []
+              },
+              {
+                "label": "null",
+                "type": "Literal",
+                "children": []
+              }
+            ]
+          },
+          {
+            "label": "THEN",
+            "type": "then",
+            "children": [
+              {
+                "label": "cardNum",
+                "type": "LocalVariable",
+                "children": [
+                  {
+                    "label": "java.lang.String",
+                    "type": "VARIABLE_TYPE",
+                    "children": []
+                  },
+                  {
+                    "label": "getParameter",
+                    "type": "Invocation",
+                    "children": [
+                      {
+                        "label": "request",
+                        "type": "FieldRead",
+                        "children": []
+                      },
+                      {
+                        "label": "\"cardNumber\"",
+                        "type": "Literal",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "label": "cardCSV",
+                "type": "LocalVariable",
+                "children": [
+                  {
+                    "label": "java.lang.String",
+                    "type": "VARIABLE_TYPE",
+                    "children": []
+                  },
+                  {
+                    "label": "getParameter",
+                    "type": "Invocation",
+                    "children": [
+                      {
+                        "label": "request",
+                        "type": "FieldRead",
+                        "children": []
+                      },
+                      {
+                        "label": "\"cardCSV\"",
+                        "type": "Literal",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "label": "append",
+                "type": "Invocation",
+                "children": [
+                  {
+                    "label": "append",
+                    "type": "Invocation",
+                    "children": [
+                      {
+                        "label": "append",
+                        "type": "Invocation",
+                        "children": [
+                          {
+                            "label": "statementBuilder",
+                            "type": "FieldRead",
+                            "children": []
+                          },
+                          {
+                            "label": "\"SELECT * FROM credit_card WHERE cardnum = '\"",
+                            "type": "Literal",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "label": "\"?\"",
+                        "type": "Literal",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "label": "\"';\"",
+                    "type": "Literal",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "label": "statement",
+                "type": "LocalVariable",
+                "children": [
+                  {
+                    "label": "PreparedStatement",
+                    "type": "VARIABLE_TYPE",
+                    "children": []
+                  },
+                  {
+                    "label": "prepareStatement",
+                    "type": "Invocation",
+                    "children": [
+                      {
+                        "label": "connection",
+                        "type": "FieldRead",
+                        "children": []
+                      },
+                      {
+                        "label": "toString",
+                        "type": "Invocation",
+                        "children": [
+                          {
+                            "label": "statementBuilder",
+                            "type": "FieldRead",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "label": "setObject",
+                "type": "Invocation",
+                "children": [
+                  {
+                    "label": "statement",
+                    "type": "VariableRead",
+                    "children": []
+                  },
+                  {
+                    "label": "1",
+                    "type": "Literal",
+                    "children": []
+                  },
+                  {
+                    "label": "cardNum",
+                    "type": "VariableRead",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "label": "results",
+                "type": "LocalVariable",
+                "children": [
+                  {
+                    "label": "ResultSet",
+                    "type": "VARIABLE_TYPE",
+                    "children": []
+                  },
+                  {
+                    "label": "executeQuery",
+                    "type": "Invocation",
+                    "children": [
+                      {
+                        "label": "statement",
+                        "type": "VariableRead",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "label": "if",
+                "type": "If",
+                "children": [
+                  {
+                    "label": "NOT",
+                    "type": "UnaryOperator",
+                    "children": [
+                      {
+                        "label": "next",
+                        "type": "Invocation",
+                        "children": [
+                          {
+                            "label": "results",
+                            "type": "VariableRead",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": "THEN",
+                    "type": "then",
+                    "children": [
+                      {
+                        "label": "append",
+                        "type": "Invocation",
+                        "children": [
+                          {
+                            "label": "append",
+                            "type": "Invocation",
+                            "children": [
+                              {
+                                "label": "append",
+                                "type": "Invocation",
+                                "children": [
+                                  {
+                                    "label": "append",
+                                    "type": "Invocation",
+                                    "children": [
+                                      {
+                                        "label": "append",
+                                        "type": "Invocation",
+                                        "children": [
+                                          {
+                                            "label": "append",
+                                            "type": "Invocation",
+                                            "children": [
+                                              {
+                                                "label": "append",
+                                                "type": "Invocation",
+                                                "children": [
+                                                  {
+                                                    "label": "delete",
+                                                    "type": "Invocation",
+                                                    "children": [
+                                                      {
+                                                        "label": "statementBuilder",
+                                                        "type": "FieldRead",
+                                                        "children": []
+                                                      },
+                                                      {
+                                                        "label": "0",
+                                                        "type": "Literal",
+                                                        "children": []
+                                                      },
+                                                      {
+                                                        "label": "length",
+                                                        "type": "Invocation",
+                                                        "children": [
+                                                          {
+                                                            "label": "statementBuilder",
+                                                            "type": "FieldRead",
+                                                            "children": []
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "label": "\"INSERT INTO credit_card VALUES ('\"",
+                                                    "type": "Literal",
+                                                    "children": []
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "label": "\"?\"",
+                                                "type": "Literal",
+                                                "children": []
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "label": "\"', '\"",
+                                            "type": "Literal",
+                                            "children": []
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "label": "\"?\"",
+                                        "type": "Literal",
+                                        "children": []
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "\"', '\"",
+                                    "type": "Literal",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "label": "\"?\"",
+                                "type": "Literal",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "label": "\"');\"",
+                            "type": "Literal",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "label": "=",
+                        "type": "Assignment",
+                        "children": [
+                          {
+                            "label": "statement",
+                            "type": "VariableWrite",
+                            "children": []
+                          },
+                          {
+                            "label": "prepareStatement",
+                            "type": "Invocation",
+                            "children": [
+                              {
+                                "label": "connection",
+                                "type": "FieldRead",
+                                "children": []
+                              },
+                              {
+                                "label": "toString",
+                                "type": "Invocation",
+                                "children": [
+                                  {
+                                    "label": "statementBuilder",
+                                    "type": "FieldRead",
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "setObject",
+                        "type": "Invocation",
+                        "children": [
+                          {
+                            "label": "statement",
+                            "type": "VariableRead",
+                            "children": []
+                          },
+                          {
+                            "label": "1",
+                            "type": "Literal",
+                            "children": []
+                          },
+                          {
+                            "label": "getUsername",
+                            "type": "Invocation",
+                            "children": [
+                              {
+                                "label": "user",
+                                "type": "FieldRead",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "label": "setObject",
+                        "type": "Invocation",
+                        "children": [
+                          {
+                            "label": "statement",
+                            "type": "VariableRead",
+                            "children": []
+                          },
+                          {
+                            "label": "2",
+                            "type": "Literal",
+                            "children": []
+                          },
+                          {
+                            "label": "cardNum",
+                            "type": "VariableRead",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "label": "setObject",
+                        "type": "Invocation",
+                        "children": [
+                          {
+                            "label": "statement",
+                            "type": "VariableRead",
+                            "children": []
+                          },
+                          {
+                            "label": "3",
+                            "type": "Literal",
+                            "children": []
+                          },
+                          {
+                            "label": "cardCSV",
+                            "type": "VariableRead",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "label": "executeUpdate",
+                        "type": "Invocation",
+                        "children": [
+                          {
+                            "label": "statement",
+                            "type": "VariableRead",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "label": "setAttribute",
+                        "type": "Invocation",
+                        "children": [
+                          {
+                            "label": "getSession",
+                            "type": "Invocation",
+                            "children": [
+                              {
+                                "label": "request",
+                                "type": "FieldRead",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "label": "\"CardOperationError\"",
+                            "type": "Literal",
+                            "children": []
+                          },
+                          {
+                            "label": "PLUS",
+                            "type": "BinaryOperator",
+                            "children": [
+                              {
+                                "label": "PLUS",
+                                "type": "BinaryOperator",
+                                "children": [
+                                  {
+                                    "label": "\"New card \\\"\"",
+                                    "type": "Literal",
+                                    "children": []
+                                  },
+                                  {
+                                    "label": "cardNum",
+                                    "type": "VariableRead",
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "label": "\"\\\" added successfully.\"",
+                                "type": "Literal",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": "ELSE",
+                    "type": "else",
+                    "children": [
+                      {
+                        "label": "",
+                        "type": "Throw",
+                        "children": [
+                          {
+                            "label": "ServletException(java.lang.String)",
+                            "type": "ConstructorCall",
+                            "children": [
+                              {
+                                "label": "\"The credit card is already present in the database.\"",
+                                "type": "Literal",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "ELSE",
+            "type": "else",
+            "children": [
+              {
+                "label": "",
+                "type": "Throw",
+                "children": [
+                  {
+                    "label": "ServletException(java.lang.String)",
+                    "type": "ConstructorCall",
+                    "children": [
+                      {
+                        "label": "\"No user is logged in to update!\"",
+                        "type": "Literal",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "results",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "ResultSet",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "executeQuery",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "statement",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

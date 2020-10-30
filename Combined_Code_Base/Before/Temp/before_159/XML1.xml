@@ -1,0 +1,188 @@
+<sqlscript xmlns="http://www.sqlparser.com/xml/sqlschema/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" dbvendor="dbvoracle" stmt_count="1" xsi:schemaLocation="http://www.sqlparser.com/xml/sqlschema/1.0 file:/C:/prg/gsp_java_maven/doc/xml/sqlschema.xsd">
+  <statement type="sstinsert">
+    <insert_statement insertSource="values">
+      <target_table type="objectname">
+        <named_table_reference>
+          <table_name object_type="table">
+            <full_name>inception_music</full_name>
+            <object_name>inception_music</object_name>
+          </table_name>
+        </named_table_reference>
+      </target_table>
+      <column_list>
+        <objectName object_type="column">
+          <full_name>musicName</full_name>
+          <part_name>musicName</part_name>
+        </objectName>
+        <objectName object_type="column">
+          <full_name>musicStyle</full_name>
+          <part_name>musicStyle</part_name>
+        </objectName>
+        <objectName object_type="column">
+          <full_name>musicLanguage</full_name>
+          <part_name>musicLanguage</part_name>
+        </objectName>
+        <objectName object_type="column">
+          <full_name>artistName</full_name>
+          <part_name>artistName</part_name>
+        </objectName>
+        <objectName object_type="column">
+          <full_name>albumName</full_name>
+          <part_name>albumName</part_name>
+        </objectName>
+        <objectName object_type="column">
+          <full_name>musicUrl</full_name>
+          <part_name>musicUrl</part_name>
+        </objectName>
+        <objectName object_type="column">
+          <full_name>imageUrl</full_name>
+          <part_name>imageUrl</part_name>
+        </objectName>
+        <objectName object_type="column">
+          <full_name>lyrics</full_name>
+          <part_name>lyrics</part_name>
+        </objectName>
+        <objectName object_type="column">
+          <full_name>publishDate</full_name>
+          <part_name>publishDate</part_name>
+        </objectName>
+        <objectName object_type="column">
+          <full_name>description</full_name>
+          <part_name>description</part_name>
+        </objectName>
+        <objectName object_type="column">
+          <full_name>uploadedBy</full_name>
+          <part_name>uploadedBy</part_name>
+        </objectName>
+        <objectName object_type="column">
+          <full_name>uploadDate</full_name>
+          <part_name>uploadDate</part_name>
+        </objectName>
+        <objectName object_type="column">
+          <full_name>fileLength</full_name>
+          <part_name>fileLength</part_name>
+        </objectName>
+        <objectName object_type="column">
+          <full_name>musicLength</full_name>
+          <part_name>musicLength</part_name>
+        </objectName>
+      </column_list>
+      <insert_values>
+        <row_values>
+          <expression expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_16030521667880</full_name>
+                <part_name>X_16030521667880</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </expression>
+          <expression expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_16030521667881</full_name>
+                <part_name>X_16030521667881</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </expression>
+          <expression expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_16030521667882</full_name>
+                <part_name>X_16030521667882</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </expression>
+          <expression expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_16030521667883</full_name>
+                <part_name>X_16030521667883</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </expression>
+          <expression expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_16030521667884</full_name>
+                <part_name>X_16030521667884</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </expression>
+          <expression expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_16030521667885</full_name>
+                <part_name>X_16030521667885</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </expression>
+          <expression expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_16030521667886</full_name>
+                <part_name>X_16030521667886</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </expression>
+          <expression expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_16030521667887</full_name>
+                <part_name>X_16030521667887</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </expression>
+          <expression expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_16030521667888</full_name>
+                <part_name>X_16030521667888</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </expression>
+          <expression expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_16030521667889</full_name>
+                <part_name>X_16030521667889</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </expression>
+          <expression expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_160305216678810</full_name>
+                <part_name>X_160305216678810</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </expression>
+          <expression expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_160305216678811</full_name>
+                <part_name>X_160305216678811</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </expression>
+          <expression expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_160305216678812</full_name>
+                <part_name>X_160305216678812</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </expression>
+          <expression expr_type="simple_object_name_t">
+            <column_referenced_expr>
+              <objectName object_type="column">
+                <full_name>X_160305216678813</full_name>
+                <part_name>X_160305216678813</part_name>
+              </objectName>
+            </column_referenced_expr>
+          </expression>
+        </row_values>
+      </insert_values>
+    </insert_statement>
+  </statement>
+</sqlscript>

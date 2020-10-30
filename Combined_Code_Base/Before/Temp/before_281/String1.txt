@@ -1,0 +1,1 @@
+"SELECT role FROM users WHERE MID=" + mid + " AND Role=" + role

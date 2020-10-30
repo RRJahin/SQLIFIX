@@ -1,0 +1,1 @@
+"SELECT COUNT(*) AS facilityInstances FROM Facility " + " WHERE id<> '?' AND name= '?'"

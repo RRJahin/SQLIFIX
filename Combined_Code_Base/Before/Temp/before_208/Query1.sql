@@ -1,0 +1,1 @@
+ INSERT INTO withdata(dateObserved,ticker) VALUES(now(),'X_16030521677640') ;
