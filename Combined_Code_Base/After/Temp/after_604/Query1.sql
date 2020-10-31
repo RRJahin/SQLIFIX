@@ -1,1 +1,0 @@
- INSERT INTO localdb.sys_network.repositories (repo_url) VALUES (?)

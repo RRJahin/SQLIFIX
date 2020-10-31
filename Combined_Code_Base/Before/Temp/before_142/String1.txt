@@ -1,1 +1,0 @@
-"UPDATE service_order " + "SET expiration_date = " + new java.sql.Date(new java.util.Date().getTime()) + ", change_user_name = javauser, change_date = " + GenericUtilities.getCurrentTimeStamp() + "WHERE id = " + serviceId

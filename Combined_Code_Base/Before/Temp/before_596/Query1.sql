@@ -1,1 +1,0 @@
- SELECT * FROM allergies WHERE PatientID= X_16030521820720 ORDER BY FirstFound DESC

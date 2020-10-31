@@ -1,1 +1,0 @@
- Select * FROM users WHERE MID=? AND password=?

@@ -1,1 +1,0 @@
- UPDATE ITEM set DEPARTMENT = ? where ITEM_NAME LIKE ? ;

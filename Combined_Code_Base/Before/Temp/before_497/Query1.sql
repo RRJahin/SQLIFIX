@@ -1,1 +1,0 @@
- select * from agent_details where agn_id= X_16030521789160 and password= X_16030521789161 and approval= X_16030521789162

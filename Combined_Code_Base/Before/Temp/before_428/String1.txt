@@ -1,1 +1,0 @@
-"INSERT INTO course(courname,faculty) VALUES (" + courname + "," + facultyCourTextBox.getText() + ")"

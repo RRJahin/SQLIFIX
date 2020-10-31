@@ -1,1 +1,0 @@
-"INSERT INTO representatives(RepresenterMID,RepresenteeMID) VALUES (?,?)"

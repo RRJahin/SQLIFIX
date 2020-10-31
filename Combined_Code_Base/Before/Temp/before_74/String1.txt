@@ -1,1 +1,0 @@
-"INSERT INTO member (id, pwd, name, phone, email, address, e_key) VALUES (" + m.getId() + ", " + m.getPwd() + ", " + m.getName() + ", " + m.getPhone() + ", " + m.getEmail() + ", " + m.getAddress() + ", " + m.getKey() + ")"

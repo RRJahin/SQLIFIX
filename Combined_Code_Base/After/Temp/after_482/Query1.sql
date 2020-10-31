@@ -1,1 +1,0 @@
- Insert into Starwood(Member_Name, Member_Surname, Address, Email_Address, Card_Number, Phone_Number, User_Name) values (?,?,?,?,?,?,?)

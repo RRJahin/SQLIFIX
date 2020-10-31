@@ -1,1 +1,0 @@
- INSERT INTO Location(zipcode, country, city) VALUES('?','?','?')

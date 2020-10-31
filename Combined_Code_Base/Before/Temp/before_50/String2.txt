@@ -1,1 +1,0 @@
-"SELECT complete_name , " + nuOrgaVal + "-CAST(aminos_vs_cyst AS float) " + " as result FROM organisms " + "WHERE COMPLETE_NAME NOT LIKE '" + organismName + "' ORDER BY " + nuOrgaVal + "-CAST(aminos_vs_cyst AS float)" + " LIMIT " + top

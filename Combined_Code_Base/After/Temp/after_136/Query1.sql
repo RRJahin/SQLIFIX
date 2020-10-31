@@ -1,1 +1,0 @@
- SELECT * FROM ModRgl WHERE codeModRgl = ?

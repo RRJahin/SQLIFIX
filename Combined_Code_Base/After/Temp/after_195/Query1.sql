@@ -1,1 +1,0 @@
- SELECT * FROM virtual_master_node_table WHERE domain='?'

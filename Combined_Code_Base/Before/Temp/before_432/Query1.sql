@@ -1,1 +1,0 @@
- CREATE TABLE country ( id INTEGER PRIMARY KEY AUTO_INCREMENT, country_code CHAR(5) NOT NULL, country_name VARCHAR(255) NOT NULL, has_division SMALLINT NOT NULL, division_name VARCHAR(255) )

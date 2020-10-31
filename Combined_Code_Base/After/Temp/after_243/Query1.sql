@@ -1,1 +1,0 @@
- INSERT INTO ActivityBooking(id, guestId, date, status) VALUES ('?','?','?','?')

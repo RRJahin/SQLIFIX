@@ -1,1 +1,0 @@
- SELECT * FROM Pays WHERE id = ?

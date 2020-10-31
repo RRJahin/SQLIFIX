@@ -1,1 +1,0 @@
-"insert into login(name,password)values('" + name + "','" + password + "')"

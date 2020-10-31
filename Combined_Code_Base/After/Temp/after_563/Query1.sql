@@ -1,1 +1,0 @@
- INSERT INTO TaskLogisticRoom TaskLogisticEquipment VALUES (?,?)

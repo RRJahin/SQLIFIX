@@ -1,1 +1,0 @@
-"SELECT sQuestion FROM users WHERE MID=" + mid

@@ -1,1 +1,0 @@
- insert into TB_DATE values ( ?, ?, ?, ?, ?)

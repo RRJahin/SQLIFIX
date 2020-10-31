@@ -1,5 +1,0 @@
- entidad.getImagen()$X_16030521738034
- entidad.getClasificacion()$X_16030521738032
- entidad.getNombre()$X_16030521738030
- entidad.getGenero()$X_16030521738031
- entidad.getDuracion()$X_16030521738033

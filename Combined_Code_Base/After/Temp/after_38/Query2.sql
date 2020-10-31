@@ -1,1 +1,0 @@
- UPDATE ITEM set DESCRIPTION = ? where ITEM_NAME LIKE ? ;

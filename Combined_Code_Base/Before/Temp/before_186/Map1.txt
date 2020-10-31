@@ -1,5 +1,0 @@
- new java.sql.Timestamp(record.getdTimestamp().getTime())$X_16030521671193
- record.getdYear4()$X_16030521671194
- new java.sql.Timestamp(record.getdDatetime().getTime())$X_16030521671192
- new java.sql.Date(record.getdDate().getTime())$X_16030521671180
- new java.sql.Time(record.getdTime().getTime())$X_16030521671191

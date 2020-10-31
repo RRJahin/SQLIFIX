@@ -1,1 +1,0 @@
-"SELECT server_name, server_url, node, dt_last_check, dt_last_rfaction " + ", env from ORKIDS_SERVERS where active = 'T'"

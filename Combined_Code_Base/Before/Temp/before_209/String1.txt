@@ -1,1 +1,0 @@
-"select * from " + TBL_NAME + " where " + FIELD_IS_PDI + "=false " + "order by " + FIELD_CODICE

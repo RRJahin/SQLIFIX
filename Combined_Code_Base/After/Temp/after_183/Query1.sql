@@ -1,1 +1,0 @@
- update ? set ? = last_insert_id(? + ?)

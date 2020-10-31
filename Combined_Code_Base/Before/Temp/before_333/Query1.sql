@@ -1,1 +1,0 @@
- delete from Persona where id = 'X_16030521742060' ;

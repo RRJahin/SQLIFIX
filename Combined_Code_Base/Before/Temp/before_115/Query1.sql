@@ -1,1 +1,0 @@
- delete from mensagem where id = 'X_16030521657820'

@@ -1,1 +1,0 @@
- DELETE FROM TravelAgency WHERE cvr= 'X_16030521781000'

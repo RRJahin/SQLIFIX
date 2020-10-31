@@ -1,1 +1,0 @@
- SELECT * FROM declaredhcp WHERE PatientID=? AND HCPID=?

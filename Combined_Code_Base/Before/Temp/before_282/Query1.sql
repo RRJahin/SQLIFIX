@@ -1,1 +1,0 @@
- INSERT INTO patients(MID) VALUES(NULL)

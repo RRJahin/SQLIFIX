@@ -1,1 +1,0 @@
- SELECT * FROM X_16030521671570 WHERE stock = \ + stockIndex + ;

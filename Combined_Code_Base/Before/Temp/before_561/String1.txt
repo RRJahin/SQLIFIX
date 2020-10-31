@@ -1,1 +1,0 @@
-"Insert into orar values(" + orar.getZiua() + "," + orar.getOra_inceput() + "," + orar.getOra_sfarsit() + "," + orar.getFrecventa() + "," + orar.getId_Disciplina() + "," + orar.getTip() + "," + orar.getId_Cadru_Didactic()

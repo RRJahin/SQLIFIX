@@ -1,1 +1,0 @@
- DELETE FROM ActivityLine WHERE activityId= '?' AND bookingId= '?' AND date= '?' AND startHour= '?'

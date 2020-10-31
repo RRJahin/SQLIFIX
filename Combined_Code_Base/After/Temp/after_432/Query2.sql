@@ -1,1 +1,0 @@
- INSERT INTO country(country_name, country_code, has_division, division_name) VALUES(?,?,?,?)

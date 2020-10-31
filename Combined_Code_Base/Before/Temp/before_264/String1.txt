@@ -1,1 +1,0 @@
-"INSERT INTO T_HT_ATIVIDADE (CD_ATIVIDADE, DT_ATIVIDADE, DS_ATIVIDADE, CD_USUARIO) VALUES (SQ_T_HT_ATIVIDADE.NEXTVAL, " + data + ", " + atividadesFisicas.getDs_atividade() + ", " + atividadesFisicas.getCd_usuario() + ")"

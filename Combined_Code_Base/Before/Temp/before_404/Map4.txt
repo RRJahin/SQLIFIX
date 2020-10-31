@@ -1,1 +1,0 @@
- Long.parseLong(post.getThread().toString())$X_16030521757240

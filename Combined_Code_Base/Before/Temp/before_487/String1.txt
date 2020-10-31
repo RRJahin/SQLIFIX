@@ -1,1 +1,0 @@
-"Select *  from Reserved_Rooms a where a.reservationID = " + reservationId.toString()

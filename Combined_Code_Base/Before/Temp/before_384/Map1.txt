@@ -1,6 +1,0 @@
- pizza.getNumero()$X_16030521750000
- pizza.getIngredientes()$X_16030521750004
- pizza.getPreco()$X_16030521750005
- pizza.getTipoPizza()$X_16030521750002
- pizza.getNome()$X_16030521750001
- pizza.getTipoMassa()$X_16030521750003

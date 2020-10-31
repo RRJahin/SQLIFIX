@@ -1,3 +1,0 @@
- book.getIdAuthor()$X_16030521669571
- book.getName()$X_16030521669570
- book.getId()$X_16030521669572

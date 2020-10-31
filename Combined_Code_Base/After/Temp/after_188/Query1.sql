@@ -1,1 +1,0 @@
- INSERT INTO template_table VALUES( '?', '?', '?')

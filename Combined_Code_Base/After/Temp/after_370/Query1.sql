@@ -1,1 +1,0 @@
- INSERT into user(name, username, password) values('?', '?','?')

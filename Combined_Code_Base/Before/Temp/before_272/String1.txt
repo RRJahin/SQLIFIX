@@ -1,1 +1,0 @@
-"SELECT * FROM ParcClient WHERE codeTParc = " + idType + " AND codeCliPros = " + codeClient

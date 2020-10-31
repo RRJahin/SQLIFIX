@@ -1,1 +1,0 @@
-"SELECT MAX(ITEM_ID) as id FROM ITEM"

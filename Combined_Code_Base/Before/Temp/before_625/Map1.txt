@@ -1,7 +1,0 @@
- emprestimo.getLivro().getLivro_id()$X_16030521829731
- new java.sql.Date(emprestimo.getData_devolucao().getTime())$X_16030521829734
- emprestimo.getEstudante().getEstudante_id()$X_16030521829732
- new java.sql.Date(emprestimo.getData_entrega().getTime())$X_16030521829735
- emprestimo.getEmprestimo_id()$X_16030521829730
- new java.sql.Date(emprestimo.getData_retirada().getTime())$X_16030521829733
- emprestimo.getStatus()$X_16030521829736

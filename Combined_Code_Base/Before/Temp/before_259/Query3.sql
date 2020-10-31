@@ -1,1 +1,0 @@
- DELETE FROM tag WHERE idtag NOT IN(SELECT idtag FROM doctag)

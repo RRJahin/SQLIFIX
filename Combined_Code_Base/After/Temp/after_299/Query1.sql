@@ -1,1 +1,0 @@
- SELECT COUNT(*) AS activityLineNumbers FROM ActivityLine WHERE bookingId='?' AND date= '?' AND status<>'Canceled'

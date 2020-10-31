@@ -1,2 +1,0 @@
- med.getDescription()$X_16030521675361
- med.getNDCode()$X_16030521675360

@@ -1,5 +1,0 @@
- cerc.getMentor()$X_16030521816122
- cerc.getDescriere()$X_16030521816124
- cerc.getAn()$X_16030521816123
- cerc.getId()$X_16030521816120
- cerc.getDenumire()$X_16030521816121

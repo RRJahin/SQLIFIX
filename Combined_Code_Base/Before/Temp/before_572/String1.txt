@@ -1,1 +1,0 @@
-"INSERT INTO ProgrameDeStudiu VALUES (" + sectie.getId() + "," + plan.getDenumire() + "," + plan.getSemestru() + ")"

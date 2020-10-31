@@ -1,1 +1,0 @@
-"SELECT COUNT(*) AS activityLineInstances3 FROM ActivityLine " + " WHERE bookingId= '" + bookingId + "' " + "AND date= '" + date + "' " + "AND startHour= '" + startHour + "' " + "AND startHour= '" + startHour + "' " + "AND status<>'Canceled' "

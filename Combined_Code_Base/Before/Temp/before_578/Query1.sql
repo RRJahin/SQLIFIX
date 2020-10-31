@@ -1,1 +1,0 @@
- SELECT * FROM Album WHERE id_album= X_16030521817860 ;

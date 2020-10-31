@@ -1,1 +1,0 @@
- SELECT COUNT(*) AS activityLineInstances3 FROM ActivityLine WHERE activityId= '?' AND date= '?' AND startHour= '?' AND facilityId= '?' AND status<>'Canceled'

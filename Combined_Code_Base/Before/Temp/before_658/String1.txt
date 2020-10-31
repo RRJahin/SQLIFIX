@@ -1,1 +1,0 @@
-"insert into practica7.PERSONA values (DEFAULT, '" + nom + "','" + llinatge1 + "','" + llinatge2 + "','" + dataNaixement + "')"

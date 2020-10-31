@@ -1,1 +1,0 @@
- update atm_user set state = 2 where account = 'X_16030521794660' ;

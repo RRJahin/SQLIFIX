@@ -1,1 +1,0 @@
- select * from pinnedposts where postid = X_16030521755000

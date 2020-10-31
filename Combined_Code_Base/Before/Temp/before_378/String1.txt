@@ -1,1 +1,0 @@
-"update " + TBL_NAME + " set " + FIELD_QUOTA + "=" + quota + " where " + FIELD_ID + "=" + id_piano

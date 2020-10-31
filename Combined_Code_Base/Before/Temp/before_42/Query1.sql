@@ -1,1 +1,0 @@
- INSERT INTO 'stats' ('player', 'kills', 'deaths') VALUES ('X_16030521761350', '0', '0')

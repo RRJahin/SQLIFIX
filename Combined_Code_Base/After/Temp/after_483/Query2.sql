@@ -1,1 +1,0 @@
- Delete From Members where User_Name= ?

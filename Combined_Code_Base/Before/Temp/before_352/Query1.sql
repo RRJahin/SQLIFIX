@@ -1,1 +1,0 @@
- UPDATE loginfailures SET FailureCount=FailureCount + 1, lastFailure=CURRENT_TIMESTAMP WHERE IPAddress= X_16030521745010

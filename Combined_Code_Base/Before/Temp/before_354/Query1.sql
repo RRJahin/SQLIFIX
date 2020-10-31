@@ -1,1 +1,0 @@
- SELECT * FROM resetpasswordfailures WHERE IPADDRESS= X_16030521745380

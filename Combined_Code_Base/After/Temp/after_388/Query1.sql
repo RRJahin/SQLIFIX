@@ -1,1 +1,0 @@
- Select product_stock from product_sms where product_id = ?

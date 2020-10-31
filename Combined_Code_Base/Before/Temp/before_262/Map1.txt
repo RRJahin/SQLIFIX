@@ -1,6 +1,0 @@
- activityLine.getStatus()$X_16030521717880
- activityLine.getFacility().getId()$X_16030521717883
- activityLine.getActivityBooking().getId()$X_16030521717882
- activityLine.getActivity().getID()$X_16030521717881
- activityLine.getStartHour()$X_16030521717885
- activityLine.getDate()$X_16030521717884

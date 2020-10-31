@@ -1,1 +1,0 @@
- SELECT message.* FROM message, personnel WHERE message.to_id=personnel.mid AND message.from_id= X_16030521661950 ORDER BY personnel.lastName DESC, personnel.firstName DESC, message.sent_date DESC

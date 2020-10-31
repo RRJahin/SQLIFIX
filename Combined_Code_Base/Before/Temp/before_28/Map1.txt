@@ -1,7 +1,0 @@
- fldProgress$X_16030521724912
- fldGoldGoal$X_16030521724915
- tableLabel$X_16030521724910
- fldStatus$X_16030521724916
- fldAchievementTitle$X_16030521724911
- fldBronzeGoal$X_16030521724913
- fldSilverGoal$X_16030521724914

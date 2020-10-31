@@ -1,3 +1,0 @@
- plan.getDenumire()$X_16030521816581
- sectie.getId()$X_16030521816580
- plan.getSemestru()$X_16030521816582

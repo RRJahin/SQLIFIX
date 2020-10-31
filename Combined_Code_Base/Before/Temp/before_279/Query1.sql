@@ -1,1 +1,0 @@
- update adv_pendencia.tab_pasta set statusPasta = 'livre' where idPasta = X_16030521724000

@@ -1,1 +1,0 @@
- DELETE FROM RoomBooking WHERE id = 'X_16030521773210'

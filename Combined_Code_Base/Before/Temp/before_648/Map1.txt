@@ -1,2 +1,0 @@
- obj.getNomFamClient()$X_16030521833811
- obj.getCodeFamClient()$X_16030521833810

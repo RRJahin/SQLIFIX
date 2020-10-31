@@ -1,1 +1,0 @@
- insert into shipping values( X_16030521754710 ,'X_16030521754711')

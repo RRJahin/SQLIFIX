@@ -1,1 +1,0 @@
- SELECT DISTINCT hospitals.* FROM hcpassignedhos hah INNER JOIN hcprelations ON hah.HCPID = hcprelations.HCP INNER JOIN hospitals ON hah.hosID = hospitals.HospitalID WHERE hcprelations.UAP= X_16030521744220 ORDER BY HospitalName ASC

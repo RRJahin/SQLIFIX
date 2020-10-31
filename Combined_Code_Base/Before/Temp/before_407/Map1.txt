@@ -1,2 +1,0 @@
- employeeNewObj.getSalary()$X_16030521758230
- employeeNewObj.getId()$X_16030521758231

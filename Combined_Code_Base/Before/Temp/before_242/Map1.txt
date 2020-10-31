@@ -1,2 +1,0 @@
- orderlist.getBid()$X_16030521702480
- orderlist.getPid()$X_16030521702481

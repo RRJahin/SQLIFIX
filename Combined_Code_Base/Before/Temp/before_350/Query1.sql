@@ -1,1 +1,0 @@
- SELECT * FROM personnel where role in ('hcp','uap','er')

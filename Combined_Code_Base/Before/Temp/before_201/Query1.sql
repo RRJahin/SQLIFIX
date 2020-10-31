@@ -1,1 +1,0 @@
- SELECT * FROM template_table WHERE name='X_16030521675150'

@@ -1,1 +1,0 @@
-"update " + TBL_NAME + " set " + FIELD_CODICE + "=" + pdi.getCodice() + ", " + FIELD_TIPO + "=" + pdi.getTipo() + ", " + FIELD_COORD_X + "=" + pdi.getCoord_X() + ", " + FIELD_COORD_Y + "=" + pdi.getCoord_Y() + ", " + FIELD_WIDTH + "=" + pdi.getLarghezza() + ", " + FIELD_LENGTH + "= " + pdi.getLunghezza() + " where " + FIELD_ID + "=" + id_pdi

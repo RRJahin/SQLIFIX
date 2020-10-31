@@ -1,1 +1,0 @@
- UPDATE Usuarios SET nome=?,login=?, senha=?, email=? WHERE id=?

@@ -1,1 +1,0 @@
- SELECT * FROM cart c, book b WHERE c.no = b.no AND id = ?

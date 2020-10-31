@@ -1,1 +1,0 @@
- UPDATE SET = + 1, points = points + WHERE id = X_16030521760340

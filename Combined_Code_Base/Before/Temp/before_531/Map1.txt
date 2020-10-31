@@ -1,2 +1,0 @@
- customerAddRequest.getName()$X_16030521799211
- customerAddRequest.getMobileNumber()$X_16030521799210

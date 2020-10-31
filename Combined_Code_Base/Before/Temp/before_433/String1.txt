@@ -1,1 +1,0 @@
-"CREATE TABLE region (" + " id INTEGER PRIMARY KEY AUTO_INCREMENT," + " country INTEGER	NOT NULL," + " region_name VARCHAR(255)" + ")"

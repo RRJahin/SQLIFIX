@@ -1,1 +1,0 @@
-"INSERT INTO " + tableLabel + " (fldAchievementTitle,fldProgress,fldBronzeGoal,fldSilverGoal,fldGoldGoal,fldStatus) VALUES(" + fldAchievementTitle + "," + fldProgress + "," + fldBronzeGoal + "," + fldSilverGoal + "," + fldGoldGoal + "," + fldStatus + ")"

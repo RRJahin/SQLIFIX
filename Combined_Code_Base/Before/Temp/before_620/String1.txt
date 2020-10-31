@@ -1,1 +1,0 @@
-"UPDATE tbl_emp SET job = " + emp.getJob() + " WHERE empno = " + emp.getEmpno()

@@ -1,1 +1,0 @@
- SELECT * FROM FamClient WHERE codeFamClient = X_16030521834360

@@ -1,1 +1,0 @@
- INSERT INTO druginteractions (FirstDrug, SecondDrug, Description) VALUES (?,?,?)

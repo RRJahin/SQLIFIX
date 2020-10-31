@@ -1,1 +1,0 @@
- SELECT * FROM OptionVisite WHERE id = X_16030521695360

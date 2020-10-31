@@ -1,1 +1,0 @@
- SELECT MAX(ship_id) from shipping

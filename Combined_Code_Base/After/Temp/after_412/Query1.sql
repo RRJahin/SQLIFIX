@@ -1,1 +1,0 @@
- insert into candidates (first_name,last_name,dob,phone,email) values (? ,? ,? ,? ,?)

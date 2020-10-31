@@ -1,1 +1,0 @@
- SELECT count(*) FROM instrcourdoc where instrcourdoc.iddocument = X_16030521651820 AND instrcourdoc.idcourse = X_16030521651821 AND instrcourdoc.idinstructor = X_16030521651822 ;

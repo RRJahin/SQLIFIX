@@ -1,1 +1,0 @@
-"UPDATE tbl_peliculas SET nombre = " + entidad.getNombre() + ", genero = " + entidad.getGenero() + ", clasificacion = " + entidad.getClasificacion() + ", duracion = " + entidad.getDuracion() + ", imagen = " + entidad.getImagen() + " WHERE pk_pelicula = " + entidad.getIdPelicula()

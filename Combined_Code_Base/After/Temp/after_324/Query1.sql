@@ -1,1 +1,0 @@
- INSERT INTO gaurav_penalty( penalty_id , student_id , issue_date , recd_date , fineamount ) VALUES ( ? ,?, ? , ?, ? ) ;

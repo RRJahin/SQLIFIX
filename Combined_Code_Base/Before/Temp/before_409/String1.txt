@@ -1,1 +1,0 @@
-new StringBuilder("UPDATE ").append(tableName).append(" SET message = " + message + " WHERE id = " + postId).toString()

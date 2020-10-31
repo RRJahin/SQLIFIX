@@ -1,1 +1,0 @@
- select * from ORKIDS_VAR_CONFIG_VALUES where id_project = 1

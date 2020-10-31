@@ -1,1 +1,0 @@
- DELETE FROM ActivityBooking WHERE id= 'X_16030521706930'

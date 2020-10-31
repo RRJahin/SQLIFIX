@@ -1,1 +1,0 @@
- SELECT SUM(quantite) AS nb FROM ParcClient WHERE codeTParc = X_16030521720730 AND codeCliPros IN (SELECT cClient FROM Client WHERE cRep = X_16030521720731 OR cClient IN (SELECT codeCliPros FROM Revoir WHERE codeUtilisateur = X_16030521720732 ) )

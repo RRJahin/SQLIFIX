@@ -1,8 +1,0 @@
- guest.getGuestPhoneNumber()$X_16030521789305
- guest.getGuestName()$X_16030521789300
- guest.getGuestSurename()$X_16030521789301
- guest.getGuestAddress()$X_16030521789302
- guest.getExpiryDate()$X_16030521789306
- guest.getGuestEmail()$X_16030521789303
- guest.getGuestCardNumber()$X_16030521789304
- guest.getCVV()$X_16030521789307

@@ -1,1 +1,0 @@
- customer.getPassword()$X_16030521795700

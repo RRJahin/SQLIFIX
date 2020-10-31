@@ -1,7 +1,0 @@
- travelAgency.getCVR()$X_16030521779150
- travelAgency.getZipCode()$X_16030521779152
- travelAgency.getAddress()$X_16030521779154
- travelAgency.getEmail()$X_16030521779156
- travelAgency.getCountry()$X_16030521779153
- travelAgency.getPhoneNo()$X_16030521779155
- travelAgency.getName()$X_16030521779151

@@ -1,3 +1,0 @@
- codeParc$X_16030521720730
- PanelStats.commercialStats.getCodeCommercial()$X_16030521720731
- PanelStats.commercialStats.getId()$X_16030521720732

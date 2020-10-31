@@ -1,1 +1,0 @@
-"INSERT INTO ModRgl (codeModRgl, nomModRgl) VALUES (" + obj.getCodeModRgl() + ", " + obj.getNomModRgl() + ")"

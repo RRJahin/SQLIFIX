@@ -1,1 +1,0 @@
-"SELECT roomNumber, reservationID FROM Reserved_Rooms WHERE reservationID = ?"

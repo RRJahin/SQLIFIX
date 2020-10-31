@@ -1,1 +1,0 @@
- INSERT INTO TaskLogisticRoom TaskLogisticEquipment VALUES ( X_16030521815530 , X_16030521815531 )

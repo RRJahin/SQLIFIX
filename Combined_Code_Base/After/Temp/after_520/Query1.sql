@@ -1,1 +1,0 @@
- SELECT * FROM instructor WHERE idinstructor != ? ORDER BY lname

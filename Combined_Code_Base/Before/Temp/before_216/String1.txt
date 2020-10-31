@@ -1,1 +1,0 @@
-"select * from " + TBL_NAME + " where " + FIELD_ID_MAPPA + "=" + search_id + " AND " + FIELD_IS_PDI + "=true order by " + FIELD_CODICE

@@ -1,1 +1,0 @@
-"INSERT INTO OrderList(bid,pid) " + "VALUES (" + orderlist.getBid() + "," + orderlist.getPid() + ")"

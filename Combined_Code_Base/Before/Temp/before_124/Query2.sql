@@ -1,1 +1,0 @@
- SELECT message.* FROM message, patients WHERE message.to_id=patients.mid AND message.from_id= X_16030521661570 ORDER BY patients.lastName ASC, patients.firstName ASC, message.sent_date ASC

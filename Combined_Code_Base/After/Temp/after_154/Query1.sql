@@ -1,1 +1,0 @@
- INSERT INTO 'movie_feature'('movie_id', 'pic') VALUES (?,?)

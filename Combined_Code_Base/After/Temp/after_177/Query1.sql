@@ -1,1 +1,0 @@
- update Book set name = '?', idAuthor =?where id =?

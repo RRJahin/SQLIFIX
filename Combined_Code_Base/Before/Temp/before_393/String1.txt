@@ -1,1 +1,0 @@
-"UPDATE tblauthor SET author_name = " + author.getAuthorName() + ", gender = " + author.getGender() + ", description = " + author.getDescription() + " WHERE id = " + author.getId()

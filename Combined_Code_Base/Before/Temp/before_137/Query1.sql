@@ -1,1 +1,0 @@
- SELECT * FROM service_order WHERE memberid = X_16030521664270 AND expiration_date IS null ORDER BY need_by_date DESC

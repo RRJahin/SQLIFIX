@@ -1,1 +1,0 @@
- SELECT COUNT(*) AS activityBokingInstances FROM ActivityBooking WHERE date='?' AND guestId='?' AND status<>'Canceled'

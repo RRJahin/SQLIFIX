@@ -1,2 +1,0 @@
- obj.getCodeModRgl()$X_16030521663740
- obj.getNomModRgl()$X_16030521663741

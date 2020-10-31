@@ -1,1 +1,0 @@
- DELETE FROM ActivityType WHERE name= 'X_16030521882150'

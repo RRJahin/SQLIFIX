@@ -1,1 +1,0 @@
- selFile.getDocid()$X_16030521715060

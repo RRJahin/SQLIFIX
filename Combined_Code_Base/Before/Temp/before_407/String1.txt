@@ -1,1 +1,0 @@
-"UPDATE Employee SET " + "salary= '" + employeeNewObj.getSalary() + "' " + "WHERE personId= '" + employeeNewObj.getId() + "'"

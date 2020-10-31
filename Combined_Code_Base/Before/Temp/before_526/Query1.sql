@@ -1,1 +1,0 @@
- delete from items where id='X_16030521794220'

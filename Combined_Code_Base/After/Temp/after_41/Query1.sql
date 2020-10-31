@@ -1,1 +1,0 @@
- SELECT player FROM stats WHERE player = '?'

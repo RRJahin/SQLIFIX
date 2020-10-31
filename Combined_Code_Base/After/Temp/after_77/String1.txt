@@ -1,1 +1,0 @@
-"UPDATE member SET e_key=? WHERE id=?"

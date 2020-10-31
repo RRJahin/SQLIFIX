@@ -1,1 +1,0 @@
-"update Book set name = '" + book.getName() + "', idAuthor =" + book.getIdAuthor() + "where id =" + book.getId()

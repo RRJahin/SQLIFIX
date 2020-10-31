@@ -1,1 +1,0 @@
-"select * from movie_feature where movie_id = " + movie_id

@@ -1,3 +1,0 @@
- editora.getNome()$X_16030521825231
- editora.getMunicipio()$X_16030521825232
- editora.getEditora_id$X_16030521825230

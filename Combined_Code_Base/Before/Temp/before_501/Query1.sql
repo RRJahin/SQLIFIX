@@ -1,1 +1,0 @@
- Select * from Starwood a where a.id = X_16030521789950

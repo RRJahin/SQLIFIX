@@ -1,2 +1,0 @@
- courname$X_16030521763810
- facultyCourTextBox.getText()$X_16030521763811

@@ -1,1 +1,0 @@
- select * from X_16030521830620 where 1<>1

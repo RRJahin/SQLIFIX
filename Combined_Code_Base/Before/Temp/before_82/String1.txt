@@ -1,1 +1,0 @@
-"INSERT INTO cart VALUES (" + id + ", " + b.getNo() + ", " + b.getTitle() + ", " + b.getPrice() + ", " + count + ", " + b.getImage() + ")"

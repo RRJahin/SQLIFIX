@@ -1,1 +1,0 @@
-"SELECT pwd FROM member WHERE e_key=" + key

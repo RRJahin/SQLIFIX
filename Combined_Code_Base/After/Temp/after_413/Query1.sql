@@ -1,1 +1,0 @@
- insert into inception_preference ( userId, musicId ) values (?, ?) ;

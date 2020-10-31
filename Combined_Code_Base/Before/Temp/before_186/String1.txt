@@ -1,1 +1,0 @@
-"update TB_DATE set d_date = " + new java.sql.Date(record.getdDate().getTime()) + ", d_time = " + new java.sql.Time(record.getdTime().getTime()) + ", d_datetime = " + new java.sql.Timestamp(record.getdDatetime().getTime()) + ", d_timestamp = " + new java.sql.Timestamp(record.getdTimestamp().getTime()) + "where d_year_4 = " + record.getdYear4()

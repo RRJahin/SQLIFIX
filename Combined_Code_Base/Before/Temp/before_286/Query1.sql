@@ -1,1 +1,0 @@
- SELECT * FROM declaredhcp, personnel WHERE PatientID= X_16030521728350 AND personnel.MID=declaredhcp.HCPID

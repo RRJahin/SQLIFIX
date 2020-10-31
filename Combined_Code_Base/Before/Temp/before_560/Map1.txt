@@ -1,2 +1,0 @@
- country.getCountry()$X_16030521814100
- new java.sql.Timestamp(new Date().getTime())$X_16030521814102

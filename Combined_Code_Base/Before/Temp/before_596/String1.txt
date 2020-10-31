@@ -1,1 +1,0 @@
-"SELECT * FROM allergies WHERE PatientID=" + pid + " ORDER BY FirstFound DESC"

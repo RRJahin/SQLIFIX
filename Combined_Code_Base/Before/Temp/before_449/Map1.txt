@@ -1,2 +1,0 @@
- r.getNumber()$X_16030521771701
- r.getRoomType().getCategory()$X_16030521771700

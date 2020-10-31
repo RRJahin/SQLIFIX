@@ -1,1 +1,0 @@
- UPDATE Employee SET salary= 'X_16030521758230' WHERE personId= 'X_16030521758231'

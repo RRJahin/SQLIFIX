@@ -1,3 +1,0 @@
- obj.getId()$X_16030521733812
- obj.getNomPays()$X_16030521733811
- obj.getCodePays()$X_16030521733810

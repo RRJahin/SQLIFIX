@@ -1,1 +1,0 @@
- select * from practica7.PERSONA where ID = X_16030521836100 ;

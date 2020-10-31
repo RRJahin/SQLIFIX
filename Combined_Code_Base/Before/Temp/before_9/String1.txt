@@ -1,1 +1,0 @@
-"INSERT INTO Cadre_Didactice  VALUES(" + cd.getPozitia() + "," + cd.getDenumirePost() + "," + cd.getNume() + "," + cd.getFunctia() + "," + cd.getTitVac() + ")"

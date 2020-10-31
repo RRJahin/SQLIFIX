@@ -1,1 +1,0 @@
- UPDATE cart SET count=? WHERE id=? AND no=?

@@ -1,1 +1,0 @@
- SELECT sAnswer FROM users WHERE MID=?

@@ -1,1 +1,0 @@
- SELECT * FROM tbl_peliculas WHERE nombre = X_16030521739390

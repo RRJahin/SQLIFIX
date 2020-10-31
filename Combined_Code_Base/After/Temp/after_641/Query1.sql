@@ -1,1 +1,0 @@
- DELETE FROM adv_pendencia.tab_extensao WHERE tab_pasta_idPasta = ? AND fk_idPendencia = ?

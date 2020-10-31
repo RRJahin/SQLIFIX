@@ -1,3 +1,0 @@
- forgotObj.getEmail()$X_16030521838182
- forgotObj.getPassword()$X_16030521838180
- forgotObj.getUserName()$X_16030521838181

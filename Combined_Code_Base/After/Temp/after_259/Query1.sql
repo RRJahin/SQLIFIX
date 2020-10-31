@@ -1,1 +1,0 @@
- DELETE FROM instrcourdoc WHERE iddocument = ? AND idinstructor = ? AND idcourse = ? ;

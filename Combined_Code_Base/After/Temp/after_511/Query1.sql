@@ -1,1 +1,0 @@
- Insert into Reserved_Rooms(roomNumber, reservationID ) values (?, ?)

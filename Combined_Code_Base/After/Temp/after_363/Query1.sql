@@ -1,1 +1,0 @@
- SELECT * FROM user WHERE Login = '?' AND Password= '?'

@@ -1,1 +1,0 @@
- INSERT INTO ParcClient (codeTParc, codeCliPros, quantite, date, nom) VALUES ( X_16030521718490 , X_16030521718491 , X_16030521718492 , , X_16030521718493 )

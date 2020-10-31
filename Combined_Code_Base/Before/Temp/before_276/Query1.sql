@@ -1,1 +1,0 @@
- SELECT idPasta, descPasta FROM adv_pendencia.tab_pasta where statusPasta = 'livre'

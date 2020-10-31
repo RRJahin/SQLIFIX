@@ -1,1 +1,0 @@
- delete FROM book where id = X_16030521669480 and name= 'X_16030521669481'

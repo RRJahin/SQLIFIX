@@ -1,1 +1,0 @@
- UPDATE member SET rating=3 WHERE id= X_16030521837190

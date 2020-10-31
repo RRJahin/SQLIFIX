@@ -1,1 +1,0 @@
- SELECT * FROM (SELECT id, pwd, name, phone, email, address, memo, rating, rownum as num FROM member) WHERE num >= ? AND num <= ?

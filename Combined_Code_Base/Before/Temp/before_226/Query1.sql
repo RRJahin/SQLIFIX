@@ -1,1 +1,0 @@
- SELECT * FROM npc WHERE npc_name = X_16030521684700

@@ -1,1 +1,0 @@
- select * from inception_preference where userId = ? order by id desc limit ?, ?

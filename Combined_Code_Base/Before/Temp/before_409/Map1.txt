@@ -1,2 +1,0 @@
- postId).toString()$X_16030521760051
- message$X_16030521760050

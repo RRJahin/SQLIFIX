@@ -1,1 +1,0 @@
-"update member set islogin=0 where id=?"

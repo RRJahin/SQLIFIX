@@ -1,1 +1,0 @@
- SELECT * FROM PlanuriInvatamint WHERE program_id = X_16030521816420

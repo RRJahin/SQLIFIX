@@ -1,1 +1,0 @@
- SELECT COUNT(*) AS personInstances FROM Person WHERE id<> '?' AND name= '?' AND zipcode= '?' AND country= '?' AND address= '?'

@@ -1,1 +1,0 @@
- SELECT SUM(quantite) AS nb FROM ParcClient WHERE codeTParc = ? AND codeCliPros IN (SELECT cClient FROM Client WHERE cRep = ? OR cClient IN (SELECT codeCliPros FROM Revoir WHERE codeUtilisateur = ?) )

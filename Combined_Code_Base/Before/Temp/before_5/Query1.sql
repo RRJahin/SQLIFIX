@@ -1,1 +1,0 @@
- Delete from Cadre_Didactice where id_Cadru_Didactic = X_16030521789370

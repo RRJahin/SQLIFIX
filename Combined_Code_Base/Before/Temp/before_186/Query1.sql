@@ -1,1 +1,0 @@
- update TB_DATE set d_date = X_16030521671180 , d_time = X_16030521671191 , d_datetime = X_16030521671192 , d_timestamp = X_16030521671193 where d_year_4 = X_16030521671194

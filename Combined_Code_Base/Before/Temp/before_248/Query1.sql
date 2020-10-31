@@ -1,1 +1,0 @@
- SELECT * FROM course WHERE idcourse != X_16030521707820 ORDER BY courname ;

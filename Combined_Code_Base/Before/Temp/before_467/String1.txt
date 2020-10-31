@@ -1,1 +1,0 @@
-"INSERT INTO TravelAgency(cvr, name, zipcode, country, address, phoneNo, email) VALUES('" + travelAgency.getCVR() + "','" + travelAgency.getName() + "','" + travelAgency.getZipCode() + "','" + travelAgency.getCountry() + "','" + travelAgency.getAddress() + "','" + travelAgency.getPhoneNo() + "','" + travelAgency.getEmail() + "')"

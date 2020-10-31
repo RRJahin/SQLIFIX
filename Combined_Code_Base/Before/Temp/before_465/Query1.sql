@@ -1,1 +1,0 @@
- DELETE FROM TeamParticipants WHERE teamId= 'X_16030521777390'

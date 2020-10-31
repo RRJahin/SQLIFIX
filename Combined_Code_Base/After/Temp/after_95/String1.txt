@@ -1,1 +1,0 @@
-"SELECT * FROM shipping WHERE order_num = ?"

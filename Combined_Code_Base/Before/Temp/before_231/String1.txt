@@ -1,1 +1,0 @@
-"INSERT INTO OptionVisite (id, label, niveau, parent, type, typeB) VALUES (" + obj.getId() + ", " + obj.getLabel() + ", " + obj.getNiveau() + ", " + obj.getParent() + ", " + obj.getType() + ", " + obj.getTypeB() + ")"

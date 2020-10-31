@@ -1,1 +1,0 @@
- SELECT order_sq.nextval FROM dual

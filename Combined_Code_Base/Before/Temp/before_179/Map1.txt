@@ -1,6 +1,0 @@
- guitar.getPrice()$X_16030521669861
- guitar.getSpec().getType()$X_16030521669863
- guitar.getSpec().getTopWood()$X_16030521669865
- guitar.getSerialNumber()$X_16030521669860
- guitar.getSpec().getBackWood()$X_16030521669864
- guitar.getSpec().getBuilder()$X_16030521669862

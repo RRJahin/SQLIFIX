@@ -1,4 +1,0 @@
- filtro.getDescPendencia()$X_16030521740490
- filtro.getNomPendencia()$X_16030521740491
- data$X_16030521740493
- filtro.getPasta()$X_16030521740492

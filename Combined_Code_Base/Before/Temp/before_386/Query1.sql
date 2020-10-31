@@ -1,1 +1,0 @@
- DELETE FROM pizza WHERE numero_pizza = X_16030521750640 ;

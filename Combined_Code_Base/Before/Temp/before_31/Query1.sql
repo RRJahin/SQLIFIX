@@ -1,1 +1,0 @@
- SELECT fldProgress FROM tblAchievements WHERE id= X_16030521733880

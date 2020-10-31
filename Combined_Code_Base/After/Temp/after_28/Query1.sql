@@ -1,1 +1,0 @@
- INSERT INTO X_16030521875240 (fldAchievementTitle,fldProgress,fldBronzeGoal,fldSilverGoal,fldGoldGoal,fldStatus) VALUES(?,?,?,?,?,?)

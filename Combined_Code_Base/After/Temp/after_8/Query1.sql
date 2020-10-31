@@ -1,1 +1,0 @@
- UPDATE User SET password=? where userName=? and email=?

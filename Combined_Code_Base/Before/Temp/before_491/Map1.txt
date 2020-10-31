@@ -1,2 +1,0 @@
- member.getEmail()$X_16030521787420
- member.getId().toString()$X_16030521787421

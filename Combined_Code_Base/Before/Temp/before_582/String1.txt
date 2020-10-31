@@ -1,1 +1,0 @@
-"INSERT INTO Album_Lista VALUES(null, " + albumLista.getAlbum().getIdAlbum() + ", " + albumLista.getLista().getIdLista() + ");"

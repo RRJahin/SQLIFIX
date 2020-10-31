@@ -1,1 +1,0 @@
-"SELECT * " + "FROM evolutionary_distance " + "WHERE organism_1 like '?' OR organism_2 like '?' ORDER BY CAST(evolutionary_distance AS float)  " + " LIMIT ?"

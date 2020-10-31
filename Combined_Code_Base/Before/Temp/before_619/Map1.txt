@@ -1,2 +1,0 @@
- pessoa.getSenha()$X_16030521828831
- pessoa.getLogin()$X_16030521828830

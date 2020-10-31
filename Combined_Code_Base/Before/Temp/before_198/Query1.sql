@@ -1,1 +1,0 @@
- SELECT * FROM virtual_slave_node_table WHERE host='X_16030521674510'

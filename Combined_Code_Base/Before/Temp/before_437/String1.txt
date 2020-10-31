@@ -1,1 +1,0 @@
-"DELETE FROM Location WHERE zipCode= '" + zipcode + "' AND country= '" + country + "'"

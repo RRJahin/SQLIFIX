@@ -1,1 +1,0 @@
- UPDATE autot SET merkki=?, malli=? vuosi=? WHERE rekno=?

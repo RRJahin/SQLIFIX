@@ -1,1 +1,0 @@
-"INSERT INTO job_file_table VALUES(" + "'" + file.getName() + "'," + "'" + job.getName() + "'," + "'" + file.getAbsolutePath() + "'," + "" + type + "," + "" + status + ")"

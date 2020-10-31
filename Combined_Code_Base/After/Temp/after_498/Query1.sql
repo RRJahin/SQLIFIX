@@ -1,1 +1,0 @@
- Select a.Guest_Name, a.Guest_Surname, a.Address, a.Card_Number, a.Phone_Number, a.Email_Address, a.CVV, a.ExpiryDate from Guest a WHERE Id = ?

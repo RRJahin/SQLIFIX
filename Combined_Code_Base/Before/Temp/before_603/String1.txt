@@ -1,1 +1,0 @@
-"UPDATE drugreactionoverridecodes SET Description = " + orc.getDescription() + " " + "WHERE Code = " + orc.getORCode()

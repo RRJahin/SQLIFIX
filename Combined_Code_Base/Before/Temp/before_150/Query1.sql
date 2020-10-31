@@ -1,1 +1,0 @@
- select SQL_CALC_FOUND_ROWS m.* FROM movie m JOIN order_movie om ON m.movie_id = om.movie_id JOIN user_order uo ON uo.order_id = om.order_id \n JOIN user u ON u.user_id = uo.user_id\n WHERE u.user_id = X_16030521666530 AND uo.confirm_no = 1 ORDER BY uo.date_create desc limit X_16030521666531 , X_16030521666532

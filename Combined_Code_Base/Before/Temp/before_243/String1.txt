@@ -1,1 +1,0 @@
-"INSERT INTO ActivityBooking(id, guestId, date, status) VALUES ('" + nextActivityBookingId + "','" + acticityBookingObj.getGuest().getId() + "','" + acticityBookingObj.getDate() + "','" + acticityBookingObj.getStatus() + "')"

@@ -1,1 +1,0 @@
- DELETE FROM RoomType WHERE category='X_16030521774020'

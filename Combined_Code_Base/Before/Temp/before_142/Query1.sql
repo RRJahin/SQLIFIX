@@ -1,1 +1,0 @@
- UPDATE service_order SET expiration_date = X_16030521665300 , change_user_name = javauser, change_date = X_16030521665301 WHERE id = X_16030521665302

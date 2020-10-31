@@ -1,1 +1,0 @@
-"SELECT Salt FROM users WHERE MID=" + mid

@@ -1,1 +1,0 @@
- INSERT INTO RoomBooking(arrivalDate, departureDate, stts, numberOfChildren) VALUES('X_16030521772860','X_16030521772861','X_16030521772862','X_16030521772863')

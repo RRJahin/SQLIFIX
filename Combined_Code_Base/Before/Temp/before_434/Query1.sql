@@ -1,1 +1,0 @@
- DELETE FROM course WHERE idcourse = X_16030521767520

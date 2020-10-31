@@ -1,1 +1,0 @@
- SELECT * FROM OptionVisite WHERE parent = X_16030521697340

@@ -1,1 +1,0 @@
- delete FROM book where id = ? and name= '?'

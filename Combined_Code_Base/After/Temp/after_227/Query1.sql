@@ -1,1 +1,0 @@
- Update npc set npc_name = ?,npc_lvl = ?, currency = ?, job_id = ? WHERE npc_id=?

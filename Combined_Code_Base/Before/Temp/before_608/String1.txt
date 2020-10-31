@@ -1,1 +1,0 @@
-"INSERT INTO Usuarios" + "(nome,Login,senha,email) values(" + pessoa.getNome() + "," + pessoa.getLogin() + "," + pessoa.getSenha() + "," + pessoa.getEmail() + ")"

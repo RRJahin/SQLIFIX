@@ -1,1 +1,0 @@
-"insert into " + TBL_NAME + " (" + FIELD_DATA + "," + FIELD_TIPO + "," + FIELD_TBL + ") values(?,?,?)"

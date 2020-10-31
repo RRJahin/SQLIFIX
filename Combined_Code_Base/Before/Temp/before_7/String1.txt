@@ -1,1 +1,0 @@
-"Select * from User where email=" + forgotObj.getEmail() + "and userName=" + forgotObj.getUserName()

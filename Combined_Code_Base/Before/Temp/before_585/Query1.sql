@@ -1,1 +1,0 @@
- SELECT sensor_type, comparator, comparison_value FROM alerts WHERE node_id = X_16030521818710 AND sensor_type = X_16030521818711 ;

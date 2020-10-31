@@ -1,1 +1,0 @@
-"DELETE FROM organisms WHERE complete_name='" + result[5] + "' "

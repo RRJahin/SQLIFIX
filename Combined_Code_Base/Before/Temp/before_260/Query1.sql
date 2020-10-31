@@ -1,1 +1,0 @@
- SELECT DISTINCT course.idcourse, courname, faculty FROM course, instrcourdoc WHERE idinstructor = X_16030521717630 AND course.idcourse = instrcourdoc.idcourse ORDER BY courname

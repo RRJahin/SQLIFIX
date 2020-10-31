@@ -1,1 +1,0 @@
- UPDATE bespeak SET order_state=? WHERE order_num=?

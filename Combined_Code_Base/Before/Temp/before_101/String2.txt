@@ -1,1 +1,0 @@
-"SELECT order_num, id, name, phone, address, no, count, price, etc, account, order_state FROM (SELECT * FROM bespeak WHERE order_state IN (7, 8, 9) ORDER BY order_num DESC)"

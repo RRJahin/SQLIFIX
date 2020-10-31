@@ -1,1 +1,0 @@
- DELETE FROM tbl_emp WHERE empno = X_16030521828320

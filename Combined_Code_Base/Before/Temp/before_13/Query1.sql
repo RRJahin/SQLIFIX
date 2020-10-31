@@ -1,1 +1,0 @@
- Select * from User where userName= X_16030521663240

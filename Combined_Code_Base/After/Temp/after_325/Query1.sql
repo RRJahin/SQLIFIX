@@ -1,1 +1,0 @@
- INSERT INTO adv_pendencia.tab_pedencia VALUES(null, ?,'Em aberto', ?, null, ?,?)

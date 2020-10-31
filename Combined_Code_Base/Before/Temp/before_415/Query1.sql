@@ -1,1 +1,0 @@
- select * from inception_preference where userId = X_16030521760730 and musicId = X_16030521760731

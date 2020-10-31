@@ -1,1 +1,0 @@
- INSERT INTO Resurse_Financiare VALUES(?,?,?)

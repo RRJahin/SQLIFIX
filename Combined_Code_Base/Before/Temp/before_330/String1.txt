@@ -1,1 +1,0 @@
-"INSERT INTO users (MID, PASSWORD, SALT, ROLE, sQuestion, sAnswer) VALUES (" + mid + "," + hashedPassword + "," + salt + "," + role.toString() + "," + "Enter the random password given in your account email" + "," + password + ")"

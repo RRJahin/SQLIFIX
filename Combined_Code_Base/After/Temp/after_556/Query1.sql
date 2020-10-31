@@ -1,1 +1,0 @@
- insert into practica7.LLIBRE values (DEFAULT, ?,?,?,?,?,?)

@@ -1,1 +1,0 @@
-"SELECT * FROM autot WHERE rekno=" + rekno

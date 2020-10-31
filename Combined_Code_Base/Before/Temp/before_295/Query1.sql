@@ -1,1 +1,0 @@
- INSERT INTO representatives(RepresenterMID,RepresenteeMID) VALUES ( X_16030521729880 , X_16030521729881 )

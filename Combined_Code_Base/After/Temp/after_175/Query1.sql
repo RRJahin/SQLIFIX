@@ -1,1 +1,0 @@
- SELECT id,idAuthor FROM book where name='?'

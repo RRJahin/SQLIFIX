@@ -1,1 +1,0 @@
- SELECT * FROM druginteractions WHERE FirstDrug = ? OR SecondDrug = ?

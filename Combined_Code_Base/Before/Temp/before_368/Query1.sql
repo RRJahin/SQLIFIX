@@ -1,1 +1,0 @@
- SELECT * FROM users WHERE MID= X_16030521747300 AND isDependent=1

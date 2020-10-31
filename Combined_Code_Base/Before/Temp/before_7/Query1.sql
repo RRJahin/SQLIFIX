@@ -1,1 +1,0 @@
- Select * from User where email= X_16030521836790 and userName= X_16030521836791

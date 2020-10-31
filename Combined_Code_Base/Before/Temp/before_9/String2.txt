@@ -1,1 +1,0 @@
-"Select Id_Cadru_Didactic from Cadre_Didactice where pozitia=" + cd.getPozitia() + " and den_post=" + cd.getDenumirePost() + " and nume=" + cd.getN + " and functia=" + cd.getFunctia() + " and tit_vac=" + cd.getTitVac()

@@ -1,1 +1,0 @@
- INSERT INTO tbl_emp(empno, ename, job, hiredate, sal) VALUES(?, ?, ?, ? ,?)

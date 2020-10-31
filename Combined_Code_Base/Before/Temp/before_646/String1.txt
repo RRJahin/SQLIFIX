@@ -1,1 +1,0 @@
-"INSERT INTO " + currentTable + "(id, joined, leaved)" + " VALUES(" + id + ", " + joined + ", " + leaved + ")"

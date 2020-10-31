@@ -1,1 +1,0 @@
- insert into X_16030521878760 (docno,productname,reviewtitle,reviewcontent,pros,cons,reviewlink,reviewstar,reviewstarword) values(?,?,?,?,?,?,?,?,?)

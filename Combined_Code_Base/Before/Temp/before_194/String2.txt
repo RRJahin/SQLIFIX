@@ -1,1 +1,0 @@
-"SELECT * FROM virtual_machine_host_table WHERE hostname='" + rs.getString("host") + "'"

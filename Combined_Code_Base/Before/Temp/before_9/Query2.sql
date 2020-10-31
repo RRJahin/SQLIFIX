@@ -1,1 +1,0 @@
- Select Id_Cadru_Didactic from Cadre_Didactice where pozitia= X_16030521839300 and den_post= X_16030521839301 and nume= X_16030521839302 and functia= X_16030521839303 and tit_vac= X_16030521839304

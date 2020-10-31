@@ -1,1 +1,0 @@
- UPDATE users SET sQuestion = ?, sAnswer = ? WHERE MID = ?

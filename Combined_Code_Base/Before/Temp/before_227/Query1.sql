@@ -1,1 +1,0 @@
- Update npc set npc_name = X_16030521685730 ,npc_lvl = X_16030521685731 , currency = X_16030521685732 , job_id = X_16030521685733 WHERE npc_id= X_16030521685734

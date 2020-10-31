@@ -1,1 +1,0 @@
- select * from mensagem where para = 'X_16030521844350'

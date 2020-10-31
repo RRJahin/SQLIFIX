@@ -1,1 +1,0 @@
- SELECT firstName, lastName FROM patients WHERE MID=?

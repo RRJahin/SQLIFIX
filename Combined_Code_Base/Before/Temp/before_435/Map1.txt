@@ -1,3 +1,0 @@
- loc.getCountry()$X_16030521767701
- loc.getCity()$X_16030521767702
- loc.getZipCode()$X_16030521767700

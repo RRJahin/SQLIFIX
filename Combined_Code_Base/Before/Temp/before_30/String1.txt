@@ -1,1 +1,0 @@
-"UPDATE tblAchievements SET fldProgress=" + newProgressResult + " WHERE id=" + ID + ";"

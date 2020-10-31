@@ -1,1 +1,0 @@
-"Update npc set npc_name = " + npc.getName() + ",npc_lvl = " + npc.getLvl() + ", " + "currency = " + npc.getCurrency() + ", job_id = " + npc.getJobClass() + " WHERE npc_id=" + npc.getId()

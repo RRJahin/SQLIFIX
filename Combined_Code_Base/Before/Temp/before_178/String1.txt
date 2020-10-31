@@ -1,1 +1,0 @@
-"SELECT * from shipping.ica_couriers where subo in (" + suborder + ")"

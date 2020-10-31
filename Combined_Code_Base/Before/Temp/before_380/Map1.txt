@@ -1,7 +1,0 @@
- pista.getLocal()$X_16030521749550
- pista.getCategoria().getId()$X_16030521749554
- new java.sql.Date(pista.getDataHora().getTime())$X_16030521749551
- pista.getLugar()$X_16030521749552
- pista.getValor()$X_16030521749556
- pista.getTipoIngresso().getId()$X_16030521749555
- pista.getQuantidade()$X_16030521749553

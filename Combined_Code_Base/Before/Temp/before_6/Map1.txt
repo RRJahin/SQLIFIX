@@ -1,6 +1,0 @@
- cd.getNume()$X_16030521822832
- cd.getDenumirePost()$X_16030521822831
- cd.getTitVac()$X_16030521822834
- cd.getId()$X_16030521822835
- cd.getPozitia()$X_16030521822830
- cd.getFunctia()$X_16030521822833

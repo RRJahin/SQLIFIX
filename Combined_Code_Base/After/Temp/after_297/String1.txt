@@ -1,1 +1,0 @@
-"SELECT * FROM patients WHERE MID=? AND DateOfDeactivation IS NULL"

@@ -1,1 +1,0 @@
- UPDATE member SET pwd=?, name=?, phone=?, email=?, address=? WHERE id = ?

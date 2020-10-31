@@ -1,1 +1,0 @@
- DELETE FROM representatives WHERE RepresenterMID= X_16030521731050 AND RepresenteeMID= X_16030521731051

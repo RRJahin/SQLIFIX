@@ -1,1 +1,0 @@
-"insert into inception_music " + "( musicName, musicStyle," + " musicLanguage, artistName, albumName, " + "musicUrl, imageUrl, lyrics, " + "publishDate, description, " + "uploadedBy, uploadDate, fileLength, musicLength) " + "values (? , ? , ? , ? , ?, ?, ?, ? , ? , ?, ?, ?, ?, ?)"

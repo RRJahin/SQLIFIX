@@ -1,1 +1,0 @@
-"INSERT INTO CUSTOMER(NAME,MOBILE_NUMBER) VALUES(" + customerAddRequest.getMobileNumber() + "," + customerAddRequest.getName() + ")"

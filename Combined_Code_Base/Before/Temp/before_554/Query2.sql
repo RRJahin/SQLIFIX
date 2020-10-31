@@ -1,1 +1,0 @@
- insert into practica7.AUTOR values (LAST_INSERT_ID(), 'X_16030521812120','X_16030521812121')

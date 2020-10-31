@@ -1,1 +1,0 @@
- select * from tablesr where dbname='?'

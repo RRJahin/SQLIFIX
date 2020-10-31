@@ -1,1 +1,0 @@
-"INSERT INTO job_table VALUES(" + "'" + job.getName() + "'," + "'" + job.getCluster() + "'," + +job.getStatus() + ")"

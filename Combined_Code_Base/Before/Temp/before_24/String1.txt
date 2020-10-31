@@ -1,1 +1,0 @@
-"SELECT * FROM ADMIN WHERE EMAIL LIKE '" + username + "';"

@@ -1,1 +1,0 @@
- insert into mensagem(de, para, mensagem) values(?,?,?)

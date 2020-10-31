@@ -1,1 +1,0 @@
- INSERT INTO pedido_stock (Id_Pedido, Id_Stock) VALUES ( X_16030521737550 , X_16030521737551 ) ;

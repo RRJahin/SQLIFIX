@@ -1,1 +1,0 @@
- Delete From Credit_Card where MemberID = X_16030521785530

@@ -1,1 +1,0 @@
-"UPDATE RoomBooking SET " + "arrivalDate='" + roomBooking.getArrivalDate() + "', " + "departureDate='" + roomBooking.getDepartureDate() + "', " + "stts='" + roomBooking.getStatus() + "', " + "numberOfChildren='" + roomBooking.getNumberOfChildren() + "' " + "WHERE id='" + roomBooking.getId() + "'"

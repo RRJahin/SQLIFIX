@@ -1,1 +1,0 @@
- UPDATE tblauthor SET author_name = X_16030521753060 , gender = X_16030521753061 , description = X_16030521753062 WHERE id = X_16030521753063

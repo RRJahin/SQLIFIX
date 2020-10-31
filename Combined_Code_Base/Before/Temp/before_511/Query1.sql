@@ -1,1 +1,0 @@
- Insert into Reserved_Rooms(roomNumber, reservationID ) values ( X_16030521791700 , X_16030521791701 )

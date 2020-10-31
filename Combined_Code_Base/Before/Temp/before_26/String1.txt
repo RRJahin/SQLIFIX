@@ -1,1 +1,0 @@
-"DELETE from ADMIN where EMAIL LIKE '" + email + "';"

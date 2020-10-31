@@ -1,1 +1,0 @@
- update users set hitcount=hitcount + 1 where name='X_16030521836450'

@@ -1,6 +1,0 @@
- obj.getTypeB()$X_16030521693245
- obj.getParent()$X_16030521693243
- obj.getId()$X_16030521693240
- obj.getLabel()$X_16030521693241
- obj.getNiveau()$X_16030521693242
- obj.getType()$X_16030521693244

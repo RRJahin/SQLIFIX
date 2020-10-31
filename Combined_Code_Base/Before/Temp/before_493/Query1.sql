@@ -1,1 +1,0 @@
- Update Credit_Card set Card_Number = X_16030521787660 where Card_Number= X_16030521787661

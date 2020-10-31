@@ -1,1 +1,0 @@
- Select * from User where userName=? and password=?

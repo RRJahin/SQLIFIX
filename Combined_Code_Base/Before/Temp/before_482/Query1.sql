@@ -1,1 +1,0 @@
- Insert into Starwood(Member_Name, Member_Surname, Address, Email_Address, Card_Number, Phone_Number, User_Name) values ( X_16030521785130 , X_16030521785131 , X_16030521785132 , X_16030521785133 , X_16030521785134 , X_16030521785135 , X_16030521785136 )

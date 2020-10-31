@@ -1,3 +1,0 @@
- _iId_Imagen$X_16030521830491
- _iId$X_16030521830492
- Data.String2Sql(_sNombre, true, false)$X_16030521830490

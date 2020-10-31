@@ -1,1 +1,0 @@
-"Insert into Credit_Card(MemberID, Card_Number,ExpiryDate, CVV) values (?,?,?,?)"

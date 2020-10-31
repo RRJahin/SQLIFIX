@@ -1,1 +1,0 @@
-"SELECT * " + "FROM organisms " + "WHERE COMPLETE_NAME LIKE '" + organismName + "'"

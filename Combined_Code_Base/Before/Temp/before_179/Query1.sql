@@ -1,1 +1,0 @@
- insert into Guitar(serialNumber,price,builder,type,backWood,topWood) values( X_16030521669860 , X_16030521669861 , X_16030521669862 , X_16030521669863 , X_16030521669864 , X_16030521669865 )

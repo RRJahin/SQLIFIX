@@ -1,1 +1,0 @@
-"DELETE FROM ProgrameDeStudiu WHERE program_id = " + plan.getId()

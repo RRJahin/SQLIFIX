@@ -1,1 +1,0 @@
- Insert into ? (Username,Password) values(? , ?) ;

@@ -1,1 +1,0 @@
-"INSERT INTO Album VALUES(" + album.getIdSpotify() + ", null);"

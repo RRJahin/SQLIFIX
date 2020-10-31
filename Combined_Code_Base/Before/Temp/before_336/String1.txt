@@ -1,1 +1,0 @@
-"SELECT DateOfDeactivation FROM patients WHERE MID=" + mid

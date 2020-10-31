@@ -1,1 +1,0 @@
- SELECT * FROM 'order_movie' where order_id = ?

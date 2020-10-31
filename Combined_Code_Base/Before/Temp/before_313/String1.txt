@@ -1,1 +1,0 @@
-"INSERT INTO pedido " + "(Fecha, CodPostal, DirEnvio)" + " VALUES (" + Data.String2Sql(Fecha.toString(), true, false) + ", " + iCodPostal + ", " + Data.String2Sql(sDirEnvio, true, false) + ");"

@@ -1,1 +1,0 @@
- UPDATE users SET isDependent=? WHERE MID=?

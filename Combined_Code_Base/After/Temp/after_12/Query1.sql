@@ -1,1 +1,0 @@
- Insert into User(id,firstName,lastName,userName,email,password,mobileNo) values(?,?,?,?,?,?,?)

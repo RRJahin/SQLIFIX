@@ -1,1 +1,0 @@
-"UPDATE Agence SET codeAgence = " + obj.getCodeAgence() + ", nomAgence = " + obj.getNomAgence() + " WHERE id = " + obj.getId()

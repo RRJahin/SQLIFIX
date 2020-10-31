@@ -1,1 +1,0 @@
- delete from guitar where SerialNumber = X_16030521670230

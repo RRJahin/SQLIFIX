@@ -1,1 +1,0 @@
- delete from inception_preference where userId = X_16030521761130 and musicId = X_16030521761131

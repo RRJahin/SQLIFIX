@@ -1,1 +1,0 @@
-"select * from " + TBL_NAME + " where " + FIELD_ID_PIANO + "=" + search_id + " order by " + FIELD_NOME

@@ -1,3 +1,0 @@
- atividadesFisicas.getDs_atividade()$X_16030521718211
- atividadesFisicas.getCd_usuario()$X_16030521718212
- atividadesFisicas.getCd_atividade()$X_16030521718210

@@ -1,1 +1,0 @@
- SELECT kills FROM stats WHERE player = '?'

@@ -1,1 +1,0 @@
- SELECT * FROM member WHERE e_key= X_16030521837170

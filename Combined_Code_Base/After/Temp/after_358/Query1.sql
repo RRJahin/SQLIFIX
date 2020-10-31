@@ -1,1 +1,0 @@
- UPDATE loginfailures SET failureCount=0 WHERE IPAddress=?

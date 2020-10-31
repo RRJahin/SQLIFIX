@@ -1,1 +1,0 @@
- UPDATE RoomType SET typeDescription='X_16030521774150', price= X_16030521774151 WHERE category='X_16030521774152'

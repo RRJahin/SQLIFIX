@@ -1,1 +1,0 @@
-"DELETE FROM Team WHERE teamId= '" + teamId + "' AND leaderId= '" + leaderId + "'"

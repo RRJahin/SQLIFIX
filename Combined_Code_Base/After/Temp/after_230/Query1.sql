@@ -1,1 +1,0 @@
- SELECT DateOfBirth FROM patients WHERE MID=?

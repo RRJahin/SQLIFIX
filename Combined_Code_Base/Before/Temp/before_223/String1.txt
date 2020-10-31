@@ -1,1 +1,0 @@
-"insert into " + TBL_NAME + " (" + FIELD_EMERG + ") values(" + true + ")"

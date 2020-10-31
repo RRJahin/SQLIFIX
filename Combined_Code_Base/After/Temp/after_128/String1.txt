@@ -1,1 +1,0 @@
-"SELECT * FROM message WHERE original_msg_id=?"

@@ -1,1 +1,0 @@
- UPDATE RoomType SET typeDescription='?', price='?' WHERE category='?'

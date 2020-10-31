@@ -1,1 +1,0 @@
-"SELECT MAX(users.mid) FROM users WHERE mid BETWEEN " + minID + " AND " + maxID

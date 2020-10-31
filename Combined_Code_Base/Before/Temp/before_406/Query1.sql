@@ -1,1 +1,0 @@
- UPDATE SET isDeleted = 1 WHERE id = X_16030521758050

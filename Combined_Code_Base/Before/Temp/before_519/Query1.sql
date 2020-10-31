@@ -1,1 +1,0 @@
- delete from customers where customerNo= X_16030521793070

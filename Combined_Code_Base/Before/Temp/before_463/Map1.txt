@@ -1,2 +1,0 @@
- teamParticipant.getTeam().getId()$X_16030521776220
- teamParticipant.getGuest().getId()$X_16030521776221

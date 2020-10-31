@@ -1,2 +1,0 @@
- activityBookingObj.getId()$X_16030521705881
- activityBookingObj.getStatus()$X_16030521705880

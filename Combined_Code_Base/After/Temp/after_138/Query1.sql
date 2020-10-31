@@ -1,1 +1,0 @@
- SELECT * FROM service_order WHERE expiration_date IS null AND id = ?

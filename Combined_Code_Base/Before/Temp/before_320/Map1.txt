@@ -1,1 +1,0 @@
- entidad.getIdPelicula()$X_16030521739010

@@ -1,2 +1,0 @@
- firstDrug$X_16030521823160
- secondDrug$X_16030521823162

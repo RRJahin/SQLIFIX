@@ -1,1 +1,0 @@
- UPDATE message SET been_read=1 WHERE message_id= X_16030521662190

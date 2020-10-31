@@ -1,1 +1,0 @@
-"UPDATE Resurse_Financiare  SET descriere=" + rf.getDescriere() + ",suma=" + rf.getSuma() + ", tip=" + tip + " where id=" + rf.getId()

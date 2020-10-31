@@ -1,1 +1,0 @@
-"SELECT count(*) FROM instrcourdoc where instrcourdoc.iddocument = " + docId + " AND instrcourdoc.idcourse = " + courseId + " AND instrcourdoc.idinstructor = " + instrId + ";"

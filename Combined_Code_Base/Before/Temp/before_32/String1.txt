@@ -1,1 +1,0 @@
-("UPDATE ADMIN set EMAIL = '" + EMAIL + "' where EMAIL LIKE '" + EMAIL + "';")

@@ -1,1 +1,0 @@
- SELECT map FROM maps WHERE map = 'X_16030521819620'

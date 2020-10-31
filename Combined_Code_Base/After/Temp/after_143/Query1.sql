@@ -1,1 +1,0 @@
- UPDATE service_order SET need_by_date = ?, service_type_mow = ?, service_type_edge = ?, service_type_rake = ?, instruction = ?, change_user_name = javauser, change_date = ? WHERE id = ?

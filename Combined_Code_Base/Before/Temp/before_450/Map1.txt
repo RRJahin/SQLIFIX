@@ -1,4 +1,0 @@
- rb.getStatus()$X_16030521772862
- rb.getDepartureDate()$X_16030521772861
- rb.getArrivalDate()$X_16030521772860
- rb.getNumberOfChildren()$X_16030521772863

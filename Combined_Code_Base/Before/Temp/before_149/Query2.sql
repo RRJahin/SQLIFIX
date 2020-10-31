@@ -1,1 +1,0 @@
- select distinct name from people, roles where people.person_id = roles.person_id and name <> 'X_16030521666230'and movie_id in (select distinct movie_id from people, roles where name = 'X_16030521666230' AND people.person_id = roles.person_id)

@@ -1,8 +1,0 @@
- serviceOrder.getServiceGroup()$X_16030521664891
- serviceOrder.getServiceTypeMow()$X_16030521664892
- new java.sql.Date(serviceOrder.getNeedByDate().getTime())$X_16030521664896
- GenericUtilities.getCurrentTimeStamp()$X_16030521664897
- serviceOrder.getId()$X_16030521664890
- serviceOrder.getServiceTypeEdge()$X_16030521664893
- serviceOrder.getInstruction()$X_16030521664895
- serviceOrder.getServiceTypeRake()$X_16030521664894

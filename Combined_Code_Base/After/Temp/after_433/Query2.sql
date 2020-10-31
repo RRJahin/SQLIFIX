@@ -1,1 +1,0 @@
- INSERT INTO region(country, region_name) VALUES(?,?)

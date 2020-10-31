@@ -1,1 +1,0 @@
- select userid from usersr where username='X_16030521681400'

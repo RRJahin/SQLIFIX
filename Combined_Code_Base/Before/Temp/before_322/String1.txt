@@ -1,1 +1,0 @@
-"SELECT * FROM tbl_peliculas WHERE pk_pelicula = " + id

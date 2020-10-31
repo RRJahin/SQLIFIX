@@ -1,1 +1,0 @@
- SELECT Room_Number, price FROM Room WHERE Room_Number = X_16030521791920

@@ -1,1 +1,0 @@
- INSERT INTO service_order (memberid, service_group, service_type_mow, service_type_edge, service_type_rake, instruction, need_by_date, create_user_name, create_date, change_user_name, change_date) VALUES (?,?,?,?,?,?,?,?,?,?,?)

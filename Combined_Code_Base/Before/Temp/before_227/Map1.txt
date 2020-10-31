@@ -1,5 +1,0 @@
- npc.getName()$X_16030521685730
- npc.getCurrency()$X_16030521685732
- npc.getJobClass()$X_16030521685733
- npc.getLvl()$X_16030521685731
- npc.getId()$X_16030521685734

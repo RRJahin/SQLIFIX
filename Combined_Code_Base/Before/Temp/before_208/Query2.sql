@@ -1,1 +1,0 @@
- INSERT INTO interesting(dateObserved,ticker) VALUES(now(),'X_16030521677680') ;

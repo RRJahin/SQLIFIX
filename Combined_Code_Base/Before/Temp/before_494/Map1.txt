@@ -1,2 +1,0 @@
- member.getUserName()$X_16030521788550
- member.getId().toString()$X_16030521788551

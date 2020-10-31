@@ -1,5 +1,0 @@
- pessoa.getEmail()$X_16030521826853
- pessoa.getSenha()$X_16030521826852
- pessoa.getLogin()$X_16030521826851
- pessoa.getId()$X_16030521826854
- pessoa.getNome()$X_16030521826850

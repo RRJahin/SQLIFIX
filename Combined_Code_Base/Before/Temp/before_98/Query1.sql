@@ -1,1 +1,0 @@
- UPDATE bespeak SET order_state= X_16030521841530 WHERE order_num= X_16030521841531

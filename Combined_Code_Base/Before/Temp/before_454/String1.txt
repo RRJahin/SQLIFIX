@@ -1,1 +1,0 @@
-"DELETE FROM RoomLine WHERE guestId=" + guestId + " AND roomNo=" + roomNo + " AND booking=" + booking

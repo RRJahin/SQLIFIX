@@ -1,3 +1,0 @@
- activityTypeNewObj.getName()$X_16030521740590
- activityTypeNewObj.getMaxParticipants()$X_16030521740591
- activityTypeNewObj.getID()$X_16030521740592

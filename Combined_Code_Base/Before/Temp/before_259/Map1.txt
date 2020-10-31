@@ -1,3 +1,0 @@
- instrId$X_16030521717151
- selFile.getDocid()$X_16030521717150
- courseId$X_16030521717152

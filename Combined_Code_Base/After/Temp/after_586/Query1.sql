@@ -1,1 +1,0 @@
- INSERT INTO alerts (sensor_type, comparator, comparison_value, node_id) VALUES (?, ?, ?, ?) ;

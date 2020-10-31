@@ -1,1 +1,0 @@
- INSERT INTO Employee(personId, salary) VALUES ('X_16030521754000','X_16030521754001')

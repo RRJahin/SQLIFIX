@@ -1,4 +1,0 @@
- (obj.getDate() == null) ? obj.getNom()$X_16030521718493
- obj.getCodeCliPros()$X_16030521718491
- Integer.toString(obj.getQuantite())$X_16030521718492
- obj.getCodeTParc()$X_16030521718490

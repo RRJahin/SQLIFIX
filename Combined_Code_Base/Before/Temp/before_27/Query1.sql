@@ -1,1 +1,0 @@
- UPDATE tblAchievements SET fldProgress= X_16030521718680 WHERE id= X_16030521718691 ;

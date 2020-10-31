@@ -1,3 +1,0 @@
- username$X_16030521668001
- dbTableName$X_16030521668000
- password$X_16030521668002

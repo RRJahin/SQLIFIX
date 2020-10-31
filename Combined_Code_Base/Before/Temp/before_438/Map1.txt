@@ -1,5 +1,0 @@
- firstNameTextBox.getText()$X_16030521768530
- lastNameTextBox.getText()$X_16030521768531
- emailTextBox.getText()$X_16030521768533
- BCrypt.hashpw(passBox.getText(), BCrypt.gensalt())$X_16030521768534
- facultyInstrTextBox.getText()$X_16030521768532

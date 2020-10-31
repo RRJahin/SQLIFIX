@@ -1,1 +1,0 @@
- SELECT death FROM stats WHERE player = 'X_16030521768920'

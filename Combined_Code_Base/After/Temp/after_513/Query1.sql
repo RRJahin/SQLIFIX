@@ -1,1 +1,0 @@
- SELECT r.Room_Number, r.capacity, r.price FROM sse.Room AS r WHERE r.Room_Number NOT IN(SELECT b.roomNumber FROM sse.Reserved_Rooms AS b JOIN sse.Reservations AS a ON a.Reservation_Id=b.reservationID WHERE a.start >= ? AND a.end <= ? AND a.status='Active')

@@ -1,1 +1,0 @@
- agricultor.getId_agricultor()$X_16030521792860

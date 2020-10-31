@@ -1,1 +1,0 @@
- DELETE FROM ActivityType WHERE id= '?'

@@ -1,1 +1,0 @@
-"INSERT INTO FamClient (codeFamClient, nomFamClient) VALUES (" + obj.getCodeFamClient() + ", " + obj.getNomFamClient() + ")"

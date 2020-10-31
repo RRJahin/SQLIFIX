@@ -1,1 +1,0 @@
-"UPDATE RoomBooking SET " + "arrivalDate='?', " + "departureDate='?', " + "stts='?', " + "numberOfChildren='?' " + "WHERE id='?'"

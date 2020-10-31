@@ -1,1 +1,0 @@
- DELETE FROM cart WHERE id=? AND no=?

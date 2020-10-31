@@ -1,1 +1,0 @@
- DELETE FROM Album_Lista WHERE id_album_lista= X_16030521818510 ;

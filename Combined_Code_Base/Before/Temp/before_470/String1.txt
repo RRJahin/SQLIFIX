@@ -1,1 +1,0 @@
-"UPDATE instructor SET admin = " + curAdmin + " WHERE idinstructor" + " = " + selInstr.getInstrId() + ";"

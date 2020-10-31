@@ -1,1 +1,0 @@
- Select * from tickets Where TicketNo = X_16030521830360 ;

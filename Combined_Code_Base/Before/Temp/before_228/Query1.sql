@@ -1,1 +1,0 @@
- SELECT * FROM officeVisit WHERE patientMID= X_16030521687560

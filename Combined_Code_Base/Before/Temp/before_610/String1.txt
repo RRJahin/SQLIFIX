@@ -1,1 +1,0 @@
-"UPDATE EDITORA SET NOME=" + editora.getMunicipio() + ", MUNICIPIO=" + editora.getNome() + " WHERE EDITORA_ID=" + editora.getEditora_id()

@@ -1,1 +1,0 @@
- SELECT * FROM usuarios where Login= X_16030521806780 and senha= X_16030521806781

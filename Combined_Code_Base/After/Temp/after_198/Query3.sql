@@ -1,1 +1,0 @@
- DELETE FROM virtual_machine_host_table where hostname='?'

@@ -1,1 +1,0 @@
- SELECT id,name,idAuthor FROM book where id= X_16030521669280

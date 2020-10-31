@@ -1,1 +1,0 @@
- SELECT cedula_ge, contrasena FROM Gerentes WHERE cedula_ge = 'X_16030521807730' ;

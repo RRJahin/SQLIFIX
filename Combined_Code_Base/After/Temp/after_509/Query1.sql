@@ -1,1 +1,0 @@
- Update Reservations set status = \ where Reservation_Id=?

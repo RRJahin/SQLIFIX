@@ -1,1 +1,0 @@
- update member set islogin=0 where id= X_16030521669010

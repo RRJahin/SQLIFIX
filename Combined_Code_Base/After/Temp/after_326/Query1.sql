@@ -1,1 +1,0 @@
- UPDATE ActivityType SET name= '?', maxParticipants= '?' WHERE id= '?'

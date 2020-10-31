@@ -1,6 +1,0 @@
- entidad.getIdPelicula()$X_16030521738155
- entidad.getImagen()$X_16030521738154
- entidad.getClasificacion()$X_16030521738152
- entidad.getNombre()$X_16030521738150
- entidad.getGenero()$X_16030521738151
- entidad.getDuracion()$X_16030521738153

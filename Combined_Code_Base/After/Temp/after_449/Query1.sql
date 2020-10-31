@@ -1,1 +1,0 @@
- UPDATE Room SET roomType='?' WHERE number='?'

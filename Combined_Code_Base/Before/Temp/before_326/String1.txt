@@ -1,1 +1,0 @@
-"UPDATE ActivityType SET " + "name= '" + activityTypeNewObj.getName() + "', " + "maxParticipants= '" + activityTypeNewObj.getMaxParticipants() + "' " + "WHERE id= '" + activityTypeNewObj.getID() + "'"

@@ -1,1 +1,0 @@
- SELECT * FROM Notas where usuario_abriu=?

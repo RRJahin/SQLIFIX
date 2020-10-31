@@ -1,1 +1,0 @@
- SELECT * FROM tblauthor WHERE author_name = 'X_16030521752540'

@@ -1,1 +1,0 @@
- SELECT * FROM npc WHERE npc_name = ?

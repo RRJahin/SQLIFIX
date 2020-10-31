@@ -1,1 +1,0 @@
- UPDATE tbl_peliculas SET nombre = X_16030521738150 , genero = X_16030521738151 , clasificacion = X_16030521738152 , duracion = X_16030521738153 , imagen = X_16030521738154 WHERE pk_pelicula = X_16030521738155

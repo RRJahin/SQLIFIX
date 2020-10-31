@@ -1,1 +1,0 @@
- SELECT complete_name , ?-CAST(aminos_vs_cyst AS float) as result FROM organisms WHERE COMPLETE_NAME NOT LIKE '?' ORDER BY ?-CAST(aminos_vs_cyst AS float) LIMIT ?

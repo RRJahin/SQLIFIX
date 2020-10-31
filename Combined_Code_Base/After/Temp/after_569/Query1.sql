@@ -1,1 +1,0 @@
- SELECT * FROM ProgrameDeStudiu WHERE sectie_id = ?

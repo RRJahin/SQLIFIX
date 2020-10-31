@@ -1,1 +1,0 @@
- UPDATE member SET pwd='x', name='x', phone='010-0000-0000', address='x', memo='x', rating=3, e_key='0' WHERE id = ?

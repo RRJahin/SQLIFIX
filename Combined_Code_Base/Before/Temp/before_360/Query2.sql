@@ -1,1 +1,0 @@
- insert into login(name,password)values('X_16030521746610','X_16030521746611')

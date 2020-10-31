@@ -1,1 +1,0 @@
-"SELECT COUNT(*) AS activityLineInstances1 FROM ActivityLine " + "WHERE activityId= '" + activityId + "' " + "AND bookingId= '" + bookingId + "' " + "AND date= '" + date + "' " + "AND startHour= '" + startHour + "' " + "AND facilityId= '" + facilityId + "' " + "AND status= '" + status + "'"

@@ -1,1 +1,0 @@
- UPDATE users SET password = X_16030521665600 , change_user_name = javauser, change_date = X_16030521665601 WHERE id = X_16030521665602

@@ -1,1 +1,0 @@
- SELECT * FROM Album WHERE id_spotify= X_16030521818030 ;

@@ -1,2 +1,0 @@
- posizione.getBiblioteca().getIsil()$X_16030521754881
- posizione.getEtichetta()$X_16030521754880

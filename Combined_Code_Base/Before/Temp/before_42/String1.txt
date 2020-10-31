@@ -1,1 +1,0 @@
-"INSERT INTO `stats` (`player`, `kills`, `deaths`) VALUES ('" + p.getUniqueId().toString() + "', '0', '0')"

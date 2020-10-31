@@ -1,1 +1,0 @@
- DELETE FROM instructor WHERE idinstructor = X_16030521769110

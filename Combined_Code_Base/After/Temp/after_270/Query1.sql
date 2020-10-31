@@ -1,1 +1,0 @@
- UPDATE ParcClient SET codeTParc = ?, codeCliPros = ?, quantite = ?, date = ?, nom = ? WHERE id = ?

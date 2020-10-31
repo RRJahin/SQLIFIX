@@ -1,2 +1,0 @@
- albumLista.getLista().getIdLista()$X_16030521818381
- albumLista.getAlbum().getIdAlbum()$X_16030521818380

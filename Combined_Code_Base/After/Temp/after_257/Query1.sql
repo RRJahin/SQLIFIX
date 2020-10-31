@@ -1,1 +1,0 @@
- SELECT docfile FROM document WHERE iddocument = ?

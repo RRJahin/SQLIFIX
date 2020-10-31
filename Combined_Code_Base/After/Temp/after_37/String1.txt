@@ -1,1 +1,0 @@
-"DELETE from ITEM where ITEM_NAME LIKE ?;"

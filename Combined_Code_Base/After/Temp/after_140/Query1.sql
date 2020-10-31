@@ -1,1 +1,0 @@
- SELECT * FROM company WHERE expiration_date IS null

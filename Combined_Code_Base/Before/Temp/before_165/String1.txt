@@ -1,1 +1,0 @@
-"update inception_music set musicName = " + music.getMusicName() + ", musicStyle = " + music.getMusicStyle() + "," + " musicLanguage = " + music.getMusicLanguage() + ", artistName = " + music.getArtistName() + ", albumName = " + music.getAlbumName() + " where id = " + music.getId()

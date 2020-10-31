@@ -1,1 +1,0 @@
- UPDATE drugreactionoverridecodes SET Description = X_16030521823410 WHERE Code = X_16030521823411

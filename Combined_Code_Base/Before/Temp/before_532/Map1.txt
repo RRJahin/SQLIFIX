@@ -1,1 +1,0 @@
- customerFetchParams.getCustomerId()$X_16030521799820

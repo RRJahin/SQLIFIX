@@ -1,1 +1,0 @@
- UPDATE 'sis_pizza_db'.'pizza' SET 'nome_pizza' = ?, 'tipo_pizza' = ?, 'tipo_massa' = ?, 'ingredientes_pizza' = ?, 'preco_pizza' = ? WHERE 'numero_pizza' = ? ;

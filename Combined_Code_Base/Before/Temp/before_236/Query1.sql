@@ -1,1 +1,0 @@
- SELECT COUNT(*) AS nb FROM OptionVisite WHERE parent = X_16030521696970

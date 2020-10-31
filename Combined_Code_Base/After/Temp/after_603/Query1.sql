@@ -1,1 +1,0 @@
- UPDATE drugreactionoverridecodes SET Description = ? WHERE Code = ?

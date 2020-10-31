@@ -1,1 +1,0 @@
-"SELECT SUM(quantite) AS nb FROM ParcClient WHERE codeTParc = " + codeParc + " AND codeCliPros IN" + "  (SELECT cClient FROM Client WHERE cRep = " + PanelStats.commercialStats.getCodeCommercial() + "  OR cClient IN" + "    (SELECT codeCliPros FROM Revoir WHERE codeUtilisateur = " + PanelStats.commercialStats.getId() + ") )"

@@ -1,1 +1,0 @@
-"UPDATE stats SET kills = " + getKills(p) + score + " WHERE player = '" + uuid + "'"

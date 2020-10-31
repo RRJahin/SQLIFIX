@@ -1,8 +1,0 @@
- adulto.getId()$X_16030521656397
- new java.sql.Date(adulto.getDataHora().getTime())$X_16030521656391
- adulto.getCategoria().getId()$X_16030521656394
- adulto.getLugar()$X_16030521656392
- adulto.getValor()$X_16030521656396
- adulto.getLocal()$X_16030521656390
- adulto.getQuantidade()$X_16030521656393
- adulto.getTipoIngresso().getId()$X_16030521656395

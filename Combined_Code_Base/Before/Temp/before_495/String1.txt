@@ -1,1 +1,0 @@
-"Update Members set User_Password =" + member.getPassword() + " where User_Name=" + member.getUserName()

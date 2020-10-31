@@ -1,1 +1,0 @@
- INSERT INTO TeamParticipants(teamId, participantId) VALUES ('X_16030521776220','X_16030521776221')

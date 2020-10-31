@@ -1,1 +1,0 @@
- UPDATE ActivityBooking SET status= '?' WHERE id= '?'

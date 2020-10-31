@@ -1,1 +1,0 @@
- Select * from Credit_Card a where a.MemberID = X_16030521786530

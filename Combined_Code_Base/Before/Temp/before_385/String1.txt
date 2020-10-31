@@ -1,1 +1,0 @@
-"UPDATE `sis_pizza_db`.`pizza` SET `nome_pizza` = " + pizza.getNome() + ", `tipo_pizza` = " + pizza.getTipoPizza() + ", `tipo_massa` = " + pizza.getTipoMassa() + ", `ingredientes_pizza` = " + pizza.getIngredientes() + ", `preco_pizza` = " + pizza.getPreco() + "WHERE `numero_pizza` = " + pizza.getNumero() + ";"

@@ -1,1 +1,0 @@
- delete from fuel_types where id= X_16030521793440

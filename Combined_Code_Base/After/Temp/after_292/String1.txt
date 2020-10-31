@@ -1,1 +1,0 @@
-"SELECT patients.* FROM representatives, patients, users " + "WHERE RepresenterMID=? AND RepresenteeMID=patients.MID AND users.MID=patients.MID AND users.isDependent=1"

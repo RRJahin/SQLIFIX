@@ -1,4 +1,0 @@
- nextActivityBookingId$X_16030521703860
- acticityBookingObj.getGuest().getId()$X_16030521703861
- acticityBookingObj.getStatus()$X_16030521703863
- acticityBookingObj.getDate()$X_16030521703862

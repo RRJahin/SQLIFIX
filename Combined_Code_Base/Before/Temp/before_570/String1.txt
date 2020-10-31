@@ -1,1 +1,0 @@
-"SELECT * FROM PlanuriInvatamint WHERE program_id = " + plan.getId()

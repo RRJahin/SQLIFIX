@@ -1,1 +1,0 @@
- DELETE FROM 'movie_feature' where movie_id = X_16030521667390

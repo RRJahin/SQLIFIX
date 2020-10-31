@@ -1,1 +1,0 @@
- SELECT * FROM bespeak WHERE order_state IN(7, 8, 9) AND id = X_16030521655630

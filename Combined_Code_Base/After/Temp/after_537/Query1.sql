@@ -1,1 +1,0 @@
- INSERT INTO Usuarios (nome,Login,senha,email) values(?,?,?,?)

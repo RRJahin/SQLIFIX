@@ -1,1 +1,0 @@
- Select Password from ? where Username = ? ;

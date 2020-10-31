@@ -1,1 +1,0 @@
- DELETE FROM virtual_master_node_table where domain='X_16030521674650'

@@ -1,1 +1,0 @@
- delete from inception_preference where id = X_16030521760680

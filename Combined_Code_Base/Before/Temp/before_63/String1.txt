@@ -1,1 +1,0 @@
-"UPDATE marca " + "SET Nombre = " + Data.String2Sql(_sNombre, true, false) + ", Id_Imagen = " + _iId_Imagen + " WHERE Id = " + _iId

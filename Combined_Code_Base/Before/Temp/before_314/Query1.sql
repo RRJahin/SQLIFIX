@@ -1,1 +1,0 @@
- DELETE FROM pedido_stock WHERE Id_Pedido = X_16030521734730

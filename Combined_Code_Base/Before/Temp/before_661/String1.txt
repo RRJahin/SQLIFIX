@@ -1,1 +1,0 @@
-"insert into practica7.PRESTEC values (DEFAULT, " + ID_Bibliotecari + ", " + ID_Soci + ", " + ID_Copia + ", now(), NULL)"

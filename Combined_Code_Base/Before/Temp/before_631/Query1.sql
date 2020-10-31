@@ -1,1 +1,0 @@
- select column_name,data_type,column_comment from information_schema.columns where table_schema='X_16030521830720' and table_name='X_16030521830721'

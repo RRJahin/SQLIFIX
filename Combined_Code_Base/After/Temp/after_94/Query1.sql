@@ -1,1 +1,0 @@
- SELECT * FROM bespeak WHERE order_num = ?

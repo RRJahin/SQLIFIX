@@ -1,1 +1,0 @@
- DELETE FROM TravelAgency WHERE name= 'X_16030521782720'

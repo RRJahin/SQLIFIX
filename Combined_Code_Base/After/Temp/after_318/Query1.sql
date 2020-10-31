@@ -1,1 +1,0 @@
- INSERT INTO tbl_peliculas (nombre, genero, clasificacion, duracion, imagen) VALUES (?, ?, ?, ?, ?)

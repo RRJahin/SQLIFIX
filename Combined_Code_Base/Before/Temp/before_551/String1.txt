@@ -1,1 +1,0 @@
-"UPDATE VARIETE SET aoc = " + aoc + " where libelle = '" + variete.getLibelle() + "' ;"

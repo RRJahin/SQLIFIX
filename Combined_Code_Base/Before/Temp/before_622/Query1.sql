@@ -1,1 +1,0 @@
- select * from Employee where EMPID = X_16030521829470

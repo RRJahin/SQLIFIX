@@ -1,7 +1,0 @@
- member.getCardNumber()$X_16030521785134
- member.getUserName()$X_16030521785136
- member.getName()$X_16030521785130
- member.getEmail()$X_16030521785133
- member.getSurename()$X_16030521785131
- member.getPhoneNumber()$X_16030521785135
- member.getAddress()$X_16030521785132

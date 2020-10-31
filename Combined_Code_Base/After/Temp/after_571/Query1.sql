@@ -1,1 +1,0 @@
- INSERT INTO Sectii VALUES (?,?)

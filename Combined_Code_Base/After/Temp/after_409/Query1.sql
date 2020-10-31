@@ -1,1 +1,0 @@
- UPDATE SET message = ? WHERE id = ?

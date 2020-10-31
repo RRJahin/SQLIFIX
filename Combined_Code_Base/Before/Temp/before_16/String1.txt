@@ -1,1 +1,0 @@
-"Insert into " + dbTableName + " (Username,Password) values('" + username + "','" + password + "');"

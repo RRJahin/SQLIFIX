@@ -1,1 +1,0 @@
-"update " + TBL_NAME + " set " + FIELD_CODICE + "=" + nodo.getCodice() + ", " + FIELD_COORD_X + "=" + nodo.getCoord_X() + ", " + FIELD_COORD_Y + "=" + nodo.getCoord_Y() + ", " + FIELD_WIDTH + "=" + nodo.getLarghezza() + " " + "where " + FIELD_ID + "=" + id_nodo

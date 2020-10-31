@@ -1,1 +1,0 @@
- SELECT COUNT(*) AS teamParticipantInstances FROM TeamParticipants WHERE teamId='?' AND participantId='?'

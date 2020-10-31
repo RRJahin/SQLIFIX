@@ -1,1 +1,0 @@
-"Insert into Starwood(Member_Name, Member_Surname, Address, Email_Address, Card_Number, Phone_Number, User_Name) values (" + member.getName() + "," + member.getSurename() + "," + member.getAddress() + "," + member.getEmail() + "," + member.getCardNumber() + "," + member.getPhoneNumber() + "," + member.getUserName() + ")"

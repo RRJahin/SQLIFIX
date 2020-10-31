@@ -1,1 +1,0 @@
- DELETE FROM instructor WHERE idinstructor = ?

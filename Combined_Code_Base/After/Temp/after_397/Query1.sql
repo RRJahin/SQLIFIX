@@ -1,1 +1,0 @@
- update nba.players set currentteam=? where name=?

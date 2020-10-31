@@ -1,1 +1,0 @@
- SELECT * FROM course WHERE idcourse != ? ORDER BY courname ;

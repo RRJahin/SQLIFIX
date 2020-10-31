@@ -1,1 +1,0 @@
- Select Id from Starwood a where a.User_name = X_16030521790120

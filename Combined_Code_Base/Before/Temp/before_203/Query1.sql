@@ -1,1 +1,0 @@
- INSERT INTO ndcodes (Code, Description) VALUES ( X_16030521675360 , X_16030521675361 )

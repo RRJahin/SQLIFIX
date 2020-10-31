@@ -1,1 +1,0 @@
- select * from guitar where type= X_16030521670100

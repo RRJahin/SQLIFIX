@@ -1,1 +1,0 @@
-"delete from Resurse_Financiare where id=?"

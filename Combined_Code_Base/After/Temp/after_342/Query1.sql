@@ -1,1 +1,0 @@
- INSERT INTO personnel(MID, Role) VALUES(?,?)

@@ -1,1 +1,0 @@
-"SELECT Id FROM marca" + Where(sNombre, iId_Imagen)

@@ -1,5 +1,0 @@
- emp.getEmpno()$X_16030521828180
- emp.getJob()$X_16030521828182
- emp.getEname()$X_16030521828181
- emp.getHiredate()$X_16030521828183
- emp.getSal()$X_16030521828184

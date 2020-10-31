@@ -1,8 +1,0 @@
- meia.getTipoIngresso().getId()$X_16030521836605
- meia.getLocal()$X_16030521836600
- new java.sql.Date(meia.getDataHora().getTime())$X_16030521836601
- meia.getLugar()$X_16030521836602
- meia.getId()$X_16030521836607
- meia.getCategoria().getId()$X_16030521836604
- meia.getQuantidade()$X_16030521836603
- meia.getValor()$X_16030521836606

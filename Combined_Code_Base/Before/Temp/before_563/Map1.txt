@@ -1,2 +1,0 @@
- ((res instanceof Sala) ? t.getId()$X_16030521815530
- res.getId()$X_16030521815531

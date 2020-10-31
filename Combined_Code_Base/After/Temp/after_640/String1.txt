@@ -1,1 +1,0 @@
-"update adv_pendencia.tab_extensao set descExtensao = ?, obExtensao = ? where tab_pasta_idPasta = ? and fk_idPendencia = ?"

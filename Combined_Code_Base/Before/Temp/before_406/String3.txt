@@ -1,1 +1,0 @@
-"UPDATE Thread SET posts = posts - 1 WHERE id = " + Long.parseLong(post.getThread().toString())

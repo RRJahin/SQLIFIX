@@ -1,1 +1,0 @@
- INSERT INTO tbl_peliculas (nombre, genero, clasificacion, duracion, imagen) VALUES ( X_16030521738030 , X_16030521738031 , X_16030521738032 , X_16030521738033 , X_16030521738034 )

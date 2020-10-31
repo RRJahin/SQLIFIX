@@ -1,1 +1,0 @@
-"SELECT title,docfile FROM document WHERE iddocument = " + selFile.getDocid()

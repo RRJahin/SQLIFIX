@@ -1,2 +1,0 @@
- obj.getCodeAgence()$X_16030521783000
- obj.getNomAgence()$X_16030521783001
