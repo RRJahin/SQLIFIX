@@ -1,0 +1,28 @@
+Target:
+	Statement stmt = null;
+	stmt = connection.createStatement();
+	rs = stmt.executeQuery("SELECT * FROM Notas where usuario_abriu="+id1);
+
+suggestion0:
+	PreparedStatement stmt = null;
+	stmt = connection.prepareStatement("SELECT * FROM Notas WHERE usuario_abriu = ?");
+	stmt.setObject(1,id1);
+	rs = stmt.executeQuery();
+
+suggestion1:
+	PreparedStatement stmt = null;
+	stmt = connection.prepareStatement("SELECT * FROM Notas WHERE usuario_abriu=?");
+	stmt.setObject(1,id1);
+	rs = stmt.executeQuery();
+
+suggestion2:
+	PreparedStatement stmt = null;
+	stmt = connection.prepareStatement("SELECT * FROM Notas WHERE usuario_abriu=?");
+	stmt.setObject(1,id1);
+	rs = stmt.executeQuery();
+
+suggestion3:
+	PreparedStatement stmt = null;
+	stmt = connection.prepareStatement("SELECT * FROM Notas WHERE usuario_abriu = ?");
+	stmt.setObject(1,id1);
+	rs = stmt.executeQuery();

@@ -1,0 +1,41 @@
+Target:
+	String sql = "SELECT * FROM Pays WHERE id = "+id;
+	Statement select = this.connect.createStatement();
+	ResultSet rs = select.executeQuery(sql);
+
+suggestion0:
+	String sql = "SELECT * FROM Pays WHERE id = ?";
+	PreparedStatement select = this.connect.prepareStatement(sql);
+	select.setObject(1,id);
+	ResultSet rs = select.executeQuery();
+
+suggestion1:
+	String sql = "SELECT * FROM Pays WHERE id = ?";
+	PreparedStatement select = this.connect.prepareStatement(sql);
+	select.setObject(1,id);
+	ResultSet rs = select.executeQuery();
+
+suggestion2:
+	String sql = "SELECT * FROM Pays WHERE id = ?";
+	PreparedStatement select = this.connect.prepareStatement(sql);
+	select.setObject(1,id);
+	ResultSet rs = select.executeQuery();
+
+suggestion3:
+	String sql = "SELECT * FROM Pays WHERE id = ?";
+	PreparedStatement select = this.connect.prepareStatement(sql);
+	select.setObject(1,id);
+	ResultSet rs = select.executeQuery();
+
+suggestion4:
+	String sql = "SELECT * FROM Pays WHERE id = ?";
+	PreparedStatement select = this.connect.prepareStatement(sql);
+	select.setObject(1,id);
+	ResultSet rs = select.executeQuery();
+
+suggestion5:
+	String sql = "SELECT * FROM Pays WHERE id = ?";
+	PreparedStatement select = this.connect.prepareStatement(sql);
+	select.setObject(1,id);
+	ResultSet rs = select.executeQuery();
+

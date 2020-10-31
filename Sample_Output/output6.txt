@@ -1,0 +1,11 @@
+Target:
+	String sql = "select * from inception_music where musicUrl = "+url;
+	Statement ps = util.getConnection().createStatement();
+	ResultSet rs = ps.executeQuery(sql);
+
+suggestion0:
+	String sql = "select * from inception_music where musicUrl = ?";
+	PreparedStatement ps = util.getConnection().prepareStatement(sql);
+	ps.setObject(1,url);
+	ResultSet rs = ps.executeQuery();
+

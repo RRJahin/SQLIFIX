@@ -1,0 +1,53 @@
+Target:
+	String purchaseId2 = "SELECT customer_purchase_ID FROM customer_login WHERE customer_password = "+customer.getPassword();
+	Statement preparePassword = conn.createStatement();
+	ResultSet result2 = preparePassword.executeQuery(purchaseId2);
+
+suggestion0:
+	String purchaseId2 = "select customer_purchase_ID from customer_login where customer_password = ?";
+	PreparedStatement preparePassword = conn.prepareStatement(purchaseId2);
+	preparePassword.setObject(1,customer.getPassword());
+	ResultSet result2 = preparePassword.executeQuery();
+
+suggestion1:
+	String purchaseId2 = "SELECT customer_purchase_ID FROM customer_login WHERE customer_password=?";
+	PreparedStatement preparePassword = conn.prepareStatement(purchaseId2);
+	preparePassword.setObject(1,customer.getPassword());
+	ResultSet result2 = preparePassword.executeQuery();
+
+suggestion3:
+	String purchaseId2 = "SELECT customer_purchase_ID FROM customer_login WHERE customer_password=?";
+	PreparedStatement preparePassword = conn.prepareStatement(purchaseId2);
+	preparePassword.setObject(1,customer.getPassword());
+	ResultSet result2 = preparePassword.executeQuery();
+
+suggestion4:
+	String purchaseId2 = "SELECT customer_purchase_ID FROM customer_login WHERE customer_password=?";
+	PreparedStatement preparePassword = conn.prepareStatement(purchaseId2);
+	preparePassword.setObject(1,customer.getPassword());
+	ResultSet result2 = preparePassword.executeQuery();
+
+suggestion5:
+	String purchaseId2 = "SELECT customer_purchase_ID FROM customer_login WHERE customer_password = ?";
+	PreparedStatement preparePassword = conn.prepareStatement(purchaseId2);
+	preparePassword.setObject(1,customer.getPassword());
+	ResultSet result2 = preparePassword.executeQuery();
+
+suggestion6:
+	String purchaseId2 = "Select customer_purchase_ID from customer_login where customer_password = ?";
+	PreparedStatement preparePassword = conn.prepareStatement(purchaseId2);
+	preparePassword.setObject(1,customer.getPassword());
+	ResultSet result2 = preparePassword.executeQuery();
+
+suggestion7:
+	String purchaseId2 = "SELECT customer_purchase_ID FROM customer_login WHERE customer_password = ?";
+	PreparedStatement preparePassword = conn.prepareStatement(purchaseId2);
+	preparePassword.setObject(1,customer.getPassword());
+	ResultSet result2 = preparePassword.executeQuery();
+
+suggestion8:
+	String purchaseId2 = "SELECT customer_purchase_ID FROM customer_login WHERE customer_password = ?";
+	PreparedStatement preparePassword = conn.prepareStatement(purchaseId2);
+	preparePassword.setObject(1,customer.getPassword());
+	ResultSet result2 = preparePassword.executeQuery();
+

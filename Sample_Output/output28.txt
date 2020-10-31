@@ -1,0 +1,11 @@
+Target:
+	stmt = c.createStatement();
+	String sql = "DELETE from ITEM where ITEM_NAME LIKE '" + item_name + "';";
+	stmt.executeUpdate(sql);
+
+suggestion0:
+	String sql = "DELETE from ITEM where ITEM_NAME LIKE ?;";
+	stmt = c.prepareStatement(sql);
+	stmt.setObject(1,item_name);
+	stmt.executeUpdate();
+

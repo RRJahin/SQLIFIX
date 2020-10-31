@@ -1,0 +1,10 @@
+Target:
+	Statement requete = connexion.createStatement();
+	int resultat = requete.executeUpdate("UPDATE VARIETE SET aoc = " + aoc + " where libelle = '" + variete.getLibelle() + "' ;");
+
+suggestion0:
+	PreparedStatement requete = connexion.prepareStatement("UPDATE VARIETE SET aoc = ?  where libelle = ?;");
+	requete.setObject(1,aoc);
+	requete.setObject(2,variete.getLibelle());
+	int resultat = requete.executeUpdate();
+

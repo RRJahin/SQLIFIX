@@ -1,0 +1,15 @@
+Target:
+	Statement st;
+	String query = "select * from " + TBL_NAME + " where " + FIELD_NOME + "=" + search_nome;
+	st = conn.createStatement();
+	rs = st.executeQuery(query);
+
+suggestion0:
+	PreparedStatement st;
+	String query = "select * from ? where ?=?";
+	st = conn.prepareStatement(query);
+	st.setObject(1,TBL_NAME);
+	st.setObject(2,FIELD_NOME);
+	st.setObject(3,search_nome);
+	rs = st.executeQuery();
+

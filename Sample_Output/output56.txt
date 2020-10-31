@@ -1,0 +1,29 @@
+Target:
+	stmt = c.createStatement();
+	ResultSet rs = stmt.executeQuery("SELECT * FROM ITEM WHERE DEPARTMENT LIKE 'books';");
+
+suggestion0:
+	stmt = c.prepareStatement("SELECT * FROM ITEM WHERE DEPARTMENT LIKE ?;");
+	stmt.setObject(1,books);
+	ResultSet rs = stmt.executeQuery();
+
+suggestion1:
+	stmt = c.prepareStatement("SELECT * FROM ITEM WHERE DEPARTMENT LIKE ?;");
+	stmt.setObject(1,books);
+	ResultSet rs = stmt.executeQuery();
+
+suggestion2:
+	stmt = c.prepareStatement("SELECT * FROM ITEM WHERE DEPARTMENT LIKE ?;");
+	stmt.setObject(1,books);
+	ResultSet rs = stmt.executeQuery();
+
+suggestion4:
+	stmt = c.PreparedStatement("SELECT * FROM ITEM WHERE DEPARTMENT LIKE ?;");
+	stmt.setObject(1,books);
+	ResultSet rs = stmt.executeQuery();
+
+suggestion5:
+	stmt = c.prepareStatement("SELECT * FROM ITEM WHERE DEPARTMENT LIKE ?;");
+	stmt.setObject(1,books);
+	ResultSet rs = stmt.executeQuery();
+

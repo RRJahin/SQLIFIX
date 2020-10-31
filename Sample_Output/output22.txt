@@ -1,0 +1,11 @@
+Target:
+	String query = "SELECT * FROM tbl_peliculas WHERE nombre = "+id;
+	Statement ps = getConexion().createStatement();
+	setResultado(ps.executeQuery(query));
+
+suggestion0:
+	String query = "SELECT * FROM tbl_peliculas WHERE nombre = ?";
+	PreparedStatement ps = getConedummyion().prepareStatement(query);
+	ps.setObject(1,id);
+	setResultado(ps.executeQuery());
+

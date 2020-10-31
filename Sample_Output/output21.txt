@@ -1,0 +1,29 @@
+Target:
+	String query = "INSERT INTO ActivityType(id, name, maxParticipants) VALUES ('" + nextActivityTypeId + "','" + activityTypeObj.getName() + "','" + activityTypeObj.getMaxParticipants() + "')";
+	Statement stmt = con.createStatement();
+	result = stmt.executeUpdate(query);
+
+suggestion0:
+	String query = "INSERT INTO ActivityType(id, name, maxParticipants)" + " VALUES('?','?','?')";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1,nextActivityTypeId);
+	stmt.setObject(2,activityTypeObj.getName());
+	stmt.setObject(3,activityTypeObj.getMaxParticipants());
+	result = stmt.executeUpdate();
+
+suggestion1:
+	String query = "INSERT INTO ActivityType(id, name, maxParticipants) VALUES('?', '?', '?')";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1,nextActivityTypeId);
+	stmt.setObject(2,activityTypeObj.getName());
+	stmt.setObject(3,activityTypeObj.getMaxParticipants());
+	result = stmt.executeUpdate();
+
+suggestion2:
+	String query = "INSERT INTO ActivityType(id, name, maxParticipants) VALUES('?','?','?')";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1,nextActivityTypeId);
+	stmt.setObject(2,activityTypeObj.getName());
+	stmt.setObject(3,activityTypeObj.getMaxParticipants());
+	result = stmt.executeUpdate();
+

@@ -1,0 +1,11 @@
+Target:
+	Statement stmt = connector.createStatement();
+	String snewer = "select userid from usersr where username='" + s + "'";
+	ResultSet rs = stmt.executeQuery(snewer);
+
+suggestion0:
+	String snewer = "select userid from usersr where s='?'";
+	PreparedStatement stmtmt = connector.prepareStatement(snewer);
+	stmtmt.setObject(1,s);
+	ResultSet rs = stmtmt.executeQuery();
+

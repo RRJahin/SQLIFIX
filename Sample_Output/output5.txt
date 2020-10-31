@@ -1,0 +1,59 @@
+Target:
+	String s = "select * from movie_feature where movie_id = "+movie_id;
+	Statement pstm = con.createStatement();
+	ResultSet rs = pstm.executeQuery(s);
+
+suggestion0:
+	String s = "select * from movie_feature where movie_id = ?";
+	PreparedStatement pstmtm = con.prepareStatement(s);
+	pstmtm.setObject(1,movie_id);
+	ResultSet rs = pstmtm.executeQuery();
+
+suggestion1:
+	String s = "SELECT * FROM movie_feature WHERE movie_id=?";
+	PreparedStatement pstmtm = con.prepareStatement(s);
+	pstmtm.setObject(1,movie_id);
+	ResultSet rs = pstmtm.executeQuery();
+
+suggestion2:
+	String s = "select * from movie_feature where movie_id = ?";
+	PreparedStatement pstmtm = con.prepareStatement(s);
+	pstmtm.setObject(1,movie_id);
+	ResultSet rs = pstmtm.executeQuery();
+
+suggestion3:
+	String s = "SELECT * FROM movie_feature WHERE movie_id=?";
+	PreparedStatement pstmtm = con.prepareStatement(s);
+	pstmtm.setObject(1,movie_id);
+	ResultSet rs = pstmtm.executeQuery();
+
+suggestion4:
+	String s = "SELECT * FROM movie_feature WHERE movie_id=?";
+	PreparedStatement pstm = con.prepareStatement(s);
+	pstm.setObject(1,movie_id);
+	ResultSet rs = pstm.executeQuery();
+
+suggestion5:
+	String s = "SELECT * FROM movie_feature WHERE movie_id = ?";
+	PreparedStatement pstmtm = con.prepareStatement(s);
+	pstmtm.setObject(1,movie_id);
+	ResultSet rs = pstmtm.executeQuery();
+
+suggestion6:
+	String s = "Select * from movie_feature where movie_id = ?";
+	PreparedStatement pstm = con.prepareStatement(s);
+	pstm.setObject(1,movie_id);
+	ResultSet rs = pstm.executeQuery();
+
+suggestion7:
+	String s = "SELECT * FROM movie_feature WHERE movie_id = ?";
+	PreparedStatement pstm = con.prepareStatement(s);
+	pstm.setObject(1,movie_id);
+	ResultSet rs = pstm.executeQuery();
+
+suggestion8:
+	String s = "SELECT * FROM movie_feature WHERE movie_id = ?";
+	PreparedStatement pstm = con.prepareStatement(s);
+	pstm.setObject(1,movie_id);
+	ResultSet rs = pstm.executeQuery();
+

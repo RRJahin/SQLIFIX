@@ -1,0 +1,14 @@
+Target:
+	String query = "INSERT INTO alerts (sensor_type, comparator, comparison_value, node_id) VALUES ("+sensorType+", "+comparator+", "+compValue+", "+node+");";
+	Statement insertAlert = dbCon.createStatement();
+	insertAlert.executeUpdate(query);
+
+suggestion0:
+	String query = "Insert into alerts(sensor_type, comparator,comparison_value, node_id) values (?,?,?,?)";
+	PreparedStatement insertAlert = dbCon.prepareStatement(query);
+	insertAlert.setObject(1,sensorType);
+	insertAlert.setObject(2,comparator);
+	insertAlert.setObject(3,compValue);
+	insertAlert.setObject(4,node);
+	insertAlert.executeUpdate();
+

@@ -1,0 +1,48 @@
+Target:
+	Statement ps = null;
+	String sql = "SELECT * FROM npc WHERE npc_id = "+id;
+	ps = conn.createStatement();
+	rs = ps.executeQuery(sql);
+
+suggestion0:
+	PreparedStatement ps = null;
+	String sql = "SELECT * FROM npc WHERE npc_id = ?";
+	ps = conn.prepareStatement(sql);
+	ps.setObject(1,id);
+	rs = ps.executeQuery();
+
+suggestion1:
+	PreparedStatement ps = null;
+	String sql = "SELECT * FROM npc WHERE npc_id=?";
+	ps = conn.prepareStatement(sql);
+	ps.setObject(1,id);
+	rs = ps.executeQuery();
+
+suggestion2:
+	PreparedStatement ps = null;
+	String sql = "SELECT * FROM npc WHERE npc_id = ?";
+	ps = conn.prepareStatement(sql);
+	ps.setObject(1,id);
+	rs = ps.executeQuery();
+
+suggestion3:
+	PreparedStatement ps = null;
+	String sql = "SELECT * FROM npc WHERE npc_id = ?";
+	ps = conn.prepareStatement(sql);
+	ps.setObject(1,id);
+	rs = ps.executeQuery();
+
+suggestion4:
+	PreparedStatement ps = null;
+	String sql = "SELECT * FROM npc WHERE npc_id = ?";
+	ps = conn.prepareStatement(sql);
+	ps.setObject(1,id);
+	rs = ps.executeQuery();
+
+suggestion5:
+	PreparedStatement ps = null;
+	String sql = "SELECT * FROM npc WHERE npc_id=?";
+	ps = conn.prepareStatement(sql);
+	ps.setObject(1,id);
+	rs = ps.executeQuery();
+

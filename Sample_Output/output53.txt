@@ -1,0 +1,59 @@
+Target:
+	String query = "select * from Employee where EMPID = "+empId;
+	Statement st = con.createStatement();
+	ResultSet rs = st.executeQuery(query);
+
+suggestion0:
+	String query = "select * from Employee where EMPID = ?";
+	PreparedStatement st = con.prepareStatement(query);
+	st.setObject(1,empId);
+	ResultSet rs = st.executeQuery();
+
+suggestion1:
+	String query = "SELECT * FROM Employee WHERE EMPID=?";
+	PreparedStatement st = con.prepareStatement(query);
+	st.setObject(1,empId);
+	ResultSet rs = st.executeQuery();
+
+suggestion2:
+	String query = "select * from Employee wheree EMPID = ?";
+	PreparedStatement st = con.prepareStatement(query);
+	st.setObject(1,empId);
+	ResultSet rs = st.executeQuery();
+
+suggestion3:
+	String query = "SELECT * FROM Employee WHERE EMPID=?";
+	PreparedStatement st = con.prepareStatement(query);
+	st.setObject(1,empId);
+	ResultSet rs = st.executeQuery();
+
+suggestion4:
+	String query = "SELECT * FROM Employee WHERE EMPID=?";
+	PreparedStatement st = con.prepareStatement(query);
+	st.setObject(1,empId);
+	ResultSet rs = st.executeQuery();
+
+suggestion5:
+	String query = "SELECT * FROM Employee WHERE EMPID = ?";
+	PreparedStatement st = con.prepareStatement(query);
+	st.setObject(1,empId);
+	ResultSet rs = st.executeQuery();
+
+suggestion6:
+	String query = "Select * from Employee where EMPID = ?";
+	PreparedStatement st = con.prepareStatement(query);
+	st.setObject(1,empId);
+	ResultSet rs = st.executeQuery();
+
+suggestion7:
+	String query = "SELECT * FROM Employee WHERE EMPID = ?";
+	PreparedStatement st = con.prepareStatement(query);
+	st.setObject(1,empId);
+	ResultSet rs = st.executeQuery();
+
+suggestion8:
+	String query = "SELECT * FROM Employee WHERE EMPID = ?";
+	PreparedStatement st = con.prepareStatement(query);
+	st.setObject(1,empId);
+	ResultSet rs = st.executeQuery();
+

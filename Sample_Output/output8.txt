@@ -1,0 +1,16 @@
+Target:
+	Statement s = conn.createStatement();
+	ResultSet rs = s.executeQuery("SELECT * FROM virtual_machine_host_table WHERE hostname='" + hostname + "'");
+
+suggestion0:
+	String sql = "select * from virtual_machine_host_table where hostname=?;";
+	PreparedStatement s = conn.prepareStatement(sql);
+	s.setObject(1,hostname);
+	ResultSet rs = s.executeQuery();
+
+suggestion1:
+	PreparedStatement s = conn.prepareStatement("SELECT * FROM virtual_machine_host_table WHERE hostname='?'");
+	s.setObject(1,hostname);
+	ResultSet rs = s.executeQuery();
+
+

@@ -1,0 +1,13 @@
+Target:
+	String sql = "UPDATE Agence SET codeAgence = "+obj.getCodeAgence()+", nomAgence = "+obj.getNomAgence()+" WHERE id = "+obj.getId();
+	Statement update = connect.createStatement();
+	int rs = update.executeUpdate(sql);
+
+suggestion0:
+	String sql = "UPDATE Agence SET codeAgence = ?, nomAgence = ? WHERE id = ?";
+	PreparedStatement update = connect.prepareStatement(sql);
+	update.setObject(1,obj.getCodeAgence());
+	update.setObject(2,obj.getNomAgence());
+	update.setObject(3,obj.getId());
+	int rs = update.executeUpdate();
+

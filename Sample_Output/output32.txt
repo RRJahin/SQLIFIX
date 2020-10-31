@@ -1,0 +1,12 @@
+Target:
+	String sql = "select * from inception_preference where userId = "+userId+" and musicId = "+musicId;
+	Statement ps = conn.createStatement();
+	ResultSet rs = ps.executeQuery(sql);
+
+suggestion0:
+	String sql = "SELECT * FROM inception_preference WHERE userId=? and musicId=?";
+	PreparedStatement ps = conn.prepareStatement(sql);
+	ps.setObject(1,userId);
+	ps.setObject(2,musicId);
+	ResultSet rs = ps.executeQuery();
+

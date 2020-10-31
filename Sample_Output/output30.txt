@@ -1,0 +1,9 @@
+Target:
+	pst = conn.createStatement();
+	result = pst.executeQuery("select * from normalposts where authorid = "+userid);
+
+suggestion0:
+	pst = conn.prepareStatement("select * from normalposts where authorid = ?");
+	pst.setObject(1,userid);
+	result = pst.executeQuery();
+

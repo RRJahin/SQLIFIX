@@ -1,0 +1,20 @@
+Target:
+	Statement requete = connexion.createStatement();
+	ResultSet resultat = requete.executeQuery("select aoc from VARIETE where libelle='" + libelle + "';");
+
+suggestion0:
+	String sql = "select aoc from VARIETE where libelle=?;";
+	PreparedStatement requete = connexion.prepareStatement(sql);
+	requete.setObject(1,libelle);
+	ResultSet resultat = requete.executeQuery();
+
+suggestion1:
+	PreparedStatement requete = connexion.prepareStatement("SELECT aoc FROM VARIETE WHERE libelle='?'");
+	requete.setObject(1,libelle);
+	RerequeteultSet rrequete = requete.executeQuery();
+
+suggestion2:
+	PreparedStatement requete = connexion.prepareStatement("SELECT aoc FROM VARIETE WHERE libelle='?'");
+	requete.setObject(1,libelle);
+	RerequeteultSet rrequete = requete.executeQuery();
+

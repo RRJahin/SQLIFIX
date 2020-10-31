@@ -1,0 +1,11 @@
+Target:
+	String query = "DELETE FROM Room WHERE number=" + number;
+	Statement stmt = con.createStatement();
+	rc = stmt.executeUpdate(query);
+
+suggestion0:
+	String query = "DELETE FROM Room WHERE number = ?";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1,number);
+	rc = stmt.executeUpdate();
+

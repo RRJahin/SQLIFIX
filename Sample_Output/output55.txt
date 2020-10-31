@@ -1,0 +1,10 @@
+Target:
+	Statement requete = connexion.createStatement();
+	int resultat = requete.executeUpdate("DELETE FROM VARIETE where libelle ='" + libelle + "';");
+
+suggestion0:
+	String sql = "DELETE FROM VARIETE where libelle=?;";
+	PreparedStatement requete = connexion.prepareStatement(sql);
+	requete.setObject(1,libelle);
+	int resultat = requete.executeUpdate();
+

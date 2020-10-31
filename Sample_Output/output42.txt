@@ -1,0 +1,59 @@
+Target:
+	String sql = "Delete From Starwood where User_Name= "+username;
+	Statement pstm = conn.createStatement();
+	pstm.executeUpdate(sql);
+
+suggestion0:
+	String sql = "Delete From Starwood where User_Name = ?";
+	PreparedStatement pstm = conn.prepareStatement(sql);
+	pstm.setObject(1,username);
+	pstm.executeUpdate();
+
+suggestion1:
+	String sql = "DELETE FROM Starwood WHERE User_Name=?";
+	PreparedStatement pstmtm = conn.prepareStatement(sql);
+	pstmtm.setObject(1,username);
+	pstmtm.executeUpdate();
+
+suggestion2:
+	String sql = "delete from Starwood where User_Name = ?";
+	PreparedStatement pstmtm = conn.prepareStatement(sql);
+	pstmtm.setObject(1,username);
+	pstmtm.executeUpdate();
+
+suggestion3:
+	String sql = "DELETE FROM Starwood WHERE User_Name=?";
+	PreparedStatement pstmtm = conn.prepareStatement(sql);
+	pstmtm.setObject(1,username);
+	pstmtm.execute();
+
+suggestion4:
+	String sql = "delete from Starwood where User_Name = ? ";
+	PreparedStatement pstmtm = conn.prepareStatement(sql);
+	pstmtm.setObject(1,username);
+	pstmtm.executeUpdate();
+
+suggestion5:
+	String sql = "DELETE FROM Starwood WHERE User_Name = ?;";
+	PreparedStatement pstm = conn.prepareStatement(sql);
+	pstm.setObject(1,username);
+	pstm.executeUpdate();
+
+suggestion6:
+	String sql = "DELETE FROM Starwood WHERE User_Name = ?";
+	PreparedStatement pstm = conn.prepareStatement(sql);
+	pstm.setObject(1,username);
+	pstm.executeUpdate();
+
+suggestion7:
+	String sql = "DELETE FROM Starwood WHERE User_Name = ?";
+	PreparedStatement pstmtm = conn.prepareStatement(sql);
+	pstmtm.setObject(1,username);
+	pstmtm.executeUpdate();
+
+suggestion8:
+	String sql = "DELETE FROM Starwood WHERE User_Name = ?";
+	PreparedStatement pstmtm = conn.prepareStatement(sql);
+	pstmtm.setObject(1,username);
+	pstmtm.executeUpdate();
+

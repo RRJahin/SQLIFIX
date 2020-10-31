@@ -1,0 +1,13 @@
+Target:
+	String query = "insert into personas (NOMBRE,EDAD,PESO)" + "values ("+p.getNombre()+","+p.getEdad()+","+p.getPeso()+")";
+	Statement ps = conexion.createStatement();
+	int numeroFilasAfectadas = ps.executeUpdate(query);
+
+suggestion0:
+	String query = "INSERT INTO personas (NOMBRE,EDAD,PESO)" + " VALUES(?, ?, ?)";
+	PreparedStatement ps = conexion.prepareStatement(query);
+	ps.setobject(1,p.getNombre());
+	ps.setobject(2,p.getEdad());
+	ps.setobject(3,p.getPeso());
+	int numeroFilasAfectadas = ps.executeUpdate();
+

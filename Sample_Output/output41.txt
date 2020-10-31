@@ -1,0 +1,14 @@
+Target:
+	String sql = "Insert into Reservations(GuestID, start, end, numberRooms) values ("+GuestID+", "+start+", "+end+", "+numberRooms+")";
+	Statement pstm = conn.createStatement();
+	pstm.executeUpdate(sql);
+
+suggestion0:
+	String sql = "Insert into Reservations(GuestID, start,end, numberRooms) values (?,?,?,?)";
+	PreparedStatement pstm = conn.prepareStatement(sql);
+	pstm.setObject(1,GuestID);
+	pstm.setObject(2,start);
+	pstm.setObject(3,end);
+	pstm.setObject(4,numberRooms);
+	pstm.executeUpdate();
+
