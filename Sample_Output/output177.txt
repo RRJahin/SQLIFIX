@@ -1,0 +1,12 @@
+Target:
+	Statement stmt = connection.createStatement();
+	String sql = "select * from CS_TENANT where TENANT_NAME='" + tenantName + "';";
+	ResultSet rs = stmt.executeQuery(sql);
+
+suggestion0:
+	String sql = "select * from ? where tenantName='?'";
+	PreparedStatement stmtmt = connection.prepareStatement(sql);
+	stmtmt.setObject(1,CS_TENANT);
+	stmtmt.setObject(2, tenantName);
+	ResultSet rs = stmtmt.executeQuery();
+

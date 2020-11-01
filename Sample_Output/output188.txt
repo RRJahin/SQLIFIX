@@ -1,0 +1,83 @@
+Target:
+	String sql = "SELECT * FROM TAREAS WHERE PROYECTO = " + proyecto.getNombre();
+	Statement numTareas = conexion.createStatement();
+	ResultSet resultado = numTareas.executeQuery(sql);
+
+suggestion0:
+	String sql = "SELECT * FROM TAREAS WHERE PROYECTO = ?";
+	PreparedStatement numTareas = conexion.prepareStatement(sql);
+	numTareas.setObject(1, proyecto.getNombre());
+	ResultSet resultado = numTareas.executeQuery();
+
+suggestion1:
+	String sql = "SELECT * FROM TAREAS WHERE PROYECTO = ?";
+	PreparedStatement numTareas = conexion.prepareStatement(sql);
+	numTareas.setObject(1, proyecto.getNombre());
+	ResultSet resultado = numTareas.executeQuery();
+
+suggestion2:
+	String sql = "SELECT * FROM TAREAS WHERE PROYECTO=?";
+	PreparedStatement numTareas = conexion.prepareStatement(sql);
+	numTareas.setObject(1, proyecto.getNombre());
+	ResultSet resultado = numTareas.executeQuery();
+
+suggestion3:
+	String sql = "select * from TAREAS where proyecto.getNombre()Name = ?";
+	PreparedStatement numTareas = conexion.prepareStatement(sql);
+	numTareas.setObject(1, proyecto.getNombre());
+	ResultSet resultado = numTareas.executeQuery();
+
+suggestion4:
+	String sql = "select * from TAREAS where proyecto.getNombre()Name = ?";
+	PreparedStatement numTareas = conexion.prepareStatement(sql);
+	numTareas.setObject(1, proyecto.getNombre());
+	ResultSet resultado = numTareas.executeQuery();
+
+suggestion5:
+	String sql = "SELECT * FROM TAREAS WHERE PROYECTO=?";
+	PreparedStatement numTareas = conexion.prepareStatement(sql);
+	numTareas.setObject(1, proyecto.getNombre());
+	ResultSet resultado = numTareas.executeQuery();
+
+suggestion6:
+	String sql = "SELECT * FROM TAREAS WHERE PROYECTO=?";
+	PreparedStatement numTareas = conexion.prepareStatement(sql);
+	numTareas.setObject(1, proyecto.getNombre());
+	ResultSet resultado = numTareas.executeQuery();
+
+suggestion7:
+	String sql = "SELECT * FROM TAREAS WHERE PROYECTO=?";
+	PreparedStatement numTareas = conexion.prepareStatement(sql);
+	numTareas.setObject(1, proyecto.getNombre());
+	ResultSet resultado = numTareas.executeQuery();
+
+suggestion8:
+	String sql = "SELECT * FROM TAREAS WHERE PROYECTO=?";
+	PreparedStatement numTareas = conexion.prepareStatement(sql);
+	numTareas.setObject(1, proyecto.getNombre());
+	ResultSet resultado = numTareas.executeQuery();
+
+suggestion9:
+	String sql = "select * from TAREAS where PROYECTO = ?";
+	PreparedStatement numTareas = conexion.prepareStatement(sql);
+	numTareas.setObject(1, proyecto.getNombre());
+	ResultSet resultado = numTareas.executeQuery();
+
+suggestion10:
+	String sql = "SELECT * FROM TAREAS WHERE PROYECTO = ?";
+	PreparedStatement numTareas = conexion.prepareStatement(sql);
+	numTareas.setObject(1, proyecto.getNombre());
+	ResultSet resultado = numTareas.executeQuery();
+
+suggestion11:
+	String sql = "SELECT * FROM TAREAS WHERE PROYECTO = ?";
+	PreparedStatement numTareas = conexion.prepareStatement(sql);
+	numTareas.setObject(1, proyecto.getNombre());
+	ResultSet resultado = numTareas.executeQuery();
+
+suggestion12:
+	String sql = "Select * from TAREAS where PROYECTO = ?";
+	PreparedStatement numTareas = conexion.prepareStatement(sql);
+	numTareas.setObject(1, proyecto.getNombre());
+	ResultSet resultado = numTareas.executeQuery();
+

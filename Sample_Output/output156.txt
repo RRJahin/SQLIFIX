@@ -1,0 +1,8 @@
+Target:
+	stmt = c.createStatement();
+	ResultSet rs = stmt.executeQuery("SELECT MAX(ITEM_ID) as id FROM ITEM");
+
+suggestion0:
+	stmt = c.prepareStatement("SELECT MAX(ITEM_ITEM_ID) as id FROM ITEM");
+	ResultSet rs = stmt.executeQuery();
+

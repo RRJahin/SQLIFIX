@@ -1,0 +1,65 @@
+Target:
+	String sql = "DELETE FROM tblAchievements WHERE id = "+id;
+	Statement pstmt = conn.createStatement()) {
+	pstmt.executeUpdate(sql);
+
+suggestion0:
+	String sql = "Delete From tblAchievements where id = ?";
+	PreparedStatement pstmtt = conn.prepareStatement(sql);
+	pstmtt.setObject(1, id);
+	pstmtt.executeUpdate();
+
+suggestion1:
+	String sql = "DELETE FROM tblAchievements WHERE id=?";
+	PreparedStatement pstmttmt = conn.prepareStatement(sql);
+	pstmttmt.setObject(1, id);
+	pstmttmt.executeUpdate();
+
+suggestion2:
+	String sql = "delete from tblAchievements where id = ?";
+	PreparedStatement pstmttmt = conn.prepareStatement(sql);
+	pstmttmt.setObject(1, id);
+	pstmttmt.executeUpdate();
+
+suggestion3:
+	String sql = "DELETE FROM tblAchievements WHERE id=?";
+	PreparedStatement pstmttmt = conn.prepareStatement(sql);
+	pstmttmt.setObject(1, id);
+	pstmttmt.execute();
+
+suggestion4:
+	String sql = "DELETE FROM tblAchievements WHERE id = ?";
+	PreparedStatement ppstmt = conn.prepareStatement(sql);
+	ppstmt.setObject(1, id);
+	ppstmt.executeUpdate();
+
+suggestion5:
+	String sql = "DELETE FROM tblAchievements WHERE id = ?";
+	PreparedStatement ppstmt = conn.prepareStatement(sql);
+	ppstmt.setObject(1, id);
+	ppstmt.executeUpdate();
+
+suggestion6:
+	String sql = "delete from tblAchievements where id = ? ";
+	PreparedStatement pstmttmt = conn.prepareStatement(sql);
+	pstmttmt.setObject(1, id);
+	pstmttmt.executeUpdate();
+
+suggestion7:
+	String sql = "DELETE FROM tblAchievements WHERE id = ?;";
+	PreparedStatement pstmt = conn.prepareStatement(sql);
+	pstmt.setObject(1, id);
+	pstmt.executeUpdate();
+
+suggestion8:
+	String sql = "DELETE FROM tblAchievements WHERE id = ?";
+	PreparedStatement pstmttmt = conn.prepareStatement(sql);
+	pstmttmt.setObject(1, id);
+	pstmttmt.executeUpdate();
+
+suggestion9:
+	String sql = "DELETE FROM tblAchievements WHERE id = ?";
+	PreparedStatement pstmttmt = conn.prepareStatement(sql);
+	pstmttmt.setObject(1, id);
+	pstmttmt.executeUpdate();
+

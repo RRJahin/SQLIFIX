@@ -1,0 +1,76 @@
+Target:
+	Statement ps = null;
+	String sql = "SELECT id FROM member WHERE email="+email;
+	ps = conn.createStatement();
+	rs = ps.executeQuery(sql);
+
+suggestion0:
+	PreparedStatement ps = null;
+	String sql = "SELECT id FROM member WHERE email = ?";
+	ps = conn.prepareStatement(sql);
+	ps.setObject(1, email);
+	rs = ps.executeQuery();
+
+suggestion1:
+	PreparedStatement ps = null;
+	String sql = "SELECT id FROM member WHERE email=?";
+	ps = conn.prepareStatement(sql);
+	ps.setObject(1, email);
+	rs = ps.executeQuery();
+
+suggestion2:
+	PreparedStatement ps = null;
+	String sql = "SELECT id FROM member WHERE email = ?";
+	ps = conn.prepareStatement(sql);
+	ps.setObject(1, email);
+	rs = ps.executeQuery();
+
+suggestion3:
+	PreparedStatement ps = null;
+	String sql = "SELECT id FROM member WHERE email=?";
+	ps = conn.prepareStatement(sql);
+	ps.setObject(1, email);
+	rs = ps.executeQuery();
+
+suggestion4:
+	PreparedStatement ps = null;
+	String sql = "SELECT email FROM member WHERE email = ?";
+	ps = conn.prepareStatement(sql);
+	ps.setObject(1, email);
+	rs = ps.executeQuery();
+
+suggestion5:
+	PreparedStatement ps = null;
+	String sql = "SELECT email FROM member WHERE email = ?";
+	ps = conn.prepareStatement(sql);
+	ps.setObject(1, email);
+	rs = ps.executeQuery();
+
+suggestion6:
+	PreparedStatement ps = null;
+	String sql = "SELECT id FROM member WHERE email = ?";
+	ps = conn.prepareStatement(sql);
+	ps.setObject(1, email);
+	rs = ps.executeQuery();
+
+suggestion7:
+	PreparedStatement ps = null;
+	String sql = "SELECT id FROM member WHERE email=?";
+	ps = conn.prepareStatement(sql);
+	ps.setObject(1, email);
+	rs = ps.executeQuery();
+
+suggestion8:
+	PreparedStatement ps = null;
+	String sql = "SELECT email FROM member WHERE email = ?";
+	ps = conn.prepareStatement(sql);
+	ps.setObject(1, email);
+	rs = ps.executeQuery();
+
+suggestion9:
+	PreparedStatement ps = null;
+	String sql = "SELECT id FROM member WHERE email=?";
+	ps = conn.prepareStatement(sql);
+	ps.setObject(1, email);
+	rs = ps.executeQuery();
+

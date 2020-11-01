@@ -1,0 +1,19 @@
+Target:
+	Statement ps = null;
+	String sql = "INSERT INTO member (id, pwd, name, phone, email, address, e_key) VALUES ("+m.getId()+", "+m.getPwd()+", "+m.getName()+", "+m.getPhone()+", "+m.getEmail()+", "+m.getAddress()+", "+m.getKey()+")";
+	ps = conn.createStatement();
+	cnt = ps.executeUpdate(sql);
+
+suggestion0:
+	PreparedStatement ps = null;
+	String sql = "INSERT INTO member (id, pwd, name, phone, email, address, e_key) VALUES (?, ?, ?, ?, ?, ?, ?)";
+	ps = conn.prepareStatement(sql);
+	ps.setObject(1, m.getId());
+	ps.setObject(2, m.getPwd());
+	ps.setObject(3, m.getName());
+	ps.setObject(4, m.getPhone());
+	ps.setObject(5, m.getEmail());
+	ps.setObject(6, m.getAddress());
+	ps.setObject(7, m.getKey());
+	cnt = ps.executeUpdate();
+

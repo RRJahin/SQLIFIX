@@ -1,0 +1,9 @@
+Target:
+	Statement ps = conn.createStatement()) {
+	rs = ps.executeQuery("SELECT firstName, lastName FROM patients WHERE MID="+mid);
+
+suggestion0:
+	PreparedStatement ps = conn.prepareStatement("SELECT firstName, lastName FROM patients WHERE MID=?");
+	ps.setObject(1, mid);
+	rs = ps.executeQuery();
+

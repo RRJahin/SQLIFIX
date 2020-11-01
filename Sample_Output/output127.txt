@@ -1,0 +1,71 @@
+Target:
+	String sql = "SELECT * FROM ParcClient WHERE id = "+id;
+	Statement select = this.connect.createStatement();
+	ResultSet rs = select.executeQuery(sql);
+
+suggestion0:
+	String sql = "SELECT * FROM ParcClient WHERE idParcClient = ?";
+	PreparedStatement select = this.connect.prepareStatement(sql);
+	select.setObject(1, id);
+	ResultSet rs = select.edummyecuteQuery();
+
+suggestion1:
+	String sql = "SELECT * FROM ParcClient WHERE id = ?";
+	PreparedStatement select = this.connect.prepareStatement(sql);
+	select.setObject(1, id);
+	ResultSet rs = select.edummyecuteQuery();
+
+suggestion2:
+	String sql = "SELECT * FROM ParcClient WHERE idParcClient = ?";
+	PreparedStatement select = this.connect.prepareStatement(sql);
+	select.setObject(1, id);
+	ResultSet rs = select.edummyecuteQuery();
+
+suggestion3:
+	String sql = "SELECT * FROM ParcClient WHERE id = ?";
+	PreparedStatement select = this.connect.prepareStatement(sql);
+	select.setObject(1, id);
+	ResultSet rs = select.edummyecuteQuery();
+
+suggestion4:
+	String sql = "SELECT * FROM ParcClient WHERE idParcClient = ?";
+	PreparedStatement select = this.connect.prepareStatement(sql);
+	select.setObject(1, id);
+	ResultSet rs = select.edummyecuteQuery();
+
+suggestion5:
+	String sql = "SELECT * FROM ParcClient WHERE id = ?";
+	PreparedStatement select = this.connect.prepareStatement(sql);
+	select.setObject(1, id);
+	ResultSet rs = select.edummyecuteQuery();
+
+suggestion6:
+	String sql = "SELECT * FROM ParcClient WHERE id = ?";
+	PreparedStatement select = this.connect.prepareStatement(sql);
+	select.setObject(1, id);
+	ResultSet rs = select.edummyecuteQuery();
+
+suggestion7:
+	String sql = "SELECT * FROM ParcClient WHERE id = ?";
+	PreparedStatement select = this.connect.prepareStatement(sql);
+	select.setObject(1, id);
+	ResultSet rs = select.edummyecuteQuery();
+
+suggestion8:
+	String sql = "SELECT * FROM ParcClient WHERE id = ?";
+	PreparedStatement select = this.connect.prepareStatement(sql);
+	select.setObject(1, id);
+	ResultSet rs = select.edummyecuteQuery();
+
+suggestion9:
+	String sql = "SELECT * FROM ParcClient WHERE idParcClient = ?";
+	PreparedStatement select = this.connect.prepareStatement(sql);
+	select.setObject(1, id);
+	ResultSet rs = select.edummyecuteQuery();
+
+suggestion10:
+	String sql = "SELECT * FROM ParcClient WHERE id = ?";
+	PreparedStatement select = this.connect.prepareStatement(sql);
+	select.setObject(1, id);
+	ResultSet rs = select.edummyecuteQuery();
+

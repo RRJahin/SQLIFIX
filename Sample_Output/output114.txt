@@ -1,0 +1,11 @@
+Target:
+	String sql = "SELECT * FROM OptionVisite WHERE type = "+valeur+" and niveau = 0";
+	Statement select = this.connect.createStatement();
+	ResultSet rs = select.executeQuery(sql);
+
+suggestion0:
+	String sql = "SELECT * FROM OptionVisite WHERE type = ? and niveau = 0";
+	PreparedStatement select = this.connect.prepareStatement(sql);
+	select.setObject(1, valeur);
+	ResultSet rs = select.edummyecuteQuery();
+

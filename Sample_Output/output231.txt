@@ -1,0 +1,12 @@
+Target:
+	Statement state;
+	state = conn.createStatement();
+	ResultSet result = state.executeQuery("SELECT death FROM stats WHERE player = '" + p.getUniqueId().toString() + "'");
+
+suggestion0:
+	PreparedStatement state;
+	String query = "SELECT death FROM stats WHERE player = '?'";
+	state = conn.prepareStatement(query);
+	state.setObject(1, p.getUniqueId().toString());
+	ResultSet result = state.executeQuery();
+

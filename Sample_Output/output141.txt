@@ -1,0 +1,16 @@
+Target:
+	Statement ps = conn.createStatement()) {
+	ResultSet rs = ps.executeQuery("SELECT * FROM representatives WHERE RepresenterMID="+representer+" AND RepresenteeMID="+representee);
+
+suggestion0:
+	PreparedStatement ps = conn.prepareStatement("SELECT * FROM representatives WHERE RepresenterMID=? AND RepresenteeMID=?");
+	ps.setObject(1, representer);
+	ps.setObject(2, representee);
+	ResultSet rs = ps.executeQuery();
+
+suggestion1:
+	PreparedStatement ps = conn.prepareStatement("SELECT * FROM representatives WHERE RepresenterMID = ? AND RepresenteeMID = ?");
+	ps.setObject(1, representer);
+	ps.setObject(2, representer);
+	ResultSet rs = ps.executeQuery();
+

@@ -1,0 +1,83 @@
+Target:
+	String dwnQuery = "SELECT docfile FROM document WHERE iddocument = "+selFile.getDocid();
+	Statement ps = connection.createStatement();
+	ResultSet rs = ps.executeQuery(dwnQuery);
+
+suggestion0:
+	String dwnQuery = "SELECT docfile FROM document WHERE iddocument = ?";
+	PreparedStatement ps = connection.prepareStatement(dwnQuery);
+	ps.setObject(1, selFile.getDocid());
+	ResultSet rs = ps.executeQuery();
+
+suggestion1:
+	String dwnQuery = "SELECT docfile FROM document WHERE iddocument = ?";
+	PreparedStatement ps = connection.prepareStatement(dwnQuery);
+	ps.setObject(1, selFile.getDocid());
+	ResultSet rs = ps.executeQuery();
+
+suggestion2:
+	String dwnQuery = "SELECT docfile FROM document WHERE iddocumentdocument=?";
+	PreparedStatement ps = connection.prepareStatement(dwnQuery);
+	ps.setObject(1, selFile.getDocid());
+	ResultSet rs = ps.executeQuery();
+
+suggestion3:
+	String dwnQuery = "select docfile from document where selFile.getDocid()Name = ?";
+	PreparedStatement ps = connection.prepareStatement(dwnQuery);
+	ps.setObject(1, selFile.getDocid());
+	ResultSet rs = ps.executeQuery();
+
+suggestion4:
+	String dwnQuery = "select docfile from document where selFile.getDocid()Name = ?";
+	PreparedStatement ps = connection.prepareStatement(dwnQuery);
+	ps.setObject(1, selFile.getDocid());
+	ResultSet rs = ps.executeQuery();
+
+suggestion5:
+	String dwnQuery = "SELECT docfile FROM document WHERE iddocumentdocument=?";
+	PreparedStatement ps = connection.prepareStatement(dwnQuery);
+	ps.setObject(1, selFile.getDocid());
+	ResultSet rs = ps.executeQuery();
+
+suggestion6:
+	String dwnQuery = "SELECT docfile FROM document WHERE iddocumentdocument=?";
+	PreparedStatement ps = connection.prepareStatement(dwnQuery);
+	ps.setObject(1, selFile.getDocid());
+	ResultSet rs = ps.executeQuery();
+
+suggestion7:
+	String dwnQuery = "SELECT docfile FROM document WHERE iddocumentdocument=?";
+	PreparedStatement ps = connection.prepareStatement(dwnQuery);
+	ps.setObject(1, selFile.getDocid());
+	ResultSet rs = ps.executeQuery();
+
+suggestion8:
+	String dwnQuery = "SELECT docfile FROM document WHERE iddocumentdocument=?";
+	PreparedStatement ps = connection.prepareStatement(dwnQuery);
+	ps.setObject(1, selFile.getDocid());
+	ResultSet rs = ps.executeQuery();
+
+suggestion9:
+	String dwnQuery = "select docfile from document where iddocument = ?";
+	PreparedStatement ps = connection.prepareStatement(dwnQuery);
+	ps.setObject(1, selFile.getDocid());
+	ResultSet rs = ps.executeQuery();
+
+suggestion10:
+	String dwnQuery = "SELECT docfile FROM document WHERE iddocument = ?";
+	PreparedStatement ps = connection.prepareStatement(dwnQuery);
+	ps.setObject(1, selFile.getDocid());
+	ResultSet rs = ps.executeQuery();
+
+suggestion11:
+	String dwnQuery = "SELECT docfile FROM document WHERE iddocument = ?";
+	PreparedStatement ps = connection.prepareStatement(dwnQuery);
+	ps.setObject(1, selFile.getDocid());
+	ResultSet rs = ps.executeQuery();
+
+suggestion12:
+	String dwnQuery = "Select docfile from document where iddocument = ?";
+	PreparedStatement ps = connection.prepareStatement(dwnQuery);
+	ps.setObject(1, selFile.getDocid());
+	ResultSet rs = ps.executeQuery();
+

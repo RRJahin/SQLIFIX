@@ -1,0 +1,33 @@
+Target:
+	String sql = "INSERT INTO Agence (codeAgence, nomAgence) VALUES ("+obj.getCodeAgence()+", "+obj.getNomAgence()+")";
+	Statement insert = connect.createStatement();
+	int rs = insert.executeUpdate(sql);
+
+suggestion0:
+	String sql = "INSERT INTO Agence (codeAgence, nomAgence) VALUES (?, ?)";
+	PreparedStatement insert = connect.prepareStatement(sql);
+	insert.setObject(1, obj.getCodeAgence());
+	insert.setObject(2, obj.getNomAgence());
+	int rs = insert.executeUpdate();
+
+suggestion1:
+	String sql = "INSERT INTO Agence (codeAgence, nomAgence) VALUES (?, ?)";
+	PreparedStatement insert = connect.prepareStatement(sql);
+	insert.setObject(1, obj.getCodeAgence());
+	insert.setObject(2, obj.getNomAgence());
+	int rs = insert.executeUpdate();
+
+suggestion2:
+	String sql = "INSERT INTO Agence (codeAgence, nomAgence) VALUES (?, ?)";
+	PreparedStatement insert = connect.prepareStatement(sql);
+	insert.setObject(1, obj.getCodeAgence());
+	insert.setObject(2, obj.getNomAgence());
+	int rs = insert.executeUpdate();
+
+suggestion3:
+	String sql = "INSERT INTO Agence (codeAgence, nomAgence) VALUES (?, ?)";
+	PreparedStatement insert = connect.prepareStatement(sql);
+	insert.setObject(1, obj.getCodeAgence());
+	insert.setObject(2, obj.getNomAgence());
+	int rs = insert.executeUpdate();
+

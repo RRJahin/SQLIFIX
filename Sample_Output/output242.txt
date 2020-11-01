@@ -1,0 +1,17 @@
+Target:
+	String sql = "INSERT INTO ingresso ( local, datahora, lugar, quantidade, idcategoria, idtipoingresso, valor) " + "VALUES ("+adulto.getLocal()+","+new java.sql.Date(adulto.getDataHora().getTime())+","+adulto.getLugar()+","+adulto.getQuantidade()+","+adulto.getCategoria().getId()+","+adulto.getTipoIngresso().getId()+","+adulto.getValor()+")";
+	Statement ps = con.createStatement();
+	ps.execute(sql);
+
+suggestion0:
+	String sql = "INSERT INTO ingresso ( local, datahora, lugar, quantidade, idcategoria, idtipoingresso, valor) " + "VALUES (?,?,?,?,?,?,?)";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, adulto.getLocal());
+	ps.setObject(2, new java.sql.Date(adulto.getDataHora().getTime()));
+	ps.setObject(3, adulto.getLugar());
+	ps.setObject(4, adulto.getQuantidade());
+	ps.setObject(5, adulto.getCategoria().getId());
+	ps.setObject(6, adulto.getTipoIngresso().getId());
+	ps.setObject(7, adulto.getValor());
+	ps.execute();
+

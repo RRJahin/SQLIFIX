@@ -1,0 +1,8 @@
+Target:
+	stmt = con.createStatement();
+	rs = stmt.executeQuery("SELECT idPasta, descPasta FROM adv_pendencia.tab_pasta where statusPasta = 'livre'");
+
+suggestion0:
+	stmt = con.prepareStatement("SELECT idPasta, descPasta FROM adv_pendencia.tab_pasta where statusPasta = 'livre'");
+	rs = stmt.executeQuery();
+

@@ -1,0 +1,59 @@
+Target:
+	String purchaseId1 = "SELECT customer_purchase_ID FROM customer_login WHERE customer_username = "+customer.getUsername();
+	Statement prepareUsername = conn.createStatement();
+	ResultSet result1 = prepareUsername.executeQuery(purchaseId1);
+
+suggestion0:
+	String purchaseId1 = "select customer_purchase_ID from customer_login wherecustomer.getUsername()Name = ?";
+	PreparedStatement prepareUsername = conn.prepareStatement(purchaseId1);
+	prepareUsername.setObject(1,customer.getUsername());
+	ResultSet result1 = prepareUsername.executeQuery();
+
+suggestion1:
+	String purchaseId1 = "SELECT customer_purchase_ID FROM customer_login WHERE customer_username=?";
+	PreparedStatement prepareUsername = conn.prepareStatement(purchaseId1);
+	prepareUsername.setObject(1,customer.getUsername());
+	ResultSet result1 = prepareUsername.executeQuery();
+
+suggestion2:
+	String purchaseId1 = "select customer_purchase_ID from customer_login wherecustomer.getUsername()Name = ?";
+	PreparedStatement prepareUsername = conn.prepareStatement(purchaseId1);
+	prepareUsername.setObject(1,customer.getUsername());
+	ResultSet result1 = prepareUsername.executeQuery();
+
+suggestion3:
+	String purchaseId1 = "SELECT customer_purchase_ID FROM customer_login WHERE customer_username=?";
+	PreparedStatement prepareUsername = conn.prepareStatement(purchaseId1);
+	prepareUsername.setObject(1,customer.getUsername());
+	ResultSet result1 = prepareUsername.executeQuery();
+
+suggestion4:
+	String purchaseId1 = "SELECT customer_purchase_ID FROM customer_login WHERE customer_username=?";
+	PreparedStatement prepareUsername = conn.prepareStatement(purchaseId1);
+	prepareUsername.setObject(1,customer.getUsername());
+	ResultSet result1 = prepareUsername.executeQuery();
+
+suggestion5:
+	String purchaseId1 = "SELECT customer_purchase_ID FROM customer_login WHERE customer_username = ?";
+	PreparedStatement prepareUsername = conn.prepareStatement(purchaseId1);
+	prepareUsername.setObject(1,customer.getUsername());
+	ResultSet result1 = prepareUsername.executeQuery();
+
+suggestion6:
+	String purchaseId1 = "Select customer_purchase_ID from customer_login where customer_username = ?";
+	PreparedStatement prepareUsername = conn.prepareStatement(purchaseId1);
+	prepareUsername.setObject(1,customer.getUsername());
+	ResultSet result1 = prepareUsername.executeQuery();
+
+suggestion7:
+	String purchaseId1 = "SELECT customer_purchase_ID FROM customer_login WHERE customer_username = ?";
+	PreparedStatement prepareUsername = conn.prepareStatement(purchaseId1);
+	prepareUsername.setObject(1,customer.getUsername());
+	ResultSet result1 = prepareUsername.executeQuery();
+
+suggestion8:
+	String purchaseId1 = "SELECT customer_purchase_ID FROM customer_login WHERE customer_username = ?";
+	PreparedStatement prepareUsername = conn.prepareStatement(purchaseId1);
+	prepareUsername.setObject(1,customer.getUsername());
+	ResultSet result1 = prepareUsername.executeQuery();
+

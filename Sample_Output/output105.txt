@@ -1,0 +1,83 @@
+Target:
+	String sqla = "SELECT CUSTOMER_ID FROM CUSTOMER WHERE customerid = ?";
+	Statement statement = conn.createStatement();
+	ResultSet rs1 = statement.executeQuery(sqla);
+
+suggestion0:
+	String sqla = "SELECT CUSTOMER_ID FROM CUSTOMER WHERE customerid = ?";
+	PreparedStatement statement = conn.prepareStatement(sqla);
+	statement.setObject(1,?);
+	ResultSet rs1 = statement.executeQuery();
+
+suggestion1:
+	String sqla = "SELECT CUSTOMER_ID FROM CUSTOMER WHERE customerid = ?";
+	PreparedStatement statement = conn.prepareStatement(sqla);
+	statement.setObject(1,?);
+	ResultSet rs1 = statement.executeQuery();
+
+suggestion2:
+	String sqlaa = "SELECT CUSTOMER_ID FROM CUSTOMER WHERE customercustomerid=?";
+	PreparedStatement statement = conn.prepareStatement(sqlaa);
+	statement.setObject(1,?);
+	ResultSet rs1 = statement.executeQuery();
+
+suggestion3:
+	String sqlaa = "select CUSTOMER_ID from CUSTOMER where?Name = ?";
+	PreparedStatement statement = conn.prepareStatement(sqlaa);
+	statement.setObject(1,?);
+	ResultSet rs1 = statement.executeQuery();
+
+suggestion4:
+	String sqlaa = "select CUSTOMER_ID from CUSTOMER where?Name = ?";
+	PreparedStatement statement = conn.prepareStatement(sqlaa);
+	statement.setObject(1,?);
+	ResultSet rs1 = statement.executeQuery();
+
+suggestion5:
+	String sqlaa = "SELECT CUSTOMER_ID FROM CUSTOMER WHERE customercustomerid=?";
+	PreparedStatement statement = conn.prepareStatement(sqlaa);
+	statement.setObject(1,?);
+	ResultSet rs1 = statement.executeQuery();
+
+suggestion6:
+	String sqlaa = "SELECT CUSTOMER_ID FROM CUSTOMER WHERE customercustomerid=?";
+	PreparedStatement statement = conn.prepareStatement(sqlaa);
+	statement.setObject(1,?);
+	ResultSet rs1 = statement.executeQuery();
+
+suggestion7:
+	String sqlaa = "SELECT CUSTOMER_ID FROM CUSTOMER WHERE customercustomerid=?";
+	PreparedStatement statement = conn.prepareStatement(sqlaa);
+	statement.setObject(1,?);
+	ResultSet rs1 = statement.executeQuery();
+
+suggestion8:
+	String sqlaa = "SELECT CUSTOMER_ID FROM CUSTOMER WHERE customercustomerid=?";
+	PreparedStatement statement = conn.prepareStatement(sqlaa);
+	statement.setObject(1,?);
+	ResultSet rs1 = statement.executeQuery();
+
+suggestion9:
+	String sqla = "select CUSTOMER_ID from CUSTOMER where custatementatementomerid = ?";
+	PreparedStatement statementatement = conn.prepareStatement(sqla);
+	statementatement.setObject(1,?);
+	ResultSet rs1 = statementatement.executeQuery();
+
+suggestion10:
+	String sqla = "SELECT CUSTOMER_ID FROM CUSTOMER WHERE customerid = ?";
+	PreparedStatement statement = conn.prepareStatement(sqla);
+	statement.setObject(1,?);
+	ResultSet rs1 = statement.executeQuery();
+
+suggestion11:
+	String sqla = "SELECT CUSTOMER_ID FROM CUSTOMER WHERE customerid = ?";
+	PreparedStatement statement = conn.prepareStatement(sqla);
+	statement.setObject(1,?);
+	ResultSet rs1 = statement.executeQuery();
+
+suggestion12:
+	String sqla = "Select CUSTOMER_ID from CUSTOMER where customerid = ?";
+	PreparedStatement statement = conn.prepareStatement(sqla);
+	statement.setObject(1,?);
+	ResultSet rs1 = statement.executeQuery();
+

@@ -1,0 +1,83 @@
+Target:
+	String sql1 = "select name from items where item_code = " + i;
+	Statement st1 = con.createStatement();
+	ResultSet r = st1.executeQuery(sql1);
+
+suggestion0:
+	String sql1 = "SELECT name FROM items WHERE item_code = ?";
+	PreparedStatement st1 = con.prepareStatement(sql1);
+	st1.setObject(1, i);
+	ResultSet r = st1.executeQuery();
+
+suggestion1:
+	String sql1 = "SELECT name FROM items WHERE item_code = ?";
+	PreparedStatement st1 = con.prepareStatement(sql1);
+	st1.setObject(1, i);
+	ResultSet r = st1.executeQuery();
+
+suggestion2:
+	String sql11 = "SELECT name FROM items WHERE item_code=?";
+	PreparedStatement st1 = con.prepareStatement(sql11);
+	st1.setObject(1, i);
+	ResultSet r = st1.executeQuery();
+
+suggestion3:
+	String sql11 = "select name from items where iName = ?";
+	PreparedStatement st1 = con.prepareStatement(sql11);
+	st1.setObject(1, i);
+	ResultSet r = st1.executeQuery();
+
+suggestion4:
+	String sql11 = "select name from items where iName = ?";
+	PreparedStatement st1 = con.prepareStatement(sql11);
+	st1.setObject(1, i);
+	ResultSet r = st1.executeQuery();
+
+suggestion5:
+	String sql11 = "SELECT name FROM items WHERE item_code=?";
+	PreparedStatement st1 = con.prepareStatement(sql11);
+	st1.setObject(1, i);
+	ResultSet r = st1.executeQuery();
+
+suggestion6:
+	String sql11 = "SELECT name FROM items WHERE item_code=?";
+	PreparedStatement st1 = con.prepareStatement(sql11);
+	st1.setObject(1, i);
+	ResultSet r = st1.executeQuery();
+
+suggestion7:
+	String sql11 = "SELECT name FROM items WHERE item_code=?";
+	PreparedStatement st1 = con.prepareStatement(sql11);
+	st1.setObject(1, i);
+	ResultSet r = st1.executeQuery();
+
+suggestion8:
+	String sql11 = "SELECT name FROM items WHERE item_code=?";
+	PreparedStatement st1 = con.prepareStatement(sql11);
+	st1.setObject(1, i);
+	ResultSet r = st1.executeQuery();
+
+suggestion9:
+	String sql1 = "select name from items where item_code = ?";
+	PreparedStatement st11 = con.prepareStatement(sql1);
+	st11.setObject(1, i);
+	ResultSet r = st11.executeQuery();
+
+suggestion10:
+	String sql1 = "SELECT name FROM items WHERE item_code = ?";
+	PreparedStatement st1 = con.prepareStatement(sql1);
+	st1.setObject(1, i);
+	ResultSet r = st1.executeQuery();
+
+suggestion11:
+	String sql1 = "SELECT name FROM items WHERE item_code = ?";
+	PreparedStatement st1 = con.prepareStatement(sql1);
+	st1.setObject(1, i);
+	ResultSet r = st1.executeQuery();
+
+suggestion12:
+	String sql1 = "Select name from items where item_code = ?";
+	PreparedStatement st1 = con.prepareStatement(sql1);
+	st1.setObject(1, i);
+	ResultSet r = st1.executeQuery();
+

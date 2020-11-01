@@ -1,0 +1,13 @@
+Target:
+	String query = "INSERT INTO " + table + " VALUES('', "+readFile(filename)+" , "+desc+" " + ")";
+	try (java.sql.Statement pstmt = conn.createStatement()) {
+	pstmt.executeUpdate(query);
+
+suggestion0:
+	String query = (("INSERT INTO " + table) + " VALUES('', ? , ? ") + ")";
+	try (final java.sql.PreparedStatement pstmt = conn.prepareStatement(query)) {;
+	};
+	pstmt.setBytes(1, readFile(filename));
+	pstmt.setObject(2, desc);
+	pstmt.executeUpdate();
+

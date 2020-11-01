@@ -1,0 +1,34 @@
+Target:
+	Statement ps = conn.createStatement()) {
+	ResultSet rs = ps.executeQuery("SELECT * FROM patients WHERE MID = "+mid);
+
+suggestion0:
+	PreparedStatement ps = conn.prepareStatement("SELECT * FROM patients WHERE MID = ?");
+	ps.setObject(1, mid);
+	ResultSet rs = ps.executeQuery();
+
+suggestion1:
+	PreparedStatement ps = conn.prepareStatement("SELECT * FROM patients WHERE MID=?");
+	ps.setObject(1, mid);
+	ResultSet rs = ps.executeQuery();
+
+suggestion2:
+	PreparedStatement ps = conn.prepareStatement("SELECT * FROM patients WHERE MID=?");
+	ps.setObject(1, mid);
+	ResultSet rs = ps.executeQuery();
+
+suggestion3:
+	PreparedStatement ps = conn.prepareStatement("SELECT * FROM patients WHERE MID = ?");
+	ps.setObject(1, mid);
+	ResultSet rs = ps.executeQuery();
+
+suggestion4:
+	PreparedStatement ps = conn.prepareStatement("SELECT * FROM patients WHERE MID = ?");
+	ps.setObject(1, mid);
+	ResultSet rs = ps.executeQuery();
+
+suggestion5:
+	PreparedStatement ps = conn.prepareStatement("SELECT * FROM patients WHERE MID=?");
+	ps.setObject(1, mid);
+	ResultSet rs = ps.executeQuery();
+

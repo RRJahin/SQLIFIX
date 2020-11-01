@@ -1,0 +1,41 @@
+Target:
+	sql = "SELECT cedula_ge, contrasena FROM Gerentes WHERE cedula_ge = '" + user + "';";
+	Statement sentencia = con.createStatement();
+	ResultSet consulta = sentencia.executeQuery(sql);
+
+suggestion0:
+	sql = "SELECT cedula_ge, contrasena FROM Gerentes WHERE cedula_ge = ?;";
+	PreparedStatement sentencia = con.prepareStatement(sql);
+	sentencia.setObject(1, user);
+	ResultSet consulta = sentencia.executeQuery();
+
+suggestion1:
+	sql = "SELECT cedula_ge, contrasena FROM Gerentes WHERE cedula_ge =?;";
+	PreparedStatement sentencia = con.prepareStatement(sql);
+	sentencia.setObject(1, user);
+	ResultSet consulta = sentencia.executeQuery();
+
+suggestion2:
+	sql = "SELECT cedula_ge, contrasena FROM Gerentes WHERE cedula_ge = ?;";
+	PreparedStatement sentencia = con.prepareStatement(sql);
+	sentencia.setObject(1, user);
+	ResultSet consulta = sentencia.executeQuery();
+
+suggestion3:
+	sql = "SELECT cedula_ge, contrasena FROM Gerentes WHERE cedula_ge = ?;";
+	PreparedStatement sentencia = con.prepareStatement(sql);
+	sentencia.setObject(1, user);
+	ResultSet consulta = sentencia.executeQuery();
+
+suggestion4:
+	sql = "SELECT cedula_ge, contrasena FROM Gerentes WHERE cedula_ge =?;";
+	PreparedStatement sentencia = con.prepareStatement(sql);
+	sentencia.setObject(1, user);
+	ResultSet consulta = sentencia.executeQuery();
+
+suggestion5:
+	sql = "SELECT cedula_ge, contrasena FROM Gerentes WHERE cedula_ge = ?;";
+	PreparedStatement sentencia = con.prepareStatement(sql);
+	sentencia.setObject(1, user);
+	ResultSet consulta = sentencia.executeQuery();
+

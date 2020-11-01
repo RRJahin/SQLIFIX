@@ -1,0 +1,11 @@
+Target:
+	String newQuery = "SELECT DISTINCT course.idcourse, courname, faculty FROM course, instrcourdoc " + "WHERE idinstructor = "+instrId+" AND course.idcourse = instrcourdoc.idcourse ORDER BY courname";
+	Statement preparedStatement = connection.createStatement();
+	ResultSet rs = preparedStatement.executeQuery(newQuery);
+
+suggestion0:
+	String newQuery = "SELECT DISTINCT course.idcourse, courname, faculty FROM course, instrcourdoc " + "WHERE idinstructor = ? AND course.idcourse = instrcourdoc.idcourse ORDER BY courname";
+	PreparedStatement preparedStatement = connection.prepareStatement(newQuery);
+	preparedStatement.setObject(1, instrId);
+	ResultSet rs = preparedStatement.executeQuery();
+

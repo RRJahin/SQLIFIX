@@ -1,0 +1,29 @@
+Target:
+	String SQL = "UPDATE EDITORA SET NOME="+editora.getMunicipio()+", MUNICIPIO="+editora.getNome()+" WHERE EDITORA_ID="+editora.getEditora_id();
+	Statement p = connection.createStatement();
+	p.execute(SQL);
+
+suggestion0:
+	String SQL = "UPDATE EDITORA SET EDITORA=?, MUNICIPIO=? WHERE EDITORA_ID=?";
+	PreparedStatement p = connection.prepareStatement(SQL);
+	p.setObject(1, editora.getMunicipio());
+	p.setTimestamp(2, editora.getEditora_id());
+	p.setObject(3, country.getCountry_id());
+	p.execute();
+
+suggestion1:
+	String SQL = "UPDATE EDITORA SET NOME=?, MUNICIPIO=? WHERE EDITORA_ID=?";
+	PreparedStatement p = connection.prepareStatement(SQL);
+	p.setObject(1, editora.getMunicipio());
+	p.setObject(2, editora.getNome());
+	p.setObject(3, editora.getEditora_id());
+	p.execute();
+
+suggestion2:
+	String SQL = "UPDATE EDITORA SET EDITORA=?, MUNICIPIO=? WHERE EDITORA_ID=?";
+	PreparedStatement p = connection.prepareStatement(SQL);
+	p.setObject(1, editora.getMunicipio());
+	p.setObject(2, editora.getEditora_id());
+	p.setObject(3, country.getCountry_id());
+	p.execute();
+

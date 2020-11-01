@@ -1,0 +1,33 @@
+Target:
+	String sql = "INSERT INTO ModRgl (codeModRgl, nomModRgl) VALUES ("+obj.getCodeModRgl()+", "+obj.getNomModRgl()+")";
+	Statement insert = connect.createStatement();
+	int rs = insert.executeUpdate(sql);
+
+suggestion0:
+	String sql = "INSERT INTO ModRgl (codeModRgl, nomModRgl) VALUES (?, ?)";
+	PreparedStatement insert = connect.prepareStatement(sql);
+	insert.setObject(1, obj.getCodeModRgl());
+	insert.setObject(2, obj.getNomModRgl());
+	int rs = insert.executeUpdate();
+
+suggestion1:
+	String sql = "INSERT INTO ModRgl (codeModRgl, nomModRgl) VALUES (?, ?)";
+	PreparedStatement insert = connect.prepareStatement(sql);
+	insert.setObject(1, obj.getCodeModRgl());
+	insert.setObject(2, obj.getNomModRgl());
+	int rs = insert.executeUpdate();
+
+suggestion2:
+	String sql = "INSERT INTO ModRgl (codeModRgl, nomModRgl) VALUES (?, ?)";
+	PreparedStatement insert = connect.prepareStatement(sql);
+	insert.setObject(1, obj.getCodeModRgl());
+	insert.setObject(2, obj.getNomModRgl());
+	int rs = insert.executeUpdate();
+
+suggestion3:
+	String sql = "INSERT INTO ModRgl (codeModRgl, nomModRgl) VALUES (?, ?)";
+	PreparedStatement insert = connect.prepareStatement(sql);
+	insert.setObject(1, obj.getCodeModRgl());
+	insert.setObject(2, obj.getNomModRgl());
+	int rs = insert.executeUpdate();
+

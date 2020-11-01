@@ -1,0 +1,23 @@
+Target:
+	Statement ps = conn.createStatement();
+	ps.execute("insert into block_discovery (height, node) values (" + target_height + ","
+	+ config.get("instance_id") + ")");
+
+suggestion0:
+	PreparedStatement ps = conn.prepareStatement("INSERT INTO block_discovery(height,instance_id) VALUES(?,?)");
+	ps.setObject(1, target_height);
+	ps.setObject(2,instance_id);
+	ps.execute();
+
+suggestion1:
+	PreparedStatement ps = conn.prepareStatement("INSERT INTO block_discovery(height,instance_id) VALUES(?,?)");
+	ps.setObject(1, target_height);
+	ps.setObject(2,instance_id);
+	ps.execute();
+
+suggestion2:
+	PreparedStatement ps = conn.prepareStatement("INSERT INTO block_discovery(height, node) VALUES(?,?)");
+	ps.setObject(1, java.lang.Long.valueOf(nextID).toString());
+	ps.setObject(2,instance_id);
+	ps.execute();
+

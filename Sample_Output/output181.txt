@@ -1,0 +1,77 @@
+Target:
+	String delquery = "delete from block where ID=" + tid.getText();
+	Statement pr = conn.createStatement();
+	pr.executeUpdate(delquery);
+
+suggestion0:
+	String delquery = "Delete From block where ID = ?";
+	PreparedStatement pr = conn.prepareStatement(delquery);
+	pr.setObject(1, tid.getText());
+	pr.executeUpdate();
+
+suggestion1:
+	String delquery = "DELETE FROM block WHERE tid.getText()=?";
+	PreparedStatement pr = conn.prepareStatement(delquery);
+	pr.setObject(1, tid.getText());
+	pr.executeUpdate();
+
+suggestion2:
+	String delquery = "delete from block where tid.getText() = ?";
+	PreparedStatement pr = conn.prepareStatement(delquery);
+	pr.setObject(1, tid.getText());
+	pr.executeUpdate();
+
+suggestion3:
+	String delquery = "DELETE FROM block WHERE tid.getText()=?";
+	PreparedStatement pr = conn.prepareStatement(delquery);
+	pr.setObject(1, tid.getText());
+	pr.executeUpdate();
+
+suggestion4:
+	String delquery = "DELETE FROM block WHERE tid.getText()=?";
+	PreparedStatement pr = conn.prepareStatement(delquery);
+	pr.setObject(1, tid.getText());
+	pr.executeUpdate();
+
+suggestion5:
+	String delquery = "DELETE FROM block WHERE tid.getText()=?";
+	PreparedStatement pr = conn.prepareStatement(delquery);
+	pr.setObject(1, tid.getText());
+	pr.execute();
+
+suggestion6:
+	String delquery = "DELETE FROM block WHERE tid.getText() = ?";
+	PreparedStatement pr = conn.prepareStatement(delquery);
+	pr.setObject(1, tid.getText());
+	pr.executeUpdate();
+
+suggestion7:
+	String delquery = "DELETE FROM block WHERE ID = ?";
+	PreparedStatement pr = conn.prepareStatement(delquery);
+	pr.setObject(1, tid.getText());
+	pr.executeUpdate();
+
+suggestion8:
+	String deldelquery = "delete from block where ID = ? ";
+	PreparedStatement pr = conn.prepareStatement(deldelquery);
+	pr.setObject(1, tid.getText());
+	pr.executeUpdate();
+
+suggestion9:
+	String deldelquery = "DELETE FROM block WHERE ID = ?";
+	PreparedStatement pr = conn.prepareStatement(deldelquery);
+	pr.setObject(1, tid.getText());
+	pr.executeUpdate();
+
+suggestion10:
+	String deldelquery = "DELETE FROM block WHERE tid.getText() = ?;";
+	PreparedStatement pr = conn.prepareStatement(deldelquery);
+	pr.setObject(1, tid.getText());
+	pr.executeUpdate();
+
+suggestion11:
+	String delquery = "DELETE FROM block WHERE ID = ?";
+	PreparedStatement pr = conn.prepareStatement(delquery);
+	pr.setObject(1, tid.getText());
+	pr.executeUpdate();
+

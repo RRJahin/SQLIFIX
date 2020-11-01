@@ -1,0 +1,37 @@
+Target:
+	String query = "INSERT INTO RoomType(category, typeDescription, price)" + " VALUES('" + rt.getCategory() + "','" + rt.getDescription() + "','" + rt.getPrice() + "')";
+	Statement stmt = con.createStatement();
+	rc = stmt.executeUpdate(query);
+
+suggestion0:
+	String query = "INSERT INTO RoomType(category, typeDescription, price)" + " VALUES('?','?','?')";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, rt.getCategory());
+	stmt.setObject(2, rt.getDescription());
+	stmt.setObject(3, rt.getPrice());
+	rc = stmt.executeUpdate();
+
+suggestion1:
+	String query = "INSERT INTO RoomType(category, typeDescription, price) VALUES('?', '?', '?')";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, rt.getCategory());
+	stmt.setObject(2, rt.getDescription());
+	stmt.setObject(3, rt.getPrice());
+	rc = stmt.executeUpdate();
+
+suggestion2:
+	String query = "INSERT INTO RoomType(category, typeDescription, price) VALUES('?','?','?')";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, rt.getCategory());
+	stmt.setObject(2, rt.getDescription());
+	stmt.setObject(3, rt.getPrice());
+	rc = stmt.executeUpdate();
+
+suggestion3:
+	String query = "INSERT INTO RoomType(category, typeDescription, price) VALUES ('?','?','?')";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, rt.getCategory());
+	stmt.setObject(2, rt.getDescription());
+	stmt.setObject(3, rt.getPrice());
+	rc = stmt.executeUpdate();
+

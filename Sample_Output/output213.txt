@@ -1,0 +1,11 @@
+Target:
+	stmt = c.createStatement();
+	String sql = "SELECT " + info + " FROM PAYMENT WHERE CUSTOMER_ID = " + customer_id;
+	ResultSet rs = stmt.executeQuery(sql);
+
+suggestion0:
+	String sql = "SELECT  info FROM PAYMENT WHERE CUSTOMER_ID = ?";
+	stmt = c.prepareStatement(sql);
+	stmt.setObject(1, customer_id);
+	ResultSet rs = stmt.executeQuery();
+

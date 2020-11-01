@@ -1,0 +1,12 @@
+Target:
+	Statement stmt = dbConn.createStatement();
+	String query = "SELECT * FROM user WHERE Login = '" + uname + "' AND Password=" + "'" + pwd + "'";
+	ResultSet rs = stmt.executeQuery(query);
+
+suggestion0:
+	String query = "SELECT * FROM user WHERE Login = '?' AND Password=" + "'?'";
+	PreparedStatement stmt = dbConn.prepareStatement(query);
+	stmt.setObject(1, uname);
+	stmt.setObject(2, pwd);
+	ResultSet rs = stmt.executeQuery();
+

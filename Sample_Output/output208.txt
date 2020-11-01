@@ -1,0 +1,83 @@
+Target:
+	String sql = "SELECT card_no from credit_card where c_id = " + cusid;
+	Statement st = con.createStatement();
+	ResultSet rs = st.executeQuery(sql);
+
+suggestion0:
+	String sql = "SELECT card_no FROM credit_card WHERE c_id = ?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cusid);
+	ResultSet rs = st.executeQuery();
+
+suggestion1:
+	String sql = "SELECT card_no FROM credit_card WHERE c_id = ?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cusid);
+	ResultSet rs = st.executeQuery();
+
+suggestion2:
+	String sql = "SELECT card_no FROM credit_card WHERE c_c_id=?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cusid);
+	ResultSet rs = st.executeQuery();
+
+suggestion3:
+	String sql = "select card_no from credit_card where cusidName = ?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cusid);
+	ResultSet rs = st.executeQuery();
+
+suggestion4:
+	String sql = "select card_no from credit_card where cusidName = ?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cusid);
+	ResultSet rs = st.executeQuery();
+
+suggestion5:
+	String sql = "SELECT card_no FROM credit_card WHERE c_c_id=?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cusid);
+	ResultSet rs = st.executeQuery();
+
+suggestion6:
+	String sql = "SELECT card_no FROM credit_card WHERE c_c_id=?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cusid);
+	ResultSet rs = st.executeQuery();
+
+suggestion7:
+	String sql = "SELECT card_no FROM credit_card WHERE c_c_id=?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cusid);
+	ResultSet rs = st.executeQuery();
+
+suggestion8:
+	String sql = "SELECT card_no FROM credit_card WHERE c_c_id=?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cusid);
+	ResultSet rs = st.executeQuery();
+
+suggestion9:
+	String sql = "select card_no from credit_card where c_id = ?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cusid);
+	ResultSet rs = st.executeQuery();
+
+suggestion10:
+	String sql = "SELECT card_no FROM credit_card WHERE c_id = ?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cusid);
+	ResultSet rs = st.executeQuery();
+
+suggestion11:
+	String sql = "SELECT card_no FROM credit_card WHERE c_id = ?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cusid);
+	ResultSet rs = st.executeQuery();
+
+suggestion12:
+	String sql = "Select card_no from credit_card where c_id = ?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cusid);
+	ResultSet rs = st.executeQuery();
+

@@ -3,7 +3,7 @@ Target:
 	s.executeUpdate("INSERT INTO virtual_machine_host_table VALUES(" + "'" + host.getHostName() + "'," + "'" + host.getIp() + "'," + "'" + host.getNaeglingPort() + "')");
 
 suggestion0:
-	PreparedStatement s = conn.prepareStatement("INSERT INTO virtual_machine_host_table VALUES(" + (("'?'," + "'?',") + "'?')"));
+	PreparedStatement s = conn.prepareStatement("INSERT INTO virtual_machine_host_table VALUES( '?', '?','?')");
 	s.setObject(1,host.getHostName());
 	s.setObject(2,host.getIp());
 	s.setObject(3,host.getNaeglingPort());

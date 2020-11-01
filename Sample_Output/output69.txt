@@ -1,0 +1,24 @@
+Target:
+	Statement stmt = conn.createStatement()) {
+	ResultSet rs = stmt.executeQuery("SELECT * FROM message WHERE from_id = "+mid+" ORDER BY sent_date DESC");
+
+suggestion0:
+	PreparedStatement stmt = conn.prepareStatement("SELECT * FROM message WHERE from_id = ? ORDER BY sent_date DESC");
+	stmt.setObject(1, mid);
+	ResultSet rs = stmt.executeQuery();
+
+suggestion1:
+	PreparedStatement stmt = conn.prepareStatement("SELECT * FROM message WHERE from_id = ? ORDER BY sent_date ASC");
+	stmt.setObject(1, mid);
+	ResultSet rs = stmt.executeQuery();
+
+suggestion2:
+	PreparedStatement stmt = conn.prepareStatement("SELECT * FROM message WHERE from_id = " + (+" ORDER BY sent_date ASC"));
+	stmt.setObject(1, mid);
+	ResultSet rs = stmt.executeQuery();
+
+suggestion3:
+	PreparedStatement stmt = conn.prepareStatement("SELECT * FROM message WHERE from_id = ? ORDER BY sent_date DESC");
+	stmt.setObject(1, mid);
+	ResultSet rs = stmt.executeQuery();
+

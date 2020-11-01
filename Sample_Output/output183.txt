@@ -1,0 +1,11 @@
+Target:
+	con.createStatement().executeUpdate("UPDATE talla " + "SET Nombre = " + Data.String2Sql(_sNombre, true, false) + ", Es_Numero = " + Data.Boolean2Sql(_bEs_Numero) + " WHERE Id = " + _iId);
+
+suggestion0:
+	String st = "UPDATE talla " + "SET Nombre = ?, Es_Numero = ? WHERE Id = ?";
+	PreparedStatement ps = con.prepareStatement(st);
+	ps.setObject(1, Data.String2Sql(_sNombre, true, false));
+	ps.setObject(2, Data.Boolean2Sql(_bEs_Numero));
+	ps.setObject(3, _iId);
+	ps.executeUpdate();
+

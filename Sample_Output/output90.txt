@@ -1,0 +1,11 @@
+Target:
+	String sql = "SELECT id,idAuthor FROM book where name='" + bookName + "'";
+	statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+	ResultSet resultSet = statement.executeQuery(sql);
+
+suggestion0:
+	String sql = "SELECT id,idAuthor FROM book where name='?'";
+	statement = connection.prepareStatement(sql, ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+	statement.setObject(1, bookName);
+	ResultSet resultSet = statement.executeQuery();
+

@@ -1,0 +1,14 @@
+Target:
+	Statement st = null;
+	String sql = "INSERT INTO user(name,pass) VALUES("+name+","+pass+")";
+	st = con.createStatement();
+	rows = st.executeUpdate(sql);
+
+suggestion0:
+	PreparedStatement st = null;
+	String sql = "INSERT INTO user(name,pass) VALUES(?,?)";
+	st = con.prepareStatement(sql);
+	st.setObject(1, name);
+	st.setObject(2, pass);
+	rows = st.executeUpdate();
+

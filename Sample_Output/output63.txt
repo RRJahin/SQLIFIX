@@ -1,0 +1,15 @@
+Target:
+	Statement ps = null;
+	String sql = "UPDATE member SET memo="+memo+", rating="+rating+" WHERE id=" + id;
+	ps = conn.createStatement();
+	cnt = ps.executeUpdate(sql);
+
+suggestion0:
+	PreparedStatement ps = null;
+	String sql = "UPDATE member SET memo=?, rating=? WHERE id=?";
+	ps = conn.prepareStatement(sql);
+	ps.setObject(1, memo);
+	ps.setObject(2, rating);
+	ps.setObject(3, id);
+	cnt = ps.executeUpdate();
+

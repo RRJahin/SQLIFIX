@@ -1,0 +1,17 @@
+Target:
+	Statement st;
+	String query = "insert into " + TBL_NAME + " (" + FIELD_NOME + "," + FIELD_ID_PIANO + ") values(" + mappa.getNome()+"," + mappa.getID_piano() + ")";
+	st = conn.createStatement();
+	st.executeUpdate(query);
+
+suggestion0:
+	PreparedStatement st;
+	String query = "insert into ? (?,?) values(?,?)";
+	st = conn.prepareStatement(query);
+	st.setObject(1, TBL_NAME);
+	st.setObject(2, FIELD_NOME);
+	st.setObject(3, FIELD_ID_PIANO);
+	st.setObject(4, mappa.getNome());
+	st.setObject(5, mappa.getID_piano());
+	st.executeUpdate();
+

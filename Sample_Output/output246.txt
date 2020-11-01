@@ -1,0 +1,59 @@
+Target:
+	String sql2 = "Delete From Members where User_Name= "+username;
+	Statement pstm1 = conn.createStatement();
+	pstm1.executeUpdate(sql2);
+
+suggestion0:
+	String sql22 = "Delete From Members where User_Name = ?";
+	PreparedStatement pstm11 = conn.prepareStatement(sql22);
+	pstm11.setObject(1,username);
+	pstm11.executeUpdate();
+
+suggestion1:
+	String sql22 = "DELETE FROM Members WHEREusername=?";
+	PreparedStatement pstm1tm1 = conn.prepareStatement(sql22);
+	pstm1tm1.setObject(1,username);
+	pstm1tm1.executeUpdate();
+
+suggestion2:
+	String sql22 = "delete from Members whereusername = ?";
+	PreparedStatement pstm1tm1 = conn.prepareStatement(sql22);
+	pstm1tm1.setObject(1,username);
+	pstm1tm1.executeUpdate();
+
+suggestion3:
+	String sql22 = "DELETE FROM Members WHEREusername=?";
+	PreparedStatement pstm1tm1 = conn.prepareStatement(sql22);
+	pstm1tm1.setObject(1,username);
+	pstm1tm1.execute();
+
+suggestion4:
+	String sql2 = "delete from Members where User_Name = ? ";
+	PreparedStatement pstm1tm1 = conn.prepareStatement(sql2);
+	pstm1tm1.setObject(1,username);
+	pstm1tm1.executeUpdate();
+
+suggestion5:
+	String sql2 = "DELETE FROM Members WHEREusername = ?;";
+	PreparedStatement pstm1 = conn.prepareStatement(sql2);
+	pstm1.setObject(1,username);
+	pstm1.executeUpdate();
+
+suggestion6:
+	String sql2 = "DELETE FROM Members WHERE User_Name = ?";
+	PreparedStatement pstm1 = conn.prepareStatement(sql2);
+	pstm1.setObject(1,username);
+	pstm1.executeUpdate();
+
+suggestion7:
+	String sql2 = "DELETE FROM Members WHERE User_Name = ?";
+	PreparedStatement pstm1tm1 = conn.prepareStatement(sql2);
+	pstm1tm1.setObject(1,username);
+	pstm1tm1.executeUpdate();
+
+suggestion8:
+	String sql2 = "DELETE FROM Members WHERE User_Name = ?";
+	PreparedStatement pstm1tm1 = conn.prepareStatement(sql2);
+	pstm1tm1.setObject(1,username);
+	pstm1tm1.executeUpdate();
+

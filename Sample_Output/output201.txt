@@ -1,0 +1,33 @@
+Target:
+	String sql = "insert into inception_preference ( userId, musicId ) values ("+userId+", "+musicId+");";
+	Statement ps = conn.createStatement();
+	ps.execute(sql);
+
+suggestion0:
+	String sql = "insert into inception_preference ( userId, musicId ) values (?, ?);";
+	PreparedStatement ps = conn.prepareStatement(sql);
+	ps.setObject(1, userId);
+	ps.setObject(2, musicId);
+	ps.execute();
+
+suggestion1:
+	String sql = "Insert into inception_preference(userId, musicId ) values (?, ?)";
+	PreparedStatement ps = conn.prepareStatement(sql);
+	ps.setObject(1, userId);
+	ps.setObject(2, musicId);
+	ps.execute();
+
+suggestion2:
+	String sql = "INSERT INTO inception_preference(userId,musicId) " + "VALUES (?,?)";
+	PreparedStatement ps = conn.prepareStatement(sql);
+	ps.setObject(1, userId);
+	ps.setObject(2, musicId);
+	ps.execute();
+
+suggestion3:
+	String sql = "Insert into inception_preference(userId, musicId) values (?,?)";
+	PreparedStatement ps = conn.prepareStatement(sql);
+	ps.setObject(1, userId);
+	ps.setObject(2, musicId);
+	ps.execute();
+

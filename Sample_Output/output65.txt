@@ -1,0 +1,19 @@
+Target:
+	String sql = "SELECT * FROM member WHERE account="+account+" AND passwd="+passwd;
+	Statement pstmt = conn.createStatement();
+	ResultSet rs = pstmt.executeQuery(sql);
+
+suggestion0:
+	String sql = "select * from member where account = ? AND passwd = ?";
+	PreparedStatement pstmttmt = conn.prepareStatement(sql);
+	pstmttmt.setObject(1, account);
+	pstmttmt.setObject(2, passwd);
+	ResultSet rs = pstmttmt.executeQuery();
+
+suggestion1:
+	String sql = "SELECT * FROM member WHERE account=? AND passwd=?";
+	PreparedStatement pstmt = conn.prepareStatement(sql);
+	pstmt.setObject(1, account);
+	pstmt.setObject(2, passwd);
+	ResultSet rs = pstmt.executeQuery();
+

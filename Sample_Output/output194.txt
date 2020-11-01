@@ -1,0 +1,26 @@
+Target:
+	String query = "UPDATE Employee SET " + "salary= '" + employeeNewObj.getSalary() + "' " + "WHERE personId= '" + employeeNewObj.getId() + "'";
+	Statement stmt = con.createStatement();
+	result = stmt.executeUpdate(query);
+
+suggestion0:
+	String query = "UPDATE Employee SET " + ("salary= '?' " + "WHERE personId= '?'");
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, employeeNewObj.getSalary());
+	stmt.setObject(2, employeeNewObj.getId());
+	result = stmt.executeUpdate();
+
+suggestion1:
+	String query = "UPDATE Employee SET " + ("salary='?' " + "WHERE personId='?'");
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, employeeNewObj.getSalary());
+	stmt.setObject(2, employeeNewObj.getId());
+	result = stmt.executeUpdate();
+
+suggestion2:
+	String query = "UPDATE Employee SET " + (" salary= '?' " + "WHERE personId= '?'");
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, employeeNewObj.getSalary());
+	stmt.setObject(2, employeeNewObj.getId());
+	result = stmt.executeUpdate();
+

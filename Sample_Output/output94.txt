@@ -1,0 +1,17 @@
+Target:
+	Statement ps = null;
+	String UPDATE = "update TB_DATE set d_date = "+new java.sql.Date(record.getdDate().getTime())+", d_time = "+new java.sql.Time(record.getdTime().getTime())+", d_datetime = "+new java.sql.Timestamp(record.getdDatetime().getTime())+", d_timestamp = "+new java.sql.Timestamp(record.getdTimestamp().getTime()) + "where d_year_4 = "+record.getdYear4();
+	ps = conn.createStatement();
+	count = ps.executeUpdate(UPDATE);
+
+suggestion0:
+	PreparedStatement ps = null;
+	String UPDATE = "update TB_DATE set d_date = ?, d_time = ?, d_datetime = ?, d_timestamp = ?" + "where d_year_4 = ?";
+	ps = conn.prepareStatement(UPDATE);
+	ps.setObject(5, record.getdYear4());
+	ps.setObject(1, new java.sql.Date(record.getdDate().getTime()));
+	ps.setTime(2, new java.sql.Time(record.getdTime().getTime()));
+	ps.setObject(3, new java.sql.Timestamp(record.getdDatetime().getTime()));
+	ps.setObject(4, new java.sql.Timestamp(record.getdTimestamp().getTime()));
+	count = ps.executeUpdate();
+

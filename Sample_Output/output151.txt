@@ -1,0 +1,39 @@
+Target:
+	Statement stmt = conn.createStatement()) {
+	final ResultSet results = stmt.executeQuery("SELECT * FROM loginfailures WHERE IPADDRESS="+ipAddr);
+
+suggestion0:
+	PreparedStatement stmt = conn.prepareStatement("SELECT * FROM loginfailures WHERE IPADDRESS=?");
+	stmt.setObject(1, ipAddr);
+	final ResultSet results = stmt.executeQuery();
+
+suggestion1:
+	PreparedStatement stmt = conn.prepareStatement("SELECT * FROM loginfailures WHERE IPADDRESS=?");
+	stmt.setObject(1, ipAddr);
+	final ResultSet results = stmt.executeQuery();
+
+suggestion2:
+	PreparedStatement stmt = conn.prepareStatement("SELECT * FROM loginfailures WHERE IPADDRESS=?");
+	stmt.setObject(1, ipAddr);
+	final ResultSet results = stmt.executeQuery();
+
+suggestion3:
+	PreparedStatement stmt = conn.prepareStatement("SELECT * FROM loginfailures WHERE IPADDRESS = ?");
+	stmt.setObject(1, ipAddr);
+	final ResultSet results = stmt.executeQuery();
+
+suggestion4:
+	PreparedStatement stmt = conn.prepareStatement("SELECT * FROM loginfailures WHERE IPADDRESS=?");
+	stmt.setObject(1, ipAddr);
+	final ResultSet results = stmt.executeQuery();
+
+suggestion5:
+	PreparedStatement stmt = conn.prepareStatement("SELECT * FROM loginfailures WHERE IPADDRESS=?");
+	stmt.setObject(1, ipAddr);
+	final ResultSet results = stmt.executeQuery();
+
+suggestion6:
+	PreparedStatement stmt = conn.prepareStatement("SELECT * FROM loginfailures WHERE IPADDRESS=?");
+	stmt.setObject(1, ipAddr);
+	final ResultSet results = stmt.executeQuery();
+

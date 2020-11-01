@@ -1,0 +1,83 @@
+Target:
+	String query = "select * from student where studentId=" + studentId;
+	Statement preparedStatement = conn.createStatement();
+	ResultSet resultSet = preparedStatement.executeQuery(query);
+
+suggestion0:
+	String query = "SELECT * FROM student WHERE studentId = ?";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, studentId);
+	ResultSet resultSet = preparedStatement.executeQuery();
+
+suggestion1:
+	String query = "SELECT * FROM student WHERE studentId = ?";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, studentId);
+	ResultSet resultSet = preparedStatement.executeQuery();
+
+suggestion2:
+	String query = "SELECT * FROM student WHERE studentId=?";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, studentId);
+	ResultSet resultSet = preparedStatement.executeQuery();
+
+suggestion3:
+	String query = "select * from student where studentIdName = ?";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, studentId);
+	ResultSet resultSet = preparedStatement.executeQuery();
+
+suggestion4:
+	String query = "select * from student where studentIdName = ?";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, studentId);
+	ResultSet resultSet = preparedStatement.executeQuery();
+
+suggestion5:
+	String query = "SELECT * FROM student WHERE studentId=?";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, studentId);
+	ResultSet resultSet = preparedStatement.executeQuery();
+
+suggestion6:
+	String query = "SELECT * FROM student WHERE studentId=?";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, studentId);
+	ResultSet resultSet = preparedStatement.executeQuery();
+
+suggestion7:
+	String query = "SELECT * FROM student WHERE studentId=?";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, studentId);
+	ResultSet resultSet = preparedStatement.executeQuery();
+
+suggestion8:
+	String query = "SELECT * FROM student WHERE studentId=?";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, studentId);
+	ResultSet resultSet = preparedStatement.executeQuery();
+
+suggestion9:
+	String query = "select * from preparedStatementudent where preparedStatementudentId = ?";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, studentId);
+	ResultSet resultSet = preparedStatement.executeQuery();
+
+suggestion10:
+	String query = "SELECT * FROM student WHERE studentId = ?";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, studentId);
+	ResultSet resultSet = preparedStatement.executeQuery();
+
+suggestion11:
+	String query = "SELECT * FROM student WHERE studentId = ?";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, studentId);
+	ResultSet resultSet = preparedStatement.executeQuery();
+
+suggestion12:
+	String query = "Select * from student where studentId = ?";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, studentId);
+	ResultSet resultSet = preparedStatement.executeQuery();
+

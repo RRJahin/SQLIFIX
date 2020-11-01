@@ -1,0 +1,11 @@
+Target:
+	String sql = "delete from guitar where SerialNumber = " + SerialNumber;
+	Statement pstmt = Conn.createStatement();
+	pstmt.executeUpdate(sql);
+
+suggestion0:
+	String sql = "delete from guitar where SerialNumber = ?";
+	PreparedStatement pstmt = Conn.prepareStatement(sql);
+	pstmt.setObject(1, SerialNumber);
+	pstmt.executeUpdate();
+

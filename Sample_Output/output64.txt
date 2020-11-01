@@ -1,0 +1,13 @@
+Target:
+	Statement ps = null;
+	ps = conn.createStatement();
+	sql = "DELETE FROM member WHERE id="+strId;
+	cnt = ps.executeUpdate(sql);
+
+suggestion0:
+	PreparedStatement ps = null;
+	String sql = "DELETE FROM member WHERE id=?";
+	ps = conn.prepareStatement(sql);
+	ps.setObject(1, strId);
+	cnt = ps.executeUpdate();
+

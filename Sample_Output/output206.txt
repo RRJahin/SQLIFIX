@@ -1,0 +1,83 @@
+Target:
+	String sql = "SELECT total from adds where cart_id = " + cid;
+	Statement st = con.createStatement();
+	ResultSet rs = st.executeQuery(sql);
+
+suggestion0:
+	String sql = "SELECT total FROM adds WHERE cart_id = ?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cid);
+	ResultSet rs = st.executeQuery();
+
+suggestion1:
+	String sql = "SELECT total FROM adds WHERE cart_id = ?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cid);
+	ResultSet rs = st.executeQuery();
+
+suggestion2:
+	String sql = "SELECT total FROM adds WHERE cart_cart_id=?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cid);
+	ResultSet rs = st.executeQuery();
+
+suggestion3:
+	String sql = "select total from adds where cidName = ?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cid);
+	ResultSet rs = st.executeQuery();
+
+suggestion4:
+	String sql = "select total from adds where cidName = ?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cid);
+	ResultSet rs = st.executeQuery();
+
+suggestion5:
+	String sql = "SELECT total FROM adds WHERE cart_cart_id=?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cid);
+	ResultSet rs = st.executeQuery();
+
+suggestion6:
+	String sql = "SELECT total FROM adds WHERE cart_cart_id=?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cid);
+	ResultSet rs = st.executeQuery();
+
+suggestion7:
+	String sql = "SELECT total FROM adds WHERE cart_cart_id=?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cid);
+	ResultSet rs = st.executeQuery();
+
+suggestion8:
+	String sql = "SELECT total FROM adds WHERE cart_cart_id=?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cid);
+	ResultSet rs = st.executeQuery();
+
+suggestion9:
+	String sql = "select total from adds where cart_id = ?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cid);
+	ResultSet rs = st.executeQuery();
+
+suggestion10:
+	String sql = "SELECT total FROM adds WHERE cart_id = ?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cid);
+	ResultSet rs = st.executeQuery();
+
+suggestion11:
+	String sql = "SELECT total FROM adds WHERE cart_id = ?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cid);
+	ResultSet rs = st.executeQuery();
+
+suggestion12:
+	String sql = "Select total from adds where cart_id = ?";
+	PreparedStatement st = con.prepareStatement(sql);
+	st.setObject(1, cid);
+	ResultSet rs = st.executeQuery();
+

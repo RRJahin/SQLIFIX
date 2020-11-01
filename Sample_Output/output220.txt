@@ -1,0 +1,13 @@
+Target:
+	String sql = "select * from inception_preference where userId = "+userId+" order by id desc limit "+start+", "+count;
+	Statement ps = conn.createStatement();
+	ResultSet rs = ps.executeQuery(sql);
+
+suggestion0:
+	String sql = "select * from inception_preference whereX_16037765747670 = ? order by id desc limit ?, ?";
+	PreparedStatement ps = conn.prepareStatement(sql);
+	ps.setObject(1,X_16037765747670);
+	ps.setObject(2,X_16037765747671);
+	ps.setObject(3,X_16037765747672);
+	ResultSet rs = ps.executeQuery();
+

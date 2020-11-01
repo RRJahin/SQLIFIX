@@ -1,0 +1,12 @@
+Target:
+	String s = "INSERT INTO `movie_feature`(`movie_id`, `pic`) VALUES ("+movie_id+","+pic+")";
+	Statement pstm = con.createStatement();
+	x = pstm.executeUpdate(s);
+
+suggestion0:
+	String s = "INSERT INTO `movie_feature`(`movie_id`, `pic`) VALUES (?,?)";
+	PreparedStatement pstm = con.prepareStatement(s);
+	pstm.setObject(1,X_16037765638140);
+	pstm.setObject(2,X_16037765638141);
+	x = pstm.executeUpdate();
+

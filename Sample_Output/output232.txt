@@ -1,0 +1,65 @@
+Target:
+	String query = "DELETE FROM RoomBooking WHERE id = '" + roomBookingId + "'";
+	Statement stmt = con.createStatement();
+	rc = stmt.executeUpdate(query);
+
+suggestion0:
+	String query = "DELETE FROM RoomBooking WHERE roomBookingId= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, roomBookingId);
+	rc = stmt.executeUpdate();
+
+suggestion1:
+	String query = "DELETE FROM RoomBooking WHERE roomBookingId= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, roomBookingId);
+	rc = stmt.executeUpdate();
+
+suggestion2:
+	String query = "DELETE FROM RoomBooking WHERE id= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, roomBookingId);
+	rc = stmt.executeUpdate();
+
+suggestion3:
+	String query = "DELETE FROM RoomBooking WHERE roomBookingId='?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, catagory);
+	rc = stmt.executeUpdate();
+
+suggestion4:
+	String query = "DELETE FROM RoomBooking WHERE id = '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, roomBookingId);
+	rc = stmt.executeUpdate();
+
+suggestion5:
+	String query = "DELETE FROM RoomBooking WHERE id= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, roomBookingId);
+	rc = stmt.executeUpdate();
+
+suggestion6:
+	String query = "DELETE FROM RoomBooking WHERE roomBookingId= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, roomBookingId);
+	rc = stmt.executeUpdate();
+
+suggestion7:
+	String query = "DELETE FROM RoomBooking WHERE roomBookingId= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, roomBookingId);
+	rc = stmt.executeUpdate();
+
+suggestion8:
+	String query = "DELETE FROM RoomBooking WHERE roomBookingId= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObjet(1, roomBookingId);
+	rc = stmt.executeUpdate();
+
+suggestion9:
+	String query = "DELETE FROM RoomBooking WHERE roomBookingId= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, roomBookingId);
+	rc = stmt.executeUpdate();
+

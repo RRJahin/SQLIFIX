@@ -1,0 +1,13 @@
+Target:
+	Statement s = conn.createStatement();
+	s.executeUpdate("INSERT INTO job_file_table VALUES(" + "'" + file.getName() + "'," + "'" + job.getName() + "'," + "'" + file.getAbsolutePath() + "'," + "" + type + "," + "" + status + ")");
+
+suggestion0:
+	PreparedStatement s = conn.prepareStatement("INSERT INTO job_file_table VALUES(" + (((("'?'," + "'?',") + "'?',") + "?,") + "?)"));
+	s.setObject(1, file.getName());
+	s.setObject(2, job.getName());
+	s.setObject(3, file.getAbsolutePath());
+	s.setObject(4, type);
+	s.setObject(5, status);
+	s.executeUpdate();
+

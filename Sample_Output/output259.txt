@@ -1,0 +1,38 @@
+Target:
+	Statement stmt = null;
+	stmt = connection.createStatement();
+	stmt.execute("DELETE FROM Usuarios WHERE id="+id);
+
+suggestion0:
+	PreparedStatement stmt = null;
+	stmt = connection.prepareStatement("DELETE FROM Usuarios WHERE id=?");
+	stmt.setObject(1, id);
+	try {;
+	    stmt.execute();;
+	} catch (SQLException e) {;
+	    e.printStackTrace();;
+	};
+	stmt.execute();
+
+suggestion1:
+	PreparedStatement stmt = null;
+	stmt = connection.prepareStatement("DELETE FROM Usuarios WHERE id=?");
+	stmt.setObject(1, id);
+	try {;
+	    stmt.execute();;
+	} catch (SQLException e) {;
+	    e.printStackTrace();;
+	};
+	stmt.execute();
+
+suggestion2:
+	PreparedStatement stmt = null;
+	stmt = connection.prepareStatement("DELETE FROM Usuarios WHERE id=?");
+	stmt.setObject(1, id);
+	try {;
+	    stmt.execute();;
+	} catch (SQLException e) {;
+	    e.printStackTrace();;
+	};
+	stmt.execute();
+

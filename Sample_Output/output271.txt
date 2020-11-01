@@ -1,0 +1,10 @@
+Target:
+	Statement state = sql.getConn().createStatement();
+	result = state.executeQuery("SELECT map FROM maps WHERE map = '" + name + "'");
+
+suggestion0:
+	String query = "SELECT map FROM maps WHERE map = '?'";
+	PreparedStatement state = sql.getConn().prepareStatement(query);
+	state.setObject(1, name);
+	result = state.executeQuery();
+

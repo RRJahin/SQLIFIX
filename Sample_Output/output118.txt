@@ -1,0 +1,13 @@
+Target:
+	Statement stmt;
+	stmt = OracleDatabaseConnection.connect.createStatement();
+	String squery1 = "select * from tablesr where dbname='" + tableeasy.MainActivity.databases[tableeasy.MainActivity.selecteddata] + "'";
+	ResultSet rs = stmt.executeQuery(squery1);
+
+suggestion0:
+	PreparedStatement stmt;
+	String squery1 = "select * from tablesr where dbname='?'";
+	stmt = OracleDatabaseConnection.connect.prepareStatement(squery1);
+	stmt.setObject(1, tableeasy.MainActivity.databases[tableeasy.MainActivity.selecteddata]);
+	ResultSet rs = stmt.executeQuery();
+

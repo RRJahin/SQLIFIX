@@ -1,0 +1,16 @@
+Target:
+	String sql = "UPDATE `sis_pizza_db`.`pizza` SET `nome_pizza` = "+pizza.getNome()+", `tipo_pizza` = "+pizza.getTipoPizza()+", `tipo_massa` = "+pizza.getTipoMassa()+", `ingredientes_pizza` = "+pizza.getIngredientes()+", `preco_pizza` = "+pizza.getPreco() + "WHERE `numero_pizza` = "+pizza.getNumero()+";";
+	Statement ps = c.createStatement();
+	int rs = ps.executeUpdate(sql);
+
+suggestion0:
+	String sql = "UPDATE `sis_pizza_db`.`pizza` SET `nome_pizza` = ?, `tipo_pizza` = ?, `tipo_massa` = ?, `ingredientes_pizza` = ?, `preco_pizza` = ?" + "WHERE `numero_pizza` = ?;";
+	PreparedStatement ps = c.prepareStatement(sql);
+	ps.setObject(1,X_16037765744970);
+	ps.setObject(2,X_16037765744971);
+	ps.setObject(3,X_16037765744972);
+	ps.setObject(4,X_16037765744973);
+	ps.setObject(5,X_16037765744974);
+	ps.setObject(6,X_16037765744975);
+	int rs = ps.executeUpdate();
+

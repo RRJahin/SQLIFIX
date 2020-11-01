@@ -1,0 +1,24 @@
+Target:
+	String sql = "UPDATE users " + "SET password = "+passwordBean.getPassword1()+", change_user_name = javauser, change_date = "+GenericUtilities.getCurrentTimeStamp() + "WHERE id = "+userId;
+	Statement pstat = null;
+	pstat = CONN.createStatement();
+	pstat.executeUpdate(sql);
+
+suggestion0:
+	String sql = "UPDATE users " + ("SET password = ?, change_user_name = javauser, change_date = ?" + "WHERE id = ?");
+	PreparedStatement pstat = null;
+	pstat = CONN.prepareStatement(sql);
+	pstat.setObject(1, passwordBean.getPassword1());
+	pstat.setObject(2, GenericUtilities.getCurrentTimeStamp());
+	pstat.setObject(3, userId);
+	pstat.executeUpdate();
+
+suggestion1:
+	String sql = "UPDATE users " + ("SET password = ?, change_user_name = javauser, change_date = ?" + "WHERE id = ?");
+	PreparedStatement pstat = null;
+	pstat = CONN.prepareStatement(sql);
+	pstat.setObject(1, passwordBean.getPassword1());
+	pstat.setObject(2, GenericUtilities.getCurrentTimeStamp());
+	pstat.setObject(3, userId);
+	pstat.executeUpdate();
+

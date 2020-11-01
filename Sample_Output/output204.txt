@@ -1,0 +1,83 @@
+Target:
+	String sql = "SELECT * FROM ingresso WHERE id=" + codigo;
+	Statement ps = con.createStatement();
+	ResultSet rs = ps.executeQuery(sql);
+
+suggestion0:
+	String sql = "SELECT * FROM ingresso WHERE id = ?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, codigo);
+	ResultSet rs = ps.executeQuery();
+
+suggestion1:
+	String sql = "SELECT * FROM ingresso WHERE id = ?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, codigo);
+	ResultSet rs = ps.executeQuery();
+
+suggestion2:
+	String sql = "SELECT * FROM ingresso WHERE id=?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, codigo);
+	ResultSet rs = ps.executeQuery();
+
+suggestion3:
+	String sql = "select * from ingresso where codigoName = ?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, codigo);
+	ResultSet rs = ps.executeQuery();
+
+suggestion4:
+	String sql = "select * from ingresso where codigoName = ?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, codigo);
+	ResultSet rs = ps.executeQuery();
+
+suggestion5:
+	String sql = "SELECT * FROM ingresso WHERE id=?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, codigo);
+	ResultSet rs = ps.executeQuery();
+
+suggestion6:
+	String sql = "SELECT * FROM ingresso WHERE id=?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, codigo);
+	ResultSet rs = ps.executeQuery();
+
+suggestion7:
+	String sql = "SELECT * FROM ingresso WHERE id=?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, codigo);
+	ResultSet rs = ps.executeQuery();
+
+suggestion8:
+	String sql = "SELECT * FROM ingresso WHERE id=?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, codigo);
+	ResultSet rs = ps.executeQuery();
+
+suggestion9:
+	String sql = "select * from ingresso where id = ?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, codigo);
+	ResultSet rs = ps.executeQuery();
+
+suggestion10:
+	String sql = "SELECT * FROM ingresso WHERE id = ?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, codigo);
+	ResultSet rs = ps.executeQuery();
+
+suggestion11:
+	String sql = "SELECT * FROM ingresso WHERE id = ?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, codigo);
+	ResultSet rs = ps.executeQuery();
+
+suggestion12:
+	String sql = "Select * from ingresso where id = ?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, codigo);
+	ResultSet rs = ps.executeQuery();
+

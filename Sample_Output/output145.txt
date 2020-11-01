@@ -1,0 +1,75 @@
+Target:
+	String sql = "UPDATE tblAchievements SET fldStatus="+editAchievementStatus+" WHERE id="+editIDResult+";";
+	Statement pstmt = conn.createStatement()) {
+	pstmt.executeUpdate(sql);
+
+suggestion0:
+	String sql = "Update tblAchievements set fldStatus =?  where id=? ";
+	PreparedStatement pstmtt = conn.prepareStatement(sql);
+	pstmtt.setObject(1, editAchievementStatus);
+	pstmtt.setObject(2, editIDResult);
+	pstmtt.executeUpdate();
+
+suggestion1:
+	String sql = "Update tblAchievements set fldStatus =?  where id=? ";
+	PreparedStatement pstmtt = conn.prepareStatement(sql);
+	pstmtt.setObject(1, editAchievementStatus);
+	pstmtt.setObject(2, editIDResult);
+	pstmtt.executeUpdate();
+
+suggestion2:
+	String sql = "Update tblAchievements set fldStatus =?  where id=? ";
+	PreparedStatement pstmtt = conn.prepareStatement(sql);
+	pstmtt.setObject(1, editAchievementStatus);
+	pstmtt.setObject(2, editIDResult);
+	pstmtt.executeUpdate();
+
+suggestion3:
+	String sql = "UPDATE tblAchievements SET fldStatus=? WHERE id=?;";
+	PreparedStatement pstmt = conn.prepareStatement(sql);
+	pstmt.setObject(1, editAchievementStatus);
+	pstmt.setObject(2, editIDResult);
+	pstmt.executeUpdate();
+
+suggestion4:
+	String sql = "UPDATE tblAchievements SET fldStatus=? WHERE id=?;";
+	PreparedStatement pstmt = conn.prepareStatement(sql);
+	pstmt.setObject(1, editAchievementStatus);
+	pstmt.setObject(2, editIDResult);
+	pstmt.executeUpdate();
+
+suggestion5:
+	String sql = "UPDATE tblAchievements SET fldStatus=? WHERE id=?;";
+	PreparedStatement pstmt = conn.prepareStatement(sql);
+	pstmt.setObject(1, editAchievementStatus);
+	pstmt.setObject(2, editIDResult);
+	pstmt.executeUpdate();
+
+suggestion6:
+	String sql = "Update tblAchievements set fldStatus =?  where id=? ";
+	PreparedStatement pstmtt = conn.prepareStatement(sql);
+	pstmtt.setObject(1, editAchievementStatus);
+	pstmtt.setObject(2, editIDResult);
+	pstmtt.executeUpdate();
+
+suggestion7:
+	String sql = "Update tblAchievements set fldStatus =?  where id=? ";
+	PreparedStatement pstmtt = conn.prepareStatement(sql);
+	pstmtt.setObject(1, editAchievementStatus);
+	pstmtt.setObject(2, editIDResult);
+	pstmtt.executeUpdate();
+
+suggestion8:
+	String sql = "Update tblAchievements set fldStatus =? where id=? ";
+	PreparedStatement pstmtt = conn.prepareStatement(sql);
+	pstmtt.setObject(1, editAchievementStatus);
+	pstmtt.setObject(2, editIDResult);
+	pstmtt.executeUpdate();
+
+suggestion9:
+	String sql = "UPDATE tblAchievements SET fldStatus = ? WHERE id = ?;";
+	PreparedStatement pstmttmt = conn.prepareStatement(sql);
+	pstmttmt.setObject(1, editAchievementStatus);
+	pstmttmt.setObject(2, editIDResult);
+	pstmttmt.executeUpdate();
+

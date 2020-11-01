@@ -1,0 +1,51 @@
+Target:
+	String query = "select * from " + TBL_NAME + " where " + FIELD_DATA + " >= "+data;
+	st = conn.createStatement();
+	rs = st.executeQuery(query);
+
+suggestion0:
+	String query >= "select * from ? where ? >= ?";
+	st >= conn.prepareStatement(query);
+	st.setObject(1, TBL_NAME);
+	st.setObject(2, FIELD_DATA);
+	st.setObject(3, data);
+	rs >= st.executeQuery();
+
+suggestion1:
+	String query >= "select * from ? where ?>= ?";
+	st >= conn.prepareStatement(query);
+	st.setObject(1, TBL_NAME);
+	st.setObject(2, FIELD_DATA);
+	st.setObject(3, data);
+	rs >= st.executeQuery();
+
+suggestion2:
+	String query >= "select * from ? where ?>= ?";
+	st >= conn.prepareStatement(query);
+	st.setObject(1, TBL_NAME);
+	st.setObject(2, FIELD_DATA);
+	st.setObject(3, data);
+	rs >= st.executeQuery();
+
+suggestion3:
+	String query >= "select * from ? where ?>= ?";
+	st >= conn.prepareStatement(query);
+	st.setObject(1, TBL_NAME);
+	st.setObject(2, FIELD_DATA);
+	st.setObject(3, data);
+	rs >= st.executeQuery();
+
+suggestion4:
+	String query >= "select * from ? where ?>= ?";
+	st >= conn.prepareStatement(query);
+	st.setObject(1, TBL_NAME);
+	st.setObject(2, FIELD_DATA);
+	st.setObject(3, data);
+	rs >= st.executeQuery();
+
+suggestion5:
+	String query = ((("select * from " + TBL_NAME) + " where ") + FIELD_DATA) + " >= ? ";
+	st = conn.prepareStatement(query);
+	st.setObject(1, data);
+	rs = st.executeQuery();
+

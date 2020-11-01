@@ -1,0 +1,65 @@
+Target:
+	String sql_borrar = "DELETE FROM organisms WHERE complete_name='" + result[5] + "' ";
+	Statement sentencia = conn.createStatement();
+	numFilas = sentencia.executeUpdate(sql_borrar);
+
+suggestion0:
+	String sql_borrar = "DELETE FROM organisms WHERE result[5]= '?'";
+	PreparedStatement sentencia = conn.prepareStatement(sql_borrar);
+	sentencia.setObject(1, result[5]);
+	numFilas = sentencia.executeUpdate();
+
+suggestion1:
+	String sql_borrar = "DELETE FROM organisms WHERE result[5]= '?'";
+	PreparedStatement sentencia = conn.prepareStatement(sql_borrar);
+	sentencia.setObject(1, result[5]);
+	numFilas = sentencia.executeUpdate();
+
+suggestion2:
+	String sql_borrar = "DELETE FROM organisms WHERE complete_name= '?'";
+	PreparedStatement sentencia = conn.prepareStatement(sql_borrar);
+	sentencia.setObject(1, result[5]);
+	numFilas = sentencia.executeUpdate();
+
+suggestion3:
+	String sql_borrar = "DELETE FROM organisms WHERE result[5]='?'";
+	PreparedStatement sentencia = conn.prepareStatement(sql_borrar);
+	sentencia.setObject(1, catagory);
+	numFilas = sentencia.executeUpdate();
+
+suggestion4:
+	String sql_borrar = "DELETE FROM organisms WHERE complete_name = '?'";
+	PreparedStatement sentencia = conn.prepareStatement(sql_borrar);
+	sentencia.setObject(1, result[5]);
+	numFilas = sentencia.executeUpdate();
+
+suggestion5:
+	String sql_borrar = "DELETE FROM organisms WHERE complete_name= '?'";
+	PreparedStatement sentencia = conn.prepareStatement(sql_borrar);
+	sentencia.setObject(1, result[5]);
+	numFilas = sentencia.executeUpdate();
+
+suggestion6:
+	String sql_borrar = "DELETE FROM organisms WHERE result[5]= '?'";
+	PreparedStatement sentencia = conn.prepareStatement(sql_borrar);
+	sentencia.setObject(1, result[5]);
+	numFilas = sentencia.executeUpdate();
+
+suggestion7:
+	String sql_borrar = "DELETE FROM organisms WHERE result[5]= '?'";
+	PreparedStatement sentencia = conn.prepareStatement(sql_borrar);
+	sentencia.setObject(1, result[5]);
+	numFilas = sentencia.executeUpdate();
+
+suggestion8:
+	String sql_borrar = "DELETE FROM organisms WHERE result[5]= '?'";
+	PreparedStatement sentencia = conn.prepareStatement(sql_borrar);
+	sentencia.setObjet(1, result[5]);
+	numFilas = sentencia.executeUpdate();
+
+suggestion9:
+	String sql_borrar = "DELETE FROM organisms WHERE result[5]= '?'";
+	PreparedStatement sentencia = conn.prepareStatement(sql_borrar);
+	sentencia.setObject(1, result[5]);
+	numFilas = sentencia.executeUpdate();
+

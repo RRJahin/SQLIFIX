@@ -1,0 +1,22 @@
+Target:
+	Statement ps = conn.createStatement()) {
+	boolean successfullyAdded = ps.executeUpdate("INSERT INTO representatives(RepresenterMID,RepresenteeMID) VALUES ("+representer+","+representee+")") == 1;
+
+suggestion0:
+	PreparedStatement ps = conn.prepareStatement("INSERT INTO representatives(RepresenterMID,RepresenteeMID) VALUES (?,?)");
+	ps.setObject(1, representer);
+	ps.setObject(2, representee);
+	boolean successfullyAdded = ps.executeUpdate() == 1;
+
+suggestion1:
+	PreparedStatement ps = conn.prepareStatement("INSERT INTO representatives(RepresenterMID, RepresenteeMID) VALUES(?,?)");
+	ps.setObject(1, representer);
+	ps.setObject(2, representee);
+	boolean successfullyAdded = ps.executeUpdate() == 1;
+
+suggestion2:
+	PreparedStatement ps = conn.prepareStatement("INSERT INTO representatives (RepresenterMID, RepresenteeMID) " + "VALUES (?,?)");
+	ps.setObject(1, representer);
+	ps.setObject(2, representee);
+	boolean successfullyAdded = ps.executeUpdate() == 1;
+

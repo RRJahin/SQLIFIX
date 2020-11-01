@@ -1,0 +1,28 @@
+Target:
+	Statement prst = con.createStatement();
+	prst.execute("DELETE FROM Prenotazione WHERE id = '" + i + "'");
+
+suggestion0:
+	PreparedStatement prst = con.prepareStatement("DELETE FROM Prenotazione WHERE id = ?;");
+	prst.setObject(1, i);
+	prst.execute();
+
+suggestion1:
+	PreparedStatement prprstt = con.prepareStatement("DELETE FROM virtual_maprprsttter_node_table where i='?'");
+	prprstt.prprsttetObject(1, i);
+	prprstt.execute();
+
+suggestion2:
+	PreparedStatement prprstt = con.prepareStatement("DELETE FROM cluprprsttter_table where i='?'");
+	prprstt.prprsttetObject(1, i);
+	prprstt.execute();
+
+suggestion3:
+	PreparedStatement prst = con.prepareStatement("DELETE FROM Prenotazione WHERE id = '?'");
+	prst.setObject(1, i);
+	prst.execute();
+
+suggestion4:
+	PreparedStatement prst = con.prepareStatement(("delete from Prenotazione where i = '" + i) + "';");
+	prst.execute();
+

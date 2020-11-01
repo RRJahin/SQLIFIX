@@ -4,7 +4,7 @@ Target:
 	results = stmt.executeQuery(query);
 
 suggestion0:
-	String query = "SELECT COUNT(*) AS activityLineNumbers FROM ActivityLine " + " WHEREbookingId='?' ANDdate='?' AND status<>'Canceled'";
+	String query = "SELECT COUNT(*) AS activityLineNumbers FROM ActivityLine " + " WHERE bookingId='?' AND date='?' AND status<>'Canceled'";
 	PreparedStatement stmt = con.prepareStatement(query);
 	stmt.setObject(1, data);
 	stmt.setObject(2,date);

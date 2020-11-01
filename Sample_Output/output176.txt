@@ -1,0 +1,11 @@
+Target:
+	String sq = "select * from usersr where userid=" + MainActivity.usernames;
+	Statement st = OracleDatabaseConnection.connect.createStatement();
+	ResultSet rs123 = st.executeQuery(sq);
+
+suggestion0:
+	String sq = "select * from users123r where MainActivity.usernames= ? ";
+	PreparedStatement st = OracleDatabaseConnection.connect.prepareStatement(sq);
+	st.setObject(1, MainActivity.usernames);
+	ResultSet rs123 = st.executeQuery();
+

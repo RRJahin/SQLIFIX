@@ -1,0 +1,11 @@
+Target:
+	String sql = "delete from nba.system where seasonid=" + id;
+	Statement pstmt = conn.createStatement();
+	pstmt.executeUpdate(sql);
+
+suggestion0:
+	String sql = "delete from nba.system where id=?";
+	PreparedStatement pstmt = conn.prepareStatement(sql);
+	pstmt.setObject(1, id);
+	pstmt.executeUpdate();
+

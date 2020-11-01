@@ -1,0 +1,13 @@
+Target:
+	Statement statement = null;
+	String sql = "update atm_user set state = 2 where account = '" + del_Account + "';";
+	statement = con.createStatement();
+	statement.executeUpdate(sql);
+
+suggestion0:
+	PreparedStatement statement = null;
+	String sql = "update atm_user set state = 2 where account = '?';";
+	statement = con.prepareStatement(sql);
+	statement.setObject(1, del_Account);
+	statement.executeUpdate();
+

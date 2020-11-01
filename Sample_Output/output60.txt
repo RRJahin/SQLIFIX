@@ -1,0 +1,14 @@
+Target:
+	Statement ps = null;
+	String sql = "SELECT * " + "FROM(SELECT order_num, rownum as num " + "FROM (SELECT DISTINCT order_num " + "FROM bespeak " + "WHERE order_state IN(7, 8, 9) " + "ORDER BY order_num DESC)) " + "WHERE num >= " + start + " AND num <= " + end;
+	ps = conn.createStatement();
+	rs = ps.executeQuery(sql);
+
+suggestion0:
+	PreparedStatement ps = null;
+	String sql = "SELECT * " + ((((("FROM(SELECT order_num, rownum as num " + "FROM (SELECT DISTINCT order_num ") + "FROM bespeak ") + "WHERE order_state NOT IN(7, 8, 9) ") + "ORDER BY order_num DESC)) ") + "WHERE num >= ? AND num <= ?");
+	ps = conn.prepareStatement(sql);
+	ps.setObject(1, start);
+	ps.setObject(2, end);
+	rs = ps.executeQuery();
+

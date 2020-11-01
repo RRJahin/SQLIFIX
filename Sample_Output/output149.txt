@@ -1,0 +1,24 @@
+Target:
+	Statement stmt = conn.createStatement()) {
+	final ResultSet results = stmt.executeQuery("SELECT sAnswer FROM users WHERE MID="+mid);
+
+suggestion0:
+	PreparedStatement stmt = conn.prepareStatement("SELECT sAnswer FROM users WHERE MID=?");
+	stmt.setObject(1, mid);
+	final ResultSet results = stmt.executeQuery();
+
+suggestion1:
+	PreparedStatement stmt = conn.prepareStatement("SELECT sAnswer FROM users WHERE MID=?");
+	stmt.setObject(1, mid);
+	final ResultSet results = stmt.executeQuery();
+
+suggestion2:
+	PreparedStatement stmt = conn.prepareStatement("SELECT sAnswer FROM users WHERE MID=?");
+	stmt.setObject(1, mid);
+	final ResultSet results = stmt.executeQuery();
+
+suggestion3:
+	PreparedStatement stmt = conn.prepareStatement("SELECT sAnswer FROM users WHERE MID = ?");
+	stmt.setObject(1, mid);
+	final ResultSet results = stmt.executeQuery();
+

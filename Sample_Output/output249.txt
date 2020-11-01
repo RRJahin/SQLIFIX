@@ -1,0 +1,33 @@
+Target:
+	String queryD = "delete from customers where customerNo="+delInt;
+	preparedStatement = con.createStatement();
+	preparedStatement.executeUpdate(queryD);
+
+suggestion0:
+	String queryD = "delete from customers where customerNo=?";
+	preparedStatement = con.prepareStatement(queryD);
+	preparedStatement.setObject(1, delInt);
+	preparedStatement.executeUpdate();
+
+suggestion1:
+	String queryD = "delete from customers where customerNo=?";
+	preparedStatement = con.prepareStatement(queryD);
+	preparedStatement.setObject(1, delInt);
+	preparedStatement.executeUpdate();
+
+suggestion2:
+	String queryDD = "delete from ? where ?=?";
+	preparedStatement = con.prepareStatement(queryDD);
+	preparedStatement.setObject(1,cupreparedStatementomers);
+	preparedStatement.setObject(2,cupreparedStatementomerNo);
+	preparedStatement.setObject(3, delInt);
+	preparedStatement.executeUpdate();
+
+suggestion3:
+	String queryDD = "delete from ? where ?=?";
+	preparedStatement = con.prepareStatement(queryDD);
+	preparedStatement.setObject(1,cupreparedStatementomers);
+	preparedStatement.setObject(2,cupreparedStatementomerNo);
+	preparedStatement.setObject(3, delInt);
+	preparedStatement.executeUpdate();
+

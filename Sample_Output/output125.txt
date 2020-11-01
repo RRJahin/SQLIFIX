@@ -1,0 +1,28 @@
+Target:
+	Statement pstmt = null;
+	String sql = "DELETE FROM T_HT_ATIVIDADE WHERE CD_ATIVIDADE = "+cd_atividade;
+	pstmt = conexao.createStatement();
+	pstmt.executeUpdate(sql);
+
+suggestion0:
+	PreparedStatement pstmt = null;
+	String sql = "delete from ? where cd_atividade=?";
+	pstmt = conexao.prepareStatement(sql);
+	pstmt.setObject(1,T_HT_ATIVIDADE);
+	pstmt.setObject(2, cd_atividade);
+	pstmt.executeUpdate();
+
+suggestion1:
+	PreparedStatement pstmt = null;
+	String sql = "DELETE FROM T_HT_ATIVIDADE WHERE CD_ATIVIDADE = ?";
+	pstmt = conexao.prepareStatement(sql);
+	pstmt.setObject(1, cd_atividade);
+	pstmt.executeUpdate();
+
+suggestion2:
+	PreparedStatement pstmt = null;
+	String sql = "DELETE FROM T_HT_ATIVIDADE WHERE CD_ATIVIDADE = ?";
+	pstmt = conexao.prepareStatement(sql);
+	pstmt.setObject(1, cd_atividade);
+	pstmt.executeUpdate();
+

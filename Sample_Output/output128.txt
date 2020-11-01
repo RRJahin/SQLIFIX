@@ -1,0 +1,22 @@
+Target:
+	String sql = "SELECT SUM(quantite) AS nb FROM ParcClient WHERE codeTParc = "+codeParc + " AND codeCliPros IN" + "  (SELECT cClient FROM Client WHERE cRep = "+PanelStats.commercialStats.getCodeCommercial() + "  OR cClient IN" + "
+	(SELECT codeCliPros FROM Revoir WHERE codeUtilisateur = "+PanelStats.commercialStats.getId()+") )";
+	Statement select = this.connect.createStatement();
+	ResultSet rs = select.executeQuery(sql);
+
+suggestion0:
+	String sql = "SELECT SUM(quantite) AS nb FROM ParcClient WHERE codeTParc = ?" + ((((" AND codeCliPros IN " + "  (SELECT cClient FROM Client WHERE cRep = ? ") + "  OR cClient IN") + "    (SELECT codeCliPros FROM Revoir WHERE codeUtilisateur = ?)") + "  )");
+	PreparedStatement select = this.connect.prepareStatement(sql);
+	select.setObject(1, codeParc);
+	select.setObject(2, PanelStats.commercialStats.getCodeCommercial());
+	select.setObject(3, PanelStats.commercialStats.getId());
+	ResultSet rs = select.edummyecuteQuery();
+
+suggestion1:
+	String sql = "SELECT SUM(quantite) AS nb FROM ParcClient WHERE codeTParc = ?" + ((((" AND codeCliPros IN" + "  (SELECT cClient FROM Client WHERE cRep = ?") + "  OR cClient IN") + "    (SELECT codeCliPros FROM Revoir WHERE codeUtilisateur = ?)") + "  )");
+	PreparedStatement select = this.connect.prepareStatement(sql);
+	select.setObject(1, codeParc);
+	select.setObject(2, PanelStats.commercialStats.getCodeCommercial());
+	select.setObject(3, PanelStats.commercialStats.getId());
+	ResultSet rs = select.edummyecuteQuery();
+

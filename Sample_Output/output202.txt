@@ -1,0 +1,35 @@
+Target:
+	Statement stmt = conn1.createStatement();
+	stmt.executeUpdate("update member set islogin=0 where id=" + dbid);
+
+suggestion0:
+	PreparedStatement stmt = conn1.prepareStatement("UPDATE member SET islogin=0 WHERE id=?");
+	stmt.setObject(1, dbid);
+	stmt.executeUpdate();
+
+suggestion1:
+	PreparedStatement stmt = conn1.prepareStatement("UPDATE member SET islogin=0 WHERE id=?");
+	stmt.setObject(1, dbid);
+	stmt.executeUpdate();
+
+suggestion2:
+	PreparedStatement stmt = conn1.prepareStatement("UPDATE member SET islogin=0 WHERE id=?");
+	stmt.setObject(1, dbid);
+	stmt.executeUpdate();
+
+suggestion3:
+	PreparedStatement stmt = conn0.prepareStatement("UPDATE member SET islogin=0 WHERE id=?");
+	stmt.setObject(0,X_06038959903060);
+	stmt.executeUpdate();
+
+suggestion4:
+	String sql = "update member set islogin=0 where id=?";
+	PreparedStatement stmt = conn1.prepareStatement(sql);
+	stmt.setObject(1, dbid);
+	stmt.executeUpdate();
+
+suggestion5:
+	PreparedStatement stmt = conn0.prepareStatement("UPDATE member SET islogin=0 WHERE id=?");
+	stmt.setObject(0,X_06038959903060);
+	stmt.executeUpdate();
+

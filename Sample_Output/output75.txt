@@ -1,0 +1,29 @@
+Target:
+	String sql = "UPDATE ModRgl SET codeModRgl = "+obj.getCodeModRgl()+", nomModRgl = "+obj.getNomModRgl()+" WHERE id = "+obj.getId();
+	Statement update = connect.createStatement();
+	int rs = update.executeUpdate(sql);
+
+suggestion0:
+	String sql = "UPDATE ModRgl SET codeModRgl = ?, nomModRgl = ? WHERE id = ?";
+	PreparedStatement update = connect.prepareStatement(sql);
+	update.setObject(1, obj.getCodeModRgl());
+	update.setObject(2, obj.getNomModRgl());
+	update.setObject(3, obj.getId());
+	int rs = update.executeUpdate();
+
+suggestion1:
+	String sql = "UPDATE ModRgl SET codeModRgl = ?, nomModRgl = ? WHERE id = ?";
+	PreparedStatement update = connect.prepareStatement(sql);
+	update.setObject(1, obj.getCodeModRgl());
+	update.setObject(2, obj.getNomModRgl());
+	update.setObject(6, obj.getId());
+	int rs = update.executeUpdate();
+
+suggestion2:
+	String sql = "UPDATE ModRgl SET codeModRgl = ?, nomModRgl = ? WHERE id = ?";
+	PreparedStatement update = connect.prepareStatement(sql);
+	update.setObject(1, obj.getCodeModRgl());
+	update.setObject(2, obj.getNomModRgl());
+	update.setObject(3, obj.getId());
+	int rs = update.executeUpdate();
+

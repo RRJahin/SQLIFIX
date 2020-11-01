@@ -1,0 +1,16 @@
+Target:
+	Statement requete = connexion.createStatement();
+	int resultat = requete.executeUpdate("INSERT INTO VARIETE VALUES ('" + variete.getLibelle() + "'," + aoc + ") ;");
+
+suggestion0:
+	PreparedStatement requete = connexion.prepareStatement("INSERT INTO VARIETE VALUES (?,?) ;");
+	requete.setObject(1, variete.getLibelle());
+	requete.setObject(2, aoc);
+	int resultat = requete.executeUpdate();
+
+suggestion1:
+	PreparedStatement requete = connexion.prepareStatement("INSERT INTO VARIETE VALUES (?,?) ;");
+	requete.setObject(1, variete.getLibelle());
+	requete.setObject(2, aoc);
+	int resultat = requete.executeUpdate();
+

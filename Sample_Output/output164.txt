@@ -1,0 +1,11 @@
+Target:
+	String sql = "select * from Guitar where type= " + type;
+	Statement pstmt = Conn.createStatement();
+	ResultSet rs = pstmt.executeQuery(sql);
+
+suggestion0:
+	String sql = "select * from Guitar where type= ? ";
+	PreparedStatement pstmt = Conn.prepareStatement(sql);
+	pstmt.setObject(1, type);
+	ResultSet rs = pstmt.executeQuery();
+

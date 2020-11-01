@@ -1,0 +1,47 @@
+Target:
+	String query = "DELETE FROM TravelAgency WHERE cvr= '" + cvr + "'";
+	Statement stmt = con.createStatement();
+	rc = stmt.executeUpdate(query);
+
+suggestion0:
+	String query = "DELETE FROM TravelAgency WHEREcvr= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1,cvr);
+	rc = stmt.executeUpdate();
+
+suggestion1:
+	String query = "DELETE FROM TravelAgency WHERE cvr= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1,cvr);
+	rc = stmt.executeUpdate();
+
+suggestion2:
+	String query = "DELETE FROM TravelAgency WHEREcvr= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObjet(1,cvr);
+	rc = stmt.executeUpdate();
+
+suggestion3:
+	String query = "DELETE FROM TravelAgency WHEREcvr= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1,cvr);
+	rc = stmt.executeUpdate();
+
+suggestion4:
+	String query = "DELETE FROM TravelAgency WHEREcvr= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1,cvr);
+	rc = stmt.executeUpdate();
+
+suggestion5:
+	String query = "DELETE FROM TravelAgency WHERE cvr = '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1,cvr);
+	rc = stmt.executeUpdate();
+
+suggestion6:
+	String query = "DELETE FROM TravelAgency WHEREcvr= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1,cvr);
+	rc = stmt.executeUpdate();
+

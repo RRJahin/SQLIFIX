@@ -1,0 +1,30 @@
+Target:
+	Statement stmt = conn.createStatement()) {
+	stmt.executeUpdate("UPDATE message SET been_read=1 WHERE message_id="+mBean.getMessageId());
+
+suggestion0:
+	PreparedStatement stmt = conn.prepareStatement("UPDATE message SET been_read=1 WHERE message_id=?");
+	stmt.setObject(1,X_16114734494311);
+	stmt.executeUpdate();
+
+suggestion1:
+	PreparedStatement stmt = conn.prepareStatement("UPDATE message SET been_read=1 WHERE message_id=?");
+	stmt.setObject(1,X_16114734494311);
+	stmt.executeUpdate();
+
+suggestion2:
+	PreparedStatement stmt = conn.prepareStatement("UPDATE message SET been_read=1 WHERE message_id=?");
+	stmt.setObject(1,X_16114734494311);
+	stmt.executeUpdate();
+
+suggestion3:
+	String sql = "update message set been_read=1 where message_message_id=?";
+	PreparedStatement stmt = conn.prepareStatement(sql);
+	stmt.setObject(1,X_16114734494311);
+	stmt.executeUpdate();
+
+suggestion4:
+	PreparedStatement stmt = conn.prepareStatement("UPDATE message SET been_read=1 WHERE message_id=?");
+	stmt.setObject(1, mBean.getMessageId());
+	stmt.executeUpdate();
+

@@ -1,0 +1,83 @@
+Target:
+	String sql = "select * from inception_music where albumName = "+album;
+	Statement ps = conn.createStatement();
+	ResultSet rs = ps.executeQuery(sql);
+
+suggestion0:
+	String sql = "SELECT * FROM inception_music WHERE albumName = ?";
+	PreparedStatement ps = conn.prepareStatement(sql);
+	ps.setObject(1, album);
+	ResultSet rs = ps.executeQuery();
+
+suggestion1:
+	String sql = "SELECT * FROM inception_music WHERE albumName = ?";
+	PreparedStatement ps = conn.prepareStatement(sql);
+	ps.setObject(1, album);
+	ResultSet rs = ps.executeQuery();
+
+suggestion2:
+	String sql = "SELECT * FROM inception_music WHERE albumName=?";
+	PreparedStatement ps = conn.prepareStatement(sql);
+	ps.setObject(1, album);
+	ResultSet rs = ps.executeQuery();
+
+suggestion3:
+	String sql = "select * from inception_music where albumName = ?";
+	PreparedStatement ps = conn.prepareStatement(sql);
+	ps.setObject(1, album);
+	ResultSet rs = ps.executeQuery();
+
+suggestion4:
+	String sql = "select * from inception_music where albumName = ?";
+	PreparedStatement ps = conn.prepareStatement(sql);
+	ps.setObject(1, album);
+	ResultSet rs = ps.executeQuery();
+
+suggestion5:
+	String sql = "SELECT * FROM inception_music WHERE albumName=?";
+	PreparedStatement ps = conn.prepareStatement(sql);
+	ps.setObject(1, album);
+	ResultSet rs = ps.executeQuery();
+
+suggestion6:
+	String sql = "SELECT * FROM inception_music WHERE albumName=?";
+	PreparedStatement ps = conn.prepareStatement(sql);
+	ps.setObject(1, album);
+	ResultSet rs = ps.executeQuery();
+
+suggestion7:
+	String sql = "SELECT * FROM inception_music WHERE albumName=?";
+	PreparedStatement ps = conn.prepareStatement(sql);
+	ps.setObject(1, album);
+	ResultSet rs = ps.executeQuery();
+
+suggestion8:
+	String sql = "SELECT * FROM inception_music WHERE albumName=?";
+	PreparedStatement ps = conn.prepareStatement(sql);
+	ps.setObject(1, album);
+	ResultSet rs = ps.executeQuery();
+
+suggestion9:
+	String sql = "select * from inception_music where albumName = ?";
+	PreparedStatement ps = conn.prepareStatement(sql);
+	ps.setObject(1, album);
+	ResultSet rs = ps.executeQuery();
+
+suggestion10:
+	String sql = "SELECT * FROM inception_music WHERE albumName = ?";
+	PreparedStatement ps = conn.prepareStatement(sql);
+	ps.setObject(1, album);
+	ResultSet rs = ps.executeQuery();
+
+suggestion11:
+	String sql = "SELECT * FROM inception_music WHERE albumName = ?";
+	PreparedStatement ps = conn.prepareStatement(sql);
+	ps.setObject(1, album);
+	ResultSet rs = ps.executeQuery();
+
+suggestion12:
+	String sql = "Select * from inception_music where albumName = ?";
+	PreparedStatement ps = conn.prepareStatement(sql);
+	ps.setObject(1, album);
+	ResultSet rs = ps.executeQuery();
+

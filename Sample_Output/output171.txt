@@ -1,0 +1,77 @@
+Target:
+	String query = "delete from student where studentId=" + studentId;
+	Statement preparedStatement = conn.createStatement();
+	preparedStatement.executeUpdate(query);
+
+suggestion0:
+	String query = "Delete From student where studentId = ?";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, studentId);
+	preparedStatement.executeUpdate();
+
+suggestion1:
+	String query = "DELETE FROM student WHERE studentId=?";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, studentId);
+	preparedStatement.executeUpdate();
+
+suggestion2:
+	String query = "delete from student where studentId = ?";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, studentId);
+	preparedStatement.executeUpdate();
+
+suggestion3:
+	String query = "DELETE FROM student WHERE studentId=?";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, studentId);
+	preparedStatement.executeUpdate();
+
+suggestion4:
+	String query = "DELETE FROM student WHERE studentId=?";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, studentId);
+	preparedStatement.executeUpdate();
+
+suggestion5:
+	String query = "DELETE FROM student WHERE studentId=?";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, studentId);
+	preparedStatement.execute();
+
+suggestion6:
+	String query = "DELETE FROM student WHERE studentId = ?";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, studentId);
+	preparedStatement.executeUpdate();
+
+suggestion7:
+	String query = "DELETE FROM student WHERE studentId = ?";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, studentId);
+	preparedStatement.executeUpdate();
+
+suggestion8:
+	String query = "delete from student where studentId = ? ";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, studentId);
+	preparedStatement.executeUpdate();
+
+suggestion9:
+	String query = "DELETE FROM student WHERE studentId = ?";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, studentId);
+	preparedStatement.executeUpdate();
+
+suggestion10:
+	String query = "DELETE FROM student WHERE studentId = ?;";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, studentId);
+	preparedStatement.executeUpdate();
+
+suggestion11:
+	String query = "DELETE FROM student WHERE studentId = ?";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, studentId);
+	preparedStatement.executeUpdate();
+

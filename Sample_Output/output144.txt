@@ -1,0 +1,9 @@
+Target:
+	Statement ps = conn.createStatement()) {
+	ResultSet rs = ps.executeQuery("SELECT * FROM patients WHERE MID="+pid+" AND DateOfDeactivation IS NULL");
+
+suggestion0:
+	PreparedStatement ps = conn.prepareStatement("SELECT * FROM patients WHERE MID=? AND DateOfDeactivation IS NULL");
+	ps.setObject(1, pid);
+	ResultSet rs = ps.executeQuery();
+

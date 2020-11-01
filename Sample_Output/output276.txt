@@ -1,0 +1,77 @@
+Target:
+	String query = "delete from Employee where EMPID = "+empId+" ";
+	Statement ps = con.createStatement();
+	ps.execute(query);
+
+suggestion0:
+	String query = "Delete From Employee where EMPID = ?";
+	PreparedStatement ps = con.prepareStatement(query);
+	ps.setObject(1, empId);
+	ps.execute();
+
+suggestion1:
+	String query = "DELETE FROM Employee WHERE empId=?";
+	PreparedStatement ps = con.prepareStatement(query);
+	ps.setObject(1, empId);
+	ps.execute();
+
+suggestion2:
+	String query = "delete from Employee where empId = ?";
+	PreparedStatement ps = con.prepareStatement(query);
+	ps.setObject(1, empId);
+	ps.execute();
+
+suggestion3:
+	String query = "DELETE FROM Employee WHERE empId=?";
+	PreparedStatement ps = con.prepareStatement(query);
+	ps.setObject(1, empId);
+	ps.execute();
+
+suggestion4:
+	String query = "DELETE FROM Employee WHERE empId=?";
+	PreparedStatement ps = con.prepareStatement(query);
+	ps.setObject(1, empId);
+	ps.execute();
+
+suggestion5:
+	String query = "DELETE FROM Employee WHERE empId=?";
+	PreparedStatement ps = con.prepareStatement(query);
+	ps.setObject(1, empId);
+	ps.execute();
+
+suggestion6:
+	String query = "DELETE FROM Employee WHERE empId = ?";
+	PreparedStatement ps = con.prepareStatement(query);
+	ps.setObject(1, empId);
+	ps.execute();
+
+suggestion7:
+	String query = "DELETE FROM Employee WHERE EMPID = ?";
+	PreparedStatement ps = con.prepareStatement(query);
+	ps.setObject(1, empId);
+	ps.execute();
+
+suggestion8:
+	String query = "delete from Employee where EMPID = ? ";
+	PreparedStatement ps = con.prepareStatement(query);
+	ps.setObject(1, empId);
+	ps.execute();
+
+suggestion9:
+	String query = "DELETE FROM Employee WHERE EMPID = ?";
+	PreparedStatement ps = con.prepareStatement(query);
+	ps.setObject(1, empId);
+	ps.execute();
+
+suggestion10:
+	String query = "DELETE FROM Employee WHERE empId = ?;";
+	PreparedStatement ps = con.prepareStatement(query);
+	ps.setObject(1, empId);
+	ps.execute();
+
+suggestion11:
+	String query = "DELETE FROM Employee WHERE EMPID = ?";
+	PreparedStatement ps = con.prepareStatement(query);
+	ps.setObject(1, empId);
+	ps.execute();
+

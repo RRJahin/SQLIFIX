@@ -1,0 +1,77 @@
+Target:
+	String sql = "DELETE FROM STUDENTS WHERE ID = " + id;
+	Statement ps = con.createStatement();
+	ps.execute(sql);
+
+suggestion0:
+	String sql = "Delete From STUDENTS where ID = ?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, id);
+	ps.execute();
+
+suggestion1:
+	String sql = "DELETE FROM STUDENTS WHERE id=?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, id);
+	ps.execute();
+
+suggestion2:
+	String sql = "delete from STUDENTS where id = ?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, id);
+	ps.execute();
+
+suggestion3:
+	String sql = "DELETE FROM STUDENTS WHERE id=?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, id);
+	ps.execute();
+
+suggestion4:
+	String sql = "DELETE FROM STUDENTS WHERE id=?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, id);
+	ps.execute();
+
+suggestion5:
+	String sql = "DELETE FROM STUDENTS WHERE id=?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, id);
+	ps.execute();
+
+suggestion6:
+	String sql = "DELETE FROM STUDENTS WHERE id = ?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, id);
+	ps.execute();
+
+suggestion7:
+	String sql = "DELETE FROM STUDENTS WHERE ID = ?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, id);
+	ps.execute();
+
+suggestion8:
+	String sql = "delete from STUDENTS where ID = ? ";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, id);
+	ps.execute();
+
+suggestion9:
+	String sql = "DELETE FROM STUDENTS WHERE ID = ?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, id);
+	ps.execute();
+
+suggestion10:
+	String sql = "DELETE FROM STUDENTS WHERE id = ?;";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, id);
+	ps.execute();
+
+suggestion11:
+	String sql = "DELETE FROM STUDENTS WHERE ID = ?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, id);
+	ps.execute();
+

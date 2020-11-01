@@ -1,0 +1,75 @@
+Target:
+	String sql = "UPDATE tarea SET esfuerzo =  " + t.getEsfuerzo() + "WHERE id = " + t.getId();
+	Statement pstmt = con.createStatement();
+	pstmt.executeUpdate(sql);
+
+suggestion0:
+	String sql = "Update tarea set esfuerzo =?  where id=? ";
+	PreparedStatement pstmtt = con.prepareStatement(sql);
+	pstmtt.setObject(1, t.getEsfuerzo());
+	pstmtt.setObject(2, t.getId());
+	pstmtt.executeUpdate();
+
+suggestion1:
+	String sql = "Update tarea set esfuerzo =?  where id=? ";
+	PreparedStatement pstmtt = con.prepareStatement(sql);
+	pstmtt.setObject(1, t.getEsfuerzo());
+	pstmtt.setObject(2, t.getId());
+	pstmtt.executeUpdate();
+
+suggestion2:
+	String sql = "Update tarea set esfuerzo =?  where id=? ";
+	PreparedStatement pstmtt = con.prepareStatement(sql);
+	pstmtt.setObject(1, t.getEsfuerzo());
+	pstmtt.setObject(2, t.getId());
+	pstmtt.executeUpdate();
+
+suggestion3:
+	String sql = "UPDATE tarea SET esfuerzo=? WHERE id=?;";
+	PreparedStatement pstmt = con.prepareStatement(sql);
+	pstmt.setObject(1, t.getEsfuerzo());
+	pstmt.setObject(2, t.getId());
+	pstmt.executeUpdate();
+
+suggestion4:
+	String sql = "UPDATE tarea SET esfuerzo=? WHERE id=?;";
+	PreparedStatement pstmt = con.prepareStatement(sql);
+	pstmt.setObject(1, t.getEsfuerzo());
+	pstmt.setObject(2, t.getId());
+	pstmt.executeUpdate();
+
+suggestion5:
+	String sql = "UPDATE tarea SET esfuerzo=? WHERE id=?;";
+	PreparedStatement pstmt = con.prepareStatement(sql);
+	pstmt.setObject(1, t.getEsfuerzo());
+	pstmt.setObject(2, t.getId());
+	pstmt.executeUpdate();
+
+suggestion6:
+	String sql = "Update tarea set esfuerzo =?  where id=? ";
+	PreparedStatement pstmtt = con.prepareStatement(sql);
+	pstmtt.setObject(1, t.getEsfuerzo());
+	pstmtt.setObject(2, t.getId());
+	pstmtt.executeUpdate();
+
+suggestion7:
+	String sql = "Update tarea set esfuerzo =?  where id=? ";
+	PreparedStatement pstmtt = con.prepareStatement(sql);
+	pstmtt.setObject(1, t.getEsfuerzo());
+	pstmtt.setObject(2, t.getId());
+	pstmtt.executeUpdate();
+
+suggestion8:
+	String sql = "Update tarea set esfuerzo =? where id=? ";
+	PreparedStatement pstmtt = con.prepareStatement(sql);
+	pstmtt.setObject(1, t.getEsfuerzo());
+	pstmtt.setObject(2, t.getId());
+	pstmtt.executeUpdate();
+
+suggestion9:
+	String sql = "UPDATE tarea SET esfuerzo = ? WHERE id = ?;";
+	PreparedStatement pstmttmt = con.prepareStatement(sql);
+	pstmttmt.setObject(1, t.getEsfuerzo());
+	pstmttmt.setObject(2, t.getId());
+	pstmttmt.executeUpdate();
+

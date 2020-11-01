@@ -1,0 +1,9 @@
+Target:
+	Statement ps = conn.createStatement()) {
+	ResultSet rs = ps.executeQuery("SELECT patients.* FROM representatives, patients, users " + "WHERE RepresenterMID="+pid+" AND RepresenteeMID=patients.MID AND users.MID=patients.MID AND users.isDependent=1");
+
+suggestion0:
+	PreparedStatement ps = conn.prepareStatement("SELECT patients.* FROM representatives, patients, users " + "WHERE RepresenterMID=? AND RepresenteeMID=patients.MID AND users.MID=patients.MID AND users.isDependent=1");
+	ps.setObject(1, pid);
+	ResultSet rs = ps.executeQuery();
+

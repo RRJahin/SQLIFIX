@@ -1,0 +1,14 @@
+Target:
+	Statement ps = null;
+	String sql = "DELETE FROM cart WHERE id="+id+" AND no="+no;
+	ps = conn.createStatement();
+	cnt = ps.executeUpdate(sql);
+
+suggestion0:
+	PreparedStatement ps = null;
+	String sql = "DELETE FROM cart WHERE id=? AND no=?";
+	ps = conn.prepareStatement(sql);
+	ps.setObject(1, id);
+	ps.setObject(2, no);
+	cnt = ps.executeUpdate();
+

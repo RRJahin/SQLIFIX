@@ -1,0 +1,21 @@
+Target:
+	Statement pstmt = conn.createStatement();
+	int vrf = pstmt.executeUpdate("delete from mensagem where id = '" + id + "'");
+
+suggestion0:
+	PreparedStatement pstmt = conn.prepareStatement("delete from mensagem where id = '?'");
+	pstmt.setObject(1, id);
+	int vrf = pstmt.executeUpdate();
+
+suggestion1:
+	String sql = "DELETE FROM mensagem where id=?;";
+	PreparedStatement pstmt = conn.prepareStatement(sql);
+	pstmt.setObject(1, id);
+	int vrf = pstmt.executeUpdate();
+
+suggestion2:
+	String sql = "DELETE FROM mensagem where id=?;";
+	PreparedStatement pstmt = conn.prepareStatement(sql);
+	pstmt.setObject(1, id);
+	int vrf = pstmt.executeUpdate();
+

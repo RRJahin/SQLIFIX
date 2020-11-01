@@ -1,0 +1,65 @@
+Target:
+	String query = "DELETE FROM TeamParticipants WHERE teamId= '" + teamId + "'";
+	Statement stmt = con.createStatement();
+	result = stmt.executeUpdate(query);
+
+suggestion0:
+	String query = "DELETE FROM TeamParticipants WHERE teamId= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, teamId);
+	result = stmt.executeUpdate();
+
+suggestion1:
+	String query = "DELETE FROM TeamParticipants WHERE teamId= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, teamId);
+	result = stmt.executeUpdate();
+
+suggestion2:
+	String query = "DELETE FROM TeamParticipantsParticipants WHERE teamId= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, teamId);
+	result = stmt.executeUpdate();
+
+suggestion3:
+	String query = "DELETE FROM TeamParticipants WHERE teamId='?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, catagory);
+	result = stmt.executeUpdate();
+
+suggestion4:
+	String query = "DELETE FROM TeamParticipants WHERE teamId = '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, teamId);
+	result = stmt.executeUpdate();
+
+suggestion5:
+	String query = "DELETE FROM TeamParticipants WHERE teamId= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, teamId);
+	result = stmt.executeUpdate();
+
+suggestion6:
+	String query = "DELETE FROM TeamParticipants WHERE teamId= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, teamId);
+	result = stmt.executeUpdate();
+
+suggestion7:
+	String query = "DELETE FROM TeamParticipants WHERE teamId= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, teamId);
+	result = stmt.executeUpdate();
+
+suggestion8:
+	String query = "DELETE FROM TeamParticipantsParticipants WHERE teamId= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObjet(1, teamId);
+	result = stmt.executeUpdate();
+
+suggestion9:
+	String query = "DELETE FROM TeamParticipants WHERE teamId= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, teamId);
+	result = stmt.executeUpdate();
+

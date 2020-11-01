@@ -1,0 +1,11 @@
+Target:
+	stmt = con.createStatement();
+	String query = "Select * from customers Where ID =" + id1.getText() + ";";
+	rs = stmt.executeQuery(query);
+
+suggestion0:
+	String query = "Select * from customers Where ID =?;";
+	stmt = con.prepareStatement(query);
+	stmt.setObject(1, id1.getText());
+	rs = stmt.executeQuery();
+

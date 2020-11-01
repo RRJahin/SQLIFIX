@@ -1,0 +1,9 @@
+Target:
+	Statement ps = conn.createStatement();
+	ResultSet rs = ps.executeQuery("select * from shares where our_result='Y' order by time desc limit "+Math.round(network_diff / 32.0));
+
+suggestion0:
+	PreparedStatement ps = conn.prepareStatement("select * from shares where our_result='Y' order by time desc limit ?");
+	ps.setObject(1, java.lang.Math.round(network_diff / 32.0));
+	ResultSet rs = ps.executeQuery();
+

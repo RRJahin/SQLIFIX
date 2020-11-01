@@ -1,0 +1,9 @@
+Target:
+	pst = conn.createStatement();
+	ResultSet rs = pst.executeQuery("select count(*) from normalposts where authorid = "+userid);
+
+suggestion0:
+	pst = conn.prepareStatement("select count(*) from normalposts where authorid = ?");
+	pst.setObject(1, userid);
+	ResultSet rs = pst.executeQuery();
+

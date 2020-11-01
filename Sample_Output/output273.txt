@@ -1,0 +1,10 @@
+Target:
+	Statement state = sql.getConn().createStatement();
+	state.executeUpdate("INSERT INTO maps VALUES ('" + name + "')");
+
+suggestion0:
+	String st = "INSERT INTO maps VALUES ('?')";
+	PreparedStatement state = sql.getConn().prepareStatement(st);
+	state.setObject(1, name);
+	state.executeUpdate();
+

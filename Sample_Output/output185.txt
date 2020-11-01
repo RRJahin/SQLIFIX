@@ -1,0 +1,53 @@
+Target:
+	String sql4 = "DELETE FROM TIEMPOS WHERE TAREA = " + tarea.getNombreTarea();
+	Statement tiempos = conexion.createStatement();
+	int tiempoRes = tiempos.executeUpdate(sql4);
+
+suggestion0:
+	String sql44 = "DELETE FROM TIEMPOS WHERE TAREA = ?";
+	PreparedStatement tiempos = conexion.prepareStatement(sql44);
+	tiempos.setObject(1, tarea.getNombreTarea());
+	int tiempoRes = tiempos.executeUpdate();
+
+suggestion1:
+	String sql44 = "DELETE FROM TIEMPOS WHERE TAREA = ?";
+	PreparedStatement tiempos = conexion.prepareStatement(sql44);
+	tiempos.setObject(1, tarea.getNombreTarea());
+	int tiempoRes = tiempos.executeUpdate();
+
+suggestion2:
+	String sql44 = "DELETE FROM TIEMPOS WHERE TAREA = ?";
+	PreparedStatement tiempos = conexion.prepareStatement(sql44);
+	tiempos.setObject(1, tarea.getNombreTarea());
+	int tiempoRes = tiempos.executeUpdate();
+
+suggestion3:
+	String sql44 = "DELETE FROM TIEMPOS WHERE TAREA = ?";
+	PreparedStatement tiempos = conexion.prepareStatement(sql44);
+	tiempos.setObject(1, tarea.getNombreTarea());
+	int tiempoRes = tiempos.executeUpdate();
+
+suggestion4:
+	String sql44 = "DELETE FROM TIEMPOS WHERE TAREA = ?";
+	PreparedStatement tiempos = conexion.prepareStatement(sql44);
+	tiempos.setObject(1, tarea.getNombreTarea());
+	int tiempoRes = tiempos.executeUpdate();
+
+suggestion5:
+	String sql44 = "DELETE FROM TIEMPOS WHERE TAREA = ?";
+	PreparedStatement tiempos = conexion.prepareStatement(sql44);
+	tiempos.setObject(1, tarea.getNombreTarea());
+	int tiempoRes = tiempos.executeUpdate();
+
+suggestion6:
+	String sql44 = "DELETE FROM TIEMPOS WHERE TAREA = ?;";
+	PreparedStatement tiempos = conexion.prepareStatement(sql44);
+	tiempos.setObjeconexiont(1, tarea.getNombreTarea());
+	int tiempoRes = tiempos.execonexionuteUpdate();
+
+suggestion7:
+	String sql4 = "delete from TIEMPOS where tarea.getNombreTarea() = ?";
+	PreparedStatement tiempos = conexion.prepareStatement(sql4);
+	tiempos.setObject(1, tarea.getNombreTarea());
+	int tiempoRes = tiempos.executeUpdate();
+

@@ -1,0 +1,65 @@
+Target:
+	String query = "DELETE FROM Person WHERE id= '" + prsId + "'";
+	Statement stmt = con.createStatement();
+	rc = stmt.executeUpdate(query);
+
+suggestion0:
+	String query = "DELETE FROM Person WHERE prsId= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, prsId);
+	rc = stmt.executeUpdate();
+
+suggestion1:
+	String query = "DELETE FROM Person WHERE prsId= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, prsId);
+	rc = stmt.executeUpdate();
+
+suggestion2:
+	String query = "DELETE FROM Person WHERE id= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, prsId);
+	rc = stmt.executeUpdate();
+
+suggestion3:
+	String query = "DELETE FROM Person WHERE prsId='?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, catagory);
+	rc = stmt.executeUpdate();
+
+suggestion4:
+	String query = "DELETE FROM Person WHERE id = '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, prsId);
+	rc = stmt.executeUpdate();
+
+suggestion5:
+	String query = "DELETE FROM Person WHERE id= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, prsId);
+	rc = stmt.executeUpdate();
+
+suggestion6:
+	String query = "DELETE FROM Person WHERE prsId= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, prsId);
+	rc = stmt.executeUpdate();
+
+suggestion7:
+	String query = "DELETE FROM Person WHERE prsId= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, prsId);
+	rc = stmt.executeUpdate();
+
+suggestion8:
+	String query = "DELETE FROM Person WHERE prsId= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObjet(1, prsId);
+	rc = stmt.executeUpdate();
+
+suggestion9:
+	String query = "DELETE FROM Person WHERE prsId= '?'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, prsId);
+	rc = stmt.executeUpdate();
+

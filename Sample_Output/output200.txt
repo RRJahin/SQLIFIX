@@ -1,0 +1,29 @@
+Target:
+	stmt = c.createStatement();
+	String sql = "SELECT PASSWORD FROM CUSTOMER WHERE EMAIL = '" + Login.sendUsername() + "'";
+	ResultSet rs = stmt.executeQuery(sql);
+
+suggestion0:
+	String sql = "SELECT PASSWORD FROM CUSTOMER WHERE EMAIL = ?";
+	stmt = c.prepareStatement(sql);
+	stmt.setObject(1, Login.sendUsername());
+	ResultSet rs = stmt.executeQuery();
+
+suggestion1:
+	String sql = "SELECT PASSWORD FROM CUSTOMER WHERE EMAIL = ?";
+	stmt = c.prepareStatement(sql);
+	stmt.setObject(1, Login.sendUsername());
+	ResultSet rs = stmt.executeQuery();
+
+suggestion2:
+	String sql = "SELECT PASSWORD FROM CUSTOMER WHERE EMAIL = ?";
+	stmt = c.prepareStatement(sql);
+	stmt.setObject(1, Login.sendUsername());
+	ResultSet rs = stmt.executeQuery();
+
+suggestion3:
+	String sql = "SELECT PASSWORD FROM CUSTOMER WHERE EMAIL = ?";
+	stmt = c.prepareStatement(sql);
+	stmt.setObject(1, Login.sendUsername());
+	ResultSet rs = stmt.executeQuery();
+

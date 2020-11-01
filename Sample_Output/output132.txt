@@ -1,0 +1,10 @@
+Target:
+	Statement ps = conn.createStatement()) {
+	rs = ps.executeQuery("SELECT role FROM users WHERE MID="+mid+" AND Role="+role);
+
+suggestion0:
+	PreparedStatement ps = conn.prepareStatement("SELECT role FROM users WHERE MID=? AND Role=?");
+	ps.setObject(1, mid);
+	ps.setObject(2, role);
+	rs = ps.executeQuery();
+

@@ -1,0 +1,9 @@
+Target:
+	con.createStatement().executeUpdate("DELETE FROM color WHERE Id = " + _iId);
+
+suggestion0:
+	String st = "DELETE FROM color WHERE Id = ?";
+	PreparedStatement ps = con.prepareStatement(st);
+	ps.setObject(1, _iId);
+	ps.executeUpdate();
+

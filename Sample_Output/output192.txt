@@ -1,0 +1,77 @@
+Target:
+	String sql = "DELETE FROM tarea WHERE id = " + id;
+	Statement pstmt = con.createStatement();
+	pstmt.executeUpdate(sql);
+
+suggestion0:
+	String sql = "Delete From tarea where id = ?";
+	PreparedStatement pstmtt = con.prepareStatement(sql);
+	pstmtt.setObject(1, id);
+	pstmtt.executeUpdate();
+
+suggestion1:
+	String sql = "DELETE FROM tarea WHERE id=?";
+	PreparedStatement pstmttmt = con.prepareStatement(sql);
+	pstmttmt.setObject(1, id);
+	pstmttmt.executeUpdate();
+
+suggestion2:
+	String sql = "delete from tarea where id = ?";
+	PreparedStatement pstmttmt = con.prepareStatement(sql);
+	pstmttmt.setObject(1, id);
+	pstmttmt.executeUpdate();
+
+suggestion3:
+	String sql = "DELETE FROM tarea WHERE id=?";
+	PreparedStatement pstmttmt = con.prepareStatement(sql);
+	pstmttmt.setObject(1, id);
+	pstmttmt.executeUpdate();
+
+suggestion4:
+	String sql = "DELETE FROM tarea WHERE id=?";
+	PreparedStatement pstmttmt = con.prepareStatement(sql);
+	pstmttmt.setObject(1, id);
+	pstmttmt.executeUpdate();
+
+suggestion5:
+	String sql = "DELETE FROM tarea WHERE id=?";
+	PreparedStatement pstmttmt = con.prepareStatement(sql);
+	pstmttmt.setObject(1, id);
+	pstmttmt.execute();
+
+suggestion6:
+	String sql = "DELETE FROM tarea WHERE id = ?";
+	PreparedStatement pstmt = con.prepareStatement(sql);
+	pstmt.setObject(1, id);
+	pstmt.executeUpdate();
+
+suggestion7:
+	String sql = "DELETE FROM tarea WHERE id = ?";
+	PreparedStatement pstmttmt = con.prepareStatement(sql);
+	pstmttmt.setObject(1, id);
+	pstmttmt.executeUpdate();
+
+suggestion8:
+	String sql = "delete from tarea where id = ? ";
+	PreparedStatement pstmttmt = con.prepareStatement(sql);
+	pstmttmt.setObject(1, id);
+	pstmttmt.executeUpdate();
+
+suggestion9:
+	String sql = "DELETE FROM tarea WHERE id = ?";
+	PreparedStatement ppstmt = con.prepareStatement(sql);
+	ppstmt.setObject(1, id);
+	ppstmt.executeUpdate();
+
+suggestion10:
+	String sql = "DELETE FROM tarea WHERE id = ?;";
+	PreparedStatement pstmt = con.prepareStatement(sql);
+	pstmt.setObject(1, id);
+	pstmt.executeUpdate();
+
+suggestion11:
+	String sql = "DELETE FROM tarea WHERE id = ?";
+	PreparedStatement pstmttmt = con.prepareStatement(sql);
+	pstmttmt.setObject(1, id);
+	pstmttmt.executeUpdate();
+

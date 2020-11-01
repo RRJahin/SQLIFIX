@@ -1,0 +1,19 @@
+Target:
+	String sql = "delete from inception_preference where userId = "+userId+" and musicId = "+musicId;
+	Statement ps = conn.createStatement();
+	ps.execute(sql);
+
+suggestion0:
+	String sql = "delete from inception_preference where userId = ? and musicId = ?";
+	PreparedStatement ps = conn.prepareStatement(sql);
+	ps.setObject(1, userId);
+	ps.setObject(2, musicId);
+	ps.execute();
+
+suggestion1:
+	String sql = "DELETE FROM inception_preference WHERE userId = ? and musicId = ?";
+	PreparedStatement ps = conn.prepareStatement(sql);
+	ps.setObject(1, userId);
+	ps.setObject(2, musicId);
+	ps.execute();
+

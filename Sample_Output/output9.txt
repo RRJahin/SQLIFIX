@@ -4,20 +4,8 @@ Target:
 	rs = st.executeQuery(query);
 
 suggestion0:
-	String query = "select * from TBL_NAME where ?=? AND ?=true order by ?";
+	String query = "select * from " + TBL_NAME + " where " + FIELD_ID_MAPPA + "=? AND " + FIELD_IS_PDI + "=true order by " + FIELD_CODICE;
 	st = conn.prepareStatement(query);
-	st.setObject(1,FIELD_ID_MAPPA);
-	st.setObject(2,search_id);
-	st.setObject(3,FIELD_IS_PDI);
-	st.setObject(4,FIELD_CODICE);
-	rs = st.executeQuery();
-
-suggestion1:
-	String query = "select * from TBL_NAME where ?=? AND ?=true order by ?";
-	st = conn.prepareStatement(query);
-	st.setObject(1,FIELD_ID_MAPPA);
-	st.setObject(2,search_id);
-	st.setObject(3,FIELD_IS_PDI);
-	st.setObject(4,FIELD_CODICE);
+	st.setObject(1,search_id);
 	rs = st.executeQuery();
 

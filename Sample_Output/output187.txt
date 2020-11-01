@@ -1,0 +1,83 @@
+Target:
+	String sql = "SELECT * FROM TAREAS WHERE PROYECTO = " + proyecto;
+	Statement temasGuardados = conexion.createStatement();
+	ResultSet resultado = temasGuardados.executeQuery(sql);
+
+suggestion0:
+	String sql = "SELECT * FROM TAREAS WHERE PROYECTO = ?";
+	PreparedStatement temasGuardados = conexion.prepareStatement(sql);
+	temasGuardados.setObject(1, proyecto);
+	ResultSet resultado = temasGuardados.executeQuery();
+
+suggestion1:
+	String sql = "SELECT * FROM TAREAS WHERE PROYECTO = ?";
+	PreparedStatement temasGuardados = conexion.prepareStatement(sql);
+	temasGuardados.setObject(1, proyecto);
+	ResultSet resultado = temasGuardados.executeQuery();
+
+suggestion2:
+	String sql = "SELECT * FROM TAREAS WHERE PROYECTO=?";
+	PreparedStatement temasGuardados = conexion.prepareStatement(sql);
+	temasGuardados.setObject(1, proyecto);
+	ResultSet resultado = temasGuardados.executeQuery();
+
+suggestion3:
+	String sql = "select * from TAREAS where proyectoName = ?";
+	PreparedStatement temasGuardados = conexion.prepareStatement(sql);
+	temasGuardados.setObject(1, proyecto);
+	ResultSet resultado = temasGuardados.executeQuery();
+
+suggestion4:
+	String sql = "select * from TAREAS where proyectoName = ?";
+	PreparedStatement temasGuardados = conexion.prepareStatement(sql);
+	temasGuardados.setObject(1, proyecto);
+	ResultSet resultado = temasGuardados.executeQuery();
+
+suggestion5:
+	String sql = "SELECT * FROM TAREAS WHERE PROYECTO=?";
+	PreparedStatement temasGuardados = conexion.prepareStatement(sql);
+	temasGuardados.setObject(1, proyecto);
+	ResultSet resultado = temasGuardados.executeQuery();
+
+suggestion6:
+	String sql = "SELECT * FROM TAREAS WHERE PROYECTO=?";
+	PreparedStatement temasGuardados = conexion.prepareStatement(sql);
+	temasGuardados.setObject(1, proyecto);
+	ResultSet resultado = temasGuardados.executeQuery();
+
+suggestion7:
+	String sql = "SELECT * FROM TAREAS WHERE PROYECTO=?";
+	PreparedStatement temasGuardados = conexion.prepareStatement(sql);
+	temasGuardados.setObject(1, proyecto);
+	ResultSet resultado = temasGuardados.executeQuery();
+
+suggestion8:
+	String sql = "SELECT * FROM TAREAS WHERE PROYECTO=?";
+	PreparedStatement temasGuardados = conexion.prepareStatement(sql);
+	temasGuardados.setObject(1, proyecto);
+	ResultSet resultado = temasGuardados.executeQuery();
+
+suggestion9:
+	String sql = "select * from TAREAS where PROYECTO = ?";
+	PreparedStatement temasGuardados = conexion.prepareStatement(sql);
+	temasGuardados.setObject(1, proyecto);
+	ResultSet resultado = temasGuardados.executeQuery();
+
+suggestion10:
+	String sql = "SELECT * FROM TAREAS WHERE PROYECTO = ?";
+	PreparedStatement temasGuardados = conexion.prepareStatement(sql);
+	temasGuardados.setObject(1, proyecto);
+	ResultSet resultado = temasGuardados.executeQuery();
+
+suggestion11:
+	String sql = "SELECT * FROM TAREAS WHERE PROYECTO = ?";
+	PreparedStatement temasGuardados = conexion.prepareStatement(sql);
+	temasGuardados.setObject(1, proyecto);
+	ResultSet resultado = temasGuardados.executeQuery();
+
+suggestion12:
+	String sql = "Select * from TAREAS where PROYECTO = ?";
+	PreparedStatement temasGuardados = conexion.prepareStatement(sql);
+	temasGuardados.setObject(1, proyecto);
+	ResultSet resultado = temasGuardados.executeQuery();
+

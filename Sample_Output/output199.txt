@@ -1,0 +1,11 @@
+Target:
+	stmt = con.createStatement();
+	String query = "Select * from flights Where ID =" + fid.getText() + ";";
+	rs = stmt.executeQuery(query);
+
+suggestion0:
+	String query = "Select * from flights Where ID =?;";
+	stmt = con.prepareStatement(query);
+	stmt.setObject(1, fid.getText());
+	rs = stmt.executeQuery();
+

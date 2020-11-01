@@ -1,0 +1,24 @@
+Target:
+	String query = "insert into student (firstName, lastName, course, year) values (" + student.getFirstName()
+	+ "," + student.getLastName() + "," + student.getCourse() + "," + student.getYear() + ")";
+	Statement preparedStatement = conn.createStatement();
+	preparedStatement.executeUpdate(query);
+
+suggestion0:
+	String query = "Insert into student(firstName, lastName,course, year) values (?,?,?,?)";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, student.getFirstName());
+	preparedStatement.setObject(2, student.getLastName());
+	preparedStatement.setObject(3, student.getCourse());
+	preparedStatement.setObject(4, student.getYear());
+	preparedStatement.executeUpdate();
+
+suggestion1:
+	String query = "Insert into student(firstName, student.getLastName(), student.getCourse(), student.getYear()) values (?, ?, ?, ?)";
+	PreparedStatement preparedStatement = conn.prepareStatement(query);
+	preparedStatement.setObject(1, student.getFirstName());
+	preparedStatement.setObject(2, student.getLastName());
+	preparedStatement.setObject(3, student.getCourse());
+	preparedStatement.setObject(4, student.getYear());
+	preparedStatement.executeUpdate();
+

@@ -1,0 +1,9 @@
+Target:
+	Statement ps = con.createStatement();
+	int ans = ps.executeUpdate("delete from user where id = " + userid);
+
+suggestion0:
+	PreparedStatement ps = con.prepareStatement("delete from user where id = ?");
+	ps.setObject(1, userid);
+	int ans = ps.executeUpdate();
+

@@ -1,0 +1,23 @@
+Target:
+	String sql = "INSERT INTO tarea(nombre, descripcion, " + "prioridad, esfuerzo, release, "
+	+ "fecha, valor, estado, iteracion_id) " + "VALUES(" + t.getNombre() + ", " + t.getDescripcion() + ", "
+	+ t.getPrioridad() + ", " + t.getEsfuerzo() + ", " + t.getRelease() + ", "
+	+ new java.sql.Date(t.getFecha().getTime()) + ", " + t.getValor() + ", " + t.getEstado().name() + ", "
+	+ t.getIteracion().getId() + ")";
+	Statement pstmt = con.createStatement();
+	pstmt.executeUpdate(sql);
+
+suggestion0:
+	String sql = "Insert into tarea(nombre,tarea_Name, tarea_Surname, esfuerzo, Email_esfuerzo, fecha, valor,estado,iteracion_id) values (?,?,?,?,?,?,?,?,?)";
+	PreparedStatement pstmtt = con.prepareStatement(sql);
+	pstmtt.setObject(1, t.getNombre());
+	pstmtt.setObject(2, t.getDescripcion());
+	pstmtt.setObject(3, t.getPrioridad());
+	pstmtt.setObject(4, t.getEsfuerzo());
+	pstmtt.setObject(5, t.getRelease());
+	pstmtt.setObject(6, new java.sql.Date(t.getFecha().getTime()));
+	pstmtt.setObject(7, t.getValor());
+	pstmtt.setObject(8, t.getEstado().name());
+	pstmtt.setObject(9, t.getIteracion().getId());
+	pstmtt.executeUpdate();
+

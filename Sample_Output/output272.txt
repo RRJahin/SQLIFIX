@@ -1,0 +1,24 @@
+Target:
+	Statement stmt = conn.createStatement()) {
+	ResultSet rs = stmt.executeQuery("SELECT * FROM drugreactionoverridecodes WHERE Code = "+code);
+
+suggestion0:
+	PreparedStatement stmt = conn.prepareStatement("SELECT * FROM drugreactionoverridecodes WHERE Code = ?");
+	stmt.setObject(1, code);
+	ResultSet rs = stmt.executeQuery();
+
+suggestion1:
+	PreparedStatement stmt = conn.prepareStatement("SELECT * FROM drugreactionoverridecodes WHERE Code = ?");
+	stmt.setObject(1, code);
+	ResultSet rs = stmt.executeQuery();
+
+suggestion2:
+	PreparedStatement stmt = conn.prepareStatement("SELECT * FROM drugreactionoverridecodes WHERE Code=?");
+	stmt.setObject(1, code);
+	ResultSet rs = stmt.executeQuery();
+
+suggestion3:
+	PreparedStatement stmt = conn.prepareStatement("SELECT * FROM drugreactionoverridecodes WHERE Code=?");
+	stmt.setObject(1, code);
+	ResultSet rs = stmt.executeQuery();
+

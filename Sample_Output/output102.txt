@@ -1,0 +1,22 @@
+Target:
+	Statement stmt = conn.createStatement()) {
+	boolean successfullyAdded = stmt.executeUpdate("INSERT INTO ndcodes (Code, Description) " + "VALUES ("+med.getNDCode()+","+med.getDescription()+")") == 1;
+
+suggestion0:
+	PreparedStatement stmt = conn.prepareStatement("INSERT INTO ndcodes(Code,Description) VALUES (?,?)");
+	stmt.setObject(1, med.getNDCode());
+	stmt.setObject(2, med.getDescription());
+	boolean successfullyAdded = stmt.executeUpdate() == 1;
+
+suggestion1:
+	PreparedStatement stmt = conn.prepareStatement("INSERT INTO ndcodes(Code, Description) VALUES(?,?)");
+	stmt.setObject(1, med.getNDCode());
+	stmt.setObject(2, med.getDescription());
+	boolean successfullyAdded = stmt.executeUpdate() == 1;
+
+suggestion2:
+	PreparedStatement stmt = conn.prepareStatement("INSERT INTO ndcodes (Code, Description) " + "VALUES (?,?)");
+	stmt.setObject(1, med.getNDCode());
+	stmt.setObject(2, med.getDescription());
+	boolean successfullyAdded = stmt.executeUpdate() == 1;
+

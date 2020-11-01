@@ -1,0 +1,17 @@
+Target:
+	Statement rebBibliotecariStmt = conn.createStatement();
+	String persona = "select * from practica7.PERSONA where ID = " + ID + ";";
+	ResultSet rs = rebBibliotecariStmt.executeQuery(persona);
+
+suggestion0:
+	String persona = "select * from practica7.PERSONA where ID = ?;";
+	PreparedStatement rebBibliotecariStmt = conn.prepareStatement(persona);
+	rebBibliotecariStmt.setObject(1, ID);
+	ResultSet rs = rebBibliotecariStmt.executeQuery();
+
+suggestion1:
+	String persona = "select * from practica7.PERSONA where ID = ?;";
+	PreparedStatement rebBibliotecariStmt = conn.prepareStatement(persona);
+	rebBibliotecariStmt.setObject(1, ID);
+	ResultSet rs = rebBibliotecariStmt.executeQuery();
+

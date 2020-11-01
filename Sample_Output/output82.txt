@@ -1,0 +1,23 @@
+Target:
+	String s = "SELECT * FROM `movie_feature` WHERE datepost < CURRENT_TIMESTAMP order by datepost desc LIMIT 0,"+NoPage;
+	Statement pstm = con.createStatement();
+	ResultSet rs = pstm.executeQuery(s);
+
+suggestion0:
+	String s = "SELECT * FROM `order_movie` whereX_16037765691510 = ?";
+	PreparedStatement pstm = con.prepareStatement(s);
+	pstm.setObject(1,X_16037765691510);
+	ResultSet rs = pstm.executeQuery();
+
+suggestion1:
+	String s = "SELECT mp.* FROM `movie_pic` mp JOIN movie m on m.movie_NoPage = mp.movie_NoPage WHERE m.movie_NoPage = ?";
+	PreparedStatement pstm = con.prepareStatement(s);
+	pstm.setObject(1,X_16037765640490);
+	ResultSet rs = pstm.executeQuery();
+
+suggestion2:
+	String s = "SELECT * FROM `order_movie` whereX_16037765692160 = ?";
+	PreparedStatement pstm = con.prepareStatement(s);
+	pstm.setObject(1,X_16037765692160);
+	ResultSet rs = pstm.executeQuery();
+

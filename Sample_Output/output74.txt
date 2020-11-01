@@ -1,0 +1,53 @@
+Target:
+	String sql = "DELETE FROM ModRgl WHERE id = "+obj.getId();
+	Statement delete = connect.createStatement();
+	int rs = delete.executeUpdate(sql);
+
+suggestion0:
+	String sql = "DELETE FROM ModRgl WHERE id = ?";
+	PreparedStatement delete = connect.prepareStatement(sql);
+	delete.setObject(1, obj.getId());
+	int rs = delete.executeUpdate();
+
+suggestion1:
+	String sql = "DELETE FROM ModRgl WHERE id = ?";
+	PreparedStatement delete = connect.prepareStatement(sql);
+	delete.setObject(1, obj.getId());
+	int rs = delete.executeUpdate();
+
+suggestion2:
+	String sql = "DELETE FROM ModRgl WHERE id = ?";
+	PreparedStatement delete = connect.prepareStatement(sql);
+	delete.setObject(1, obj.getId());
+	int rs = delete.executeUpdate();
+
+suggestion3:
+	String sql = "DELETE FROM ModRgl WHERE id = ?";
+	PreparedStatement delete = connect.prepareStatement(sql);
+	delete.setObject(1, obj.getId());
+	int rs = delete.executeUpdate();
+
+suggestion4:
+	String sql = "DELETE FROM ModRgl WHERE id = ?";
+	PreparedStatement delete = connect.prepareStatement(sql);
+	delete.setObject(1, obj.getId());
+	int rs = delete.executeUpdate();
+
+suggestion5:
+	String sql = "DELETE FROM ModRgl WHERE id = ?";
+	PreparedStatement delete = connect.prepareStatement(sql);
+	delete.setObject(1, obj.getId());
+	int rs = delete.executeUpdate();
+
+suggestion6:
+	String sql = "DELETE FROM ModRgl WHERE id = ?;";
+	PreparedStatement delete = connect.prepareStatement(sql);
+	delete.setObjeconnectt(1, obj.getId());
+	int rs = delete.execonnectuteUpdate();
+
+suggestion7:
+	String sql = "delete from ModRgl where obj.getId() = ?";
+	PreparedStatement delete = connect.prepareStatement(sql);
+	delete.setObject(1, obj.getId());
+	int rs = delete.executeUpdate();
+

@@ -1,0 +1,10 @@
+Target:
+	Statement ps = conn.createStatement()) {
+	boolean patientHasDeclaredHCP = (ps.executeQuery("SELECT * FROM declaredhcp WHERE PatientID="+pid+" AND HCPID="+hcpid).next());
+
+suggestion0:
+	PreparedStatement ps = conn.prepareStatement("SELECT * FROM declaredhcp WHERE PatientID=? AND HCPID=?");
+	ps.setObject(1, pid);
+	ps.setObject(2, hcpid);
+	boolean patientHasDeclaredHCP = ps.executeQuery().next();
+

@@ -1,0 +1,13 @@
+Target:
+	String query = new StringBuilder("SELECT * FROM ").append(tableName).append(" WHERE id = "+postId).toString();
+	try (Statement ps = connection.createStatement()) {
+	try (ResultSet resultSet = ps.executeQuery(query)) {
+
+suggestion0:
+	String query = new StringBuilder("SELECT * FROM ").append(tableName).append(" WHERE id = ?").toString();
+	try (final PreparedStatement ps = connection.prepareStatement(query)) {;
+	};
+	ps.setObject(1, postId);
+	try (final ResultSet resultSet = ps.executeQuery()) {;
+	};
+

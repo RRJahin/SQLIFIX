@@ -1,0 +1,12 @@
+Target:
+	rs = con.createStatement().executeQuery("SELECT Id FROM categoria" + Where(sNombre, iId_Imagen, iId_Marca));
+
+suggestion0:
+	rs = con.prepareStatement().executeQuery("SELECT Id FROM categoria" + Where(sNombre, iId_Imagen, iId_Marca));
+
+suggestion1:
+	String st = "SELECT Id FROM categoria ?";
+	PreparedStatement ps = con.prepareStatement(st);
+	ps.setObject(1, Where(sNombre, iId_Imagen, iId_Marca));
+	rs = ps.executeQuery();
+

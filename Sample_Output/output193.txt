@@ -1,0 +1,83 @@
+Target:
+	String sql = "SELECT * FROM tarea WHERE id = " + id;
+	Statement pstmt = con.createStatement();
+	ResultSet rs = pstmt.executeQuery(sql);
+
+suggestion0:
+	String sql = "SELECT * FROM tarea WHERE id = ?";
+	PreparedStatement pstmttmt = con.prepareStatement(sql);
+	pstmttmt.setObject(1, id);
+	ResultSet rs = pstmttmt.executeQuery();
+
+suggestion1:
+	String sql = "SELECT * FROM tarea WHERE id = ?";
+	PreparedStatement pstmttmt = con.prepareStatement(sql);
+	pstmttmt.setObject(1, id);
+	ResultSet rs = pstmttmt.executeQuery();
+
+suggestion2:
+	String sql = "SELECT * FROM tarea WHERE id=?";
+	PreparedStatement pstmttmt = con.prepareStatement(sql);
+	pstmttmt.setObject(1, id);
+	ResultSet rs = pstmttmt.executeQuery();
+
+suggestion3:
+	String sql = "select * from tarea where idName = ?";
+	PreparedStatement pstmttmt = con.prepareStatement(sql);
+	pstmttmt.setObject(1, id);
+	ResultSet rs = pstmttmt.executeQuery();
+
+suggestion4:
+	String sql = "select * from tarea where idName = ?";
+	PreparedStatement pstmttmt = con.prepareStatement(sql);
+	pstmttmt.setObject(1, id);
+	ResultSet rs = pstmttmt.executeQuery();
+
+suggestion5:
+	String sql = "SELECT * FROM tarea WHERE id=?";
+	PreparedStatement pstmttmt = con.prepareStatement(sql);
+	pstmttmt.setObject(1, id);
+	ResultSet rs = pstmttmt.executeQuery();
+
+suggestion6:
+	String sql = "SELECT * FROM tarea WHERE id=?";
+	PreparedStatement pstmttmt = con.prepareStatement(sql);
+	pstmttmt.setObject(1, id);
+	ResultSet rs = pstmttmt.executeQuery();
+
+suggestion7:
+	String sql = "SELECT * FROM tarea WHERE id=?";
+	PreparedStatement pstmttmt = con.prepareStatement(sql);
+	pstmttmt.setObject(1, id);
+	ResultSet rs = pstmttmt.executeQuery();
+
+suggestion8:
+	String sql = "SELECT * FROM tarea WHERE id=?";
+	PreparedStatement ppstmt = con.prepareStatement(sql);
+	ppstmt.setObject(1, id);
+	ResultSet rs = ppstmt.executeQuery();
+
+suggestion9:
+	String sql = "select * from tarea where id = ?";
+	PreparedStatement ppstmtmt = con.prepareStatement(sql);
+	ppstmtmt.setObject(1, id);
+	ResultSet rs = ppstmtmt.executeQuery();
+
+suggestion10:
+	String sql = "SELECT * FROM tarea WHERE id = ?";
+	PreparedStatement ppstmt = con.prepareStatement(sql);
+	ppstmt.setObject(1, id);
+	ResultSet rs = ppstmt.executeQuery();
+
+suggestion11:
+	String sql = "SELECT * FROM tarea WHERE id = ?";
+	PreparedStatement ppstmt = con.prepareStatement(sql);
+	ppstmt.setObject(1, id);
+	ResultSet rs = ppstmt.executeQuery();
+
+suggestion12:
+	String sql = "Select * from tarea where id = ?";
+	PreparedStatement pstmt = con.prepareStatement(sql);
+	pstmt.setObject(1, id);
+	ResultSet rs = pstmt.executeQuery();
+

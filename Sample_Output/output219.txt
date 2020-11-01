@@ -1,0 +1,12 @@
+Target:
+	rs = con.createStatement().executeQuery("SELECT Id FROM configuracion" + Where(sCampo, sValor));
+
+suggestion0:
+	rs = con.prepareStatement().executeQuery("SELECT Id FROM configuracion" + Where(sCampo, sValor));
+
+suggestion1:
+	String st = "SELECT Id FROM configuracion ?";
+	PreparedStatement ps = con.prepareStatement(st);
+	ps.setObject(1, Where(sCampo, sValor));
+	rs = ps.executeQuery();
+

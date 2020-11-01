@@ -1,0 +1,48 @@
+Target:
+	String sql = "UPDATE ingresso SET local=" + camarote.getLocal() + ", datahora="
+	+ new java.sql.Date(camarote.getDataHora().getTime()) + ", lugar=" + camarote.getLugar()
+	+ ", quantidade=" + camarote.getQuantidade() + ", idcategoria=" + camarote.getCategoria().getId()
+	+ ", idtipoingresso=" + camarote.getTipoIngresso().getId() + ", valor=" + camarote.getValor()
+	+ " WHERE id=" + camarote.getId();
+	Statement ps = con.createStatement();
+	ps.executeUpdate(sql);
+
+suggestion0:
+	String sql = "UPDATE ingresso SET local=?, datahora=?, lugar=?, quantidade=?, idcategoria=?, idtipoingresso=?, valor=? WHERE id=?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, camarote.getLocal());
+	ps.setObject(2, new java.sql.Date(camarote.getDataHora().getTime()));
+	ps.setObject(3, camarote.getLugar());
+	ps.setObject(4, camarote.getQuantidade());
+	ps.setObject(5, camarote.getCategoria().getId());
+	ps.setObject(6, camarote.getTipoIngresso().getId());
+	ps.setObject(7, camarote.getValor());
+	ps.setObject(8, camarote.getId());
+	ps.executeUpdate();
+
+suggestion1:
+	String sql = "UPDATE ingresso SET local=?, datahora=?, lugar=?, quantidade=?, idcategoria=?, idtipoingresso=?, valor=? WHERE id=?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, camarote.getLocal());
+	ps.setObject(2, new java.sql.Date(camarote.getDataHora().getTime()));
+	ps.setObject(3, camarote.getLugar());
+	ps.setObject(4, camarote.getQuantidade());
+	ps.setObject(5, camarote.getCategoria().getId());
+	ps.setObject(6, camarote.getTipoIngresso().getId());
+	ps.setObject(7, camarote.getValor());
+	ps.setObject(8, camarote.getId());
+	ps.executeUpdate();
+
+suggestion2:
+	String sql = "UPDATE ingresso SET local=?, datahora=?, lugar=?, quantidade=?, idcategoria=?, idtipoingresso=?, valor=? WHERE id=?";
+	PreparedStatement ps = con.prepareStatement(sql);
+	ps.setObject(1, camarote.getLocal());
+	ps.setObject(2, new java.sql.Date(camarote.getDataHora().getTime()));
+	ps.setObject(3, camarote.getLugar());
+	ps.setObject(4, camarote.getQuantidade());
+	ps.setObject(5, camarote.getCategoria().getId());
+	ps.setObject(6, camarote.getTipoIngresso().getId());
+	ps.setObject(7, camarote.getValor());
+	ps.setObject(8, camarote.getId());
+	ps.executeUpdate();
+

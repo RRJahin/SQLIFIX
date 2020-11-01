@@ -1,0 +1,35 @@
+Target:
+	Statement pstring = null;
+	pstring = conn.createStatement();
+	results = pstring.executeQuery("SELECT * FROM officeVisit WHERE visitID="+id);
+
+suggestion0:
+	PreparedStatement pstring = null;
+	pstring = conn.prepareStatement("SELECT * FROM officeVisit WHERE visitID=?");
+	pstring.setObject(1, id);
+	results = pstring.executeQuery();
+
+suggestion1:
+	PreparedStatement pstring = null;
+	pstring = conn.prepareStatement("SELECT * FROM officeVisit WHERE visitID=?");
+	pstring.setObject(1, id);
+	results = pstring.executeQuery();
+
+suggestion2:
+	PreparedStatement pstring = null;
+	pstring = conn.prepareStatement("SELECT * FROM officeVisit WHERE visitID = ?");
+	pstring.setObject(1, id);
+	results = pstring.executeQuery();
+
+suggestion3:
+	PreparedStatement pstring = null;
+	pstring = conn.prepareStatement("SELECT * FROM officeVisit WHERE visitID=?");
+	pstring.setObject(1, id);
+	results = pstring.executeQuery();
+
+suggestion4:
+	PreparedStatement pstring = null;
+	pstring = conn.prepareStatement("SELECT * FROM officeVisit WHERE visitID = ?");
+	pstring.setObject(1, id);
+	results = pstring.executeQuery();
+

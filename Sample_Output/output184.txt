@@ -1,0 +1,53 @@
+Target:
+	String sql1 = "DELETE FROM TAREAS WHERE DESCRIPCION = " + tarea.getNombreTarea();
+	Statement eliminar = conexion.createStatement();
+	int eliminarRes = eliminar.executeUpdate(sql1);
+
+suggestion0:
+	String sql11 = "DELETE FROM TAREAS WHERE DESCRIPCION = ?";
+	PreparedStatement eliminar = conexion.prepareStatement(sql11);
+	eliminar.setObject(1, tarea.getNombreTarea());
+	int eliminarRes = eliminar.executeUpdate();
+
+suggestion1:
+	String sql11 = "DELETE FROM TAREAS WHERE DESCRIPCION = ?";
+	PreparedStatement eliminar = conexion.prepareStatement(sql11);
+	eliminar.setObject(1, tarea.getNombreTarea());
+	int eliminarRes = eliminar.executeUpdate();
+
+suggestion2:
+	String sql11 = "DELETE FROM TAREAS WHERE DESCRIPCION = ?";
+	PreparedStatement eliminar = conexion.prepareStatement(sql11);
+	eliminar.setObject(1, tarea.getNombreTarea());
+	int eliminarRes = eliminar.executeUpdate();
+
+suggestion3:
+	String sql11 = "DELETE FROM TAREAS WHERE DESCRIPCION = ?";
+	PreparedStatement eliminar = conexion.prepareStatement(sql11);
+	eliminar.setObject(1, tarea.getNombreTarea());
+	int eliminarRes = eliminar.executeUpdate();
+
+suggestion4:
+	String sql11 = "DELETE FROM TAREAS WHERE DESCRIPCION = ?";
+	PreparedStatement eliminar = conexion.prepareStatement(sql11);
+	eliminar.setObject(1, tarea.getNombreTarea());
+	int eliminarRes = eliminar.executeUpdate();
+
+suggestion5:
+	String sql11 = "DELETE FROM TAREAS WHERE DESCRIPCION = ?";
+	PreparedStatement eliminar = conexion.prepareStatement(sql11);
+	eliminar.setObject(1, tarea.getNombreTarea());
+	int eliminarRes = eliminar.executeUpdate();
+
+suggestion6:
+	String sql11 = "DELETE FROM TAREAS WHERE DESCRIPCION = ?;";
+	PreparedStatement eliminar = conexion.prepareStatement(sql11);
+	eliminar.setObjeconexiont(1, tarea.getNombreTarea());
+	int eliminarRes = eliminar.execonexionuteUpdate();
+
+suggestion7:
+	String sql1 = "delete from TAREAS where tarea.getNombreTarea() = ?";
+	PreparedStatement eliminar = conexion.prepareStatement(sql1);
+	eliminar.setObject(1, tarea.getNombreTarea());
+	int eliminarRes = eliminar.executeUpdate();
+

@@ -1,0 +1,35 @@
+Target:
+	Statement stmt = conn.createStatement()) {
+	stmt.executeUpdate("UPDATE loginfailures SET failureCount=0 WHERE IPAddress="+ipAddr);
+
+suggestion0:
+	PreparedStatement stmt = conn.prepareStatement("UPDATE loginfailures SET failureCount=0 WHERE IPAddress=?");
+	stmt.setObject(1, ipAddr);
+	stmt.executeUpdate();
+
+suggestion1:
+	PreparedStatement stmt = conn.prepareStatement("UPDATE loginfailures SET failureCount=0 WHERE IPAddress=?");
+	stmt.setObject(1, ipAddr);
+	stmt.executeUpdate();
+
+suggestion2:
+	PreparedStatement stmt = conn.prepareStatement("UPDATE loginfailures SET failureCount=0 WHERE IPAddress=?");
+	stmt.setObject(1, ipAddr);
+	stmt.executeUpdate();
+
+suggestion3:
+	PreparedStatement stmt = conn.prepareStatement("UPDATE loginfailures SET failureCount=0 WHERE IPAddress=?");
+	stmt.setObject(0,X_06042294666760);
+	stmt.executeUpdate();
+
+suggestion4:
+	String sql = "update loginfailures set failureCount=0 where IPAddress=?";
+	PreparedStatement stmt = conn.prepareStatement(sql);
+	stmt.setObject(1, ipAddr);
+	stmt.executeUpdate();
+
+suggestion5:
+	PreparedStatement stmt = conn.prepareStatement("UPDATE loginfailures SET failureCount=0 WHERE IPAddress=?");
+	stmt.setObject(0,X_06042294666760);
+	stmt.executeUpdate();
+

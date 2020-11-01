@@ -1,0 +1,42 @@
+Target:
+	Statement s = conn.createStatement();
+	ResultSet rs = s.executeQuery("SELECT * FROM virtual_slave_node_table WHERE host='" + hostname + "'");
+
+suggestion0:
+	String sql = "select * from virtual_slave_node_table where hostname=?;";
+	PreparedStatement s = conn.prepareStatement(sql);
+	s.setObject(1, hostname);
+	ResultSet rs = s.executeQuery();
+
+suggestion1:
+	String sql = "select * from virtual_slave_node_table where hostname=?;";
+	PreparedStatement s = conn.prepareStatement(sql);
+	s.setObject(1, hostname);
+	ResultSet rs = s.executeQuery();
+
+suggestion2:
+	PreparedStatement s = conn.prepareStatement("SELECT * FROM virtual_slave_node_table WHERE hostname='?'");
+	s.setObject(1, hostname);
+	ResultSet rs = s.executeQuery();
+
+suggestion3:
+	PreparedStatement s = conn.prepareStatement("SELECT * FROM virtual_slave_node_table WHERE hostname='?'");
+	s.setObject(1, hostname);
+	ResultSet rs = s.executeQuery();
+
+suggestion4:
+	PreparedStatement s = conn.prepareStatement("SELECT * FROM virtual_slave_node_table WHERE hostname='?'");
+	s.setObject(1, hostname);
+	s.ResultSet rs = s.executeQuery();
+	ResultSet rs2 = s2.executeQuery(("SELECT * FROM virtual_machine_host_table WHERE hostname='" + rs.getString("host")) + "'");
+
+suggestion5:
+	PreparedStatement s = conn.prepareStatement("SELECT * FROM virtual_slave_node_table WHERE hostname='?'");
+	s.setObject(1, hostname);
+	ResultSet rs = s.executeQuery();
+
+suggestion6:
+	PreparedStatement s = conn.prepareStatement("SELECT * FROM virtual_slave_node_table WHERE hostname='?'");
+	s.setObject(1, hostname);
+	ResultSet rs = s.executeQuery();
+

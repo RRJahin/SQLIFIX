@@ -1,0 +1,18 @@
+Target:
+	String sql = "Insert into Guest(Guest_Name, Guest_Surname, Address, Email_Address, Card_Number, Phone_Number,ExpiryDate,CVV) values ("+guest.getGuestName()+","+guest.getGuestSurename()+","+guest.getGuestAddress()+","+guest.getGuestEmail()+","+guest.getGuestCardNumber()+","+guest.getGuestPhoneNumber()+","+guest.getExpiryDate()+","+guest.getCVV()+")";
+	Statement pstm = conn.createStatement( Statement.RETURN_GENERATED_KEYS);
+	pstm.executeUpdate(sql);
+
+suggestion0:
+	String sql = "Insert into Guest(Guest_Name, Guest_Surname, Address, Email_Address, Card_Number, Phone_Number,ExpiryDate,CVV) values (?,?,?,?,?,?,,)";
+	PreparedStatement pstm = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+	pstm.setObject(1, guest.getGuestName());
+	pstm.setObject(2, guest.getGuestSurename());
+	pstm.setObject(3, guest.getGuestAddress());
+	pstm.setObject(4, guest.getGuestEmail());
+	pstm.setObject(5, guest.getGuestCardNumber());
+	pstm.setObject(6, guest.getGuestPhoneNumber());
+	pstm.setObject(7, guest.getExpiryDate());
+	pstm.setObject(8, guest.getCVV());
+	pstm.executeUpdate();
+

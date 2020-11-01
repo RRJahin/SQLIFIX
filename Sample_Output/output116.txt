@@ -1,0 +1,11 @@
+Target:
+	stmt = c.createStatement();
+	String sql = "SELECT ITEM_NAME,QUANTITY,PRICE FROM HISTORY WHERE CUSTOMER_ID = " + id + " ORDER BY ORDER_ID DESC";
+	ResultSet rs = stmt.executeQuery(sql);
+
+suggestion0:
+	String sql = "SELECT ITEM_NAME,QUANTITY,PRICE FROM HISTORY WHERE CUSTOMER_ID = ? ORDER BY ORDER_ID DESC";
+	stmt = c.prepareStatement(sql);
+	stmt.setObject(1, id);
+	ResultSet rs = stmt.executeQuery();
+

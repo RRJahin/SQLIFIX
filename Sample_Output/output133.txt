@@ -1,0 +1,8 @@
+Target:
+	Statement ps = conn.createStatement()) {
+	ps.executeUpdate("INSERT INTO patients(MID) VALUES(NULL)");
+
+suggestion0:
+	PreparedStatement ps = conn.prepareStatement("INSERT INTO patients(MID) VALUES(NULL)");
+	ps.executeUpdate();
+

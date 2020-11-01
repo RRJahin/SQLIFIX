@@ -4,16 +4,14 @@ Target:
 	st.executeUpdate(query);
 
 suggestion0:
-	String query = "insert into TBL_NAME (?) values(?)";
+	String query = "insert into " + TBL_NAME + " (" + FIELD_EMERG + ") values(?)";
 	st = conn.prepareStatement(query);
-	st.setObject(1,FIELD_EMERG);
-	st.setObject(2,false);
+	st.setObject(1,false);
 	st.executeUpdate();
 
 suggestion1:
-	String query = "insert into TBL_NAME(?) values(?)";
+	String query = "insert into " + TBL_NAME + " (" + FIELD_EMERG + ") values(?)";
 	st = conn.prepareStatement(query);
-	st.setObject(1,FIELD_EMERG);
-	st.setBoolean(2,false);
+	st.setObject(1,false);
 	st.executeUpdate();
 

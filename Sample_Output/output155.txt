@@ -1,0 +1,13 @@
+Target:
+	String query = "SELECT " + column + " FROM " + table + " WHERE id="+id;
+	java.sql.Statement pstmt = null;
+	pstmt = conn.createStatement();
+	rs = pstmt.executeQuery(query);
+
+suggestion0:
+	String query = ((("SELECT " + column) + " FROM ") + table) + " WHERE id=?";
+	java.sql.PreparedStatement pstmt = null;
+	pstmt = conn.prepareStatement(query);
+	pstmt.setObject(1, id);
+	rs = pstmt.executeQuery();
+

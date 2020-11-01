@@ -1,0 +1,76 @@
+Target:
+	Statement ps = null;
+	String qry = "select LAST_NM from person where prsn_id = " + i;
+	ps = conn.createStatement();
+	rs = ps.executeQuery(qry);
+
+suggestion0:
+	PreparedStatement ps = null;
+	String qry = "SELECT LAST_NM FROM person WHERE prsn_id = ?";
+	ps = conn.prepareStatement(qry);
+	ps.setObject(1, i);
+	rs = ps.executeQuery();
+
+suggestion1:
+	PreparedStatement ps = null;
+	String qry = "SELECT LAST_NM FROM person WHERE prsn_id=?";
+	ps = conn.prepareStatement(qry);
+	ps.setObject(1, i);
+	rs = ps.executeQuery();
+
+suggestion2:
+	PreparedStatement ps = null;
+	String qry = "SELECT LAST_NM FROM person WHERE i = ?";
+	ps = conn.prepareStatement(qry);
+	ps.setObject(1, i);
+	rs = ps.executeQuery();
+
+suggestion3:
+	PreparedStatement ps = null;
+	String qry = "SELECT LAST_NM FROM person WHERE prsn_id=?";
+	ps = conn.prepareStatement(qry);
+	ps.setObject(1, i);
+	rs = ps.executeQuery();
+
+suggestion4:
+	PreparedStatement ps = null;
+	String qry = "SELECT LAST_NM FROM person WHERE prsn_prsn_id = ?";
+	ps = conn.prepareStatement(qry);
+	ps.setObject(1, i);
+	rs = ps.executeQuery();
+
+suggestion5:
+	PreparedStatement ps = null;
+	String qry = "SELECT LAST_NM FROM person WHERE prsn_prsn_id = ?";
+	ps = conn.prepareStatement(qry);
+	ps.setObject(1, i);
+	rs = ps.executeQuery();
+
+suggestion6:
+	PreparedStatement ps = null;
+	String qry = "SELECT LAST_NM FROM person WHERE prsn_id = ?";
+	ps = conn.prepareStatement(qry);
+	ps.setObject(1, i);
+	rs = ps.executeQuery();
+
+suggestion7:
+	PreparedStatement ps = null;
+	String qry = "SELECT LAST_NM FROM person WHERE i=?";
+	ps = conn.prepareStatement(qry);
+	ps.setObject(1, i);
+	rs = ps.executeQuery();
+
+suggestion8:
+	PreparedStatement ps = null;
+	String qry = "SELECT LAST_NM FROM person WHERE prsn_prsn_id = ?";
+	ps = conn.prepareStatement(qry);
+	ps.setObject(1, i);
+	rs = ps.executeQuery();
+
+suggestion9:
+	PreparedStatement ps = null;
+	String qry = "SELECT LAST_NM FROM person WHERE prsn_id=?";
+	ps = conn.prepareStatement(qry);
+	ps.setObject(1, i);
+	rs = ps.executeQuery();
+

@@ -1,0 +1,14 @@
+Target:
+	Statement pstemt = null;
+	String sql = "select column_name,data_type,column_comment from information_schema.columns where table_schema='" + bi.getDatabase() + "' and table_name='" + bi.getTable() + "'";
+	pstemt = con.createStatement();
+	ResultSet executeQuery = pstemt.executeQuery(sql);
+
+suggestion0:
+	PreparedStatement pstemt = null;
+	String sql = "select column_name,data_type,column_comment from information_schema.columns where table_schema='?' and table_name='?'";
+	pstemt = con.prepareStatement(sql);
+	pstemt.setObject(1, bi.getDatabase());
+	pstemt.setObject(2, bi.getTable());
+	ResultSet executeQuery = pstemt.executeQuery();
+

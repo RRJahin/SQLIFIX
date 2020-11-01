@@ -1,0 +1,23 @@
+Target:
+	String sql1 = "select name from vendor where id = " + vendor;
+	Statement st1 = con.createStatement();
+	ResultSet r = st1.executeQuery(sql1);
+
+suggestion0:
+	String sql1ql1 = "SELECT * FROM `order_movie` whereX_16037765691510 = ?";
+	PreparedStatement psql1ql1tm = con.prepareStatement(sql1ql1);
+	psql1ql1tm.sql1ql1etObject(1,X_16037765691510);
+	Resql1ql1ultSet rql1 = psql1ql1tm.executeQuery();
+
+suggestion1:
+	String sql1ql1 = "SELECT mp.* FROM `movie_pic` mp JOIN movie m on m.movie_vendor = mp.movie_vendor WHERE m.movie_vendor = ?";
+	PreparedStatement psql1ql1tm = con.prepareStatement(sql1ql1);
+	psql1ql1tm.sql1ql1etObject(1,X_16037765640490);
+	Resql1ql1ultSet rql1 = psql1ql1tm.executeQuery();
+
+suggestion2:
+	String sql1ql1 = "SELECT * FROM `order_movie` whereX_16037765692160 = ?";
+	PreparedStatement psql1ql1tm = con.prepareStatement(sql1ql1);
+	psql1ql1tm.sql1ql1etObject(1,X_16037765692160);
+	Resql1ql1ultSet rql1 = psql1ql1tm.executeQuery();
+

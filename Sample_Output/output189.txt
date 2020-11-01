@@ -1,0 +1,83 @@
+Target:
+	String sql = "SELECT COMENTARIO FROM TAREAS WHERE DESCRIPCION = " + nomTarea;
+	Statement coment = conexion.createStatement();
+	ResultSet resultado = coment.executeQuery(sql);
+
+suggestion0:
+	String sql = "SELECT COMENTARIO FROM TAREAS WHERE DESCRIPCION = ?";
+	PreparedStatement coment = conexion.prepareStatement(sql);
+	coment.setObject(1, nomTarea);
+	ResultSet resultado = coment.executeQuery();
+
+suggestion1:
+	String sql = "SELECT COMENTARIO FROM TAREAS WHERE DESCRIPCION = ?";
+	PreparedStatement coment = conexion.prepareStatement(sql);
+	coment.setObject(1, nomTarea);
+	ResultSet resultado = coment.executeQuery();
+
+suggestion2:
+	String sql = "SELECT COMENTARIO FROM TAREAS WHERE DESCRIPCION=?";
+	PreparedStatement coment = conexion.prepareStatement(sql);
+	coment.setObject(1, nomTarea);
+	ResultSet resultado = coment.executeQuery();
+
+suggestion3:
+	String sql = "select COMENTARIO from TAREAS where nomTareaName = ?";
+	PreparedStatement coment = conexion.prepareStatement(sql);
+	coment.setObject(1, nomTarea);
+	ResultSet resultado = coment.executeQuery();
+
+suggestion4:
+	String sql = "select COMENTARIO from TAREAS where nomTareaName = ?";
+	PreparedStatement coment = conexion.prepareStatement(sql);
+	coment.setObject(1, nomTarea);
+	ResultSet resultado = coment.executeQuery();
+
+suggestion5:
+	String sql = "SELECT COMENTARIO FROM TAREAS WHERE DESCRIPCION=?";
+	PreparedStatement coment = conexion.prepareStatement(sql);
+	coment.setObject(1, nomTarea);
+	ResultSet resultado = coment.executeQuery();
+
+suggestion6:
+	String sql = "SELECT COMENTARIO FROM TAREAS WHERE DESCRIPCION=?";
+	PreparedStatement coment = conexion.prepareStatement(sql);
+	coment.setObject(1, nomTarea);
+	ResultSet resultado = coment.executeQuery();
+
+suggestion7:
+	String sql = "SELECT COMENTARIO FROM TAREAS WHERE DESCRIPCION=?";
+	PreparedStatement coment = conexion.prepareStatement(sql);
+	coment.setObject(1, nomTarea);
+	ResultSet resultado = coment.executeQuery();
+
+suggestion8:
+	String sql = "SELECT COMENTARIO FROM TAREAS WHERE DESCRIPCION=?";
+	PreparedStatement coment = conexion.prepareStatement(sql);
+	coment.setObject(1, nomTarea);
+	ResultSet resultado = coment.executeQuery();
+
+suggestion9:
+	String sql = "select COMENTARIO from TAREAS where DESCRIPCION = ?";
+	PreparedStatement coment = conexion.prepareStatement(sql);
+	coment.setObject(1, nomTarea);
+	ResultSet resultado = coment.executeQuery();
+
+suggestion10:
+	String sql = "SELECT COMENTARIO FROM TAREAS WHERE DESCRIPCION = ?";
+	PreparedStatement coment = conexion.prepareStatement(sql);
+	coment.setObject(1, nomTarea);
+	ResultSet resultado = coment.executeQuery();
+
+suggestion11:
+	String sql = "SELECT COMENTARIO FROM TAREAS WHERE DESCRIPCION = ?";
+	PreparedStatement coment = conexion.prepareStatement(sql);
+	coment.setObject(1, nomTarea);
+	ResultSet resultado = coment.executeQuery();
+
+suggestion12:
+	String sql = "Select COMENTARIO from TAREAS where DESCRIPCION = ?";
+	PreparedStatement coment = conexion.prepareStatement(sql);
+	coment.setObject(1, nomTarea);
+	ResultSet resultado = coment.executeQuery();
+

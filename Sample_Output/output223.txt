@@ -1,0 +1,16 @@
+Target:
+	Statement stat = null;
+	stat = myConn.createStatement();
+	rs = stat.executeQuery("SELECT * FROM register_customer WHERE Account_num ='" + accountNum + "'");
+
+suggestion0:
+	PreparedStatement stat = null;
+	stat = myConn.prepareStatement("select * from register_customer where Account_num= accountNum");
+	rs = stat.executeQuery();
+
+suggestion1:
+	PreparedStatement stat = null;
+	stat = myConn.prepareStatement("select * from register_customer where Account_num=?");
+	stat.setObject(1, accountNum);
+	rs = stat.executeQuery();
+

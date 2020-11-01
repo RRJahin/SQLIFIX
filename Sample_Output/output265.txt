@@ -1,0 +1,17 @@
+Target:
+	Statement p = conn.createStatement();
+	p.executeUpdate("Insert into orar values("+orar.getZiua()+","+orar.getOra_inceput()+","+orar.getOra_sfarsit()+","+orar.getFrecventa()+","+orar.getId_Disciplina()+","+orar.getTip()+","+orar.getId_Cadru_Didactic(),orar.getId_Sala()+","+orar.getId_Formatie()+")");
+
+suggestion0:
+	PreparedStatement p = conn.prepareStatement("Insert into orar values(?,?,?,?,?,?,?,?,?)");
+	p.setObject(1,X_16014782218020);
+	p.setObject(2,X_16014782218021);
+	p.setObject(3,X_16014782218022);
+	p.setObject(4,X_16014782218023);
+	p.setObject(5,X_16014782218024);
+	p.setObject(6,X_16014782218035);
+	p.setObject(7,X_16014782218036);
+	p.setObject(8, orar.getId_Sala());
+	p.setObject(9, orar.getId_Formatie());
+	p.executeUpdate();
+

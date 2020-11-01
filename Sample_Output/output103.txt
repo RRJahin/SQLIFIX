@@ -1,0 +1,10 @@
+Target:
+	Statement stmt = conn.createStatement()) {
+	return stmt.executeUpdate("UPDATE ndcodes SET Description = "+ med.getDescription() + "WHERE Code = "+med.getNDCode());
+
+suggestion0:
+	PreparedStatement stmt = conn.prepareStatement("UPDATE ndcodes SET Description = ? " + "WHERE Code = ?");
+	stmt.setObject(1, med.getDescription());
+	stmt.setObject(2, med.getNDCode());
+	return stmt.executeUpdate();
+

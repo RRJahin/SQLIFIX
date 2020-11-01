@@ -1,0 +1,37 @@
+Target:
+	String query = "INSERT INTO RoomLine(guestId, roomNo, booking) VALUES('" + roomLine.getGuest().getId() + "', '" + roomLine.getRoom().getNumber() + "', '" + roomLine.getBooking().getId() + "')";
+	Statement stmt = con.createStatement();
+	rc = stmt.executeUpdate(query);
+
+suggestion0:
+	String query = "INSERT INTO RoomLine(guestId, roomNo, booking)" + " VALUES('?','?','?')";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, roomLine.getGuest().getId());
+	stmt.setObject(2, roomLine.getRoom().getNumber());
+	stmt.setObject(3, roomLine.getBooking().getId());
+	rc = stmt.executeUpdate();
+
+suggestion1:
+	String query = "INSERT INTO RoomLine(guestId, roomNo, booking) VALUES('?', '?', '?')";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, roomLine.getGuest().getId());
+	stmt.setObject(2, roomLine.getRoom().getNumber());
+	stmt.setObject(3, roomLine.getBooking().getId());
+	rc = stmt.executeUpdate();
+
+suggestion2:
+	String query = "INSERT INTO RoomLine(guestId, roomNo, booking) VALUES('?','?','?')";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, roomLine.getGuest().getId());
+	stmt.setObject(2, roomLine.getRoom().getNumber());
+	stmt.setObject(3, roomLine.getBooking().getId());
+	rc = stmt.executeUpdate();
+
+suggestion3:
+	String query = "INSERT INTO RoomLine(guestId, roomNo, booking) VALUES ('?','?','?')";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, roomLine.getGuest().getId());
+	stmt.setObject(2, roomLine.getRoom().getNumber());
+	stmt.setObject(3, roomLine.getBooking().getId());
+	rc = stmt.executeUpdate();
+

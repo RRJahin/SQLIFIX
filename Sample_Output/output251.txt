@@ -1,0 +1,11 @@
+Target:
+	String loadInstrQuery = "SELECT * FROM instructor WHERE idinstructor != "+instrId+" ORDER BY lname";
+	Statement ps = connection.createStatement();
+	ResultSet rs = ps.executeQuery(loadInstrQuery);
+
+suggestion0:
+	String loadInstrQuery = "SELECT * FROM instructor WHERE idinstructor != ? ORDER BY lname;";
+	PreparedStatement ps = connection.prepareStatement(loadInstrQuery);
+	ps.setObject(1,instrId);
+	ResultSet rs = ps.executeQuery();
+

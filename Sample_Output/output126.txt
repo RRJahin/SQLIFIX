@@ -1,0 +1,15 @@
+Target:
+	String sql = "INSERT INTO ParcClient (codeTParc, codeCliPros, quantite, date, nom) VALUES ("+obj.getCodeTParc()+", "+obj.getCodeCliPros()+", "+Integer.toString(obj.getQuantite())+", "+(obj.getDate() == null) ? "" : formatter.format(obj.getDate())+", "+obj.getNom()+")";
+	Statement insert = connect.createStatement();
+	int rs = insert.executeUpdate(sql);
+
+suggestion0:
+	String sql = "INSERT INTO ParcClient (codeTParc, codeCliPros, quantite, date, nom) VALUES (?, ?, ?, ?, ?)";
+	PreparedStatement insert = connect.prepareStatement(sql);
+	insert.setObject(1,X_16037765703960);
+	insert.setObject(2,X_16037765703961);
+	insert.setObject(3, java.lang.Integer.toString(obj.getQuantite()));
+	insert.setObject(4, obj.getDate() == null ? "" : formatter.format(obj.getDate()));
+	insert.setObject(5, obj.getNom());
+	int rs = insert.executeUpdate();
+

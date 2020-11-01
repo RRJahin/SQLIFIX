@@ -1,0 +1,11 @@
+Target:
+	stmt = con.createStatement();
+	String query = "Select * from tickets Where TicketNo =" + ticketx.getText() + ";";
+	rs = stmt.executeQuery(query);
+
+suggestion0:
+	String query = "Select * from tickets Where TicketNo =?;";
+	stmt = con.prepareStatement(query);
+	stmt.setObject(1, ticketx.getText());
+	rs = stmt.executeQuery();
+

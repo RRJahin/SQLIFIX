@@ -1,0 +1,83 @@
+Target:
+	String query = "SELECT * FROM block where ID = " + tableRecords.getID();
+	Statement pst = conn.createStatement();
+	ResultSet resultSet = pst.executeQuery(query);
+
+suggestion0:
+	String query = "SELECT * FROM block WHERE ID = ?";
+	PreparedStatement pstt = conn.prepareStatement(query);
+	pstt.setObject(1, tableRecords.getID());
+	ResultSet resultSet = pstt.executeQuery();
+
+suggestion1:
+	String query = "SELECT * FROM block WHERE ID = ?";
+	PreparedStatement pstt = conn.prepareStatement(query);
+	pstt.setObject(1, tableRecords.getID());
+	ResultSet resultSet = pstt.executeQuery();
+
+suggestion2:
+	String query = "SELECT * FROM block WHERE ID=?";
+	PreparedStatement pstt = conn.prepareStatement(query);
+	pstt.setObject(1, tableRecords.getID());
+	ResultSet resultSet = pstt.executeQuery();
+
+suggestion3:
+	String query = "select * from block where tableRecords.getID()Name = ?";
+	PreparedStatement pstt = conn.prepareStatement(query);
+	pstt.setObject(1, tableRecords.getID());
+	ResultSet resultSet = pstt.executeQuery();
+
+suggestion4:
+	String query = "select * from block where tableRecords.getID()Name = ?";
+	PreparedStatement pstt = conn.prepareStatement(query);
+	pstt.setObject(1, tableRecords.getID());
+	ResultSet resultSet = pstt.executeQuery();
+
+suggestion5:
+	String query = "SELECT * FROM block WHERE ID=?";
+	PreparedStatement pstt = conn.prepareStatement(query);
+	pstt.setObject(1, tableRecords.getID());
+	ResultSet resultSet = pstt.executeQuery();
+
+suggestion6:
+	String query = "SELECT * FROM block WHERE ID=?";
+	PreparedStatement pstt = conn.prepareStatement(query);
+	pstt.setObject(1, tableRecords.getID());
+	ResultSet resultSet = pstt.executeQuery();
+
+suggestion7:
+	String query = "SELECT * FROM block WHERE ID=?";
+	PreparedStatement pstt = conn.prepareStatement(query);
+	pstt.setObject(1, tableRecords.getID());
+	ResultSet resultSet = pstt.executeQuery();
+
+suggestion8:
+	String query = "SELECT * FROM block WHERE ID=?";
+	PreparedStatement pst = conn.prepareStatement(query);
+	pst.setObject(1, tableRecords.getID());
+	ResultSet resultSet = pst.executeQuery();
+
+suggestion9:
+	String query = "select * from block where ID = ?";
+	PreparedStatement ppst = conn.prepareStatement(query);
+	ppst.setObject(1, tableRecords.getID());
+	ResultSet resultSet = ppst.executeQuery();
+
+suggestion10:
+	String query = "SELECT * FROM block WHERE ID = ?";
+	PreparedStatement pst = conn.prepareStatement(query);
+	pst.setObject(1, tableRecords.getID());
+	ResultSet resultSet = pst.executeQuery();
+
+suggestion11:
+	String query = "SELECT * FROM block WHERE ID = ?";
+	PreparedStatement pst = conn.prepareStatement(query);
+	pst.setObject(1, tableRecords.getID());
+	ResultSet resultSet = pst.executeQuery();
+
+suggestion12:
+	String query = "Select * from block where ID = ?";
+	PreparedStatement pst = conn.prepareStatement(query);
+	pst.setObject(1, tableRecords.getID());
+	ResultSet resultSet = pst.executeQuery();
+

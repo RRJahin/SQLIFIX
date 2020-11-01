@@ -1,0 +1,75 @@
+Target:
+	String sql = "Update Starwood set Email_Address ="+member.getEmail()+"  where Id="+member.getId().toString();
+	Statement pstm = conn.createStatement();
+	pstm.executeUpdate(sql);
+
+suggestion0:
+	String sql = "Update Starwood set Email_Address =?  where Id=? ";
+	PreparedStatement pstm = conn.prepareStatement(sql);
+	pstm.setObject(1, member.getEmail());
+	pstm.setObject(2, member.getId().toString());
+	pstm.executeUpdate();
+
+suggestion1:
+	String sql = "Update Starwood set Email_Email_Address =?  where Id=? ";
+	PreparedStatement pstm = conn.prepareStatement(sql);
+	pstm.setObject(1, member.getEmail());
+	pstm.setObject(2, member.getId().toString());
+	pstm.executeUpdate();
+
+suggestion2:
+	String sql = "Update Starwood set Email_Address =?  where Id=? ";
+	PreparedStatement pstm = conn.prepareStatement(sql);
+	pstm.setObject(1, member.getEmail());
+	pstm.setObject(2, member.getId().toString());
+	pstm.executeUpdate();
+
+suggestion3:
+	String sql = "UPDATE Starwood SET Email_Address=? WHERE Id=?;";
+	PreparedStatement pstm = conn.prepareStatement(sql);
+	pstm.setObject(1, member.getEmail());
+	pstm.setObject(2, member.getId().toString());
+	pstm.executeUpdate();
+
+suggestion4:
+	String sql = "UPDATE Starwood SET Email_Address=? WHERE Id=?;";
+	PreparedStatement pstm = conn.prepareStatement(sql);
+	pstm.setObject(1, member.getEmail());
+	pstm.setObject(2, member.getId().toString());
+	pstm.executeUpdate();
+
+suggestion5:
+	String sql = "UPDATE Starwood SET Email_Address=? WHERE Id=?;";
+	PreparedStatement pstm = conn.prepareStatement(sql);
+	pstm.setObject(1, member.getEmail());
+	pstm.setObject(2, member.getId().toString());
+	pstm.executeUpdate();
+
+suggestion6:
+	String sql = "Update Starwood set Email_Address =?  where Id=? ";
+	PreparedStatement pstm = conn.prepareStatement(sql);
+	pstm.setObject(1, member.getEmail());
+	pstm.setObject(2, member.getId().toString());
+	pstm.executeUpdate();
+
+suggestion7:
+	String sql = "Update Starwood set Email_Address =?  where Id=? ";
+	PreparedStatement pstm = conn.prepareStatement(sql);
+	pstm.setObject(1, member.getEmail());
+	pstm.setObject(2, member.getId().toString());
+	pstm.executeUpdate();
+
+suggestion8:
+	String sql = "Update Starwood set Email_Address =? where Id=? ";
+	PreparedStatement pstm = conn.prepareStatement(sql);
+	pstm.setObject(1, member.getEmail());
+	pstm.setObject(2, member.getId().toString());
+	pstm.executeUpdate();
+
+suggestion9:
+	String sql = "UPDATE Starwood SET Email_Address = ? WHERE Id = ?;";
+	PreparedStatement pstmtm = conn.prepareStatement(sql);
+	pstmtm.setObject(1, member.getEmail());
+	pstmtm.setObject(2, member.getId().toString());
+	pstmtm.executeUpdate();
+

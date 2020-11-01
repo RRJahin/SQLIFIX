@@ -1,0 +1,17 @@
+Target:
+	String prevQuery = "SELECT title,docfile FROM document WHERE iddocument = "+selFile.getDocid();
+	Statement ps = connection.createStatement();
+	ResultSet rs = ps.executeQuery(prevQuery);
+
+suggestion0:
+	String prevQuery = "SELECT title,docfile FROM document WHERE iddocument = ?";
+	PreparedStatement ps = connection.prepareStatement(prevQuery);
+	ps.setObject(1, selFile.getDocid());
+	ResultSet rs = ps.executeQuery();
+
+suggestion1:
+	String prevQuery = "SELECT title, docfile FROM document WHERE title = ?";
+	PreparedStatement ps = connection.prepareStatement(prevQuery);
+	ps.setObject(1, selFile.getDocid());
+	ResultSet rs = ps.executeQuery();
+
