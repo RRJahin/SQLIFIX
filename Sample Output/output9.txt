@@ -1,0 +1,11 @@
+Target:
+	String query = "select * from " + TBL_NAME + " where " + FIELD_ID_MAPPA + "="+search_id+" AND " + FIELD_IS_PDI + "=true order by " + FIELD_CODICE;
+	st = conn.createStatement();
+	rs = st.executeQuery(query);
+
+suggestion0:
+	String query = "select * from " + TBL_NAME + " where " + FIELD_ID_MAPPA + "=? AND " + FIELD_IS_PDI + "=true order by " + FIELD_CODICE;
+	st = conn.prepareStatement(query);
+	st.setObject(1,search_id);
+	rs = st.executeQuery();
+

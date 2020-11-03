@@ -1,0 +1,19 @@
+Target:
+	String query = "SELECT COUNT(*) AS activityBokingInstances FROM ActivityBooking " + " WHERE date='" + date + "' AND guestId='" + guestId + "' AND status<>'Canceled'";
+	Statement stmt = con.createStatement();
+	results = stmt.executeQuery(query);
+
+suggestion0:
+	String query = "SELECT COUNT(*) AS activityBokingInstances FROM ActivityBooking " + " WHERE date='?' AND guestId= '?' AND status<>'Canceled' ";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, date);
+	stmt.setObject(2, data);
+	results = stmt.executeQuery();
+
+suggestion1:
+	String query = "SELECT COUNT(*) AS activityBokingInstances FROM ActivityBooking " + " WHERE date='?' AND guestId='?' AND status<>'Canceled'";
+	PreparedStatement stmt = con.prepareStatement(query);
+	stmt.setObject(1, data);
+	stmt.setObject(2, guestId);
+	results = stmt.executeQuery();
+

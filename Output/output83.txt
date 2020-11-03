@@ -1,11 +1,11 @@
 Target:
-	String s = "DELETE FROM `movie_feature` where movie_id = "+movie_id;
+	String s = "DELETE FROM `movie_feature` where movie_id = "+id;
 	Statement pstm = con.createStatement();
 	x = pstm.executeUpdate(s);
 
 suggestion0:
-	String s = "DELETE FROM `movie_feature` whereX_16037765639450 = ?";
+	String s = "DELETE FROM `movie_feature` where movie_id = ?";
 	PreparedStatement pstm = con.prepareStatement(s);
-	pstm.setObject(1,X_16037765639450);
+	pstm.setObject(1,id);
 	x = pstm.executeUpdate();
 

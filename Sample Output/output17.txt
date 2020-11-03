@@ -1,0 +1,13 @@
+Target:
+	String sql = "UPDATE Pays SET codePays = "+obj.getCodePays()+", nomPays = "+obj.getNomPays()+" WHERE id = "+obj.getId();
+	Statement update = connect.createStatement();
+	int rs = update.executeUpdate(sql);
+
+suggestion0:
+	String sql = "UPDATE Pays SET codePays = ?, nomPays = ? WHERE id = ?";
+	PreparedStatement update = connect.prepareStatement(sql);
+	update.setObject(1,obj.getCodePays());
+	update.setObject(2,obj.getNomPays());
+	update.setObject(3,obj.getId());
+	int rs = update.executeUpdate();
+

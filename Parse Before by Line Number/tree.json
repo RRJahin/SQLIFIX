@@ -1,0 +1,75 @@
+{
+  "before_code": "\"DELETE FROM COUNTRY WHERE COUNTRY_ID \u003d \" \u003d country.getCountry_id()\nStatement p \u003d connection.createStatement()\np.execute(SQL)\n",
+  "after_code": "",
+  "before_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": [
+      {
+        "label": "\u003d",
+        "type": "Assignment",
+        "children": [
+          {
+            "label": "\"DELETE FROM COUNTRY WHERE COUNTRY_ID \u003d \"",
+            "type": "Literal",
+            "children": []
+          },
+          {
+            "label": "getCountry_id",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "country",
+                "type": "TypeAccess",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "p",
+        "type": "LocalVariable",
+        "children": [
+          {
+            "label": "Statement",
+            "type": "VARIABLE_TYPE",
+            "children": []
+          },
+          {
+            "label": "createStatement",
+            "type": "Invocation",
+            "children": [
+              {
+                "label": "connection",
+                "type": "FieldRead",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "execute",
+        "type": "Invocation",
+        "children": [
+          {
+            "label": "p",
+            "type": "VariableRead",
+            "children": []
+          },
+          {
+            "label": "SQL",
+            "type": "TypeAccess",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "after_tree": {
+    "label": "edit_root",
+    "type": "edit_unit",
+    "children": []
+  }
+}
