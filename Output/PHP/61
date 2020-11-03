@@ -1,0 +1,22 @@
+target:
+	$conn->query("SELECT * FROM myTable WHERE name like '$name' AND id=$id");
+	$conn->close();
+
+suggestion0:
+	$stmt = $conn->prepare("SELECT * FROM myTable WHERE name like ? AND id!=?");
+	$stmt->bind_param("si", $name,$id);
+	$stmt->execute();
+	$stmt->close();
+
+suggestion1:
+	$stmt = $conn->prepare("SELECT * FROM myTable WHERE name like ? AND id = ?");
+	$stmt->bind_param("ss", $name,$id);
+	$stmt->execute();
+	$stmt->close();
+
+suggestion2:
+	$stmt = $conn->prepare("SELECT * FROM myTable WHERE name like ? AND id=?");
+	$stmt->bind_param("si", $name,$id);
+	$stmt->execute();
+	$stmt->close();
+

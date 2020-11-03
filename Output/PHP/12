@@ -1,0 +1,45 @@
+target:
+	return $db->query("SELECT '$field' as val from $wpdb->myTable where $pk=$id");
+
+suggestion0:
+	$stmt = $db->prepare("SELECT ? as val from table1 where ?=?");
+	$stmt->bind_param("sss",$field, $pk,$id);
+	$stmt->execute();
+	return $stmt->get_result();
+
+suggestion1:
+	$stmt = $db->prepare("SELECT ?  from ? where ?=?");
+	$stmt->bind_param("ssss",$field,$wpdb->myTable, $pk,$id);
+	$stmt->execute();
+	return $stmt->get_result();
+
+suggestion2:
+	$stmt = $db->prepare("SELECT rowid,,? as val from table1 where ?!=?");
+	$stmt->bind_param("sss",$field, $pk,$id);
+	$stmt->execute();
+	return $stmt->get_result();
+
+suggestion3:
+	$stmt = $db->prepare("SELECT ? as val from table1 where ?<=?");
+	$stmt->bind_param("sss",$field, $pk,$id);
+	$stmt->execute();
+	return $stmt->get_result();
+
+suggestion4:
+	$stmt = $conn->prepare( "SELECT username,email FROM userTable WHERE ID IN (?) ORDER BY display_name" );
+	$stmt->bind_param('s',$editable);
+	$stmt->execute();
+	return  $stmt->get_result();
+
+suggestion5:
+	$stmt = $conn->prepare( "SELECT uname FROM ? WHERE ID IN (?) ORDER BY display_name" );
+	$stmt->bind_param('ss',$wpdb->users,$editable);
+	$stmt->execute();
+	return  $stmt->get_result();
+
+suggestion6:
+	$stmt = $db->prepare("SELECT ? as val from ? where ?=?");
+	$stmt->bind_param("ssss",$field,$wpdb->usertable, $pk,$id);
+	$stmt->execute();
+	return $stmt->get_result();
+

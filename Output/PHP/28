@@ -1,0 +1,46 @@
+target:
+	$conn->query("SELECT * FROM $wpdb->myTable WHERE name='$name'");
+	$conn->close();
+
+suggestion0:
+	$stmt = $conn->prepare("SELECT * FROM ? WHERE name = ?");
+	$stmt->bind_param("ss",$wpdb->myTable, $_SESSION['name']);
+	$stmt->execute();
+	$stmt = $conn->prepare("DELETE FROM ? WHERE name = ?");
+	$stmt->bind_param("ss",$wpdb->myTable, $_SESSION['name']);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+
+suggestion1:
+	$stmt = $conn->prepare("SELECT * FROM ? WHERE name= ?");
+	$stmt->bind_param("ss", $wpdb->myTable,$name);
+	$stmt->execute();
+	$stmt->close();
+
+suggestion2:
+	$stmt = $conn->prepare("SELECT * FROM ? WHERE name = ?");
+	$stmt->bind_param("si",$wpdb->myTable, $_SESSION['name']);
+	$stmt->execute();
+	$stmt = $conn->prepare("DELETE FROM ? WHERE name = ?");
+	$stmt->bind_param("si",$wpdb->myTable, $_SESSION['name']);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+
+suggestion3:
+	$stmt = $conn->prepare("SELECT uname FROM ? WHERE name= ?");
+	$stmt->bind_param("ss",$wpdb->myTable, $name);
+	$stmt->execute();
+	$stmt->close();
+
+suggestion4:
+	$stmt = $conn->prepare("SELECT * FROM ? WHERE name != ?");
+	$stmt->bind_param("si",$wpdb->myTable, $_SESSION['name']);
+	$stmt->execute();
+	$stmt = $conn->prepare("DELETE FROM ? WHERE name != ?");
+	$stmt->bind_param("si",$wpdb->myTable, $_SESSION['name']);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+

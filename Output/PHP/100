@@ -1,0 +1,25 @@
+target:
+	$conn->query("DELETE FROM myTable WHERE id = '{$_SESSION['id']}' and isLogin=$isLogin");
+	$conn->close();
+
+suggestion0:
+	$stmt = $conn->prepare("DELETE FROM myTable WHERE id = ? and isLogin = ?");
+	$stmt->bind_param("ss", $_SESSION['id'],$isLogin);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+
+suggestion1:
+	$stmt = $conn->prepare("DELETE FROM myTable WHERE id = ? and isLogin = FALSE");
+	$stmt->bind_param("i", $_SESSION['id']);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+
+suggestion2:
+	$stmt = $conn->prepare("DELETE FROM myTable WHERE id = ? and isLogin = TRUE");
+	$stmt->bind_param("i", $_SESSION['id']);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+

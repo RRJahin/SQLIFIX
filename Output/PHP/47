@@ -1,0 +1,16 @@
+target:
+	$sql = "INSERT INTO 'answers' ('author', 'date', 'question', 'answer') VALUES ('$author', '$date', $question, $answer)";
+	$pdo->query($sql);
+	$sql = "UPDATE 'questions' SET 'answers'='answers'+1 WHERE 'id'=$question ans session_id = {$_POST['id']}" ;
+	$pdo->query($sql);
+
+suggestion0:
+	$sql = "INSERT INTO answers (author, date, question, answer) VALUES (?, ?, ?, ?)";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("ssss", $author, $date, $question, $answer);
+	$stmt->execute();
+	$sql = "UPDATE questions SET answers=answers+1 WHERE id=? and session_id = ?";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("ss", $question,$_POST['id']);
+	$stmt->execute();
+

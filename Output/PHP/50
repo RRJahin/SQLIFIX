@@ -1,0 +1,25 @@
+target:
+	$conn->query("DELETE FROM myTable WHERE id = '{$_SESSION['id']}' AND email= $email");
+	$conn->close();
+
+suggestion0:
+	$stmt = $conn->prepare("DELETE FROM myTable WHERE id = ? AND email = ?");
+	$stmt->bind_param("ss", $_SESSION['id'],$email);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+
+suggestion1:
+	$stmt = $conn->prepare("DELETE FROM myTable WHERE id = ? AND email = FALSE");
+	$stmt->bind_param("i", $_SESSION['id']);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+
+suggestion2:
+	$stmt = $conn->prepare("DELETE FROM myTable WHERE id = ? AND email = TRUE");
+	$stmt->bind_param("i", $_SESSION['id']);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+

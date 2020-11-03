@@ -1,0 +1,12 @@
+target:
+	$pass = password_hash($_POST['password'],1);
+	$conn->query("INSERT INTO User (username,password,salt,id) VALUES ('{$_POST['name']}','$pass',$salt,'{$_POST['id']}')");
+	$conn->close();
+
+suggestion0:
+	$pass = password_hash($_POST['password'], 1);
+	$stmt = $conn->prepare("INSERT INTO User (username,password,salt,id) VALUES (?, ?, ?,?)");
+	$stmt->bind_param("ssii", $_POST['name'], $pass,$salt,$_POST['id']);
+	$stmt->execute();
+	$stmt->close();
+

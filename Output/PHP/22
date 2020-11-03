@@ -1,0 +1,44 @@
+target:
+	$conn->query("INSERT INTO myTable (name) VALUES ('$name')");
+	$conn->query("UPDATE myTable SET name = '$name' WHERE id = $id");
+
+suggestion0:
+	$stmt1 = $conn->prepare("INSERT INTO myTable (name) VALUES (?)");
+	$stmt2 = $conn->prepare("UPDATE myTable SET name = ? WHERE id = ? and isLogin=?");
+	$stmt1->bind_param("s", $name);
+	$stmt2->bind_param("sss", $name,$id, $isLogin);
+	$stmt1->execute();
+	$stmt2->execute();
+	$stmt1->close();
+	$stmt2->close();
+
+suggestion1:
+	$stmt1 = $conn->prepare("INSERT INTO myTable (name) VALUES (?)");
+	$stmt2 = $conn->prepare("UPDATE myTable SET email = ? WHERE id = ?");
+	$stmt1->bind_param("s", $name);
+	$stmt2->bind_param("ss", $email,$_SESSION['id']);
+	$stmt1->execute();
+	$stmt2->execute();
+	$stmt1->close();
+	$stmt2->close();
+
+suggestion2:
+	$stmt1 = $conn->prepare("INSERT INTO myTable (name) VALUES (?)");
+	$stmt2 = $conn->prepare("UPDATE myTable SET name = ? WHERE id = ?");
+	$stmt1->bind_param("s", $name);
+	$stmt2->bind_param("ss", $name,$id);
+	$stmt1->execute();
+	$stmt2->execute();
+	$stmt1->close();
+	$stmt2->close();
+
+suggestion3:
+	$stmt1 = $conn->prepare("INSERT INTO myTable (name) VALUES (?)");
+	$stmt2 = $conn->prepare("UPDATE myTable SET name = ? WHERE id = ?");
+	$stmt1->bind_param("s", $name);
+	$stmt2->bind_param("ss", $name,$_SESSION['id']);
+	$stmt1->execute();
+	$stmt2->execute();
+	$stmt1->close();
+	$stmt2->close();
+

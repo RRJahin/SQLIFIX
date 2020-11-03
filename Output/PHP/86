@@ -1,0 +1,34 @@
+target:
+	$conn->query("SELECT avg(age) FROM myTable WHERE name='{$_POST['name']}'");
+	$conn->close();
+
+suggestion0:
+	$stmt = $conn->prepare("SELECT avg(age) FROM myTable WHERE name= ?");
+	$stmt->bind_param("s", $_POST['name']);
+	$stmt->execute();
+	$stmt->close();
+
+suggestion1:
+	$stmt = $conn->prepare("SELECT avg(age) FROM myTable WHERE name= ?");
+	$stmt->bind_param("s", $_POST['name']);
+	$stmt->execute();
+	$stmt->close();
+
+suggestion2:
+	$stmt = $conn->prepare("SELECT avg(*) FROM myTable WHERE name= ?");
+	$stmt->bind_param("s", $_POST['name']);
+	$stmt->execute();
+	$stmt->close();
+
+suggestion3:
+	$stmt = $conn->prepare("SELECT avg(age) FROM myTable WHERE name= ?");
+	$stmt->bind_param("s", $_POST['name']);
+	$stmt->execute();
+	$stmt->close();
+
+suggestion4:
+	$stmt = $conn->prepare("SELECT avg(age) FROM myTable WHERE name= ?");
+	$stmt->bind_param("s", $_POST['name']);
+	$stmt->execute();
+	$stmt->close();
+

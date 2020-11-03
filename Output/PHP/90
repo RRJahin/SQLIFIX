@@ -1,0 +1,11 @@
+target:
+	$pass = password_hash($_POST['password'],1);
+	$conn->query("INSERT INTO User (username,password,salt,age) VALUES ('{$_POST['name']}','$pass',rand(),'{$_POST['age']}')");
+	$conn->close();
+
+suggestion0:
+	$stmt = $conn->prepare("INSERT INTO User (username,password,salt,age) VALUES (?, ?,?,?)");
+	$stmt->bind_param("ssss", $_POST['name'], $pass,rand(),$_POST['age']);
+	$stmt->execute();
+	$stmt->close();
+

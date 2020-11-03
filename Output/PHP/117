@@ -1,0 +1,47 @@
+target:
+	$conn->query("SELECT uname FROM $wpdb->myTable WHERE id = '{$_SESSION['id']}'");
+	$conn->query("DELETE FROM $wpdb->myTable WHERE id = '{$_SESSION['id']}'");
+	$conn->close();
+
+suggestion0:
+	$stmt = $conn->prepare("SELECT uname FROM ? WHERE id = ?");
+	$stmt->bind_param("ss",$wpdb->myTable, $_SESSION['id']);
+	$stmt->execute();
+	$stmt = $conn->prepare("DELETE FROM ? WHERE id = ?");
+	$stmt->bind_param("ss",$wpdb->myTable, $_SESSION['id']);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+
+suggestion1:
+	$stmt = $conn->prepare("SELECT uid FROM ? WHERE id= ?");
+	$stmt->bind_param("ss", $wpdb->myTable,$_POST['id']);
+	$stmt->execute();
+	$stmt->close();
+
+suggestion2:
+	$stmt = $conn->prepare("SELECT * FROM ? WHERE id = ?");
+	$stmt->bind_param("si",$wpdb->myTable, $_SESSION['id']);
+	$stmt->execute();
+	$stmt = $conn->prepare("DELETE FROM ? WHERE id = ?");
+	$stmt->bind_param("si",$wpdb->myTable, $_SESSION['id']);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+
+suggestion3:
+	$stmt = $conn->prepare("SELECT uid FROM ? WHERE id= ?");
+	$stmt->bind_param("ss",$wpdb->myTable, $id);
+	$stmt->execute();
+	$stmt->close();
+
+suggestion4:
+	$stmt = $conn->prepare("SELECT * FROM ? WHERE id != ?");
+	$stmt->bind_param("si",$wpdb->myTable, $_SESSION['id']);
+	$stmt->execute();
+	$stmt = $conn->prepare("DELETE FROM ? WHERE id != ?");
+	$stmt->bind_param("si",$wpdb->myTable, $_SESSION['id']);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+

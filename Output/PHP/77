@@ -1,0 +1,61 @@
+target:
+	$sql = "SELECT min(solved) FROM $wpdb->myTable WHERE 'id'!=$id";
+	$data = $pdo->query($sql);
+	$sql = "DELETE FROM $wpdb->myTable  WHERE 'id'=$id";
+	$pdo->query($sql);
+
+suggestion0:
+	$sql ! = "SELECT  min(solved) FROM ? WHERE 'id'! =?";
+	$stmt ! = $pdo->prepare($sql);
+	$stmt->bind_param("ss",$wpdb->myTable, $id);
+	$stmt->execute();
+	$data ! = $stmt->get_result();
+	$sql ! = "DELETE FROM ? WHERE 'id'! =?";
+	$stmt ! = $pdo->prepare($sql);
+	$stmt->bind_param("ss",$wpdb->myTable, $id);
+	$stmt->execute();
+
+suggestion1:
+	$sql ! = "SELECT  min(solved) FROM ? WHERE 'id'! =?";
+	$stmt ! = $pdo->prepare($sql);
+	$stmt->bind_param("ss",$wpdb->myTable, $id);
+	$stmt->execute();
+	$data ! = $stmt->get_result();
+	$sql ! = "DELETE FROM ? WHERE 'id'! =?";
+	$stmt ! = $pdo->prepare($sql);
+	$stmt->bind_param("ss",$wpdb->myTable, $id);
+	$stmt->execute();
+
+suggestion2:
+	$sql ! = "SELECT  min(solved) FROM ? WHERE 'id'! =?";
+	$stmt ! = $pdo->prepare($sql);
+	$stmt->bind_param("ss",$wpdb->myTable, $id);
+	$stmt->execute();
+	$data ! = $stmt->get_result();
+	$sql ! = "DELETE FROM ? WHERE 'id'! =?";
+	$stmt ! = $pdo->prepare($sql);
+	$stmt->bind_param("ss",$wpdb->myTable, $id);
+	$stmt->execute();
+
+suggestion3:
+	$sql ! = "SELECT  min(solved) FROM ? WHERE 'id'! =?";
+	$stmt ! = $pdo->prepare($sql);
+	$stmt->bind_param("ss",$wpdb->myTable, $id);
+	$stmt->execute();
+	$data ! = $stmt->get_result();
+	$sql ! = "DELETE FROM ? WHERE 'id'! =?";
+	$stmt ! = $pdo->prepare($sql);
+	$stmt->bind_param("ss",$wpdb->myTable, $id);
+	$stmt->execute();
+
+suggestion4:
+	$sql ! = "SELECT  min(solved) FROM ? WHERE 'id'! =?";
+	$stmt ! = $pdo->prepare($sql);
+	$stmt->bind_param("ss",$wpdb->myTable, $id);
+	$stmt->execute();
+	$data ! = $stmt->get_result();
+	$sql ! = "DELETE FROM ? WHERE 'id'! =?";
+	$stmt ! = $pdo->prepare($sql);
+	$stmt->bind_param("ss",$wpdb->myTable, $id);
+	$stmt->execute();
+

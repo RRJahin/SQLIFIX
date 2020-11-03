@@ -1,0 +1,65 @@
+target:
+	$conn->query("SELECT * FROM myTable WHERE name like '$name' AND age>$age");
+	$conn->close();
+
+suggestion0:
+	$stmt = $conn->prepare("SELECT * FROM ?s WHERE name= ? and id=?");
+	$stmt->bind_param("sss",$wpdb->guest, $name,$_POST['id']);
+	$stmt->execute();
+	$stmt->close();
+
+suggestion1:
+	$stmt = $conn->prepare("SELECT * FROM myTable WHERE name= ? and id = ?");
+	$stmt->bind_param("ss", $_POST['name'],$_POST['id']);
+	$stmt->execute();
+	$stmt->close();
+
+suggestion2:
+	$stmt = $conn->prepare("SELECT * FROM myTable WHERE name= ? and id=?");
+	$stmt->bind_param("ss", $name,$_POST['id']);
+	$stmt->execute();
+	$stmt->close();
+
+suggestion3:
+	$stmt = $conn->prepare("SELECT uname FROM myTable WHERE name= ? and id = ?");
+	$stmt->bind_param("ss", $_POST['name'],$_POST['id']);
+	$stmt->execute();
+	$stmt->close();
+
+suggestion4:
+	$stmt = $conn->prepare("SELECT * FROM ? WHERE name like ? AND age>?");
+	$stmt->bind_param("ssi",$wpdb->myTable, $name,$age);
+	$stmt->execute();
+	$stmt->close();
+
+suggestion5:
+	$stmt = $conn->prepare("SELECT * FROM myTable WHERE name= ? and email=?");
+	$stmt->bind_param("ss", $name,$email);
+	$stmt->execute();
+	$stmt->close();
+
+suggestion6:
+	$stmt = $conn->prepare("UPDATE myTable SET name = ?, pass = ? WHERE id = ?");
+	$stmt->bind_param("ssi", $_POST['name'],$_POST['pass'], $_SESSION['id']);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+
+suggestion7:
+	$stmt = $conn->prepare("SELECT uname FROM myTable WHERE name like ? AND age<?");
+	$stmt->bind_param("si", $name,$age);
+	$stmt->execute();
+	$stmt->close();
+
+suggestion8:
+	$stmt = $conn->prepare("SELECT * FROM ? WHERE name= ? and id = ?");
+	$stmt->bind_param("sss",$wpdb->myTable, $_POST['name'],$_POST['id']);
+	$stmt->execute();
+	$stmt->close();
+
+suggestion9:
+	$stmt = $conn->prepare("SELECT * FROM myTable WHERE name like ? AND age<?");
+	$stmt->bind_param("si", $name,$age);
+	$stmt->execute();
+	$stmt->close();
+

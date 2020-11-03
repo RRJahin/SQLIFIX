@@ -1,0 +1,18 @@
+target:
+	$conn->query("DELETE FROM myTable WHERE id = '{$_SESSION['id']}'");
+	$conn->close();
+
+suggestion0:
+	$stmt = $conn->prepare("DELETE FROM myTable WHERE id = ?");
+	$stmt->bind_param("i", $_SESSION['id']);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+
+suggestion1:
+	$stmt = $conn->prepare("DELETE FROM myTable WHERE id = ?");
+	$stmt->bind_param("i", $_SESSION['id']);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+

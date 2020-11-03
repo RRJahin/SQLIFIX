@@ -1,0 +1,20 @@
+target:
+	$conn->query("SELECT * FROM myTable WHERE name='$name'");
+	$conn->close();
+
+suggestion0:
+	$stmt = $conn->prepare("SELECT * FROM myTable WHERE name = ?");
+	$stmt->bind_param("i", $_SESSION['name']);
+	$stmt->execute();
+	$stmt = $conn->prepare("DELETE FROM myTable WHERE name = ?");
+	$stmt->bind_param("i", $_SESSION['name']);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+
+suggestion1:
+	$stmt = $conn->prepare("SELECT * FROM myTable WHERE name= ?");
+	$stmt->bind_param("s", $name);
+	$stmt->execute();
+	$stmt->close();
+

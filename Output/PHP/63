@@ -1,0 +1,39 @@
+target:
+	$conn->query("UPDATE myTable SET name = '$name', isLogin = FALSE WHERE id = '{$_POST['id']}'");
+	$conn->close();
+
+suggestion0:
+	$stmt = $conn->prepare("UPDATE myTable SET name = ?, isLogin = ? WHERE id = ?");
+	$stmt->bind_param("sss", $name,false, $_POST['id']);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+
+suggestion1:
+	$stmt = $conn->prepare("UPDATE myTable SET name = ?, isLogin = TRUE WHERE id = ?");
+	$stmt->bind_param("si", $name, $_POST['id']);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+
+suggestion2:
+	$stmt = $conn->prepare("UPDATE myTable SET name = ?, isLogin = ? WHERE id = ?");
+	$stmt->bind_param("ss", $name,false, $_POST['id']);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+
+suggestion3:
+	$stmt = $conn->prepare("UPDATE myTable SET name = ?, isLogin = TRUE WHERE id = ?");
+	$stmt->bind_param("si", $name, $_POST['id']);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+
+suggestion4:
+	$stmt = $conn->prepare("UPDATE myTable SET name = ?, isLogin = FALSE WHERE id = ?");
+	$stmt->bind_param("si", $name, $_POST['id']);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+

@@ -1,0 +1,9 @@
+target:
+	$query = $db->query("SELECT '$field' as val from $wpdb->myTable where $pk=$id AND $fk=$id2");
+
+suggestion0:
+	$stmt = $db->prepare("SELECT ? as val from ? where ?=? or ?!=?");
+	$stmt->bind_param("ssssss",$field,$wpdb->myTable, $pk,$id,$fk,$id2);
+	$stmt->execute();
+	$query = $stmt->get_result();
+

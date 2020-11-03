@@ -1,0 +1,17 @@
+target:
+	$sql = "SELECT min(solved) FROM $wpdb->question WHERE 'id'=$id";
+	$data = $pdo->query($sql);
+	$sql = "UPDATE $wpdb->question SET 'views'='views'+1 WHERE 'id'=$id";
+	$pdo->query($sql);
+
+suggestion0:
+	$sql = "SELECT  min(solved) FROM ? WHERE 'id'=?";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("ss",$wpdb->question, $id);
+	$stmt->execute();
+	$data = $stmt->get_result();
+	$sql = "UPDATE ? SET views=views+1 WHERE id=?";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("ss",$wpdb->question, $id);
+	$stmt->execute();
+

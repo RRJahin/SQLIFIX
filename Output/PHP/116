@@ -1,0 +1,19 @@
+target:
+	$conn->query("INSERT INTO $wpdb->user (username,password,salt,age) VALUES ('{$_POST['name']}','{$_POST['password']}',rand(),'{$_POST['age']}')");
+	$conn->close();
+	?>
+
+suggestion0:
+	$_POST['password'] = password_hash($_POST['password'], 1);
+	$stmt = $conn->prepare("INSERT INTO ? (username,password,salt) VALUES (?, ?, ?)");
+	$stmt->bind_param("sssi",$wpdb->user, $_POST['name'], $_POST['password'],rand());
+	$stmt->execute();
+	$stmt->close();
+
+suggestion1:
+	$_POST['password'] = password_hash($_POST['password'], 1);
+	$stmt = $conn->prepare("INSERT INTO ? (username,password,salt,age) VALUES (?, ?, ?,?)");
+	$stmt->bind_param("sssii",$wpdb->user, $_POST['name'], $_POST['password'],rand(),$_POST['age']);
+	$stmt->execute();
+	$stmt->close();
+

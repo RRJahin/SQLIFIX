@@ -1,0 +1,184 @@
+target:
+	return  $db->query("SELECT * FROM table1 where '$key' != '" . $value . "' AND '$key2' != '" . $value2 . "'");
+	return  $db->query("SELECT * FROM table1 where '$key' != '" . $value . "'");
+
+suggestion0:
+	$stmt = $db->prepare("SELECT * FROM table1 where ? = ? AND ? = ? OR id = ?");
+	$stmt->bind_param("sssss", $key, ".$value.", $key2, ".$value2.",$_POST['id']);
+	$stmt->execute();
+	return  $stmt->get_result();
+	$stmt = $db->prepare("SELECT * FROM table1 where ? = ? OR id=?");
+	$stmt->bind_param("sss", $key, ".$value.",$_POST['id']);
+	$stmt->execute();
+	return  $stmt->get_result();
+
+suggestion1:
+	$stmt = $db->prepare("SELECT * FROM ? where ? = ? AND ? = ?");
+	$stmt->bind_param("sssss", $wpdb->usertable,$key, ".$value.", $key2, ".$value2.");
+	$stmt->execute();
+	return  $stmt->get_result();
+	$stmt = $db->prepare("SELECT * FROM ? where ? = ?");
+	$stmt->bind_param("sss",$wpdb->usertable, $key, ".$value.");
+	$stmt->execute();
+	return  $stmt->get_result();
+
+suggestion2:
+	$stmt = $db->prepare("SELECT uname FROM ? where ? != ? AND ? != ?");
+	$stmt->bind_param("sssss",$wpdb->myTable,$key, ".$value.", $key2, ".$value2.");
+	$stmt->execute();
+	return  $stmt->get_result();
+	$stmt = $db->prepare("SELECT uname FROM ? where ? != ?");
+	$stmt->bind_param("sss",$wpdb->myTable, $key, ".$value.");
+	$stmt->execute();
+	return  $stmt->get_result();
+
+suggestion3:
+	$stmt = $db->prepare("SELECT * FROM ? where ? != ? AND ? != ?");
+	$stmt->bind_param("sssss",$wpdb->myTable, $key, ".$value.", $key2, ".$value2.");
+	$stmt->execute();
+	return  $stmt->get_result();
+	$stmt = $db->prepare("SELECT * FROM ? where ? != ?");
+	$stmt->bind_param("sss",$wpdb->myTable, $key, ".$value.");
+	$stmt->execute();
+	return  $stmt->get_result();
+
+suggestion4:
+	$stmt = $db->prepare("SELECT uname FROM table1 where ? = ? AND ? != ?");
+	$stmt->bind_param("ssss", $key, ".$value.", $key2, ".$value2.");
+	$stmt->execute();
+	return  $stmt->get_result();
+	$stmt = $db->prepare("SELECT uname FROM table1 where ? = ?");
+	$stmt->bind_param("ss", $key, ".$value.");
+	$stmt->execute();
+	return  $stmt->get_result();
+
+suggestion5:
+	$stmt = $db->prepare("SELECT uname FROM table1 where ? != ? AND ? != ?");
+	$stmt->bind_param("ssss", $key, ".$value.", $key2, ".$value2.");
+	$stmt->execute();
+	return  $stmt->get_result();
+	$stmt = $db->prepare("SELECT uname FROM table1 where ? != ?");
+	$stmt->bind_param("ss", $key, ".$value.");
+	$stmt->execute();
+	return  $stmt->get_result();
+
+suggestion6:
+	$stmt = $db->prepare("SELECT * FROM table1 where ? = ? OR ? = ?");
+	$stmt->bind_param("ssss", $key, ".$value.", $key2, ".$value2.");
+	$stmt->execute();
+	return  $stmt->get_result();
+	$stmt = $db->prepare("SELECT * FROM table1 where ? = ?");
+	$stmt->bind_param("ss", $key, ".$value.");
+	$stmt->execute();
+	return  $stmt->get_result();
+
+suggestion7:
+	$stmt = $db->prepare("SELECT * FROM ? where ? != ? AND ? != ?");
+	$stmt->bind_param("sssss",$wpdb->myTable, $key, ".$value.", $key2, ".$value2.");
+	$stmt->execute();
+	return  $stmt->get_result();
+	$stmt = $db->prepare("SELECT * FROM ? where ? != ?");
+	$stmt->bind_param("sss",$wpdb->myTable, $key, ".$value.");
+	$stmt->execute();
+	return  $stmt->get_result();
+
+suggestion8:
+	$stmt = $db->prepare("SELECT * FROM ? where ? = ? AND ? = ? and id = ?");
+	$stmt->bind_param("ssssss", $wpdb->myTable,$key, ".$value.", $key2, ".$value2.",$_POST['id']);
+	$stmt->execute();
+	return  $stmt->get_result();
+	$stmt = $db->prepare("SELECT * FROM ? where ? = ? and id=?");
+	$stmt->bind_param("ssss",$wpdb->myTable, $key, ".$value.",$_POST['id']);
+	$stmt->execute();
+	return  $stmt->get_result();
+
+suggestion9:
+	$stmt = $db->prepare("SELECT * FROM table1 where ? = ? AND ? >= ?");
+	$stmt->bind_param("ssss", $key, ".$value.", $key2, ".$value2.");
+	$stmt->execute();
+	return  $stmt->get_result();
+	$stmt = $db->prepare("SELECT * FROM table1 where ? = ?");
+	$stmt->bind_param("ss", $key, ".$value.");
+	$stmt->execute();
+	return  $stmt->get_result();
+
+suggestion10:
+	$stmt = $db->prepare("SELECT * FROM table1 where ? != ? OR ? > ?");
+	$stmt->bind_param("ssss", $key, ".$value.", $key2, ".$value2.");
+	$stmt->execute();
+	return  $stmt->get_result();
+	$stmt = $db->prepare("SELECT * FROM table1 where ? != ?");
+	$stmt->bind_param("ss", $key, ".$value.");
+	$stmt->execute();
+	return  $stmt->get_result();
+
+suggestion11:
+	$stmt = $db->prepare("SELECT * FROM ? where ? != ? OR ? != ?");
+	$stmt->bind_param("sssss",$wpdb->myTable, $key, ".$value.", $key2, ".$value2.");
+	$stmt->execute();
+	return  $stmt->get_result();
+	$stmt = $db->prepare("SELECT * FROM ? where ? != ?");
+	$stmt->bind_param("sss",$wpdb->myTable, $key, ".$value.");
+	$stmt->execute();
+	return  $stmt->get_result();
+
+suggestion12:
+	$stmt = $db->prepare("SELECT * FROM table1 where ? = ? AND ? != ?");
+	$stmt->bind_param("ssss", $key, ".$value.", $key2, ".$value2.");
+	$stmt->execute();
+	return  $stmt->get_result();
+	$stmt = $db->prepare("SELECT * FROM table1 where ? = ?");
+	$stmt->bind_param("ss", $key, ".$value.");
+	$stmt->execute();
+	return  $stmt->get_result();
+
+suggestion13:
+	$stmt = $db->prepare("SELECT * FROM table1 where ? != ? OR ? != ?");
+	$stmt->bind_param("ssss", $key, ".$value.", $key2, ".$value2.");
+	$stmt->execute();
+	return  $stmt->get_result();
+	$stmt = $db->prepare("SELECT * FROM table1 where ? != ?");
+	$stmt->bind_param("ss", $key, ".$value.");
+	$stmt->execute();
+	return  $stmt->get_result();
+
+suggestion14:
+	$stmt = $db->prepare("SELECT * FROM table1 where ? = ? AND ? = ?");
+	$stmt->bind_param("ssss", $key, ".$value.", $key2, ".$value2.");
+	$stmt->execute();
+	return  $stmt->get_result();
+	$stmt = $db->prepare("SELECT * FROM table1 where ? = ?");
+	$stmt->bind_param("ss", $key, ".$value.");
+	$stmt->execute();
+	return  $stmt->get_result();
+
+suggestion15:
+	$stmt = $db->prepare("SELECT * FROM table1 where ? = ? AND ? = ? and id = ?");
+	$stmt->bind_param("sssss", $key, ".$value.", $key2, ".$value2.",$_POST['id']);
+	$stmt->execute();
+	return  $stmt->get_result();
+	$stmt = $db->prepare("SELECT * FROM table1 where ? = ? and id=?");
+	$stmt->bind_param("sss", $key, ".$value.",$_POST['id']);
+	$stmt->execute();
+	return  $stmt->get_result();
+
+suggestion16:
+	$stmt = $db->prepare("SELECT * FROM ? where ? != ? AND ? != ?");
+	$stmt->bind_param("sssss", $wpdb->usertable,$key, ".$value.", $key2, ".$value2.");
+	$stmt->execute();
+	return  $stmt->get_result();
+	$stmt = $db->prepare("SELECT * FROM ? where ? != ?");
+	$stmt->bind_param("sss",$wpdb->usertable, $key, ".$value.");
+	$stmt->execute();
+	return  $stmt->get_result();
+
+suggestion17:
+	$stmt = $db->prepare("SELECT * FROM ? where ? = ? AND ? = ?");
+	$stmt->bind_param("sssss",$wpdb->myTable, $key, ".$value.", $key2, ".$value2.");
+	$stmt->execute();
+	return  $stmt->get_result();
+	$stmt = $db->prepare("SELECT * FROM ? where ? = ?");
+	$stmt->bind_param("sss",$wpdb->myTable, $key, ".$value.");
+	$stmt->execute();
+	return  $stmt->get_result();
+

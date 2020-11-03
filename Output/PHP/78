@@ -1,0 +1,25 @@
+target:
+	$sql = "DELETE FROM myTable WHERE id ='$id' AND isActive = FALSE";
+	$conn->query($sql);
+
+suggestion0:
+	$sql = "DELETE FROM myTable WHERE id =? AND isActive = ?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("ss", $id,false);
+	$stmt->execute();
+	$stmt->close();
+
+suggestion1:
+	$sql = "DELETE FROM myTable WHERE id =? AND id = ?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("ii", false,false);
+	$stmt->execute();
+	$stmt->close();
+
+suggestion2:
+	$sql = "DELETE FROM myTable WHERE id =? AND isActive = ?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("is", $id, $isActive);
+	$stmt->execute();
+	$stmt->close();
+

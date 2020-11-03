@@ -1,0 +1,70 @@
+target:
+	$fb_id = $user_profile1['id'];
+	$query = $db->query("Select uname from table1 where $fb_userid = '$fb_id'");
+
+suggestion0:
+	$sql = "SELECT * FROM table1 WHERE $fb_user$fb_userid!=?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("i", $$fb_user$fb_userid);
+	$stmt->execute();
+	$result = $stmt->get_result();
+	$stmt->close();
+
+suggestion1:
+	$stmt = $db->prepare("Select * from table1 where  ?=?");
+	$stmt->bind_param("ss", $fb_userid, $fb_id);
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion2:
+	$stmt = $db->prepare("Select uname from table1 where  ?!=?");
+	$stmt->bind_param("ss", $fb_userid, $fb_id);
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion3:
+	$sql = "SELECT * FROM table1 WHERE $fb_user$fb_userid=?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("i", $$fb_user$fb_userid);
+	$stmt->execute();
+	$result = $stmt->get_result();
+	$stmt->close();
+
+suggestion4:
+	$sql = "SELECT * FROM table1 WHERE $fb_user$fb_userid=?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("i", $_SESSION['$fb_user$fb_userid']);
+	$stmt->execute();
+	$result = $stmt->get_result();
+	$stmt->close();
+
+suggestion5:
+	$sql = "SELECT * FROM table1 WHERE $fb_user$fb_userid=?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("i", $_POST['$fb_user$fb_userid']);
+	$stmt->execute();
+	$result = $stmt->get_result();
+	$stmt->close();
+
+suggestion6:
+	$sql = "SELECT uname FROM table1 WHERE $fb_user$fb_userid=?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("i", $$fb_user$fb_userid);
+	$stmt->execute();
+	$result = $stmt->get_result();
+	$stmt->close();
+
+suggestion7:
+	$stmt = $db->prepare("Select * from table1 where  ?!=?");
+	$stmt->bind_param("ss", $fb_userid, $fb_id);
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion8:
+	$sql = "SELECT * FROM table1 WHERE $fb_user$fb_userid !=?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("i", $_POST['$fb_user$fb_userid']);
+	$stmt->execute();
+	$result = $stmt->get_result();
+	$stmt->close();
+

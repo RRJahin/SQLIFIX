@@ -1,0 +1,13 @@
+<?php
+
+function facebook_exist($db, $fb_userid, $user_profile2)
+{
+    $fb_id = $user_profile2['id'];
+    global $wpdb;
+    $query = $db->query("Select * from $wpdb->myTable where $fb_userid ='$fb_id' and id = {$_POST['id']}");
+    if ($query->num_rows > 0) {
+        return 1;
+    } else {
+        return 0;
+    }
+}

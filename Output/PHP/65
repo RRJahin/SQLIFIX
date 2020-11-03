@@ -1,0 +1,50 @@
+target:
+	$sql = "SELECT max(solved) FROM 'questions' WHERE 'id'=$id";
+	$data = $pdo->query($sql);
+	$sql = "DELETE FROM 'questions'  WHERE 'id'=$id";
+	$pdo->query($sql);
+
+suggestion0:
+	$sql = "SELECT  max(solved) FROM 'questions' WHERE 'id'=?";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("s", $id);
+	$stmt->execute();
+	$data = $stmt->get_result();
+	$sql = "DELETE FROM 'questions' WHERE 'id'=?";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("s", $id);
+	$stmt->execute();
+
+suggestion1:
+	$sql = "SELECT  max(solved) FROM 'questions' WHERE 'id'!=?";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("s", $id);
+	$stmt->execute();
+	$data = $stmt->get_result();
+	$sql = "DELETE FROM 'questions' WHERE 'id'=?";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("s", $id);
+	$stmt->execute();
+
+suggestion2:
+	$sql = "SELECT  max(solved) FROM 'questions' WHERE 'id'=?";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("s", $id);
+	$stmt->execute();
+	$data = $stmt->get_result();
+	$sql = "DELETE FROM 'questions' WHERE 'id'=?";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("s", $id);
+	$stmt->execute();
+
+suggestion3:
+	$sql = "SELECT  max(solved) FROM 'questions' WHERE 'id'=?";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("s", $id);
+	$stmt->execute();
+	$data = $stmt->get_result();
+	$sql = "DELETE FROM 'questions' WHERE 'id'=?";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("s", $id);
+	$stmt->execute();
+
