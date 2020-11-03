@@ -6,7 +6,7 @@ Target:
 suggestion0:
 	String s = "INSERT INTO `movie_feature`(`movie_id`, `pic`) VALUES (?,?)";
 	PreparedStatement pstm = con.prepareStatement(s);
-	pstm.setObject(1,X_16037765638140);
-	pstm.setObject(2,X_16037765638141);
+	pstm.setObject(1,movie_id);
+	pstm.setObject(2,pic);
 	x = pstm.executeUpdate();
 

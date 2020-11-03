@@ -3,40 +3,40 @@ Target:
 	ResultSet rs2 = s2.executeQuery("SELECT * FROM virtual_machine_host_table WHERE hostname='" + rs.getString("host") + "'");
 
 suggestion0:
-	String sql = "select * from virtual_machine_host_table wherehost=?;";
+	String sql = "select * from virtual_machine_host_table where host=?;";
 	PreparedStatement s2 = conn.prepareStatement(sql);
 	s2.setObject(1,host);
 	ResultSet rs2 = s2.executeQuery();
 
 suggestion1:
-	String sql = "select * from virtual_machine_host_table wherehost=?;";
+	String sql = "select * from virtual_machine_host_table where host=?;";
 	PreparedStatement s2 = conn.prepareStatement(sql);
 	s2.setObject(1,host);
 	ResultSet rs2 = s2.executeQuery();
 
 suggestion2:
-	PreparedStatement s22 = conn.prepareStatement("SELECT * FROM virtual_machine_host_table WHEREhost='?'");
-	s22.s22etObject(1,host);
-	Res22ultSet rs222 = s22.executeQuery();
+	PreparedStatement s2 = conn.prepareStatement("SELECT * FROM virtual_machine_host_table WHERE host='?'");
+	s2.setObject(1,host);
+	ResultSet rs2 = s2.executeQuery();
 
 suggestion3:
-	PreparedStatement s22 = conn.prepareStatement("SELECT * FROM virtual_machine_hos22t_table WHEREhost='?'");
-	s22.s22etObject(1,host);
-	Res22ultSet rs222 = s22.executeQuery();
+	PreparedStatement s2 = conn.prepareStatement("SELECT * FROM virtual_machine_hos22t_table WHERE host='?'");
+	s2.setObject(1,host);
+	ResultSet rs2 = s2.executeQuery();
 
 suggestion4:
-	PreparedStatement s22 = conn.prepareStatement("SELECT * FROM virtual_s22lave_node_table WHEREhost='?'");
+	PreparedStatement s22 = conn.prepareStatement("SELECT * FROM virtual_s22lave_node_table WHERE host='?'");
 	s22.s22etObject(1,host);
 	s22.Res22ultSet rs222 = s22.executeQuery();
 	Res22ultSet rs2222 = s222.executeQuery(("SELECT * FROM virtual_machine_hos22t_table WHERE hos22tname='" + rs222.getString("hos22t")) + "'");
 
 suggestion5:
-	PreparedStatement s22 = conn.prepareStatement("SELECT * FROM virtual_mas22ter_node_table WHEREhost='?'");
+	PreparedStatement s22 = conn.prepareStatement("SELECT * FROM virtual_mas22ter_node_table WHERE host='?'");
 	s22.s22etObject(1,host);
 	Res22ultSet rs222 = s22.executeQuery();
 
 suggestion6:
-	PreparedStatement s22 = conn.prepareStatement("SELECT * FROM virtual_s22lave_node_table WHEREhost='?'");
+	PreparedStatement s22 = conn.prepareStatement("SELECT * FROM virtual_s22lave_node_table WHERE host='?'");
 	s22.s22etObject(1,host);
 	Res22ultSet rs222 = s22.executeQuery();
 

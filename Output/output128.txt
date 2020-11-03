@@ -10,7 +10,7 @@ suggestion0:
 	select.setObject(1, codeParc);
 	select.setObject(2, PanelStats.commercialStats.getCodeCommercial());
 	select.setObject(3, PanelStats.commercialStats.getId());
-	ResultSet rs = select.edummyecuteQuery();
+	ResultSet rs = select.executeQuery();
 
 suggestion1:
 	String sql = "SELECT SUM(quantite) AS nb FROM ParcClient WHERE codeTParc = ?" + ((((" AND codeCliPros IN" + "  (SELECT cClient FROM Client WHERE cRep = ?") + "  OR cClient IN") + "    (SELECT codeCliPros FROM Revoir WHERE codeUtilisateur = ?)") + "  )");
@@ -18,5 +18,5 @@ suggestion1:
 	select.setObject(1, codeParc);
 	select.setObject(2, PanelStats.commercialStats.getCodeCommercial());
 	select.setObject(3, PanelStats.commercialStats.getId());
-	ResultSet rs = select.edummyecuteQuery();
+	ResultSet rs = select.executeQuery();
 
