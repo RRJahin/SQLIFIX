@@ -1,0 +1,10 @@
+target:
+	$conn->query("SELECT sum(age) FROM $wpdb->usertable WHERE name='{$_POST['name']}'");
+	$conn->close();
+
+suggestion0:
+	$stmt = $conn->prepare("SELECT sum(age) FROM ? WHERE name= ?");
+	$stmt->bind_param("ss", $wpdb->usertable, $_POST['name']);
+	$stmt->execute();
+	$stmt->close();
+

@@ -1,0 +1,39 @@
+target:
+	if(isset($_COOKIE['id']) && isset($_COOKIE['key']))
+	{
+	$sql = "SELECT count(*) FROM 'users' where 'id'=$id AND 'secret_key'=$key AND 'name' NOT LIKE $name";
+	$checking = $pdo->query($sql);
+	else{
+	$active_user = false;
+	}
+
+suggestion0:
+	if (isset($_COOKIE['id']) && isset($_COOKIE['key'])) {
+	$sql = "SELECT count(*) FROM 'users' where 'id'!= ? AND 'secret_key'!=? AND 'name' NOT LIKE ?";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("sss", $id, $key, $name);
+	$stmt->execute();
+	$checking = $stmt->get_result();
+	} else {
+	$active_user = false;
+
+suggestion1:
+	if (isset($_COOKIE['id']) && isset($_COOKIE['key'])) {
+	$sql = "SELECT count(*) FROM users where id= ? AND secret_key=? AND name NOT LIKE ?";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("sss", $id, $key, $name);
+	$stmt->execute();
+	$checking = $stmt->get_result();
+	} else {
+	$active_user = false;
+
+suggestion2:
+	if (isset($_COOKIE['id']) && isset($_COOKIE['key'])) {
+	$sql = "SELECT count(*) FROM 'users' where 'id'!= ? AND 'secret_key'=? AND 'name' LIKE ?";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("sss", $id, $key, $name);
+	$stmt->execute();
+	$checking = $stmt->get_result();
+	} else {
+	$active_user = false;
+

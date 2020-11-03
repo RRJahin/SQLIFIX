@@ -1,0 +1,52 @@
+target:
+	$sql = "INSERT INTO MyGuests (firstname,email) VALUES ('John', select email from user where firstname = 'John')";
+	if ($conn->query($sql) === TRUE) {
+
+suggestion0:
+	// prepare and bind
+	$sql = "INSERT INTO MyGuests (firstname, lastname, email) VALUES (?, ?, select email from user where firstname=?)";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("sss", "John", "Doe", 'john');
+	if ($stmt->execute() === TRUE) {
+	$stmt->close();
+
+suggestion1:
+	// prepare and bind
+	$sql = "INSERT INTO MyGuests (firstname,email) VALUES (?, SELECT email FROM Users WHERE firstname = ?)";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("ss", "John","John");
+	if ($stmt->execute() === TRUE) {
+	$stmt->close();
+
+suggestion2:
+	// prepare and bind
+	$sql = "INSERT INTO MyGuests (firstname,email) VALUES (?,, SELECT email FROM Users WHERE firstname = ?)";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("ss", "John","John");
+	if ($stmt->execute() === TRUE) {
+	$stmt->close();
+
+suggestion3:
+	// prepare and bind
+	$sql = "INSERT INTO MyGuests (firstname,email) VALUES (?,, SELECT email FROM Users WHERE name = ?)";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("ss", "John","John");
+	if ($stmt->execute() === TRUE) {
+	$stmt->close();
+
+suggestion4:
+	// prepare and bind
+	$sql = "INSERT INTO MyGuests (firstname, lastname) VALUES (?, Select lastname from User where firstname = ? )";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("ss", "John", "John");
+	if ($stmt->execute() === TRUE) {
+	$stmt->close();
+
+suggestion5:
+	// prepare and bind
+	$sql = "INSERT INTO MyGuests (firstname, lastname, email) VALUES (?, ?, select email from user where firstname=? and lastname=?)";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("ssss", "John", "Doe", "john","Doe");
+	if ($stmt->execute() === TRUE) {
+	$stmt->close();
+

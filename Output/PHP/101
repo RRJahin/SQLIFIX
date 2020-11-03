@@ -1,0 +1,22 @@
+target:
+	$sql = "INSERT INTO answers (author, date, answer) VALUES ('$author', '$date', $answer)";
+	$pdo->query($sql);
+
+suggestion0:
+	$sql = "INSERT INTO 'answers' ('author', 'date', 'answer') VALUES (?, ?, ?)";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("sss", $author, $date,  $answer);
+	$stmt->execute();
+
+suggestion1:
+	$sql = "INSERT INTO answers (author, date, answer) VALUES (?, ?, ?)";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("sss", $author, $date, $answer);
+	$stmt->execute();
+
+suggestion2:
+	$sql = "INSERT INTO 'answers' ('author', 'date', 'answer') VALUES (?, ?, ?)";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("sss", $author, $date, $answer);
+	$stmt->execute();
+

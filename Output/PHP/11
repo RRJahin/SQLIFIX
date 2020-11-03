@@ -1,0 +1,59 @@
+target:
+	return    $db->query("SELECT count(*) as count FROM $wpdb->myTable WHERE '$field' != '".$value."' OR  '$field2' != '".$value2."'");
+	return $db->query("SELECT count(*) as count FROM $wpdb->myTable WHERE '$field' != '".$value."' ");
+
+suggestion0:
+	$stmt = $db->prepare("SELECT count(*) as count FROM table1 WHERE ? != ? OR  ? != ?");
+	$stmt->bind_param("ssss", $field,".$value.",$field2,".$value2.");
+	$stmt->execute();
+	return $stmt->get_result();
+	$stmt = $db->prepare("SELECT count(*) as count FROM table1 WHERE ? != ? ");
+	$stmt->bind_param("ss",$field, ".$value.");
+	$stmt->execute();
+	return $stmt->get_result();
+	?>
+
+suggestion1:
+	$stmt = $db->prepare("SELECT count(*) FROM table1 WHERE ? != ? OR  ? != ?");
+	$stmt->bind_param("ssss", $field,".$value.",$field2,".$value2.");
+	$stmt->execute();
+	return $stmt->get_result();
+	$stmt = $db->prepare("SELECT count(*)  FROM table1 WHERE ? != ? ");
+	$stmt->bind_param("ss",$field, ".$value.");
+	$stmt->execute();
+	return $stmt->get_result();
+	?>
+
+suggestion2:
+	$stmt = $db->prepare("SELECT count(*) as count FROM ? WHERE ? != ? OR  ? = ?");
+	$stmt->bind_param("sssss",$wpdb->myTable, $field,".$value.",$field2,".$value2.");
+	$stmt->execute();
+	return $stmt->get_result();
+	$stmt = $db->prepare("SELECT count(*) as count FROM ? WHERE ? != ? ");
+	$stmt->bind_param("sss",$wpdb->myTable,$field, ".$value.");
+	$stmt->execute();
+	return $stmt->get_result();
+	?>
+
+suggestion3:
+	$stmt = $db->prepare("SELECT count(*) as count FROM table1 WHERE ? != ? OR  ? = ?");
+	$stmt->bind_param("ssss", $field,".$value.",$field2,".$value2.");
+	$stmt->execute();
+	return $stmt->get_result();
+	$stmt = $db->prepare("SELECT count(*) as count FROM table1 WHERE ? != ? ");
+	$stmt->bind_param("ss",$field, ".$value.");
+	$stmt->execute();
+	return $stmt->get_result();
+	?>
+
+suggestion4:
+	$stmt = $db->prepare("SELECT sum(salary) as count FROM ? WHERE ? != ? OR  ? != ?");
+	$stmt->bind_param("sssss",$wpdb->myTable, $field,".$value.",$field2,".$value2.");
+	$stmt->execute();
+	return $stmt->get_result();
+	$stmt = $db->prepare("SELECT sum(salary) as count FROM ? WHERE ? != ? ");
+	$stmt->bind_param("sss",$wpdb->myTable,$field, ".$value.");
+	$stmt->execute();
+	return $stmt->get_result();
+	?>
+

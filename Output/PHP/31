@@ -1,0 +1,18 @@
+target:
+	$pass = password_hash($_POST['password'],1);
+	$conn->query("INSERT INTO $wpdb->User (username,password) VALUES ('{$_POST['name']}','$pass')");
+	$conn->close();
+
+suggestion0:
+	$pass = password_hash($_SESSION['password'], 1);
+	$stmt = $conn->prepare("INSERT INTO ? (username,password) VALUES (?, ?)");
+	$stmt->bind_param("sss",$wpdb->User, $_POST['name'], $pass);
+	$stmt->execute();
+	$stmt->close();
+
+suggestion1:
+	$stmt = $conn->prepare("INSERT INTO ? (username,password) VALUES (?, ?)");
+	$stmt->bind_param("sss",$wpdb->User, $_POST['name'], $pass);
+	$stmt->execute();
+	$stmt->close();
+

@@ -1,0 +1,22 @@
+target:
+	$sql = "INSERT INTO 'questions' ('author', 'date', 'question','isMCQ') VALUES ('$author', '$date', $question, FALSE)";
+	$pdo->query($sql);
+
+suggestion0:
+	$sql = "INSERT INTO questions (author, date, question, isMCQ) VALUES (?, ?, ?, ?)";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("ssss", $author, $date, $question, false);
+	$stmt->execute();
+
+suggestion1:
+	$sql = "INSERT INTO questions (author, date, question,isMCQ) VALUES (?, ?, ?, ?)";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("ssss", $author, $date, $question,false);
+	$stmt->execute();
+
+suggestion2:
+	$sql = "INSERT INTO 'questions' ('author', 'date', 'question', 'isMCQ') VALUES (?, ?, ?, ?)";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("ssss", $author, $date, $question, false);
+	$stmt->execute();
+

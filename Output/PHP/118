@@ -1,0 +1,35 @@
+target:
+	$query = $db->query("Select uname from $wpdb->myTable where $fb_userid ='$fb_id' AND isActive = TRUE");
+
+suggestion0:
+	$stmt = $db->prepare("Select * from ? where  ?!=? AND isActive = ?");
+	$stmt->bind_param("ssss",$wpdb->myTable, $fb_userisActive, $fb_isActive, $isActive);
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion1:
+	$stmt = $db->prepare("Select * from ? where  ?=? AND isActive = ?");
+	$stmt->bind_param("ssss",$wpdb->myTable, $fb_userisActive, $fb_isActive, $isActive);
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion2:
+	$stmt = $db->prepare("Select * from ? where  ?!=? AND isActive = ?");
+	$stmt->bind_param("ssss",$wpdb->myTable, $fb_userisActive, $fb_isActive,$isActive);
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion3:
+	$stmt = $db->prepare("Select uname from ? where  ?!=? AND isActive = TRUE");
+	$stmt->bind_param("sss",$wpdb->myTable, $fb_userid, $fb_id);
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion4:
+	$sql = "SELECT * FROM ? WHERE $fb_user$fb_userid!=? AND isActive = ?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("sis",$wpdb->myTable, $$fb_user$fb_userid, $isActive);
+	$stmt->execute();
+	$result = $stmt->get_result();
+	$stmt->close();
+

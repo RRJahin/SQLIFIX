@@ -1,0 +1,25 @@
+target:
+	$conn->query("UPDATE $wpdb->myTable SET name = '$name', isLogin = TRUE WHERE id = '{$_SESSION['id']}'");
+	$conn->close();
+
+suggestion0:
+	$stmt = $conn->prepare("UPDATE ? SET name = ?, isLogin = ? WHERE id = ?");
+	$stmt->bind_param("ssss",$wpdb->myTable, $name,true, $_SESSION['id']);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+
+suggestion1:
+	$stmt = $conn->prepare("UPDATE ? SET name = ?, isLogin = ? WHERE id = ?");
+	$stmt->bind_param("ssss",$wpdb->myTable, $name,true, $_SESSION['id']);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+
+suggestion2:
+	$stmt = $conn->prepare("UPDATE ? SET name = ?, isLogin = TRUE WHERE id = ?");
+	$stmt->bind_param("ssi",$wpdb->myTable, $name, $_SESSION['id']);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+

@@ -1,0 +1,10 @@
+target:
+	$conn->query("SELECT max(age) FROM $wpdb->myTable WHERE name='{$_POST['name']}' and id =$id");
+	$conn->close();
+
+suggestion0:
+	$stmt = $conn->prepare("SELECT max(age) FROM ? WHERE name= ? and id = ?");
+	$stmt->bind_param("sss",$wpdb->myTable, $_POST['name'], $id);
+	$stmt->execute();
+	$stmt->close();
+

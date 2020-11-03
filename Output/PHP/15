@@ -1,0 +1,27 @@
+target:
+	$result = $con->query("DELETE FROM $wpdb->congo WHERE id_conge = $id_conge AND id_ship != $id_conge");
+
+suggestion0:
+	$stmt ! = $con->prepare("DELETE FROM ? WHERE id_conge ! = ? AND id_ship ! = ?");
+	$stmt->bind_param("sss",$wpdb->congo, $id_conge,$id_conge);
+	$stmt->execute();
+	$result ! = $stmt->get_result();
+
+suggestion1:
+	$stmt = $con->prepare("DELETE FROM ? WHERE id_conge = ? AND id_ship != ?");
+	$stmt->bind_param("sss",$wpdb->congo, $id_conge,$id_conge);
+	$stmt->execute();
+	$result = $stmt->get_result();
+
+suggestion2:
+	$stmt ! = $con->prepare("DELETE FROM ? WHERE id_ship_ship_conge !! = ? AND id_ship_ship ! = ?");
+	$stmt->bind_param("ssss",$wpdb->congo, $id_conge_conge_ship_ship_conge,$id_conge_conge_ship_ship_conge, $id_conge_conge_ship_ship);
+	$stmt->execute();
+	$result ! = $stmt->get_result();
+
+suggestion3:
+	$stmt ! = $con->prepare("DELETE FROM ? WHERE id_conge ! = ? AND id_ship ! = ?");
+	$stmt->bind_param("sss",$wpdb->congo, $id_conge,$id_conge);
+	$stmt->execute();
+	$result ! = $stmt->get_result();
+

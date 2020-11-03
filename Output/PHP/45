@@ -1,0 +1,25 @@
+target:
+	$sql = "DELETE FROM myTable WHERE id = $id and email = {$_POST['email']}";
+	$conn->query($sql);
+
+suggestion0:
+	$sql = "DELETE FROM ? WHERE id =?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("si", $wpdb->usertable,$_SESSION['id']);
+	$stmt->execute();
+	$stmt->close();
+
+suggestion1:
+	$sql = "DELETE FROM ? WHERE id =?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("ss",$wpdb->myTable, $_SESSION['id']);
+	$stmt->execute();
+	$stmt->close();
+
+suggestion2:
+	$sql = "DELETE FROM ? WHERE id = ? and email = ?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("sis",$wpdb->myTable, $id,$_POST['email']);
+	$stmt->execute();
+	$stmt->close();
+

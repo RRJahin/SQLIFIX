@@ -1,0 +1,11 @@
+target:
+	$conn->query("DELETE FROM myTable WHERE id = '{$_SESSION['id']}' and email = '{$_POST['email']}'");
+	$conn->close();
+
+suggestion0:
+	$stmt = $conn->prepare("DELETE FROM myTable WHERE id = ? and email=?");
+	$stmt->bind_param("is", $_SESSION['id'],$_POST['email']);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+

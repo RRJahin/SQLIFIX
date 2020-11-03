@@ -1,0 +1,11 @@
+target:
+	$sql = "DELETE FROM $wpdb->myTable WHERE id ='{$_SESSION['id']}'";
+	$conn->query($sql);
+
+suggestion0:
+	$sql = "DELETE FROM ? WHERE id =?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("si", $wpdb->myTable,$_SESSION['id']);
+	$stmt->execute();
+	$stmt->close();
+

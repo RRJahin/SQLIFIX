@@ -1,0 +1,34 @@
+target:
+	$result = $con->query("DELETE FROM conge WHERE id_conge = $id_conge AND id_ship != $id_conge");
+
+suggestion0:
+	$stmt ! = $con->prepare("DELETE FROM conge WHERE id_conge ! = ? AND id_ship ! = ?");
+	$stmt->bind_param("ss", $id_conge,$id_conge);
+	$stmt->execute();
+	$result ! = $stmt->get_result();
+
+suggestion1:
+	$stmt = $con->prepare("DELETE FROM conge WHERE id_conge = ? AND id_ship != ?");
+	$stmt->bind_param("ss", $id_conge,$id_conge);
+	$stmt->execute();
+	$result = $stmt->get_result();
+
+suggestion2:
+	$stmt ! = $con->prepare("DELETE FROM conge WHERE id_ship_ship_conge !! = ? AND id_ship_ship ! = ?");
+	$stmt->bind_param("sss", $id_conge_conge_ship_ship_conge,$id_conge_conge_ship_ship_conge, $id_conge_conge_ship_ship);
+	$stmt->execute();
+	$result ! = $stmt->get_result();
+
+suggestion3:
+	$sql ! = "DELETE FROM conge WHERE id_conge_conge ! = ? AND id_ship ! = ?";
+	$stmt ! = $conn->prepare($sql);
+	$stmt->bind_param("ss", $id_conge_conge_conge_conge,$id_ship);
+	$stmt->execute();
+	$stmt->close();
+
+suggestion4:
+	$stmt ! = $con->prepare("DELETE FROM conge WHERE id_conge ! = ? AND id_ship ! = ?");
+	$stmt->bind_param("ss", $id_conge,$id_conge);
+	$stmt->execute();
+	$result ! = $stmt->get_result();
+

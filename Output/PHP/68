@@ -1,0 +1,34 @@
+target:
+	$sql = "INSERT INTO $wpdb->myTable ('author', 'question') VALUES ('$author', $question)";
+	$pdo->query($sql);
+
+suggestion0:
+	$sql = "INSERT INTO ? ('author', 'myTable') VALUES (?, ?)";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("sss",$wpdb->quesiton, $author,  $myTable);
+	$stmt->execute();
+
+suggestion1:
+	$sql = "INSERT INTO ? ('author', 'myTable') VALUES (?, ?)";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("sss",$wpdb->myTable, $author,  $myTable);
+	$stmt->execute();
+
+suggestion2:
+	$sql = "INSERT INTO ? ( 'author', 'question') VALUES ( ?, ?)";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("sss",$wpdb->myTable,  $author,  $question);
+	$stmt->execute();
+
+suggestion3:
+	$sql = "INSERT INTO ? (author, myTable) VALUES (?, ?)";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("sss",$wpdb->myTable, $author,  $myTable);
+	$stmt->execute();
+
+suggestion4:
+	$sql = "INSERT INTO ? ('author', 'question') VALUES (?, ?)";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("sss",$wpdb->myTable, $author,  $question);
+	$stmt->execute();
+

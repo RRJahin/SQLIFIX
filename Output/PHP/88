@@ -1,0 +1,39 @@
+target:
+	$query = $db->query("SELECT rowid,$field1 as val FROM table1 WHERE '$field2' != '".$value."' ");
+
+suggestion0:
+	$stmt = $db->prepare("SELECT ? as val FROM ? WHERE ? = ? ");
+	$stmt->bind_param("ssss",$field2,$wpdb->myTable, $field1,".$value.");
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion1:
+	$stmt = $db->prepare("SELECT ? as val FROM ? WHERE ? != ? ");
+	$stmt->bind_param("ssss",$field1,$wpdb->myTable, $field2,".$value.");
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion2:
+	$stmt = $db->prepare("SELECT ? as val FROM ? WHERE ? > ? ");
+	$stmt->bind_param("ssss",$field1,$wpdb->myTable, $field2,".$value.");
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion3:
+	$stmt = $db->prepare("SELECT ? as val FROM table1 WHERE ? > ? ");
+	$stmt->bind_param("sss",$field1, $field2,".$value.");
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion4:
+	$stmt = $db->prepare("SELECT ? as val FROM table1 WHERE ? = ? ");
+	$stmt->bind_param("sss",$field1, $field2,".$value.");
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion5:
+	$stmt = $db->prepare("SELECT ? as val FROM table1 WHERE ? != ? ");
+	$stmt->bind_param("sss",$field1, $field2,".$value.");
+	$stmt->execute();
+	$query = $stmt->get_result();
+

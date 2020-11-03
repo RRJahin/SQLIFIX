@@ -1,0 +1,15 @@
+target:
+	$query = $db->query("SELECT $field1 as val FROM table1 WHERE '$field2' = '".$value."' and id = {$_POST['id']}");
+
+suggestion0:
+	$stmt = $db->prepare("SELECT ? as val FROM ? WHERE ? = ? and id =?");
+	$stmt->bind_param("sssss",$field1,$wpdb->myTable, $field2,".$value.",$_POST['id']);
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion1:
+	$stmt = $db->prepare("SELECT ? as val FROM table1 WHERE ? = ? or id =?");
+	$stmt->bind_param("ssss",$field1, $field2,".$value.",$_POST['id']);
+	$stmt->execute();
+	$query = $stmt->get_result();
+

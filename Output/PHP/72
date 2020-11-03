@@ -1,0 +1,34 @@
+target:
+	$query = $db->query("SELECT count(*) as count FROM $wpdb->myTable1 WHERE '$field' != '".$value."' OR  '$field2' != '".$value2."' and id = $id");
+	$query = $db->query("SELECT count(*) as count FROM $wpdb->myTable2 WHERE '$field' != '".$value."' and id = $id");
+
+suggestion0:
+	$stmt = $db->prepare("SELECT count(*) as count FROM table1 WHERE ? != ? OR  ? != ? and id = ?");
+	$stmt->bind_param("sssss", $field,".$value.",$field2,".$value2.", $id);
+	$stmt->execute();
+	$query = $stmt->get_result();
+	$stmt = $db->prepare("SELECT count(*) as count FROM table1 WHERE ? != ? and id = ?");
+	$stmt->bind_param("ssd",$field, ".$value.", $id);
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion1:
+	$stmt = $db->prepare("SELECT count(*) as count FROM ? WHERE ? = ? AND  ? = ? and id = ?");
+	$stmt->bind_param("ssssss", $wpdb->myTable,$field,".$value.",$field2,".$value2.", $_POST['id']);
+	$stmt->execute();
+	$query = $stmt->get_result();
+	$stmt = $db->prepare("SELECT count(*) as count FROM ? WHERE ? = ? and id =? ");
+	$stmt->bind_param("ssss",$wpdb->myTable,$field, ".$value.", $_POST['id']);
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion2:
+	$stmt = $db->prepare("SELECT count(*) as count FROM table1 WHERE ? = ? AND  ? = ? and id = ?");
+	$stmt->bind_param("sssss", $field,".$value.",$field2,".$value2.", $_POST['id']);
+	$stmt->execute();
+	$query = $stmt->get_result();
+	$stmt = $db->prepare("SELECT count(*) as count FROM table1 WHERE ? = ? and id =? ");
+	$stmt->bind_param("sss",$field, ".$value.", $_POST['id']);
+	$stmt->execute();
+	$query = $stmt->get_result();
+

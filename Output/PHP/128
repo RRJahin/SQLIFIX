@@ -1,0 +1,70 @@
+target:
+	$sql = "SELECT * FROM users WHERE id ='{$_POST['id']}'";
+	$result = $conn->query($sql);
+
+suggestion0:
+	$sql = "SELECT * FROM users WHERE id!=?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("i", $_POST['id']);
+	$stmt->execute();
+	$result = $stmt->get_result();
+	$stmt->close();
+
+suggestion1:
+	$stmt = $db->prepare("Select * from users where  ?=?");
+	$stmt->bind_param("ss", id, $_POST['id']);
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion2:
+	$stmt = $db->prepare("Select * from users where  ?!=?");
+	$stmt->bind_param("ss", id, $_POST['id']);
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion3:
+	$sql = "SELECT * FROM users WHERE id=?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("i", $_POST['id']);
+	$stmt->execute();
+	$result = $stmt->get_result();
+	$stmt->close();
+
+suggestion4:
+	$sql = "SELECT * FROM users WHERE id=?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("i", $_POST['id']);
+	$stmt->execute();
+	$result = $stmt->get_result();
+	$stmt->close();
+
+suggestion5:
+	$sql = "SELECT * FROM users WHERE id=?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("i", $_POST['id']);
+	$stmt->execute();
+	$result = $stmt->get_result();
+	$stmt->close();
+
+suggestion6:
+	$sql = "SELECT * FROM users WHERE id=?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("i", $_POST['id']);
+	$stmt->execute();
+	$result = $stmt->get_result();
+	$stmt->close();
+
+suggestion7:
+	$stmt = $db->prepare("Select * from users where  ?!=?");
+	$stmt->bind_param("ss", id, $_POST['id']);
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion8:
+	$sql = "SELECT * FROM users WHERE id !=?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("i", $_POST['id']);
+	$stmt->execute();
+	$result = $stmt->get_result();
+	$stmt->close();
+

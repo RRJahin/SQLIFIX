@@ -1,0 +1,48 @@
+target:
+	$sql = "SELECT * FROM $wpdb->users WHERE id ='{$_POST['id']}'";
+	$result = $conn->query($sql);
+
+suggestion0:
+	$sql = "SELECT * FROM ? WHERE id=?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("ss",$wpdb->users, $_POST['id']);
+	$stmt->execute();
+	$result = $stmt->get_result();
+	$stmt->close();
+
+suggestion1:
+	$stmt = $db->prepare("Select * from ? where  ?=?");
+	$stmt->bind_param("sss",$wpdb->users, id, $_POST['id']);
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion2:
+	$sql = "SELECT * FROM ? WHERE id=?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("si",$wpdb->users, $_POST['id']);
+	$stmt->execute();
+	$result = $stmt->get_result();
+	$stmt->close();
+
+suggestion3:
+	$sql = "SELECT * FROM ? WHERE id !=?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("si",$wpdb->users, $_POST['id']);
+	$stmt->execute();
+	$result = $stmt->get_result();
+	$stmt->close();
+
+suggestion4:
+	$stmt = $db->prepare("Select * from ? where  ?!=?");
+	$stmt->bind_param("sss",$wpdb->users, id, $_POST['id']);
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion5:
+	$sql = "SELECT * FROM ? WHERE id=?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("si",$wpdb->users, $_POST['id']);
+	$stmt->execute();
+	$result = $stmt->get_result();
+	$stmt->close();
+

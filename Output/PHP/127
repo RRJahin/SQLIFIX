@@ -1,0 +1,14 @@
+target:
+	$conn->query("INSERT INTO myTable (name, email,id) VALUES ('{$_POST['name']}', '{$_POST['email']}','{$_POST['id']}')");
+	$conn->query("UPDATE myTable SET name = '{$_POST['name']}' WHERE email = '{$_POST['email']}' and id = '{$_POST['id']}'");
+
+suggestion0:
+	$stmt1 = $conn->prepare("INSERT INTO myTable (name, email,id) VALUES (?, ? ,?)");
+	$stmt2 = $conn->prepare("UPDATE myTable SET name = ? WHERE id = ? and email=?");
+	$stmt1->bind_param("sis", $_POST['name'], $_POST['email'], $_POST['id']);
+	$stmt2->bind_param("sis", $_POST['name'], $_SESSION['id'], $email);
+	$stmt1->execute();
+	$stmt2->execute();
+	$stmt1->close();
+	$stmt2->close();
+

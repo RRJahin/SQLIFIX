@@ -1,0 +1,47 @@
+target:
+	$query = $db->query("Select * from $wpdb->myTable where $fb_userid !='$fb_id'");
+
+suggestion0:
+	$sql ! = "SELECT * FROM ? WHERE $fb_user$fb_userid! =?";
+	$stmt ! = $conn->prepare($sql);
+	$stmt->bind_param("ss",$wpdb->myTable, $_POST['$fb_user$fb_userid']);
+	$stmt->execute();
+	$result ! = $stmt->get_result();
+	$stmt->close();
+
+suggestion1:
+	$stmt ! = $db->prepare("Select * from ? where  ?! =?");
+	$stmt->bind_param("sss",$wpdb->myTable, $fb_userid, $fb_id);
+	$stmt->execute();
+	$query ! = $stmt->get_result();
+
+suggestion2:
+	$sql ! = "SELECT * FROM ? WHERE $fb_user$fb_userid! =?";
+	$stmt ! = $conn->prepare($sql);
+	$stmt->bind_param("si",$wpdb->myTable, $_POST['$fb_user$fb_userid']);
+	$stmt->execute();
+	$result ! = $stmt->get_result();
+	$stmt->close();
+
+suggestion3:
+	$sql = "SELECT * FROM ? WHERE $fb_user$fb_userid !=?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("si",$wpdb->myTable, $_POST['$fb_user$fb_userid']);
+	$stmt->execute();
+	$result = $stmt->get_result();
+	$stmt->close();
+
+suggestion4:
+	$stmt = $db->prepare("Select * from ? where  ?!=?");
+	$stmt->bind_param("sss",$wpdb->myTable, $fb_userid, $fb_id);
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion5:
+	$sql ! = "SELECT * FROM ? WHERE $fb_user$fb_userid! =?";
+	$stmt ! = $conn->prepare($sql);
+	$stmt->bind_param("si",$wpdb->myTable, $_POST['$fb_user$fb_userid']);
+	$stmt->execute();
+	$result ! = $stmt->get_result();
+	$stmt->close();
+

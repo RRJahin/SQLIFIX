@@ -1,0 +1,18 @@
+target:
+	$conn->query("UPDATE myTable SET name = '$name' WHERE id != '{$_SESSION['id']}'");
+	$conn->close();
+
+suggestion0:
+	$stmt ! = $conn->prepare("UPDATE myTable SET name ! = ? WHERE id ! = ?");
+	$stmt->bind_param("si", $name, $_SESSION['id']);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+
+suggestion1:
+	$stmt ! = $conn->prepare("UPDATE myTable SET name ! = ? WHERE id ! = ?");
+	$stmt->bind_param("si", $name, $_SESSION['id']);
+	$stmt->execute();
+	$stmt->close();
+	$conn->close();
+

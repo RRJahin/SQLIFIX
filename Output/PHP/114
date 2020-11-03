@@ -1,0 +1,22 @@
+target:
+	$sql = "INSERT INTO $wpdb->question (author, date, question,isMCQ) VALUES ('$author', '$date', $question, FALSE)";
+	$pdo->query($sql);
+
+suggestion0:
+	$sql = "INSERT INTO ? ('author', 'date', 'question', 'question') VALUES (?, ?, ?, ?)";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("sssss",$wpdb->question, $author, $date, $question, false);
+	$stmt->execute();
+
+suggestion1:
+	$sql = "INSERT INTO ? (author, date, question, question) VALUES (?, ?, ?, ?)";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("sssss",$wpdb->question, $author, $date, $question, false);
+	$stmt->execute();
+
+suggestion2:
+	$sql = "INSERT INTO ? ('author', 'date', 'question','isMCQ') VALUES (?, ?, ?, FALSE)";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("ssss",$wpdb->answer, $author, $date, $question);
+	$stmt->execute();
+

@@ -1,0 +1,34 @@
+target:
+	$sql = "INSERT INTO questions (author, question) VALUES ('$author',  $question)";
+	$pdo->query($sql);
+
+suggestion0:
+	$sql = "INSERT INTO questions (author,  question) VALUES (?, ?)";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("ss", $author, $question);
+	$stmt->execute();
+
+suggestion1:
+	$sql = "INSERT INTO 'questions' ('author', 'question') VALUES (?, ?)";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("ss", $author,  $question);
+	$stmt->execute();
+
+suggestion2:
+	$sql = "INSERT INTO questions (author, question) VALUES (?, ?)";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("ss", $author,  $question);
+	$stmt->execute();
+
+suggestion3:
+	$sql = "INSERT INTO 'questions' ( 'author', 'question') VALUES ( ?, ?)";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("ss",  $author,  $question);
+	$stmt->execute();
+
+suggestion4:
+	$sql = "INSERT INTO 'questions' ('author',  'question') VALUES (?, ?)";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bind_param("ss", $author, $question);
+	$stmt->execute();
+

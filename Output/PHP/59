@@ -1,0 +1,55 @@
+target:
+	$query = $db->query("Select * from table1 where $fb_userid ='$fb_id' and id = $id");
+
+suggestion0:
+	$stmt = $db->prepare("Select * from table1 where  ?!=? and id = TRUE");
+	$stmt->bind_param("ss", $fb_userid, $fb_id);
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion1:
+	$sql = "SELECT * FROM table1 WHERE $fb_user$fb_userid=? and id = ?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("ss", $_SESSION['$fb_user$fb_userid'],$id);
+	$stmt->execute();
+	$result = $stmt->get_result();
+	$stmt->close();
+
+suggestion2:
+	$stmt = $db->prepare("Select * from table1 where  ?!=? and id = ?");
+	$stmt->bind_param("sss", $fb_userid, $fb_id, $id);
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion3:
+	$stmt = $db->prepare("Select * from table1 where  ?!=? and id = ?");
+	$stmt->bind_param("sss", $fb_userid, $fb_id,$id);
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion4:
+	$stmt = $db->prepare("Select * from table1 where  ?!=? and id = TRUE");
+	$stmt->bind_param("ss", $fb_userid, $fb_id);
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion5:
+	$stmt = $db->prepare("Select * from table1 where  ?=? and id = TRUE");
+	$stmt->bind_param("ss", $fb_userid, $fb_id);
+	$stmt->execute();
+	$query = $stmt->get_result();
+
+suggestion6:
+	$sql = "SELECT * FROM table1 WHERE $fb_user$fb_userid!=? and id = ?";
+	$stmt = $conn->prepare($sql);
+	$stmt->bind_param("is", $$fb_user$fb_userid, $id);
+	$stmt->execute();
+	$result = $stmt->get_result();
+	$stmt->close();
+
+suggestion7:
+	$stmt = $db->prepare("Select * from table1 where  ?=? and id = TRUE");
+	$stmt->bind_param("ss", $fb_userid, $fb_id);
+	$stmt->execute();
+	$query = $stmt->get_result();
+

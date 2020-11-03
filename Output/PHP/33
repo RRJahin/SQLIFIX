@@ -1,0 +1,34 @@
+target:
+	$conn->query("INSERT INTO $wpdb->Table (name, age) VALUES ('{$_POST['name']}', '{$_POST['age']}')");
+	$conn->query("UPDATE $wpdb->Table SET name = '{$_POST['name']}' WHERE age = '{$_POST['age']}'");
+
+suggestion0:
+	$stmt1 = $conn->prepare("INSERT INTO ? (name, age) VALUES (?, ?)");
+	$stmt2 = $conn->prepare("UPDATE ? SET name = ? WHERE id = ?");
+	$stmt1->bind_param("ssi",$wpdb->Table, $_POST['name'], $_POST['age']);
+	$stmt2->bind_param("ssi",$wpdb->Table, $_POST['name'], $_SESSION['id']);
+	$stmt1->execute();
+	$stmt2->execute();
+	$stmt1->close();
+	$stmt2->close();
+
+suggestion1:
+	$stmt1 = $conn->prepare("INSERT INTO ? (name, age) VALUES (?, ?)");
+	$stmt2 = $conn->prepare("UPDATE ? SET name = ? WHERE age = ?");
+	$stmt1->bind_param("ssi",$wpdb->Table, $_POST['name'], $_POST['age']);
+	$stmt2->bind_param("ssi",$wpdb->Table, $_POST['name'], $_POST['age']);
+	$stmt1->execute();
+	$stmt2->execute();
+	$stmt1->close();
+	$stmt2->close();
+
+suggestion2:
+	$stmt1 = $conn->prepare("INSERT INTO ? (name, age) VALUES (?, ?)");
+	$stmt2 = $conn->prepare("UPDATE ? SET name = ? WHERE id = ?");
+	$stmt1->bind_param("ssi",$wpdb->Table, $_POST['name'], $_POST['age']);
+	$stmt2->bind_param("ssi",$wpdb->Table, $_POST['name'], $_SESSION['id']);
+	$stmt1->execute();
+	$stmt2->execute();
+	$stmt1->close();
+	$stmt2->close();
+
