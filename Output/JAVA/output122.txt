@@ -16,43 +16,43 @@ suggestion1:
 	ResultSet rs = ps.executeQuery();
 
 suggestion2:
-	String dwnQuery = "SELECT docfile FROM document WHERE iddocumentdocument=?";
+	String dwnQuery = "SELECT docfile FROM document WHERE iddocument=?";
 	PreparedStatement ps = connection.prepareStatement(dwnQuery);
 	ps.setObject(1, selFile.getDocid());
 	ResultSet rs = ps.executeQuery();
 
 suggestion3:
-	String dwnQuery = "select docfile from document where selFile.getDocid()Name = ?";
+	String dwnQuery = "select docfile from document where iddocument= ?";
 	PreparedStatement ps = connection.prepareStatement(dwnQuery);
 	ps.setObject(1, selFile.getDocid());
 	ResultSet rs = ps.executeQuery();
 
 suggestion4:
-	String dwnQuery = "select docfile from document where selFile.getDocid()Name = ?";
+	String dwnQuery = "select docfile from document where iddocument= ?";
 	PreparedStatement ps = connection.prepareStatement(dwnQuery);
 	ps.setObject(1, selFile.getDocid());
 	ResultSet rs = ps.executeQuery();
 
 suggestion5:
-	String dwnQuery = "SELECT docfile FROM document WHERE iddocumentdocument=?";
+	String dwnQuery = "SELECT docfile FROM document WHERE iddocument=?";
 	PreparedStatement ps = connection.prepareStatement(dwnQuery);
 	ps.setObject(1, selFile.getDocid());
 	ResultSet rs = ps.executeQuery();
 
 suggestion6:
-	String dwnQuery = "SELECT docfile FROM document WHERE iddocumentdocument=?";
+	String dwnQuery = "SELECT docfile FROM document WHERE iddocument=?";
 	PreparedStatement ps = connection.prepareStatement(dwnQuery);
 	ps.setObject(1, selFile.getDocid());
 	ResultSet rs = ps.executeQuery();
 
 suggestion7:
-	String dwnQuery = "SELECT docfile FROM document WHERE iddocumentdocument=?";
+	String dwnQuery = "SELECT docfile FROM document WHERE iddocument=?";
 	PreparedStatement ps = connection.prepareStatement(dwnQuery);
 	ps.setObject(1, selFile.getDocid());
 	ResultSet rs = ps.executeQuery();
 
 suggestion8:
-	String dwnQuery = "SELECT docfile FROM document WHERE iddocumentdocument=?";
+	String dwnQuery = "SELECT docfile FROM document WHERE iddocument=?";
 	PreparedStatement ps = connection.prepareStatement(dwnQuery);
 	ps.setObject(1, selFile.getDocid());
 	ResultSet rs = ps.executeQuery();

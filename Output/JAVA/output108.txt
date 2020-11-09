@@ -16,18 +16,14 @@ suggestion1:
 	st.executeUpdate();
 
 suggestion2:
-	String query = "delete from ? where ?=?";
+	String query = "delete from " + TBL_NAME + " where " + FIELD_ID + "=?";
 	st = conn.prepareStatement(query);
-	st.setObject(1, TBL_NAME);
-	st.setObject(2, FIELD_ID);
-	st.setObject(3, id_nodo);
+	st.setObject(1, id_nodo);
 	st.executeUpdate();
 
 suggestion3:
-	String query = "delete from ? where ?=?";
+	String query = "delete from " + TBL_NAME + " where " + FIELD_ID + "=?";
 	st = conn.prepareStatement(query);
-	st.setObject(1, TBL_NAME);
-	st.setObject(2, FIELD_ID);
-	st.setObject(3, id_nodo);
+	st.setObject(1, id_nodo);
 	st.executeUpdate();
 

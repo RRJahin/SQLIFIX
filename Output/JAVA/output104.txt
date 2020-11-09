@@ -1,5 +1,5 @@
 Target:
-	Statement stmt = conn.createStatement()) {
+	Statement stmt = conn.createStatement();
 	return stmt.executeUpdate("DELETE FROM ndcodes WHERE Code="+med.getNDCode()) == 1;
 
 suggestion0:
