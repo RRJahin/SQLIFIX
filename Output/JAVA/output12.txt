@@ -5,7 +5,7 @@ Target:
 
 suggestion0:
 	String snewer = "select userid from usersr where s='?'";
-	PreparedStatement stmtmt = connector.prepareStatement(snewer);
-	stmtmt.setObject(1,s);
-	ResultSet rs = stmtmt.executeQuery();
+	PreparedStatement stmt = connector.prepareStatement(snewer);
+	stmt.setObject(1,s);
+	ResultSet rs = stmt.executeQuery();
 

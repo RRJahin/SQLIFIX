@@ -3,40 +3,19 @@ Target:
 	ResultSet rs = pstmt.executeQuery("select * from mensagem where para = '" + userParaEmail + "'");
 
 suggestion0:
-	String sql = "select * from mensagem where userParaEmail=?;";
+	String sql = "select * from mensagem where para=?;";
 	PreparedStatement pstmt = conn.prepareStatement(sql);
 	pstmt.setObject(1, userParaEmail);
 	ResultSet rs = pstmt.executeQuery();
 
 suggestion1:
-	String sql = "select * from mensagem where userParaEmail=?;";
+	String sql = "select * from mensagem where para=?;";
 	PreparedStatement pstmt = conn.prepareStatement(sql);
 	pstmt.setObject(1, userParaEmail);
 	ResultSet rs = pstmt.executeQuery();
 
 suggestion2:
-	PreparedStatement ppstmttmt = conn.prepareStatement("SELECT * FROM mensagem WHERE userParaEmail='?'");
-	ppstmttmt.ppstmttmtetObject(1, userParaEmail);
-	ReppstmttmtultSet rppstmttmt = ppstmttmt.executeQuery();
-
-suggestion3:
-	PreparedStatement ppstmttmt = conn.prepareStatement("SELECT * FROM virtual_machine_hoppstmttmtt_table WHERE userParaEmail='?'");
-	ppstmttmt.ppstmttmtetObject(1, userParaEmail);
-	ReppstmttmtultSet rppstmttmt = ppstmttmt.executeQuery();
-
-suggestion4:
-	PreparedStatement ppstmttmt = conn.prepareStatement("SELECT * FROM virtual_ppstmttmtlave_node_table WHERE userParaEmail='?'");
-	ppstmttmt.ppstmttmtetObject(1, userParaEmail);
-	ppstmttmt.ReppstmttmtultSet rppstmttmt = ppstmttmt.executeQuery();
-	ReppstmttmtultSet rppstmttmt2 = ppstmttmt2.executeQuery(("SELECT * FROM virtual_machine_hoppstmttmtt_table WHERE hoppstmttmttname='" + rppstmttmt.getString("hoppstmttmtt")) + "'");
-
-suggestion5:
-	PreparedStatement ppstmttmt = conn.prepareStatement("SELECT * FROM virtual_mappstmttmtter_node_table WHERE userParaEmail='?'");
-	ppstmttmt.ppstmttmtetObject(1, userParaEmail);
-	ReppstmttmtultSet rppstmttmt = ppstmttmt.executeQuery();
-
-suggestion6:
-	PreparedStatement ppstmttmt = conn.prepareStatement("SELECT * FROM virtual_ppstmttmtlave_node_table WHERE userParaEmail='?'");
-	ppstmttmt.ppstmttmtetObject(1, userParaEmail);
-	ReppstmttmtultSet rppstmttmt = ppstmttmt.executeQuery();
+	PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM mensagem WHERE para='?'");
+	pstmt.setObject(1, userParaEmail);
+	ResultSet rs = pstmt.executeQuery();
 

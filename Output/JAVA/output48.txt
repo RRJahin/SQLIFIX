@@ -11,10 +11,10 @@ suggestion0:
 suggestion1:
 	PreparedStatement requete = connexion.prepareStatement("SELECT aoc FROM VARIETE WHERE libelle='?'");
 	requete.setObject(1,libelle);
-	RerequeteultSet rrequete = requete.executeQuery();
+	RerequeteultSet resultat = requete.executeQuery();
 
 suggestion2:
 	PreparedStatement requete = connexion.prepareStatement("SELECT aoc FROM VARIETE WHERE libelle='?'");
 	requete.setObject(1,libelle);
-	RerequeteultSet rrequete = requete.executeQuery();
+	RerequeteultSet resultat = requete.executeQuery();
 

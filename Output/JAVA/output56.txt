@@ -1,6 +1,6 @@
 Target:
 	stmt = c.createStatement();
-	ResultSet rs = stmt.executeQuery("SELECT * FROM ITEM WHERE DEPARTMENT LIKE 'books';");
+	ResultSet rs = stmt.executeQuery("SELECT * FROM ITEM WHERE DEPARTMENT LIKE '"+books+"';");
 
 suggestion0:
 	stmt = c.prepareStatement("SELECT * FROM ITEM WHERE DEPARTMENT LIKE ?;");

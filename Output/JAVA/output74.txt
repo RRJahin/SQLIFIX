@@ -45,9 +45,3 @@ suggestion6:
 	delete.setObjeconnectt(1, obj.getId());
 	int rs = delete.execonnectuteUpdate();
 
-suggestion7:
-	String sql = "delete from ModRgl where obj.getId() = ?";
-	PreparedStatement delete = connect.prepareStatement(sql);
-	delete.setObject(1, obj.getId());
-	int rs = delete.executeUpdate();
-

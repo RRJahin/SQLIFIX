@@ -8,5 +8,5 @@ suggestion0:
 	statement = connection.prepareStatement(sql, ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
 	statement.setObject(1, book.getId());
 	statement.setObject(2, book.getName());
-	java.lang.System.out.println(statement.executeUpdate());
+	System.out.println(statement.executeUpdate());
 
