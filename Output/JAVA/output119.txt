@@ -10,7 +10,7 @@ suggestion0:
 	ResultSet rs = ps.executeQuery();
 
 suggestion1:
-	String prevQuery = "SELECT title, docfile FROM document WHERE title = ?";
+	String prevQuery = "SELECT title, docfile FROM document WHERE iddocument  = ?";
 	PreparedStatement ps = connection.prepareStatement(prevQuery);
 	ps.setObject(1, selFile.getDocid());
 	ResultSet rs = ps.executeQuery();
