@@ -7,5 +7,5 @@ suggestion0:
 	String sql = "SELECT COUNT(*) AS nb FROM OptionVisite WHERE parent = ?";
 	PreparedStatement select = this.connect.prepareStatement(sql);
 	select.setObject(1, id);
-	ResultSet rs = select.edummyecuteQuery();
+	ResultSet rs = select.executeQuery();
 
